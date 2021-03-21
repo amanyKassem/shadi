@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="282.118" height="218.267" viewBox="0 0 282.118 218.267">
+  <defs>
+    <clipPath id="clip-path">
+      <rect width="93" height="47" fill="none"/>
+    </clipPath>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#d8d8d8" stop-opacity="0.271"/>
+      <stop offset="1" stop-color="#e9e9e9" stop-opacity="0.039"/>
+    </linearGradient>
+  </defs>
+  <g id="light_green__lamb" data-name="light_green _lamb" transform="translate(-1533 -5051)">
+    <g id="Ellipse_421" data-name="Ellipse 421" transform="translate(1656 5150)" fill="#fff" stroke="rgba(216,220,214,0.55)" stroke-width="1" style="mix-blend-mode: soft-light;isolation: isolate">
+      <circle cx="20.5" cy="20.5" r="20.5" stroke="none"/>
+      <circle cx="20.5" cy="20.5" r="20" fill="none"/>
+    </g>
+    <circle id="Ellipse_422" data-name="Ellipse 422" cx="25.5" cy="25.5" r="25.5" transform="translate(1651 5145)" fill="rgba(151,213,127,0.13)"/>
+    <g id="Scroll_Group_4" data-name="Scroll Group 4" transform="translate(1630 5126)" clip-path="url(#clip-path)" style="isolation: isolate">
+      <circle id="Ellipse_423" data-name="Ellipse 423" cx="46.5" cy="46.5" r="46.5" fill="#69cc41"/>
+    </g>
+    <rect id="Rectangle_1077" data-name="Rectangle 1077" width="4" height="103" transform="translate(1674 5051)" fill="#69cc41"/>
+    <path id="Path_29172" data-name="Path 29172" d="M934.008,216,817.735,312.267h282.118L992.594,216Z" transform="translate(715.265 4957)" fill="url(#linear-gradient)"/>
+  </g>
+</svg>

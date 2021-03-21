@@ -1,0 +1,35 @@
+
+@font-face {
+    font-family: 'Cairo';
+    src: url('../fonts/Cairo-Regular.ttf');
+    src: url('../fonts/Cairo-Regular.ttf') format('woff'),
+    url('../fonts/Cairo-Regular.ttf') format('truetype')
+}
+
+body {
+    direction: rtl;
+    text-align: right;
+    font-family: 'Cairo';
+}
+
+.OverLay{
+    right: 0;
+    transform: translateX(100%);
+}
+
+/* Media Screen */
+
+@media screen and (max-width: 990px){
+
+
+    .fixHeader{
+        right: 0;
+        transform: translateX(100%);
+    }
+
+}
+
+@media screen and (max-width: 990px) {
+
+
+}

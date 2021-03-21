@@ -1,0 +1,74 @@
+@font-face {
+    font-family: 'Sukar';
+    src: url('../fonts/Sukar-Regular.ttf');
+    src: url('../fonts/Sukar-Bold.ttf') format('woff'),
+    url('../fonts/Sukar-Black.ttf') format('truetype')
+}
+
+
+body {
+    direction: ltr;
+    text-align: left;
+    font-family: 'Sukar';
+}
+
+
+.selector i{
+    left: 10px;
+}
+
+.contentCart {
+    right: 0;
+    transform: translateX(100%);
+}
+
+.OverLay{
+    left: 0;
+    transform: translateX(-100%);
+}
+
+.pinTitle{
+    left: 20px;
+}
+
+.iconControl{
+    right: 10px;
+}
+
+.shapeLeft:before{
+    right: 0;
+}
+
+.profile .nav-tabs .nav-item {
+    text-align: left;
+    padding: 0;
+}
+
+.headBang h6 {
+    border-right: 1px solid #b1b1b1;
+}
+
+.headBang h6:last-child {
+    border-right: 0px solid #b1b1b1;
+}
+
+.coupon{
+    right: 0;
+}
+
+/* Media Screen */
+
+@media screen and (max-width: 990px){
+
+
+    .fixHeader{
+        left: 0;
+        transform: translateX(-100%);
+    }
+
+}
+
+@media screen and (max-width: 990px) {
+
+
+}
