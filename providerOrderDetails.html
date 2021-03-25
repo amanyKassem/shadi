@@ -198,13 +198,29 @@
 <div class="orderDetailsContainer bgLightGray">
     <div class="container">
 
-        <div class="bgWight orderInfo">
+        <a href="providerOrders.html" class="bgWight orderInfo">
             طلب معلق < <span>#123435345</span>
+        </a>
+
+        <a href="providerOrders.html" class="bgWight orderInfo">
+            طلب قيد التنفيذ < <span>#123435345</span>
+        </a>
+
+        <a href="providerOrders.html" class="bgWight orderInfo">
+            طلب ملغي < <span>#123435345</span>
+        </a>
+
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            <span class="icon-hourglass alertIcon"></span>
+            في انتظار الموافقة علي الطلب
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span class="icon-cancel_black"></span>
+            </button>
         </div>
 
         <div class="alert alert-success alert-dismissible fade show" role="alert">
-            <span class="icon-hourglass"></span>
-            في انتظار الموافقة علي الطلب
+            <span class="icon-victory_black alertIcon"></span>
+            طلبك بدء !
             <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                 <span class="icon-cancel_black"></span>
             </button>
@@ -230,7 +246,7 @@
                         <div class="processTime">
                             <div class="date">
                                 <ul class="timeline">
-                                    <li>4 يناير 2021</li>
+                                    <li class="active">4 يناير 2021</li>
                                     <li>5 يناير 2021</li>
                                 </ul>
                             </div>
@@ -239,6 +255,28 @@
                                 <span>2 يوم</span>
                             </div>
                         </div>
+                    </div>
+                </div>
+
+                <div id="clockdiv">
+                    <div class="count">
+                        <span class="days"></span>
+                        <div class="smalltext">يوم</div>
+                    </div>
+                    <span class="colMark">|</span>
+                    <div class="count">
+                        <span class="hours"></span>
+                        <div class="smalltext">ساعة</div>
+                    </div>
+                    <span class="colMark">|</span>
+                    <div class="count">
+                        <span class="minutes"></span>
+                        <div class="smalltext">دقيقة</div>
+                    </div>
+                    <span class="colMark">|</span>
+                    <div class="count">
+                        <span class="seconds"></span>
+                        <div class="smalltext">ثانية</div>
                     </div>
                 </div>
 
@@ -304,10 +342,64 @@
                     </div>
                 </div>
 
+                <div class="btnCont">
+                    <a href="providerOrders.html" class="btnDefault hvr-pulse">موافقة</a>
+                    <a href="" class="btnDefault redBtn hvr-pulse">رفض</a>
+                </div>
+
+                <div class="btnCont">
+                    <a href="providerOrders.html" class="btnDefault hvr-pulse">تحديث</a>
+                </div>
+
             </div>
 
             <div class="leftCont">
+                <div class="paymentDetails bgWight">
+                    <h4 class="title">التكلفة</h4>
 
+                    <div class="payBlock">
+                        <div class="sideTitle">
+                            تكلفة الخدمة
+                        </div>
+                        <div class="price">18 ريال</div>
+                    </div>
+
+                    <div class="payBlock">
+                        <div class="sideTitle">
+                            سعر الضريبة
+                        </div>
+                        <div class="price">18 ريال</div>
+                    </div>
+
+                    <div class="payBlock">
+                        <div class="sideTitle">
+                            كود الخصم
+                        </div>
+                        <div class="price">2v3i</div>
+                    </div>
+
+                    <hr class="customHr">
+
+                    <div class="payBlock">
+                        <div class="sideTitle">
+                           الاجمالي
+                        </div>
+                        <div class="prices">
+                            <div class="price oldPrice">18 ريال</div>
+                            <div class="price">18 ريال</div>
+                        </div>
+                    </div>
+
+                    <hr class="customHr">
+
+                    <div class="payBlock">
+                        <div class="sideTitle">
+                            طريقة الدفع
+                        </div>
+                        <img src="img/card.png" alt="">
+                    </div>
+
+                </div>
             </div>
         </div>
 
@@ -426,6 +518,52 @@
 <script src="js/bootstrap.min.js"></script>
 <script src="js/owl.carousel.min.js"></script>
 <script src="js/script.js"></script>
+
+<!--count down-->
+<script>
+    function getTimeRemaining(endtime) {
+        var t = Date.parse(endtime) - Date.parse(new Date());
+        var seconds = Math.floor((t / 1000) % 60);
+        var minutes = Math.floor((t / 1000 / 60) % 60);
+        var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
+        var days = Math.floor(t / (1000 * 60 * 60 * 24));
+        return {
+            'total': t,
+            'days': days,
+            'hours': hours,
+            'minutes': minutes,
+            'seconds': seconds
+        };
+    }
+
+    function initializeClock(id, endtime) {
+        var clock = document.getElementById(id);
+        var daysSpan = clock.querySelector('.days');
+        var hoursSpan = clock.querySelector('.hours');
+        var minutesSpan = clock.querySelector('.minutes');
+        var secondsSpan = clock.querySelector('.seconds');
+
+        function updateClock() {
+            var t = getTimeRemaining(endtime);
+
+            daysSpan.innerHTML = t.days;
+            hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
+            minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
+            secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
+
+            if (t.total <= 0) {
+                clearInterval(timeinterval);
+            }
+        }
+
+        updateClock();
+        var timeinterval = setInterval(updateClock, 1000);
+    }
+
+    var deadline = new Date(Date.parse(new Date()) + 15 * 24 * 60 * 60 * 1000);
+    initializeClock('clockdiv', deadline);
+</script>
+
 
 </body>
 </html>

@@ -1903,6 +1903,9 @@ table.dataTable.hover tbody tr:hover, table.dataTable.display tbody tr:hover{
 .orderDetailsContainer .orderInfo {
     padding: 15px 20px;
     color: #818181;
+    margin-bottom: 20px;
+    width: 100%;
+    display: flex;
 }
 .orderDetailsContainer .orderInfo span{
     color: #3A3A3A;
@@ -1914,13 +1917,13 @@ table.dataTable.hover tbody tr:hover, table.dataTable.display tbody tr:hover{
     height: 60px;
     display: flex;
     align-items: center;
-    margin: 20px 0;
+    margin: 0 0 20px;
     color: #56C429;
     padding-right: 20px;
     font-size: 15px;
 }
 
-.orderDetailsContainer .alert-success span.icon-hourglass {
+.orderDetailsContainer .alert-success span.alertIcon {
     font-size: 30px;
     margin-left: 15px;
 }
@@ -1947,7 +1950,8 @@ table.dataTable.hover tbody tr:hover, table.dataTable.display tbody tr:hover{
 }
 .orderDetailsContainer .detailsCont .rightCont .details ,
 .orderDetailsContainer .detailsCont .rightCont .packageCont ,
-.orderDetailsContainer .detailsCont .rightCont .filesCont{
+.orderDetailsContainer .detailsCont .rightCont .filesCont,
+.orderDetailsContainer .detailsCont .leftCont .paymentDetails{
     padding: 20px;
     display: flex;
     flex-wrap: wrap;
@@ -2040,6 +2044,17 @@ table.dataTable.hover tbody tr:hover, table.dataTable.display tbody tr:hover{
     top: 50%;
     transform: translateY(-50%);
 }
+.orderDetailsContainer .detailsCont .rightCont .details .processTime ul.timeline > li.active:after {
+    content: ' ';
+    background: #56C429;
+    position: absolute;
+    border-radius: 50%;
+    right: -5px;
+    width: 11px;
+    height: 11px;
+    top: 50%;
+    transform: translateY(-50%);
+}
 .orderDetailsContainer .detailsCont .rightCont .details .processTime .time{
     display: flex;
     justify-content: space-between;
@@ -2055,12 +2070,15 @@ table.dataTable.hover tbody tr:hover, table.dataTable.display tbody tr:hover{
     color: #56C429;
 }
 .orderDetailsContainer .detailsCont .rightCont .packageCont ,
-.orderDetailsContainer .detailsCont .rightCont .filesCont{
+.orderDetailsContainer .detailsCont .rightCont .filesCont,
+.orderDetailsContainer .detailsCont .leftCont .paymentDetails{
     margin-top: 20px;
     flex-direction: column;
     align-items: flex-start;
 }
-.orderDetailsContainer .detailsCont .rightCont .packageCont .title , .orderDetailsContainer .detailsCont .rightCont .filesCont .title {
+.orderDetailsContainer .detailsCont .rightCont .packageCont .title ,
+.orderDetailsContainer .detailsCont .rightCont .filesCont .title,
+.orderDetailsContainer .detailsCont .leftCont .paymentDetails .title{
     color: #1C3624;
     font-size: 16px;
     margin: 0;
@@ -2097,29 +2115,135 @@ table.dataTable.hover tbody tr:hover, table.dataTable.display tbody tr:hover{
 .orderDetailsContainer .detailsCont .rightCont .filesCont{
 
 }
-.orderDetailsContainer .detailsCont .rightCont .filesCont .title{
+.orderDetailsContainer .detailsCont .rightCont .filesCont .title , .orderDetailsContainer .detailsCont .leftCont .paymentDetails .title{
     color: #3A3A3A;
+    margin-bottom: 30px;
 }
 .orderDetailsContainer .detailsCont .rightCont .filesCont .files{
-
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 }
 .orderDetailsContainer .detailsCont .rightCont .filesCont .files .file{
-
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #bababa;
+    padding-bottom: 20px;
+}
+.orderDetailsContainer .detailsCont .rightCont .filesCont .files .file:last-child{
+    border: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
 .orderDetailsContainer .detailsCont .rightCont .filesCont .files .file img{
-
+    width: 35px;
+}
+.orderDetailsContainer .detailsCont .rightCont .filesCont .files .file .info{
+    margin-right: 20px;
 }
 .orderDetailsContainer .detailsCont .rightCont .filesCont .files .file .name{
-
+    color: #3A3A3A;
+    margin: 0 0 5px;
+    font-size: 15px;
+    font-weight: bold;
 }
 .orderDetailsContainer .detailsCont .rightCont .filesCont .files .file .size{
-
+    color: #818181;
+    font-size: 14px;
+    font-weight: bold;
+}
+.orderDetailsContainer .detailsCont .rightCont .btnCont{
+    margin: 40px 0 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.orderDetailsContainer .detailsCont .rightCont .btnDefault{
+    min-width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    border-radius: 10px;
+}
+.orderDetailsContainer .detailsCont .rightCont .btnDefault.redBtn{
+    margin-right: 20px;
+    background: #e93f33 !important;
+    border-color: #e93f33 !important;
 }
 
 
 .orderDetailsContainer .detailsCont .leftCont{
-    padding: 20px;
     width: 25%;
+}
+.orderDetailsContainer .detailsCont .leftCont .paymentDetails{
+    margin-top: 0;
+}
+.orderDetailsContainer .detailsCont .leftCont .paymentDetails .title{
+    margin-bottom: 15px;
+}
+.orderDetailsContainer .detailsCont .leftCont .paymentDetails .payBlock{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 5px;
+}
+.orderDetailsContainer .detailsCont .leftCont .paymentDetails .payBlock .sideTitle{
+    color: #3A3A3A;
+}
+.orderDetailsContainer .detailsCont .leftCont .paymentDetails .payBlock .prices{
+    display: flex;
+    align-items: center;
+}
+.orderDetailsContainer .detailsCont .leftCont .paymentDetails .payBlock .price{
+    color: #56C429;
+}
+.orderDetailsContainer .detailsCont .leftCont .paymentDetails .payBlock .price.oldPrice{
+    color: #818181;
+    text-decoration: line-through;
+    margin-left: 7px;
+}
+
+.orderDetailsContainer .detailsCont .leftCont .paymentDetails .payBlock img{
+    width: 22px;
+}
+
+.orderDetailsContainer .detailsCont .leftCont .paymentDetails .customHr{
+    margin: 15px 0;
+}
+
+#clockdiv {
+    display: flex;
+    align-items: center;
+    margin: 70px 0;
+    justify-content: center;
+}
+#clockdiv .count {
+    display: inline-block;
+    text-align: center;
+}
+#clockdiv .count .smalltext {
+    font-size: 20px;
+    font-weight: bold;
+    color: #818181;
+    text-transform: capitalize;
+    margin-top: 5px;
+}
+#clockdiv .count span {
+    display: block;
+    color: #274730;
+    font-size: 50px;
+    margin-bottom: 40px;
+}
+#clockdiv .colMark {
+    margin: 0 35px;
+    font-size: 30px;
+    color: #ddd;
 }
 
 /*end orderDetailsContainer*/
