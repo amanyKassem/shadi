@@ -1,14 +1,23 @@
-jQuery(window).load(function () {
+$(document).ready(function () {
 
-    // Loading Page
+    // toggle menu
+    $("header .toggle").click(function () {
+        $(".overlay").css({
+            "transform": "scaleX(1)"
+        });
 
-    $(".loader").fadeOut(500,function(){
-
-        $(".loading").delay(1000).fadeOut(500);
+        $(".menu").addClass('ulDir');
 
     });
 
-    $("body").css("overflow-y", "auto");
+    $("header .overlay").click(function () {
+        $(this).removeAttr("style");
+        $(".menu").removeClass("ulDir");
+    });
+
+
+
+
 
     // ANIMATION
 
@@ -36,6 +45,23 @@ jQuery(window).load(function () {
     }
 
 });
+
+/* loading screen */
+$(window).on('load', function () {
+
+    // Loading Page
+
+    $(".loader").fadeOut(500,function(){
+
+        $(".loading").delay(1000).fadeOut(500);
+
+    });
+
+    $("body").css("overflow-y", "auto");
+
+
+});
+
 
 // ADD IMAGE
 $('.image-uploader').change(function (event) {
