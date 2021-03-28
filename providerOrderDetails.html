@@ -210,6 +210,10 @@
             طلب ملغي < <span>#123435345</span>
         </a>
 
+        <a href="providerOrders.html" class="bgWight orderInfo">
+            طلب منتهي < <span>#123435345</span>
+        </a>
+
         <div class="alert alert-success alert-dismissible fade show" role="alert">
             <span class="icon-hourglass alertIcon"></span>
             في انتظار الموافقة علي الطلب
@@ -221,6 +225,14 @@
         <div class="alert alert-success alert-dismissible fade show" role="alert">
             <span class="icon-victory_black alertIcon"></span>
             طلبك بدء !
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span class="icon-cancel_black"></span>
+            </button>
+        </div>
+
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            <span class="icon-finsh_icon_order alertIcon"></span>
+            يمكنك الطلب من جديد !
             <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                 <span class="icon-cancel_black"></span>
             </button>
@@ -247,7 +259,9 @@
                             <div class="date">
                                 <ul class="timeline">
                                     <li class="active">4 يناير 2021</li>
-                                    <li>5 يناير 2021</li>
+                                    <li class="cancelled">
+                                        <span class="icon-cancel"></span>
+                                        5 يناير 2021</li>
                                 </ul>
                             </div>
                             <div class="time">
@@ -344,11 +358,31 @@
 
                 <div class="btnCont">
                     <a href="providerOrders.html" class="btnDefault hvr-pulse">موافقة</a>
-                    <a href="" class="btnDefault redBtn hvr-pulse">رفض</a>
+                    <a href="providerOrders.html" class="btnDefault redBtn hvr-pulse">رفض</a>
                 </div>
 
                 <div class="btnCont">
                     <a href="providerOrders.html" class="btnDefault hvr-pulse">تحديث</a>
+                </div>
+
+                <div class="btnCont">
+                    <a href="providerOrders.html" class="btnDefault redBtn hvr-pulse">مسح</a>
+                </div>
+
+                <div class="btnCont">
+                    <a data-toggle="modal" data-target="#payInfo" class="btnDefault hvr-pulse">انهاء</a>
+                </div>
+
+                <!-- Modal -->
+                <div class="modal fade" id="payInfo" tabindex="-1" role="dialog" aria-labelledby="payInfoTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <img class="vector" src="img/vector_payment.png" alt="vector payment">
+                                <p class="desc">تم تحويل المبلغ علي حسابك بنجاح وخصم العمولة</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
             </div>
