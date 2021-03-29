@@ -39,6 +39,16 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
+  <component name="RunManager">
+    <configuration name="completeAcc.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/shadi/completeAcc.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.completeAcc.html" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -50,7 +60,7 @@
       <workItem from="1616066143801" duration="8028000" />
       <workItem from="1616310619522" duration="24641000" />
       <workItem from="1616412928008" duration="49844000" />
-      <workItem from="1616915494230" duration="12450000" />
+      <workItem from="1616915494230" duration="20725000" />
     </task>
     <servers />
   </component>

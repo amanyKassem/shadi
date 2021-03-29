@@ -25,6 +25,7 @@
     <link rel="stylesheet" type="text/css" href="css/datatables.min.css"/>
     <link rel="stylesheet" type="text/css" href="css/jquery.dataTables.min.css"/>
     <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/bootstrap-select.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/hover.css">
     <link href="css/icomoon.css" rel="stylesheet"/>
@@ -105,13 +106,13 @@
                             </ul>
                         </div>
                     </li>
-                    <li>
+                    <li class="active">
                         <a href="services.html">الخدمات المقدمة</a>
                     </li>
                     <li>
                         <a href="analytics.html">تحليلات</a>
                     </li>
-                    <li class="active">
+                    <li>
                         <a href="earnings.html">ارباح</a>
                     </li>
 
@@ -194,123 +195,175 @@
 
 <!--end header-->
 
-<!--start earnings-->
-<div class="ordersContainer analytics earnings bgLightGray">
+<!--start services-->
+<div class="ordersContainer analytics services bgLightGray">
     <div class="container">
 
+        <div class="addServBlock">
+            <span>الاقسام</span>
+            <a href="#" class="addEditCat">تعديل او اضافة قسم</a>
+        </div>
+
+
+        <div id="owl-demo1" class="owl-carousel">
+
+            <div class="item boxShadow">
+                <a href="" class="category">
+                    <img src="img/graphic_design.png" alt="Graphic design">
+                    <h4>الجرافيك والديزاين</h4>
+                </a>
+            </div>
+
+            <div class="item boxShadow">
+                <a href="" class="category">
+                    <img src="img/Seo.png" alt="Technology and Marketing Online">
+                    <h4>التكنولوجيا والتسويق لكتروني</h4>
+                </a>
+            </div>
+
+            <div class="item boxShadow">
+                <a href="" class="category">
+                    <img src="img/translate.png" alt="Writing and translation">
+                    <h4>الكتابة والترجمة</h4>
+                </a>
+            </div>
+
+            <div class="item boxShadow">
+                <a href="" class="category">
+                    <img src="img/photography.png" alt="Photography and montage">
+                    <h4>التصوير والمونتاج</h4>
+                </a>
+            </div>
+
+            <div class="item boxShadow">
+                <a href="" class="category">
+                    <img src="img/education.png" alt="Education">
+                    <h4>التعليم</h4>
+                </a>
+            </div>
+
+            <div class="item boxShadow">
+                <a href="" class="category">
+                    <img src="img/consutation.png" alt="Consulting">
+                    <h4>الاستشارات</h4>
+                </a>
+            </div>
+
+            <div class="item boxShadow">
+                <a href="" class="category">
+                    <img src="img/lifestyle.png" alt="Life style">
+                    <h4>لايف استايل</h4>
+                </a>
+            </div>
+
+            <div class="item boxShadow">
+                <a href="" class="category">
+                    <img src="img/mic_enmy.png" alt="Video and animation">
+                    <h4>الفيديو والانيميشن</h4>
+                </a>
+            </div>
+
+        </div>
+
+        <div class="addServBlock">
+            <span>الخدمات</span>
+            <a  class="btnDefault hvr-pulse">اضافة خدمة</a>
+        </div>
+
+        <div class="filterCont">
+            <select class="selectpicker" id="month" title="القسم">
+                <option>جرافيك وديزاين</option>
+                <option>تصوير</option>
+            </select>
+        </div>
         <div class="ordersInfo">
             <table class="display nowrap orderTable" >
                 <thead>
                 <tr>
-                    <th>اسم الحساب</th>
+                    <th>صورة الخدمة</th>
+                    <th>عنوان الخمة</th>
+                    <th>القسم</th>
                     <th>تاريخ الاضافة</th>
-                    <th>اسم البنك</th>
-                    <th>رقم الحساب</th>
-                    <th>رقم الايبان</th>
-                    <th>تفعيل البطاقة</th>
+                    <th>ايام الانجاز</th>
+                    <th></th>
                 </tr>
                 </thead>
                 <tbody>
 
                 <tr>
-                    <td>اوامر الشبكة</td>
-                    <td>20/8/2023</td>
-                    <td>بنك فيصل</td>
-                    <td>2472397041571</td>
-                    <td>6086428306401</td>
                     <td>
-                        <div class="custom-control custom-switch">
-                            <input type="checkbox" class="custom-control-input" id="aval3">
-                            <label class="custom-control-label" for="aval3"></label>
-                        </div>
+                        <a href="providerServiceDetails.html"><img class="img-fluid" src="img/pic_o.png" alt="service"></a>
+                    </td>
+                    <td>
+                        <a href="providerServiceDetails.html">تعديلات فيديوهات ومونتاج</a>
+                    </td>
+                    <td>الجرافيك والديزاين</td>
+                    <td>15\3\2022</td>
+                    <td>15</td>
+                    <td>
+                        <a href="#" class="more">
+                            <span class="icon-more_provider"></span>
+                        </a>
                     </td>
                 </tr>
+
                 <tr>
-                    <td>اوامر الشبكة</td>
-                    <td>20/8/2023</td>
-                    <td>بنك فيصل</td>
-                    <td>2472397041571</td>
-                    <td>6086428306401</td>
                     <td>
-                        <div class="custom-control custom-switch">
-                            <input type="checkbox" class="custom-control-input" id="aval4">
-                            <label class="custom-control-label" for="aval4"></label>
-                        </div>
+                        <a href="providerServiceDetails.html"><img class="img-fluid" src="img/pic_o.png" alt="service"></a>
+                    </td>
+                    <td>
+                        <a href="providerServiceDetails.html">تعديلات فيديوهات ومونتاج</a>
+                    </td>
+                    <td>الجرافيك والديزاين</td>
+                    <td>15\3\2022</td>
+                    <td>15</td>
+                    <td>
+                        <a href="#" class="more">
+                            <span class="icon-more_provider"></span>
+                        </a>
                     </td>
                 </tr>
+
                 <tr>
-                    <td>اوامر الشبكة</td>
-                    <td>20/8/2023</td>
-                    <td>بنك فيصل</td>
-                    <td>2472397041571</td>
-                    <td>6086428306401</td>
                     <td>
-                        <div class="custom-control custom-switch">
-                            <input type="checkbox" class="custom-control-input" id="aval5">
-                            <label class="custom-control-label" for="aval5"></label>
-                        </div>
+                        <a href="providerServiceDetails.html"><img class="img-fluid" src="img/pic_o.png" alt="service"></a>
+                    </td>
+                    <td>
+                        <a href="providerServiceDetails.html">تعديلات فيديوهات ومونتاج</a>
+                    </td>
+                    <td>الجرافيك والديزاين</td>
+                    <td>15\3\2022</td>
+                    <td>15</td>
+                    <td>
+                        <a href="#" class="more">
+                            <span class="icon-more_provider"></span>
+                        </a>
                     </td>
                 </tr>
+
                 <tr>
-                    <td>اوامر الشبكة</td>
-                    <td>20/8/2023</td>
-                    <td>بنك فيصل</td>
-                    <td>2472397041571</td>
-                    <td>6086428306401</td>
                     <td>
-                        <div class="custom-control custom-switch">
-                            <input type="checkbox" class="custom-control-input" id="aval6">
-                            <label class="custom-control-label" for="aval6"></label>
-                        </div>
+                        <a href="providerServiceDetails.html"><img class="img-fluid" src="img/pic_o.png" alt="service"></a>
+                    </td>
+                    <td>
+                        <a href="providerServiceDetails.html">تعديلات فيديوهات ومونتاج</a>
+                    </td>
+                    <td>الجرافيك والديزاين</td>
+                    <td>15\3\2022</td>
+                    <td>15</td>
+                    <td>
+                        <a href="#" class="more">
+                            <span class="icon-more_provider"></span>
+                        </a>
                     </td>
                 </tr>
 
                 </tbody>
             </table>
         </div>
-
-        <div class="bankAccCont boxShadow">
-            <p>يمكنك اضافة حساب بنكي آخر</p>
-            <a data-toggle="modal" data-target="#addAcc" class="btnDefault hvr-pulse">اضافة حساب</a>
-        </div>
-
-        <!-- Modal -->
-        <div class="modal fade" id="addAcc" tabindex="-1" role="dialog" aria-labelledby="addAccTitle" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                    <div class="modal-body">
-                        <img class="vector" src="img/vector_payment.png" alt="vector payment">
-
-                        <form action="">
-
-                            <div class="form-group">
-                                <input type="text" name="bankName" id="bankName" class="form-control" placeholder="اسم البنك" required>
-                            </div>
-
-                            <div class="form-group">
-                                <input type="text" name="accName" id="accName" class="form-control" placeholder="اسم الحساب" required>
-                            </div>
-
-                            <div class="form-group">
-                                <input type="text" name="accNum" id="accNum" class="form-control" placeholder="رقم الحساب" required>
-                            </div>
-
-                            <div class="form-group">
-                                <input type="text" name="ibanNum" id="ibanNum" class="form-control" placeholder="رقم الايبان" required>
-                            </div>
-
-                            <a data-dismiss="modal" class="btnDefault hvr-pulse">ارسال</a>
-
-                        </form>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-
     </div>
 </div>
-<!--end earnings-->
+<!--end services-->
 
 <!--start footer-->
 <footer>
@@ -421,10 +474,18 @@
 <script src="js/jquery-3.3.1.min.js"></script>
 <script src="js/popper.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap-select.min.js"></script>
 <script type="text/javascript" src="js/datatables.min.js"></script>
 <script type="text/javascript" src="js/jquery.dataTables.min.js"></script>
 <script src="js/owl.carousel.min.js"></script>
 <script src="js/script.js"></script>
+
+<!--start select-->
+<script>
+    $('.selectpicker').selectpicker();
+</script>
+<!--end select-->
+
 <!--table-->
 <script>
     $(document).ready(function() {

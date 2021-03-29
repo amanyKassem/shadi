@@ -193,6 +193,7 @@ select{
     color: #afafaf;
     transform: translateY(-50%);
 }
+
 .form-group .form-control {
     position: relative;
     z-index: 1;
@@ -851,7 +852,52 @@ li{
     margin: 0;
 }
 
-/* Style ChickBox */
+.modal-dialog .modal-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 400px;
+    padding: 50px 10px;
+}
+.modal-dialog .modal-body .vector {
+    width: 200px;
+    margin-bottom: 15px;
+}
+.modal-dialog .modal-body .desc {
+    font-size: 15px;
+    color: #818181;
+    max-width: 250px;
+    text-align: center;
+    line-height: 1.8;
+}
+.modal-body form{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 20px;
+}
+.modal-body form .form-group .form-control {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 45px;
+    outline: none;
+    color: #818181;
+    font-size: 14px;
+    background: #f8f8f8;
+    border: 1px solid #eaeaea;
+    border-radius: 5px;
+}
+
+.modal-body form .form-group {
+    margin-bottom: 15px;
+}
+.modal-body .btnDefault {
+    margin-top: 25px;
+}
+    /* Style ChickBox */
 .custom-checkbox {
     padding-right: 1.5rem;
     padding-left: 0;
@@ -1350,7 +1396,7 @@ li{
     align-items: center;
     margin: 15px 0 20px;
 }
-.register .btnGray , .register .btnDefault {
+.register .btnGray , .register .btnDefault  {
     padding: 10px 35px;
     border-radius: 10px;
     display: block;
@@ -2185,7 +2231,7 @@ table.dataTable.hover tbody tr:hover, table.dataTable.display tbody tr:hover{
     align-items: center;
     flex-wrap: wrap;
 }
-.orderDetailsContainer .detailsCont .rightCont .btnDefault{
+.orderDetailsContainer .detailsCont .rightCont .btnDefault {
     min-width: 150px;
     display: flex;
     justify-content: center;
@@ -2238,27 +2284,6 @@ table.dataTable.hover tbody tr:hover, table.dataTable.display tbody tr:hover{
 
 .orderDetailsContainer .detailsCont .leftCont .paymentDetails .customHr{
     margin: 15px 0;
-}
-.orderDetailsContainer .modal-dialog {
-    max-width: 750px;
-}
-.orderDetailsContainer .modal-dialog .modal-body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 400px;
-}
-.orderDetailsContainer .modal-dialog .modal-body .vector {
-    width: 200px;
-    margin-bottom: 15px;
-}
-.orderDetailsContainer .modal-dialog .modal-body .desc {
-    font-size: 15px;
-    color: #818181;
-    max-width: 250px;
-    text-align: center;
-    line-height: 1.8;
 }
 
 #clockdiv {
@@ -2325,7 +2350,7 @@ table.dataTable.hover tbody tr:hover, table.dataTable.display tbody tr:hover{
 .earnings .earningsInfo .orderStatistic .dashIcon{
     font-size: 25px;
 }
-.earnings .bankAccCont{
+.earnings .bankAccCont {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -2336,12 +2361,12 @@ table.dataTable.hover tbody tr:hover, table.dataTable.display tbody tr:hover{
     border-radius: 5px;
 }
 
-.earnings .bankAccCont p{
+.earnings .bankAccCont p , .services .addServBlock span{
    font-size: 14px;
     color: #3A3A3A;
 }
 
-.earnings .bankAccCont .btnDefault{
+.earnings .bankAccCont .btnDefault , .modal-body .btnDefault, .services .addServBlock .btnDefault{
     min-width: 150px;
     display: flex;
     justify-content: center;
@@ -2350,8 +2375,97 @@ table.dataTable.hover tbody tr:hover, table.dataTable.display tbody tr:hover{
     border-radius: 10px;
 }
 
+
 /*end earnings*/
 
+/*start services*/
+
+.services .addEditCat{
+    font-size: 15px;
+    color: #56C429;
+}
+.services #owl-demo1{
+    margin-bottom: 25px;
+}
+.services #owl-demo1 .item {
+    max-width: 160px;
+    margin: 10px 0;
+}
+.services #owl-demo1 .item a{
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 15px 10px;
+    border: 1px solid transparent;
+    height: 115px;
+}
+.services #owl-demo1 .item a:hover{
+    border-color:#56C429;
+}
+.services #owl-demo1 .item a img{
+    height: 40px;
+    max-width: 50px;
+    margin-bottom: 5px;
+}
+.services #owl-demo1 .item a h4 {
+    font-size: 13px;
+    text-align: center;
+    color: #818181;
+    margin: 0;
+    line-height: 1.5;
+}
+.services #owl-demo1 .owl-nav {
+    display: block;
+}
+.services #owl-demo1 .owl-prev, .services #owl-demo1 .owl-next {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: #fff;
+    background-color: #56C429;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid transparent;
+    text-align: center;
+    margin: auto;
+    font-size: 15px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}
+
+.services #owl-demo1 .owl-prev:hover, .services #owl-demo1 .owl-next:hover {
+    background-color: #FFF;
+    color: #56C429;
+    border: 1px solid #56C429;
+}
+.services #owl-demo1 .owl-next {
+    right: -15px;
+}
+
+.services #owl-demo1 .owl-prev {
+    left: -15px;
+}
+.services .addServBlock{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+}
+.services .addServBlock span{
+    font-size: 15px;
+}
+/*end services*/
 
 /* start footer*/
 footer .lightLamp{
@@ -2815,10 +2929,17 @@ footer .footerInfo > div .apps img{
         font-size: 13px;
     }
 
-    .orderDetailsContainer .modal-dialog .modal-body .vector {
-        width: 140px;
+    .modal-dialog .modal-body {
+        min-height: auto;
     }
 
+    .modal-dialog .modal-body .vector {
+        width: 140px;
+    }
+    .modal-body form {
+        width: 90%;
+        align-items: center;
+    }
     .analytics .filterCont{
         justify-content: center;
     }
@@ -2845,6 +2966,17 @@ footer .footerInfo > div .apps img{
     }
     .btnDefault {
         font-size: 13px;
+    }
+    .services #owl-demo1 .item {
+        max-width: 100%;
+        margin: 10px 0;
+    }
+    .services #owl-demo1 .owl-prev, .services #owl-demo1 .owl-next {
+        width: 35px;
+        height: 35px;
+    }
+    .services #owl-demo1 .owl-prev span, .services #owl-demo1 .owl-next span{
+        font-size: 10px;
     }
 }
 @media(min-width: 768px) and (max-width: 991px){
@@ -2940,5 +3072,7 @@ footer .footerInfo > div .apps img{
     }
 }
 @media(min-width: 1200px){
-
+    .modal-dialog {
+        max-width: 800px;
+    }
 }
