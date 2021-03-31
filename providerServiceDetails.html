@@ -1,0 +1,839 @@
+<!doctype html>
+<html lang="ar">
+
+<head>
+
+    <!-- Title Page -->
+    <title>shadi</title>
+
+    <!-- favicon Page -->
+    <link rel="shortcut icon" href="img/fav.png">
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="HandheldFriendly" content="true">
+
+    <meta name="theme-color" content="#121320">
+    <meta name="msapplication-navbutton-color" content="#121320">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#121320">
+
+    <!-- Bootstrap CSS -->
+    <link href="css/all.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/font-awesome-5all.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/hover.css">
+    <link href="css/icomoon.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/ar.css">
+
+</head>
+
+<body class="pT115">
+
+<!-- Start Loading Page -->
+
+<div class="loader">
+    <div class="loading"></div>
+</div>
+
+<!-- Start Overlay Page -->
+
+<div class="OverLay"></div>
+
+<!--  Start Header  -->
+<header>
+    <div class="container">
+
+        <div class="menuBar d-flex d-md-none justify-content-between align-items-center">
+            <a href="providerHome.html">
+                <img src="img/logo_icon.png" class="logo" alt="logo">
+            </a>
+            <div class="toggle">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </div>
+        </div>
+
+        <div class="overlay"></div>
+
+        <div class="menu d-flex flex-wrap align-items-center">
+
+            <!--             if user login-->
+            <a href="profile.html" class="user d-md-none">
+                <img src="img/pic.jpg" class="img-fluid" alt="profile">
+                <p>
+                    أماني قاسم
+                </p>
+            </a>
+
+
+            <!--            if user not login-->
+            <!--            <a href="login.html" class="user d-md-none">-->
+            <!--                <i class="far fa-user"></i>-->
+            <!--                <p>-->
+            <!--                    حسابي-->
+            <!--                </p>-->
+            <!--            </a>-->
+
+
+            <div class="d-flex align-items-center">
+                <a href="providerHome.html" class="d-none d-md-block">
+                    <img src="img/logo_icon.png" class="logo" alt="logo">
+                </a>
+
+                <ul class="menuLinks">
+                    <li class="active">
+                        <a href="providerHome.html">الرئيسية</a>
+                    </li>
+                    <li>
+                        <a href="providerOrders.html">الطلبات</a>
+                    </li>
+                    <li>
+                        <div class="msgs">
+                            <div class="num">
+                                100
+                            </div>
+                            الرسائل
+                            <span class="icon-down_arrow_drop"></span>
+                            <ul class="boxShadow">
+                                <li><a href="chat.html"><span class="icon-email_gray"></span> الرسائل</a></li>
+                                <li><a href="notifications.html"><span class="icon-notification"></span> الاشعارات</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="services.html">الخدمات المقدمة</a>
+                    </li>
+                    <li>
+                        <a href="analytics.html">تحليلات</a>
+                    </li>
+                    <li>
+                        <a href="earnings.html">ارباح</a>
+                    </li>
+
+                    <!--                    only in mobile-->
+
+                    <li class="d-sm-none">
+                        <div>
+                            <span>الحالة</span>
+                            <div class="custom-control custom-switch">
+                                <input type="checkbox" class="custom-control-input" id="aval2">
+                                <label class="custom-control-label" for="aval2"></label>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="d-sm-none"><a href="settings.html">الاعدادات</a></li>
+                    <li class="d-sm-none">
+                        <div>
+                            <span>اللغة</span>
+                            <div class="lang">
+                                <a class="active py-0 px-3">Ar</a>
+                                |
+                                <a class="py-0 pr-3 pl-0">En</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="d-sm-none"><a href="login.html">تسجيل الخروج</a></li>
+
+
+                </ul>
+            </div>
+
+            <div class="d-flex flex-column align-items-start flex-md-row align-items-md-center">
+
+                <a href="transferBuyer" class="transferBuyer">
+                    حول الي مشتري
+                </a>
+
+                <!-- if user login-->
+                <!--                <a href="profile.html" class="profile d-none d-md-flex">-->
+                <!--                    <img src="img/pic.jpg" class="img-fluid" alt="profile">-->
+                <!--                    أماني قاسم-->
+                <!--                </a>-->
+
+                <div class="profile d-none d-md-flex">
+                    <img class="img-fluid" src="img/pic.jpg" alt="profile">
+                    <span class="icon-down_arrow_drop"></span>
+                    <img src="img/triangle.png" alt="arrow" class="triangle">
+                    <ul class="boxShadow">
+                        <li><a href="profile.html">عرض الملف الشخصي</a></li>
+                        <li>
+                            <div>
+                                <span>الحالة</span>
+                                <div class="custom-control custom-switch">
+                                    <input type="checkbox" class="custom-control-input" id="aval">
+                                    <label class="custom-control-label" for="aval"></label>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="settings.html">الاعدادات</a></li>
+                        <li>
+                            <div>
+                                <span>اللغة</span>
+                                <div class="lang">
+                                    <a class="active py-0 pl-3 pr-0">Ar</a>
+                                    |
+                                    <a class="py-0 pr-3 pl-0">En</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="login.html">تسجيل الخروج</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</header>
+<!-- end header -->
+
+<!--start statistics-->
+<div class="statistics minBody pt-0 bgGray">
+
+    <div class="bgGray p-4 borderCli">
+        <div class="container">
+            <div class="bgGray flex flexSpace">
+
+                <div class="">
+                    <ul class="flex flexRowCenter">
+                        <li class="mr-3 ml-3"><a href="">نظره عامة</a></li>
+                        <li class="mr-3 ml-3"><a href="">الوصف والشروط</a></li>
+                        <li class="mr-3 ml-3"><a href="">عن البائع</a></li>
+                        <li class="mr-3 ml-3"><a href="">خطط الاسعار</a></li>
+                    </ul>
+                </div>
+
+                <div class="">
+                    <ul class="flex flexRowCenter">
+                        <li class="mr-1 ml-1">
+                            <a href="" class="colorDefault">
+                                <i class="icon-tag colorDefault"></i>
+                                <span class="mr-1 ml-1">آضف خصم</span>
+                            </a>
+                        </li>
+                        <li class="mr-1 ml-1">
+                            <a href="" class="colorDefault">
+                                <i class="far fa-edit colorDefault"></i>
+                                <span class="mr-1 ml-1">تعديل الخدمة</span>
+                            </a>
+                        </li>
+                        <li class="mr-1 ml-1">
+                            <a href="" class="colorRed">
+                                <i class="icon-delete_charts colorRed"></i>
+                                <span class="mr-1 ml-1">حذف الخدمة</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="bgWight p-3 pt-5">
+        <div class="container">
+
+            <div class="bgGray flex flexSpace p-4 borderCli mb-3">
+                <div class="flex flexRowCenter">
+                    <h2 class="colorDefault icon-share-4"></h2>
+                    <div class="pl-3 pr-3">
+                        <p class="font-weight-bold">شارك لتصل خدمتك لآكثرعدد</p>
+                        <p class="colorGray">انت الان تشارك محتوي مع زوار هذا الموقعيمكنك الان المشاركه علي تواصل الاجتماعي لمزيد من العملاء</p>
+                    </div>
+                </div>
+                <div class="flex flexRowCenter">
+                    <a href="" class="btnButton btnDefault displayInline">
+                        شارك خدمتك
+                    </a>
+                </div>
+            </div>
+
+            <div class="mt-2">
+
+                <div class="row">
+                    <div class="col-md-8 col-xs-12">
+
+                        <div class="">
+                            <ul>
+                               <li class="mr-1 ml-1">
+                                   <a href="" class="colorDefault">
+                                       قسم نمط الحياه
+                                   </a>
+                               </li>
+                                <li class="mr-1 ml-1">
+                                    <a href="" class="colorDefault">
+                                        فيديوهات وبطاقات معايده
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="viewInfoUserDec mt-4">
+                            <h5 class="mb-4 colorBlack">سوف أصنع لك فديو مميز لك بذكرياتك بأستخدام صورك الخاصه</h5>
+                            <div class="flex flexRowCenter">
+                                <div class="imgUserMassage wImgIcon45">
+                                    <img src="img/pic.jpg" alt="" class="wImgIcon45">
+                                </div>
+                                <p class="mb-0 mt-0 pr-3 pl-3">شعوذه الندم</p>
+                            </div>
+                        </div>
+
+                        <div class="mt-3">
+                            <div class="position-relative">
+                                <div id="sync1" class="owl-carousel owl-theme">
+                                    <div class="item position-relative" data-hash="zero">
+                                        <a href="img/order.png" data-fancybox="watermrk" data-caption="caption #1">
+                                            <img src="img/order.png">
+                                        </a>
+                                        <a class="btnButton btnDefault position-absolute btnFullScreen" href="img/order.png" data-fancybox="watermrk" data-caption="caption #1">
+                                            <i class="icon-full_screen mr-1 ml-1"></i>
+                                            شاشه كامله
+                                        </a>
+                                    </div>
+                                    <div class="item position-relative" data-hash="three">
+                                        <a href="img/order.png" data-fancybox="watermrk" data-caption="caption #1">
+                                            <img src="img/vedio_pic.png">
+                                        </a>
+                                        <a class="btnButton btnDefault position-absolute btnFullScreen" href="img/vedio_pic.png" data-fancybox="watermrk" data-caption="caption #1">
+                                            <i class="icon-full_screen mr-1 ml-1"></i>
+                                            شاشه كامله
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="sync2" class="owl-carousel owl-theme">
+                                <a class="button secondary url" href="#zero"><img class="imo" src="img/order.png"></a>
+                                <a class="button secondary url" href="#three"><img class="imo" src="img/vedio_pic.png"></a>
+                            </div>
+                        </div>
+
+                        <div class="mt-4 mb-4">
+                            <div class="">
+                                <h5 class="mb-3">عن الخدمه</h5>
+                                <p class="colorGray">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
+                                    إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى</p>
+                            </div>
+                        </div>
+
+                        <div class="mt-4 mb-4">
+                            <div class="">
+                                <h5 class="mb-4">تفاصيل طلبات تصميم الفديو</h5>
+                                <ul class="listPoint">
+                                    <li class="colorBlack displayBlock mb-3 position-relative pr-3 pl-3">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة</li>
+                                    <li class="colorBlack displayBlock mb-3 position-relative pr-3 pl-3">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة</li>
+                                    <li class="colorBlack displayBlock mb-3 position-relative pr-3 pl-3">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="mb-4">
+                            <p class="lineHText">
+                                هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
+                                هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
+                            </p>
+                        </div>
+
+                        <div class="mt-4">
+                            <h5 class="mb-5 mt-3">عن البائع</h5>
+                            <div class="flex flexRowCenter">
+                                <div class="imgUserMassage wImgIcon75">
+                                    <img src="img/pic.jpg" alt="" class="wImgIcon75">
+                                </div>
+                                <div class="infoAboutSaller pr-3 pl-3">
+                                    <div class="flex flexRowCenter">
+                                        <h6 class="mb-0 mt-0">شعوذه الندم</h6>
+                                        <a href="" class="pl-4 pr-4 pt-2 pb-2 Radius5 btnDefault displayInline mr-3 ml-3">متصل</a>
+                                    </div>
+                                    <p class="colorGray">تعديل الفديوهات | مصمم الفديوهات | مصمم جرافيك</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bgGray p-3 mt-5 mb-5 borderCli">
+
+                            <div class="flex flexRowCenter mt-2 mb-3 borderBCli pb-4">
+                                <div class="flex50 flex flexRow pl-3 pr-3">
+                                    <div class="">
+                                        <h4 class="icon-location"></h4>
+                                    </div>
+                                    <div class="pl-3 pr-3">
+                                        <p>البلد</p>
+                                        <p class="m-0">مصر</p>
+                                    </div>
+                                </div>
+                                <div class="flex50 flex flexRow pl-3 pr-3">
+                                    <div class="">
+                                        <h4 class="icon-man-user"></h4>
+                                    </div>
+                                    <div class="pl-3 pr-3">
+                                        <p>عضو منذ</p>
+                                        <p class="m-0">سبتمبر 2020</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="dic mt-4 mb-3 pl-3 pr-3">
+                                <h6>خبره المقدم</h6>
+                                <p class="colorGray">
+                                    هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
+                                    هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
+                                    هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <div class="bgGray mt-5 mb-5">
+
+                            <table class="table table-bordered tableOrder">
+                                <thead>
+                                <tr>
+                                    <th>
+
+                                    </th>
+                                    <th>
+                                        <p>110 دولار</p>
+                                        <p>الأساسي</p>
+                                        <p>فضي</p>
+                                        <p>أوصف التفاصيل الباقه كما سيشاهدها المشتركين</p>
+                                    </th>
+                                    <th>
+                                        <p>110 دولار</p>
+                                        <p>المتعارف عليها</p>
+                                        <p>ذهبي</p>
+                                        <p>أوصف التفاصيل الباقه كما سيشاهدها المشتركين</p>
+                                    </th>
+                                    <th>
+                                        <p>110 دولار</p>
+                                        <p>المميزه</p>
+                                        <p>برونزيه</p>
+                                        <p>أوصف التفاصيل الباقه كما سيشاهدها المشتركين</p>
+                                    </th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <th>الخدمه شامله ( الخصائص )</th>
+                                    <td>3 تعديلات</td>
+                                    <td>4 تعديلات</td>
+                                    <td>6 تعديلات</td>
+                                </tr>
+                                <tr>
+                                    <th>وقت التوصيل أو أنجاز الخدمه</th>
+                                    <td>34 يوم</td>
+                                    <td>43 يوم</td>
+                                    <td>
+                                        <label class="radioButton w-100">
+                                            <input type="radio" checked="checked" name="radio">
+                                            <span class="checkmark"></span>
+                                            1 يوم
+                                        </label>
+                                        <label class="radioButton w-100">
+                                            <input type="radio" name="radio">
+                                            <span class="checkmark"></span>
+                                            2 يوم
+                                        </label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>الأجمالي</th>
+                                    <td>3112 دولار</td>
+                                    <td>4120 دولار</td>
+                                    <td>6122 دولار</td>
+                                </tr>
+                                </tbody>
+                            </table>
+
+                        </div>
+
+                        <div class="">
+
+                            <h5>الاسئله الشائعه</h5>
+
+                            <div class="mt-4">
+                                <div class="boxTo mt-3 mb-2">
+                                    <button class="toggleBox bgGray borderCli flex flexSpace p-3 w-100">
+                                        <span>أي سؤال خاص بالخدمه يضعه مقدم الخدمه ؟</span>
+                                        <h6 class="icon-down_arrow_drop"></h6>
+                                    </button>
+                                    <div class="slideBoxDrop p-2">
+                                        <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
+                                            إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى</p>
+                                    </div>
+                                </div>
+
+                                <div class="boxTo mt-3 mb-2">
+                                    <button class="toggleBox bgGray borderCli flex flexSpace p-3 w-100">
+                                        <span>أي سؤال خاص بالخدمه يضعه مقدم الخدمه ؟</span>
+                                        <h6 class="icon-down_arrow_drop"></h6>
+                                    </button>
+                                    <div class="slideBoxDrop p-2">
+                                        <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
+                                            إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى</p>
+                                    </div>
+                                </div>
+                                <div class="boxTo mt-3 mb-2">
+                                    <button class="toggleBox bgGray borderCli flex flexSpace p-3 w-100">
+                                        <span>أي سؤال خاص بالخدمه يضعه مقدم الخدمه ؟</span>
+                                        <h6 class="icon-down_arrow_drop"></h6>
+                                    </button>
+                                    <div class="slideBoxDrop p-2">
+                                        <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
+                                            إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="mt-5 mb-5">
+
+                            <div class="flex flexSpace mt-3 mb-4">
+                                <div class="flex flexRowCenter">
+                                    <span class="colorBlack">43 تقييم</span>
+                                    <div class="stars position-relative flex flexRowCenter mr-3 ml-3">
+                                        <div class="overLayBT"></div>
+                                        <div class="star-rating">
+                                            <span class="icon-ic_star_24px colorYellow" data-rating="1"></span>
+                                            <span class="icon-ic_star_24px colorYellow" data-rating="2"></span>
+                                            <span class="icon-ic_star_24px colorYellow" data-rating="3"></span>
+                                            <span class="icon-ic_star_24px colorYellow" data-rating="4"></span>
+                                            <span class="icon-ic_star_24px colorGray" data-rating="5"></span>
+                                            <input class="rating-value" type="hidden" name="whatever1" value="2.56" disabled="">
+                                        </div>
+                                        <span class="colorYellow mr-2 ml-2">9.5</span>
+                                    </div>
+                                </div>
+                                <div class="flex flexRowCenter">
+                                    <span class="colorBlack mr-2 ml-2">تصنيف ب</span>
+                                    <div class="selector p-2 bgGray borderCli flex flexSpace w150 Radius5">
+                                        <select name="country">
+                                            <option value="26">الاعلي تقييما</option>
+                                            <option value="27">الاقل تقييما</option>
+                                        </select>
+                                        <span class="icon-down_arrow_drop colorBlack"></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="mt-3 mb-3">
+
+                                <div class="flex flexRowCenter mt-3 mb-3">
+                                    <span class="colorDefault w150">خمس نجوم</span>
+                                    <div class="progress Radius10 w250 mr-3 ml-3">
+                                        <div class="progress-bar bgDefault" role="progressbar" style="width: 75%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <span class="colorGray">( 90 )</span>
+                                </div>
+
+                                <div class="flex flexRowCenter mt-3 mb-3">
+                                    <span class="colorDefault w150">اربع نجوم</span>
+                                    <div class="progress Radius10 w250 mr-3 ml-3">
+                                        <div class="progress-bar bgDefault" role="progressbar" style="width: 70%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <span class="colorGray">( 70 )</span>
+                                </div>
+
+                                <div class="flex flexRowCenter mt-3 mb-3">
+                                    <span class="colorDefault w150">ثلاث نجوم</span>
+                                    <div class="progress Radius10 w250 mr-3 ml-3">
+                                        <div class="progress-bar bgDefault" role="progressbar" style="width: 50%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <span class="colorGray">( 59 )</span>
+                                </div>
+
+                                <div class="flex flexRowCenter mt-3 mb-3">
+                                    <span class="colorDefault w150">اثنين نجوم</span>
+                                    <div class="progress Radius10 w250 mr-3 ml-3">
+                                        <div class="progress-bar bgDefault" role="progressbar" style="width: 35%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <span class="colorGray">( 35 )</span>
+                                </div>
+
+                                <div class="flex flexRowCenter mt-3 mb-3">
+                                    <span class="colorDefault w150">واحد نجوم</span>
+                                    <div class="progress Radius10 w250 mr-3 ml-3">
+                                        <div class="progress-bar bgDefault" role="progressbar" style="width: 10%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <span class="colorGray">( 19 )</span>
+                                </div>
+
+                            </div>
+
+                            <div class="mt-5 mb-5 pb-4 borderBCli">
+
+                                <div class="flex flexRowCenter">
+                                    <label class="switch" for="checkbox">
+                                        <input type="checkbox" id="checkbox" />
+                                        <div class="slider round"></div>
+                                    </label>
+                                    <h6 class="colorBlack mr-2 ml-2">إظهار التعليقات فقط مع صور التسليم ( 222 )</h6>
+                                </div>
+
+                                <div class="flex flexRowCenter">
+                                    <p>إظهار المراجعات مع صور التسليم</p>
+                                    <a href="" class="colorDefault mr-1 ml-1">مسح تصفية</a>
+                                </div>
+
+                            </div>
+
+
+                            <div class="allComments">
+
+                                <div class="sectionComment">
+
+                                   <div class="flex flexRow">
+                                       <div class="flex5">
+                                           <div class="imgUserMassage flex flexCenter bgDefault">
+                                               <span class="colorWight">E</span>
+                                           </div>
+                                       </div>
+                                       <div class="pr-2 pl-2 flex95">
+                                           <div class="iconUser flex flexSpace">
+                                               <div class="mr-2 ml-2">
+                                                   <div class="flex flexRowCenter">
+                                                       <h6 class="m-0">شعوذه الندم</h6>
+                                                       <div class="flex flexRowCenter mr-2 ml-2">
+                                                           <span class="icon-ic_star_24px colorYellow"></span>
+                                                           <span class="colorYellow">4.4</span>
+                                                       </div>
+                                                   </div>
+                                                   <p class="colorGray m-0">مصر</p>
+                                               </div>
+                                               <button>
+                                                   <i class="fas fa-flag colorGray"></i>
+                                               </button>
+                                           </div>
+                                           <div class="flex flexRowCenter">
+                                               <div class="flex90 pl-3">
+                                                   <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
+                                                       إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى </p>
+                                               </div>
+                                               <div class="flex10">
+                                                   <img src="img/thomas-le-dQNiTdka3Xw-unsplash.png" alt="" class="w-100" style="height: 70px">
+                                               </div>
+                                           </div>
+                                       </div>
+                                   </div>
+
+                                    <div class="flex flexRow mt-3 mb-3">
+                                        <div class="flex5">
+                                            <div class="imgUserMassage flex flexCenter bgDefault">
+                                                <img src="img/pic.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="pr-2 pl-2 flex95">
+                                            <div class="flex flexRowCenter">
+                                                <div class="w-100">
+                                                    <h6 class="m-0">شعوذه الندم</h6>
+                                                    <div class="flex flexRowCenter">
+                                                        <div class="">
+                                                            <p class="m-0 colorGray">شكرا جزيلا لك سيدي المقدم</p>
+                                                        </div>
+                                                        <button class="mr-2 ml-2">
+                                                            <span class="icon-delete_charts colorRed"></span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="mt-3 mb-3">
+                                                <form action="" class="addComment">
+                                                    <textarea placeholder="اضف تعليقك ..."></textarea>
+                                                    <button class="bgDefault pt-2 pb-2 pl-4 pr-4 colorWight Radius5 mt-2 mb-2">اضف تعليقك</button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+
+
+
+                    <div class="col-md-4 col-xs-12">
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+</div>
+<!--end statistics-->
+
+<!--start footer-->
+<footer>
+    <div class="container">
+        <img src="img/light_green_lamb.svg" class="lightLamp" alt="ight_green_lamb">
+        <div class="footerInfo">
+
+            <div>
+                <h5 class="title">فئات</h5>
+                <ul>
+                    <li>
+                        <a href="graphicDesign.html" class="hvr-backward">الجرافيم والديزاين</a>
+                    </li>
+                    <li>
+                        <a href="graphicDesign.html" class="hvr-backward">التكنولوجيا والتسويق الالكتروني</a>
+                    </li>
+                    <li>
+                        <a href="graphicDesign.html" class="hvr-backward">التصوير والمونتاج</a>
+                    </li>
+                    <li>
+                        <a href="graphicDesign.html" class="hvr-backward">الكتابة والترجمة</a>
+                    </li>
+                    <li>
+                        <a href="graphicDesign.html" class="hvr-backward">الفيديو والانيميشن</a>
+                    </li>
+                    <li>
+                        <a href="graphicDesign.html" class="hvr-backward">التعليم</a>
+                    </li>
+                    <li>
+                        <a href="graphicDesign.html" class="hvr-backward">الاستشارات</a>
+                    </li>
+                    <li>
+                        <a href="graphicDesign.html" class="hvr-backward">لايف ستايل</a>
+                    </li>
+                    <li>
+                        <a href="graphicDesign.html" class="hvr-backward">خدمات عامة</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <h5 class="title">عن</h5>
+                <ul>
+                    <li>
+                        <a href="terms.html" class="hvr-backward">سياسة الخصوصية</a>
+                    </li>
+                    <li>
+                        <a href="terms.html" class="hvr-backward">شروط الخدمة</a>
+                    </li>
+                </ul>
+                <h5 class="title">تحميل تطبيق الموبايل</h5>
+                <div class="apps">
+                    <a href="" class="hvr-float-shadow"><img src="img/google-play.png" alt="google play"></a>
+                    <a href="" class="hvr-float-shadow"><img src="img/appstore.png" alt="app store"></a>
+                </div>
+
+            </div>
+
+            <div>
+                <h5 class="title">دعم</h5>
+                <ul>
+                    <li>
+                        <a href="support.html" class="hvr-backward">المساعدة والدعم</a>
+                    </li>
+                    <li>
+                        <a href="sellOnLight.html" class="hvr-backward">بيع علي <span>Light Up</span></a>
+                    </li>
+                    <li>
+                        <a href="completeAcc.html" class="hvr-backward">الشراء علي <span>Light Up</span></a>
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <h5 class="title">المجتمع</h5>
+                <ul>
+                    <li>
+                        <a href="inviteFriend.html" class="hvr-backward">دعوة صديق</a>
+                    </li>
+                    <li>
+                        <a href="beBuyer.html" class="hvr-backward">أصبح بائع</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+        <hr class="customHr">
+        <div class="info">
+            <div class="copyright justify-content-center justify-content-sm-start">
+                <h4>Light Up</h4>
+                <p>جميع الحقوق محفوظة ل <a href="">اوامر الشبكة 2021</a></p>
+            </div>
+            <div class="social">
+                <a href="" class="hvr-float-shadow"><span class="icon-linkedin"></span></a>
+                <a href="" class="hvr-float-shadow"><span class="icon-facebook"></span></a>
+                <a href="" class="hvr-float-shadow"><span class="icon-instagram"></span></a>
+            </div>
+        </div>
+
+    </div>
+</footer>
+<!--end footer-->
+
+
+<!--===============================
+    SCRIPT
+===================================-->
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap-select.min.js"></script>
+<script src="js/jquery.fancybox.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/script.js"></script>
+
+<script>
+    $('#sync1').owlCarousel({
+        items:1,
+        loop:false,
+        center:true,
+        autoplay:true,
+        margin:10,
+        nav:false,
+        navText: [
+            '<i class="fas fa-long-arrow-alt-right"></i>',
+            '<i class="fas fa-long-arrow-alt-left"></i>'
+        ],
+        animateOut: 'fadeOut',
+        URLhashListener:true,
+        autoplayHoverPause:true,
+        startPosition: 'URLHash',
+    });
+
+    $('#sync2').owlCarousel({
+        // items:4,
+        loop:false,
+        center:false,
+        margin:10,
+        URLhashListener:true,
+        autoplayHoverPause:true,
+        startPosition: 'URLHash',
+        nav:false,
+        navText: [
+            '<i class="fas fa-long-arrow-alt-right"></i>',
+            '<i class="fas fa-long-arrow-alt-left"></i>'
+        ],
+        responsive:{
+            0:{
+                items:2
+            },
+            900:{
+                items:2
+            },
+            1000:{
+                items:4
+            }
+        }
+    });
+</script>
+
+</body>
+</html>

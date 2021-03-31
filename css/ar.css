@@ -17,6 +17,32 @@ body {
     transform: translateX(100%);
 }
 
+.point{
+    left: 5px;
+}
+
+.formAction button{
+    left: 0;
+}
+
+.posLeftSec{
+    left: 0px;
+    right: auto;
+}
+
+.posRightSec{
+    left: auto;
+    right: 0px;
+}
+
+.imgNote .overUp{
+    left: 12px;
+}
+
+#sync2 .owl-stage{
+    float: right;
+}
+
 /* Media Screen */
 
 @media screen and (max-width: 990px){

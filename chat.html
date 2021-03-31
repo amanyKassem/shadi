@@ -1,0 +1,505 @@
+<!doctype html>
+<html lang="ar">
+<head>
+
+    <!-- Title Page -->
+    <title>shadi</title>
+
+    <!-- favicon Page -->
+    <link rel="shortcut icon" href="img/fav.png">
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="HandheldFriendly" content="true">
+
+    <meta name="theme-color" content="#121320">
+    <meta name="msapplication-navbutton-color" content="#121320">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#121320">
+
+    <!-- Bootstrap CSS -->
+    <link href="css/all.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/hover.css">
+    <link href="css/icomoon.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/ar.css">
+
+</head>
+<body class="pT115">
+
+<!-- Start Loading Page -->
+
+<div class="loader">
+    <div class="loading"></div>
+</div>
+
+<!-- Start Overlay Page -->
+
+<div class="OverLay"></div>
+
+<!--  Start Header  -->
+
+<header>
+    <div class="container">
+
+        <div class="menuBar d-flex d-md-none justify-content-between align-items-center">
+            <a href="providerHome.html">
+                <img src="img/logo_icon.png" class="logo" alt="logo">
+            </a>
+            <div class="toggle">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </div>
+        </div>
+
+        <div class="overlay"></div>
+
+        <div class="menu d-flex flex-wrap align-items-center">
+
+            <!--             if user login-->
+            <a href="profile.html" class="user d-md-none">
+                <img src="img/pic.jpg" class="img-fluid" alt="profile">
+                <p>
+                    أماني قاسم
+                </p>
+            </a>
+
+
+            <!--            if user not login-->
+            <!--            <a href="login.html" class="user d-md-none">-->
+            <!--                <i class="far fa-user"></i>-->
+            <!--                <p>-->
+            <!--                    حسابي-->
+            <!--                </p>-->
+            <!--            </a>-->
+
+
+            <div class="d-flex align-items-center">
+                <a href="providerHome.html" class="d-none d-md-block">
+                    <img src="img/logo_icon.png" class="logo" alt="logo">
+                </a>
+
+                <ul class="menuLinks">
+                    <li class="active">
+                        <a href="providerHome.html">الرئيسية</a>
+                    </li>
+                    <li>
+                        <a href="providerOrders.html">الطلبات</a>
+                    </li>
+                    <li>
+                        <div class="msgs">
+                            <div class="num">
+                                100
+                            </div>
+                            الرسائل
+                            <span class="icon-down_arrow_drop"></span>
+                            <ul class="boxShadow">
+                                <li><a href="chat.html"><span class="icon-email_gray"></span> الرسائل</a></li>
+                                <li><a href="notifications.html"><span class="icon-notification"></span> الاشعارات</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="services.html">الخدمات المقدمة</a>
+                    </li>
+                    <li>
+                        <a href="analytics.html">تحليلات</a>
+                    </li>
+                    <li>
+                        <a href="earnings.html">ارباح</a>
+                    </li>
+
+                    <!--                    only in mobile-->
+
+                    <li class="d-sm-none">
+                        <div>
+                            <span>الحالة</span>
+                            <div class="custom-control custom-switch">
+                                <input type="checkbox" class="custom-control-input" id="aval2">
+                                <label class="custom-control-label" for="aval2"></label>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="d-sm-none"><a href="settings.html">الاعدادات</a></li>
+                    <li class="d-sm-none">
+                        <div>
+                            <span>اللغة</span>
+                            <div class="lang">
+                                <a class="active py-0 px-3">Ar</a>
+                                |
+                                <a class="py-0 pr-3 pl-0">En</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="d-sm-none"><a href="login.html">تسجيل الخروج</a></li>
+
+
+                </ul>
+            </div>
+
+            <div class="d-flex flex-column align-items-start flex-md-row align-items-md-center">
+
+                <a href="transferBuyer" class="transferBuyer">
+                    حول الي مشتري
+                </a>
+
+                <!-- if user login-->
+                <!--                <a href="profile.html" class="profile d-none d-md-flex">-->
+                <!--                    <img src="img/pic.jpg" class="img-fluid" alt="profile">-->
+                <!--                    أماني قاسم-->
+                <!--                </a>-->
+
+                <div class="profile d-none d-md-flex">
+                    <img class="img-fluid" src="img/pic.jpg" alt="profile">
+                    <span class="icon-down_arrow_drop"></span>
+                    <img src="img/triangle.png" alt="arrow" class="triangle">
+                    <ul class="boxShadow">
+                        <li><a href="profile.html">عرض الملف الشخصي</a></li>
+                        <li>
+                            <div>
+                                <span>الحالة</span>
+                                <div class="custom-control custom-switch">
+                                    <input type="checkbox" class="custom-control-input" id="aval">
+                                    <label class="custom-control-label" for="aval"></label>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="settings.html">الاعدادات</a></li>
+                        <li>
+                            <div>
+                                <span>اللغة</span>
+                                <div class="lang">
+                                    <a class="active py-0 pl-3 pr-0">Ar</a>
+                                    |
+                                    <a class="py-0 pr-3 pl-0">En</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="login.html">تسجيل الخروج</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</header>
+
+<!--end header-->
+
+<!--start statistics-->
+<div class="statistics bgLightGray minBody">
+    <div class="container">
+
+        <div class="flex flexSpace">
+            <h5 class="colorGreen m-0">الرسائل</h5>
+            <div class="flex flexRowCenter">
+                <label class="switch mr-2 ml-2" for="checkbox">
+                    <input type="checkbox" id="checkbox" />
+                    <div class="slider round"></div>
+                </label>
+                <h6 class="colorBla m-0 mr-2">صوت الرسايل</h6>
+            </div>
+        </div>
+
+
+        <div class="mt-4 mb-4">
+            <div class="chatAll flex flexRow overflow-hidden position-relative">
+                <div class="menuChat flex30 pr-2 pl-2">
+                    <div class="bgWight overScroll heightChat pl-3 pr-3 pt-4 pb-4 mt-3 mb-3  Radius10 boxShadow">
+
+                        <div class="formAction">
+                            <form action="" class="position-relative overflow-hidden">
+                                <input type="text" placeholder="ابحث عن اسم المستخدم">
+                                <button class="btnButton btnDefault w-auto pl-3 pr-3">
+                                    <span class="icon-search colorWight"></span>
+                                </button>
+                            </form>
+                        </div>
+
+                        <div class="pt-3 pb-3">
+                            <div class="boxMessage clickTo flex flexRowCenter pt-3 pb-3 pr-1 pl-1">
+                                <div class="imgUserMassage flex15 text-center position-relative">
+                                    <img src="img/pic.jpg" alt="">
+                                    <span class="point pointRed"></span>
+                                </div>
+                                <div class="infoMassage flex85">
+                                    <div class="flex flexSpace">
+                                        <h6 class="m-0">شعوذه</h6>
+                                        <span class="colorGray">12 Jun</span>
+                                    </div>
+                                    <div class="flex flexSpace">
+                                        <p class="m-0 colorOp">عذاب عمرك ف عشق الندم</p>
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="boxMessage clickTo flex flexRowCenter pt-3 pb-3 pr-1 pl-1">
+                                <div class="imgUserMassage flex15 text-center position-relative">
+                                    <img src="img/pic.jpg" alt="">
+                                    <span class="point pointGreen"></span>
+                                </div>
+                                <div class="infoMassage flex85">
+                                    <div class="flex flexSpace">
+                                        <h6 class="m-0">شعوذه</h6>
+                                        <span class="colorGray">12 Jun</span>
+                                    </div>
+                                    <div class="flex flexSpace">
+                                        <p class="m-0 colorOp">عذاب عمرك ف عشق الندم</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="boxMessage clickTo flex flexRowCenter pt-3 pb-3 pr-1 pl-1">
+                                <div class="imgUserMassage flex15 text-center position-relative">
+                                    <img src="img/pic.jpg" alt="">
+                                    <span class="point pointRed"></span>
+                                </div>
+                                <div class="infoMassage flex85">
+                                    <div class="flex flexSpace">
+                                        <h6 class="m-0">شعوذه</h6>
+                                        <span class="colorGray">12 Jun</span>
+                                    </div>
+                                    <div class="flex flexSpace">
+                                        <p class="m-0 colorOp">عذاب عمرك ف عشق الندم</p>
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="boxMessage clickTo flex flexRowCenter pt-3 pb-3 pr-1 pl-1">
+                                <div class="imgUserMassage flex15 text-center position-relative">
+                                    <img src="img/pic.jpg" alt="">
+                                    <span class="point pointGreen"></span>
+                                </div>
+                                <div class="infoMassage flex85">
+                                    <div class="flex flexSpace">
+                                        <h6 class="m-0">شعوذه</h6>
+                                        <span class="colorGray">12 Jun</span>
+                                    </div>
+                                    <div class="flex flexSpace">
+                                        <p class="m-0 colorOp">عذاب عمرك ف عشق الندم</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="boxMessage clickTo flex flexRowCenter pt-3 pb-3 pr-1 pl-1">
+                                <div class="imgUserMassage flex15 text-center position-relative">
+                                    <img src="img/pic.jpg" alt="">
+                                    <span class="point pointRed"></span>
+                                </div>
+                                <div class="infoMassage flex85">
+                                    <div class="flex flexSpace">
+                                        <h6 class="m-0">شعوذه</h6>
+                                        <span class="colorGray">12 Jun</span>
+                                    </div>
+                                    <div class="flex flexSpace">
+                                        <p class="m-0 colorOp">عذاب عمرك ف عشق الندم</p>
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="boxMessage clickTo flex flexRowCenter pt-3 pb-3 pr-1 pl-1">
+                                <div class="imgUserMassage flex15 text-center position-relative">
+                                    <img src="img/pic.jpg" alt="">
+                                    <span class="point pointGreen"></span>
+                                </div>
+                                <div class="infoMassage flex85">
+                                    <div class="flex flexSpace">
+                                        <h6 class="m-0">شعوذه</h6>
+                                        <span class="colorGray">12 Jun</span>
+                                    </div>
+                                    <div class="flex flexSpace">
+                                        <p class="m-0 colorOp">عذاب عمرك ف عشق الندم</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="boxChat flex70 pr-2 pl-2 position-relative">
+                    <button class="clickTo closeChat">
+                        <span class="icon-cancel"></span>
+                    </button>
+                    <div class="bgWight p-4 mt-3 mb-3 Radius10 boxShadow position-relative">
+
+                        <div class="noChat">
+                            <img src="img/chat.png" alt="">
+                            <p class="font_16">قم بإختيار المحادثة للتواصل</p>
+                        </div>
+
+                        <div class="contentChat overScroll heightChat pb-3">
+                            <div class="blockSent pb-4 pt-4">
+                                <div class="sent flex flexRow">
+                                    <div class="imgUserMassage imgSender flex10 text-center position-relative mt-2 mb-2">
+                                        <img src="img/pic.jpg" alt="">
+                                    </div>
+                                    <div class="infoSender flex90">
+                                        <p class="m-0 p-3 float-right">اهلا بك يابن الندم اهلا بك يابن الندم اهلا بك يابن الندم اهلا بك يابن الندم اهلا بك يابن الندم اهلا بك يابن الندم</p>
+                                    </div>
+                                </div>
+                                <span class="text-center d-block w-100 colorGray mt-2 mb-2">19/1/2020 , 3:39 AM</span>
+                            </div>
+
+                            <div class="blockRecent pb-4 pt-4">
+                                <div class="recent flex flexRow rowReverse">
+                                    <div class="imgUserMassage imgRecent flex10 text-center position-relative mt-2 mb-2">
+                                        <img src="img/pic.jpg" alt="">
+                                    </div>
+                                    <div class="infoRecent flex90">
+                                        <p class="bgDefault m-0 p-3 float-left colorWight">اهلا بك يابن الندم</p>
+                                    </div>
+                                </div>
+                                <span class="text-center d-block w-100 colorGray mt-2 mb-2">19/1/2020 , 3:39 AM</span>
+                            </div>
+                        </div>
+
+                        <div class="formAction sentMassage p-3 bgWight">
+                            <form action="" class="position-relative overflow-hidden formChat">
+                                <a class="position-absolute btnButton btnDefault w-auto pl-3 pr-3 posRightSec">
+                                    <span class="icon-paperclip"></span>
+                                </a>
+                                <input class="input-custom-size" type="text" placeholder="اكتب نص الرسالة">
+                                <button class="btnButton btnDefault w-auto pl-3 pr-3 posLeftSec" type="submit">
+                                    <span class="icon-send"></span>
+                                </button>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!--end statistics-->
+
+<!--start footer-->
+<footer>
+    <div class="container">
+        <img src="img/light_green_lamb.svg" class="lightLamp" alt="ight_green_lamb">
+        <div class="footerInfo">
+
+            <div>
+                <h5 class="title">فئات</h5>
+                <ul>
+                    <li>
+                        <a href="graphicDesign.html" class="hvr-backward">الجرافيم والديزاين</a>
+                    </li>
+                    <li>
+                        <a href="graphicDesign.html" class="hvr-backward">التكنولوجيا والتسويق الالكتروني</a>
+                    </li>
+                    <li>
+                        <a href="graphicDesign.html" class="hvr-backward">التصوير والمونتاج</a>
+                    </li>
+                    <li>
+                        <a href="graphicDesign.html" class="hvr-backward">الكتابة والترجمة</a>
+                    </li>
+                    <li>
+                        <a href="graphicDesign.html" class="hvr-backward">الفيديو والانيميشن</a>
+                    </li>
+                    <li>
+                        <a href="graphicDesign.html" class="hvr-backward">التعليم</a>
+                    </li>
+                    <li>
+                        <a href="graphicDesign.html" class="hvr-backward">الاستشارات</a>
+                    </li>
+                    <li>
+                        <a href="graphicDesign.html" class="hvr-backward">لايف ستايل</a>
+                    </li>
+                    <li>
+                        <a href="graphicDesign.html" class="hvr-backward">خدمات عامة</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <h5 class="title">عن</h5>
+                <ul>
+                    <li>
+                        <a href="terms.html" class="hvr-backward">سياسة الخصوصية</a>
+                    </li>
+                    <li>
+                        <a href="terms.html" class="hvr-backward">شروط الخدمة</a>
+                    </li>
+                </ul>
+                <h5 class="title">تحميل تطبيق الموبايل</h5>
+                <div class="apps">
+                    <a href="" class="hvr-float-shadow"><img src="img/google-play.png" alt="google play"></a>
+                    <a href="" class="hvr-float-shadow"><img src="img/appstore.png" alt="app store"></a>
+                </div>
+
+            </div>
+
+            <div>
+                <h5 class="title">دعم</h5>
+                <ul>
+                    <li>
+                        <a href="support.html" class="hvr-backward">المساعدة والدعم</a>
+                    </li>
+                    <li>
+                        <a href="sellOnLight.html" class="hvr-backward">بيع علي <span>Light Up</span></a>
+                    </li>
+                    <li>
+                        <a href="completeAcc.html" class="hvr-backward">الشراء علي <span>Light Up</span></a>
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <h5 class="title">المجتمع</h5>
+                <ul>
+                    <li>
+                        <a href="inviteFriend.html" class="hvr-backward">دعوة صديق</a>
+                    </li>
+                    <li>
+                        <a href="beBuyer.html" class="hvr-backward">أصبح بائع</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+        <hr class="customHr">
+        <div class="info">
+            <div class="copyright justify-content-center justify-content-sm-start">
+                <h4>Light Up</h4>
+                <p>جميع الحقوق محفوظة ل <a href="">اوامر الشبكة 2021</a></p>
+            </div>
+            <div class="social">
+                <a href="" class="hvr-float-shadow"><span class="icon-linkedin"></span></a>
+                <a href="" class="hvr-float-shadow"><span class="icon-facebook"></span></a>
+                <a href="" class="hvr-float-shadow"><span class="icon-instagram"></span></a>
+            </div>
+        </div>
+
+    </div>
+</footer>
+<!--end footer-->
+
+
+<!--===============================
+    SCRIPT
+===================================-->
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap-select.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/script.js"></script>
+
+<!--start select-->
+<script>
+    $('.selectpicker').selectpicker();
+</script>
+<!--end select-->
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+<script>
+
+</script>
+
+</body>
+</html>

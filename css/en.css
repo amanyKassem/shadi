@@ -56,6 +56,32 @@ body {
     right: 0;
 }
 
+.point{
+    right: 5px;
+}
+
+.formAction button{
+    right: 0;
+}
+
+.posLeftSec{
+    right: 0px;
+    left: auto;
+}
+
+.posRightSec{
+    right: auto;
+    left: 0px;
+}
+
+.imgNote .overUp{
+    right: 12px;
+}
+
+#sync2 .owl-stage{
+    float: left;
+}
+
 /* Media Screen */
 
 @media screen and (max-width: 990px){
