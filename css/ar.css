@@ -43,6 +43,278 @@ body {
     float: right;
 }
 
+
+/* start amany style */
+.menu .menuLinks {
+    margin-right: 30px;
+}
+.form-group>label{
+    right: 15px;
+}
+.form-group input:focus + label, .form-group input:valid + label , .owl-prev {
+    right: 10px;
+}
+
+.slider:before {
+    left: 4px;
+}
+
+.noChat , .listPoint li:before , .overLayBT , .upload-img:before , .loader,
+.orderDetailsContainer .detailsCont .rightCont .details .processTime ul.timeline:before ,
+.addService .dataForm .leftDiv .info li:before{
+    right: 0;
+}
+
+.close_model {
+    left: -10px;
+}
+
+.closeChat {
+    left: 0;
+}
+
+.custom-checkbox {
+    padding-right: 1.5rem;
+    padding-left: 0;
+}
+
+.custom-checkbox .custom-control-label::before ,.custom-checkbox .custom-control-label::after{
+    right: -1.5rem;
+    left: 0;
+}
+
+.authForm .forget span, .authForm .createAcc span{
+    margin-right: 7px;
+}
+.register .btnGray{
+    margin-right: 20px;
+}
+
+.menu .menuLinks li {
+    margin-right: 25px;
+}
+.menu .msgs .icon-down_arrow_drop{
+    margin-right: 7px;
+}
+.menu .msgs .num{
+    left: -8px;
+}
+.menu .msgs .num:before {
+    right: 50%;
+}
+div.dataTables_wrapper .dataTables_length input, div.dataTables_wrapper .dataTables_filter input {
+    margin-left: 3px;
+    margin-right: 10px;
+}
+
+.orderDetailsContainer .alert-success {
+    padding-right: 20px;
+}
+
+.orderDetailsContainer .alert-dismissible .close {
+    left: 20px;
+    right: auto;
+}
+
+.orderDetailsContainer .detailsCont .rightCont .details .leftInfo{
+    margin-right: 15px;
+}
+.orderDetailsContainer .detailsCont .rightCont{
+    margin-left: 20px;
+}
+.orderDetailsContainer .detailsCont .rightCont .details .processTime ul.timeline > li {
+    padding-left: 20px;
+}
+.orderDetailsContainer .detailsCont .rightCont .details .processTime ul.timeline > li:before {
+    right: -7px;
+}
+.orderDetailsContainer .detailsCont .rightCont .details .processTime ul.timeline > li.cancelled .icon-cancel {
+    right: -2px;
+}
+.orderDetailsContainer .detailsCont .rightCont .details .processTime ul.timeline > li.active:after {
+    right: -5px;
+}
+.orderDetailsContainer .detailsCont .rightCont .details .processTime .time{
+    margin-right: 25px;
+}
+.orderDetailsContainer .detailsCont .rightCont .filesCont .files .file .info ,
+.orderDetailsContainer .detailsCont .rightCont .btnDefault.redBtn , .addService .dataForm .rightDiv .btnDefault.grayBtn ,
+.addService .dataForm .rightDiv .requiredInfo .tags-input-wrapper .tag a{
+    margin-right: 20px;
+}
+
+.owl-next{
+    left: 10px;
+}
+
+.btnFullScreen{
+    left: 15px;
+}
+
+.services #owl-demo1 .owl-next {
+    right: -15px;
+    left:auto;
+}
+
+.services #owl-demo1 .owl-prev {
+    left: -15px;
+    right: auto;
+}
+.addService .dataForm .leftDiv:before{
+    border-left: 15px solid #defad2;
+    right: -15px;
+}
+.addService .dataForm .leftDiv .info li{
+    padding-right: 20px;
+}
+
+.authForm .copyright h4{
+    margin-left: 15px;
+}
+.terms .light_green_lamb{
+    left: 0;
+}
+.register .copyright h4 , footer .copyright h4{
+    margin-left: 15px;
+}
+
+header .overlay {
+    transform-origin: left;
+}
+.menu .transferBuyer{
+    margin-left: 30px;
+}
+.menu .profile img{
+    margin-left: 7px;
+}
+.menu .profile ul , .menu .msgs ul {
+    left: 0;
+}
+
+.menu .msgs ul li a span{
+    margin-left: 15px;
+}
+
+.menu .msgs ul li a span.icon-notification:after{
+    left: -2px;
+}
+
+.menu .profile .triangle{
+    left: -15px;
+}
+.orderDetailsContainer .alert-success span.alertIcon {
+    margin-left: 15px;
+}
+.orderDetailsContainer .detailsCont .rightCont .details .user img{
+    margin-left: 5px;
+}
+.orderDetailsContainer .detailsCont .rightCont .packageCont .options .option{
+    margin-left: 15px;
+}
+.orderDetailsContainer .detailsCont .rightCont .packageCont .options .option span {
+    margin-left: 10px;
+}
+.orderDetailsContainer .detailsCont .leftCont .paymentDetails .payBlock .price.oldPrice{
+    margin-left: 7px;
+}
+
+.addService .mainTitles i{
+    margin-left: 20px;
+}
+.addService .dataForm .rightDiv .requiredInfo .form-group .count{
+    text-align: left;
+}
+
+.addService .dataForm .rightDiv .requiredInfo .categories .dropdown.bootstrap-select:first-child {
+    margin-left: 25px;
+}
+
+.addService .dataForm .rightDiv .requiredInfo .titleInfo{
+    margin-left: 45px;
+}
+
+
+.addService .dataForm .rightDiv .requiredInfo .tags-input-wrapper .tag{
+    margin-left: 10px;
+}
+
+.addService .dataForm .rightDiv .requiredInfo .hint img{
+    margin-left: 5px;
+}
+
+footer .footerInfo > div .apps img{
+    margin-left: 15px;
+}
+
+.editCategory .interests > div {
+    margin-left: 20px;
+}
+
+@media(max-width: 767px){
+    .register .btnGray {
+        margin-right: 0;
+    }
+
+    header .menuBar .toggle {
+        text-align: right;
+    }
+    .menu {
+         text-align: right;
+         right: -100%;
+         transform-origin: right;
+     }
+
+    .menu.ulDir , .menu .profile ul, .menu .msgs ul {
+        right: 0
+    }
+
+    .orderDetailsContainer .detailsCont .rightCont .details .leftInfo {
+        margin-right: 0;
+    }
+
+    header .user img {
+        margin-left: 20px;
+    }
+
+    header .user  i{
+        margin-left: 20px;
+    }
+    .orderDetailsContainer .detailsCont .rightCont {
+        margin-left: 0;
+    }
+
+    .addService .dataForm .rightDiv .requiredInfo .titleInfo {
+        margin-left: 0;
+    }
+    .addService .dataForm .rightDiv .requiredInfo .categories .dropdown.bootstrap-select:first-child {
+        margin-left: 10px;
+    }
+    .editCategory .interests > div {
+        margin-left:0;
+    }
+
+}
+
+@media(min-width: 768px) and (max-width: 991px){
+    .menu .menuLinks {
+        margin-right: 0px;
+    }
+    .menu .menuLinks li {
+        margin-right: 15px;
+    }
+    .menu .transferBuyer {
+        margin-left: 15px;
+    }
+}
+
+@media(max-width: 1024px){
+    .chatAll .menuChat{
+        right: 0;
+    }
+}
+
+/* end amany style */
+
 /* Media Screen */
 
 @media screen and (max-width: 990px){
