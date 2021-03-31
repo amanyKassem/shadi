@@ -21,6 +21,9 @@
     <!-- Bootstrap CSS -->
     <link href="css/all.min.css" rel="stylesheet"/>
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-select.min.css">
+    <link rel="stylesheet" type="text/css" href="css/datatables.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/jquery.dataTables.min.css"/>
     <link rel="stylesheet" href="css/owl.carousel.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/hover.css">
@@ -59,22 +62,22 @@
 
         <div class="menu d-flex flex-wrap align-items-center">
 
-<!--             if user login-->
-                        <a href="profile.html" class="user d-md-none">
-                            <img src="img/pic.jpg" class="img-fluid" alt="profile">
-                            <p>
-                                أماني قاسم
-                            </p>
-                        </a>
+            <!--             if user login-->
+            <a href="profile.html" class="user d-md-none">
+                <img src="img/pic.jpg" class="img-fluid" alt="profile">
+                <p>
+                    أماني قاسم
+                </p>
+            </a>
 
 
-<!--            if user not login-->
-<!--            <a href="login.html" class="user d-md-none">-->
-<!--                <i class="far fa-user"></i>-->
-<!--                <p>-->
-<!--                    حسابي-->
-<!--                </p>-->
-<!--            </a>-->
+            <!--            if user not login-->
+            <!--            <a href="login.html" class="user d-md-none">-->
+            <!--                <i class="far fa-user"></i>-->
+            <!--                <p>-->
+            <!--                    حسابي-->
+            <!--                </p>-->
+            <!--            </a>-->
 
 
             <div class="d-flex align-items-center">
@@ -83,7 +86,7 @@
                 </a>
 
                 <ul class="menuLinks">
-                    <li class="active">
+                    <li>
                         <a href="providerHome.html">الرئيسية</a>
                     </li>
                     <li>
@@ -108,11 +111,11 @@
                     <li>
                         <a href="analytics.html">تحليلات</a>
                     </li>
-                    <li>
+                    <li class="active">
                         <a href="earnings.html">ارباح</a>
                     </li>
 
-<!--                    only in mobile-->
+                    <!--                    only in mobile-->
 
                     <li class="d-sm-none">
                         <div>
@@ -191,129 +194,123 @@
 
 <!--end header-->
 
-<!--start statistics-->
-<div class="statistics bgLightGray">
+<!--start earnings-->
+<div class="ordersContainer analytics earnings bgLightGray">
     <div class="container">
+
         <div class="ordersInfo">
+            <table class="display nowrap orderTable" >
+                <thead>
+                <tr>
+                    <th>اسم الحساب</th>
+                    <th>تاريخ الاضافة</th>
+                    <th>اسم البنك</th>
+                    <th>رقم الحساب</th>
+                    <th>رقم الايبان</th>
+                    <th>تفعيل البطاقة</th>
+                </tr>
+                </thead>
+                <tbody>
 
-            <div class="orderStatistic boxShadow">
-                <img src="img/chart_line.png" class="chartLine" alt="Chart line">
-                <div>
-                    <span>600</span>
-                    <span>عدد الطلبات</span>
-                </div>
-                <span class="icon-order_dashbord dashIcon"></span>
-            </div>
+                <tr>
+                    <td>اوامر الشبكة</td>
+                    <td>20/8/2023</td>
+                    <td>بنك فيصل</td>
+                    <td>2472397041571</td>
+                    <td>6086428306401</td>
+                    <td>
+                        <div class="custom-control custom-switch">
+                            <input type="checkbox" class="custom-control-input" id="aval3">
+                            <label class="custom-control-label" for="aval3"></label>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>اوامر الشبكة</td>
+                    <td>20/8/2023</td>
+                    <td>بنك فيصل</td>
+                    <td>2472397041571</td>
+                    <td>6086428306401</td>
+                    <td>
+                        <div class="custom-control custom-switch">
+                            <input type="checkbox" class="custom-control-input" id="aval4">
+                            <label class="custom-control-label" for="aval4"></label>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>اوامر الشبكة</td>
+                    <td>20/8/2023</td>
+                    <td>بنك فيصل</td>
+                    <td>2472397041571</td>
+                    <td>6086428306401</td>
+                    <td>
+                        <div class="custom-control custom-switch">
+                            <input type="checkbox" class="custom-control-input" id="aval5">
+                            <label class="custom-control-label" for="aval5"></label>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>اوامر الشبكة</td>
+                    <td>20/8/2023</td>
+                    <td>بنك فيصل</td>
+                    <td>2472397041571</td>
+                    <td>6086428306401</td>
+                    <td>
+                        <div class="custom-control custom-switch">
+                            <input type="checkbox" class="custom-control-input" id="aval6">
+                            <label class="custom-control-label" for="aval6"></label>
+                        </div>
+                    </td>
+                </tr>
 
-            <div class="orderStatistic boxShadow">
-                <img src="img/chart_line.png" class="chartLine" alt="Chart line">
-                <div>
-                    <span>600</span>
-                    <span>طلبات معلقة</span>
-                </div>
-                <span class="icon-pending_dashbored dashIcon"></span>
-            </div>
-
-            <div class="orderStatistic boxShadow">
-                <img src="img/chart_line.png" class="chartLine" alt="Chart line">
-                <div>
-                    <span>600</span>
-                    <span>طلبات منتهية</span>
-                </div>
-                <span class="icon-sent_done_order dashIcon"></span>
-            </div>
-
-            <div class="orderStatistic boxShadow">
-                <img src="img/chart_line.png" class="chartLine" alt="Chart line">
-                <div>
-                    <span>600</span>
-                    <span>طلبات قيد التنفيذ</span>
-                </div>
-                <span class="icon-fast_icon_order dashIcon"></span>
-            </div>
-
-            <div class="orderStatistic boxShadow">
-                <img src="img/chart_line.png" class="chartLine" alt="Chart line">
-                <div>
-                    <span>600</span>
-                    <span>عدد الخدمات</span>
-                </div>
-                <span class="icon-filter_dashbored dashIcon"></span>
-            </div>
-
-            <div class="orderStatistic boxShadow">
-                <img src="img/chart_line.png" class="chartLine" alt="Chart line">
-                <div>
-                    <span>600</span>
-                    <span>الأكثر مبيعاً</span>
-                </div>
-                <span class="icon-sales_dasbord dashIcon"></span>
-            </div>
-
-            <div class="orderStatistic boxShadow">
-                <img src="img/chart_line.png" class="chartLine" alt="Chart line">
-                <div>
-                    <span>600</span>
-                    <span>الأعلي تقيماً</span>
-                </div>
-                <span class="icon-star_dashbord dashIcon"></span>
-            </div>
-
-            <div class="orderStatistic boxShadow">
-                <img src="img/chart_line.png" class="chartLine" alt="Chart line">
-                <div>
-                    <span>600</span>
-                    <span>متوسط التقييم</span>
-                </div>
-                <span class="icon-rating_dashbord dashIcon"></span>
-            </div>
-
-            <div class="orderStatistic boxShadow">
-                <img src="img/chart_line.png" class="chartLine" alt="Chart line">
-                <div>
-                    <span>600</span>
-                    <span>عدد التعليقات</span>
-                </div>
-                <span class="icon-conversation_dashbored dashIcon"></span>
-            </div>
-
-            <div class="orderStatistic boxShadow">
-                <img src="img/chart_line.png" class="chartLine" alt="Chart line">
-                <div>
-                    <span>600</span>
-                    <span>اجمالي الطلبات</span>
-                </div>
-                <span class="icon-choices_dashbored dashIcon"></span>
-            </div>
-
-            <div class="orderStatistic boxShadow">
-                <img src="img/chart_line.png" class="chartLine" alt="Chart line">
-                <div>
-                    <span>600</span>
-                    <span>عدد المبيعات</span>
-                </div>
-                <span class="icon-business_order_dashbored dashIcon"></span>
-            </div>
-
-            <div class="orderStatistic boxShadow">
-                <img src="img/chart_line.png" class="chartLine" alt="Chart line">
-                <div>
-                    <span>600</span>
-                    <span>عدد المشاهدات</span>
-                </div>
-                <span class="icon-view_order_dashbored dashIcon"></span>
-            </div>
-
+                </tbody>
+            </table>
         </div>
 
-        <div class="chartContainer bgWight p-4 mt-3">
-            <h4 class="chartTitle">المبيعات</h4>
-            <canvas id="myChart"></canvas>
+        <div class="bankAccCont boxShadow">
+            <p>يمكنك اضافة حساب بنكي آخر</p>
+            <a data-toggle="modal" data-target="#addAcc" class="btnDefault hvr-pulse">اضافة حساب</a>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="addAcc" tabindex="-1" role="dialog" aria-labelledby="addAccTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <img class="vector" src="img/vector_payment.png" alt="vector payment">
+
+                        <form action="">
+
+                            <div class="form-group">
+                                <input type="text" name="bankName" id="bankName" class="form-control" placeholder="اسم البنك" required>
+                            </div>
+
+                            <div class="form-group">
+                                <input type="text" name="accName" id="accName" class="form-control" placeholder="اسم الحساب" required>
+                            </div>
+
+                            <div class="form-group">
+                                <input type="text" name="accNum" id="accNum" class="form-control" placeholder="رقم الحساب" required>
+                            </div>
+
+                            <div class="form-group">
+                                <input type="text" name="ibanNum" id="ibanNum" class="form-control" placeholder="رقم الايبان" required>
+                            </div>
+
+                            <a data-dismiss="modal" class="btnDefault hvr-pulse">ارسال</a>
+
+                        </form>
+
+                    </div>
+                </div>
+            </div>
         </div>
 
     </div>
 </div>
-<!--end statistics-->
+<!--end earnings-->
 
 <!--start footer-->
 <footer>
@@ -424,50 +421,26 @@
 <script src="js/jquery-3.3.1.min.js"></script>
 <script src="js/popper.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/datatables.min.js"></script>
+<script type="text/javascript" src="js/jquery.dataTables.min.js"></script>
 <script src="js/owl.carousel.min.js"></script>
 <script src="js/script.js"></script>
-
-
-<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+<!--table-->
 <script>
-    var ctx = document.getElementById('myChart').getContext('2d');
-    var gradient = ctx.createLinearGradient(0, 0, 0, 400);
-    gradient.addColorStop(0, 'rgba(86,196,41,0.7)');
-    gradient.addColorStop(1, 'rgba(86,196,41,0)');
-
-    var chart = new Chart(ctx, {
-        // The type of chart we want to create
-        type: 'line',
-
-        // The data for our dataset
-        data: {
-            labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul' , 'Aug' , 'Sep', 'Oct' , 'Nov' , 'Dec'],
-            datasets: [{
-                label: 'المبيعات',
-                backgroundColor: gradient,
-                borderColor: 'rgb(86, 196, 41)',
-                data: [140, 250, 180, 200, 330, 350, 300, 350, 400, 350, 410, 460],
-            }]
-        },
-
-        // Configuration options go here
-        options: {
-            legend: {
-                display: false,
-            },
-            scales: {
-                yAxes: [{
-                    ticks: {
-                        // Include a dollar sign in the ticks
-                        callback: function(value, index, values) {
-                            return 'SR ' + value;
-                        }
-                    }
-                }]
-            }
-        }
-    });
+    $(document).ready(function() {
+        $('.orderTable').DataTable( {
+            // "language": {
+            //     "paginate": {
+            //         "next": '<i class="fas fa-chevron-left"></i>',
+            //         "previous": '<i class="fas fa-chevron-right"></i>',
+            //     }
+            // },
+            "scrollY": 200,
+            "scrollX": true
+        } );
+    } );
 </script>
+
 
 </body>
 </html>

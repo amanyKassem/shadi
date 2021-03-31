@@ -21,7 +21,11 @@
     <!-- Bootstrap CSS -->
     <link href="css/all.min.css" rel="stylesheet"/>
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-select.min.css">
+    <link rel="stylesheet" type="text/css" href="css/datatables.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/jquery.dataTables.min.css"/>
     <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/bootstrap-select.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/hover.css">
     <link href="css/icomoon.css" rel="stylesheet"/>
@@ -59,22 +63,22 @@
 
         <div class="menu d-flex flex-wrap align-items-center">
 
-<!--             if user login-->
-                        <a href="profile.html" class="user d-md-none">
-                            <img src="img/pic.jpg" class="img-fluid" alt="profile">
-                            <p>
-                                أماني قاسم
-                            </p>
-                        </a>
+            <!--             if user login-->
+            <a href="profile.html" class="user d-md-none">
+                <img src="img/pic.jpg" class="img-fluid" alt="profile">
+                <p>
+                    أماني قاسم
+                </p>
+            </a>
 
 
-<!--            if user not login-->
-<!--            <a href="login.html" class="user d-md-none">-->
-<!--                <i class="far fa-user"></i>-->
-<!--                <p>-->
-<!--                    حسابي-->
-<!--                </p>-->
-<!--            </a>-->
+            <!--            if user not login-->
+            <!--            <a href="login.html" class="user d-md-none">-->
+            <!--                <i class="far fa-user"></i>-->
+            <!--                <p>-->
+            <!--                    حسابي-->
+            <!--                </p>-->
+            <!--            </a>-->
 
 
             <div class="d-flex align-items-center">
@@ -83,7 +87,7 @@
                 </a>
 
                 <ul class="menuLinks">
-                    <li class="active">
+                    <li>
                         <a href="providerHome.html">الرئيسية</a>
                     </li>
                     <li>
@@ -102,7 +106,7 @@
                             </ul>
                         </div>
                     </li>
-                    <li>
+                    <li class="active">
                         <a href="services.html">الخدمات المقدمة</a>
                     </li>
                     <li>
@@ -112,7 +116,7 @@
                         <a href="earnings.html">ارباح</a>
                     </li>
 
-<!--                    only in mobile-->
+                    <!--                    only in mobile-->
 
                     <li class="d-sm-none">
                         <div>
@@ -191,129 +195,175 @@
 
 <!--end header-->
 
-<!--start statistics-->
-<div class="statistics bgLightGray">
+<!--start services-->
+<div class="ordersContainer analytics services bgLightGray">
     <div class="container">
+
+        <div class="addServBlock">
+            <span>الاقسام</span>
+            <a href="#" class="addEditCat">تعديل او اضافة قسم</a>
+        </div>
+
+
+        <div id="owl-demo1" class="owl-carousel">
+
+            <div class="item boxShadow">
+                <a href="" class="category">
+                    <img src="img/graphic_design.png" alt="Graphic design">
+                    <h4>الجرافيك والديزاين</h4>
+                </a>
+            </div>
+
+            <div class="item boxShadow">
+                <a href="" class="category">
+                    <img src="img/Seo.png" alt="Technology and Marketing Online">
+                    <h4>التكنولوجيا والتسويق لكتروني</h4>
+                </a>
+            </div>
+
+            <div class="item boxShadow">
+                <a href="" class="category">
+                    <img src="img/translate.png" alt="Writing and translation">
+                    <h4>الكتابة والترجمة</h4>
+                </a>
+            </div>
+
+            <div class="item boxShadow">
+                <a href="" class="category">
+                    <img src="img/photography.png" alt="Photography and montage">
+                    <h4>التصوير والمونتاج</h4>
+                </a>
+            </div>
+
+            <div class="item boxShadow">
+                <a href="" class="category">
+                    <img src="img/education.png" alt="Education">
+                    <h4>التعليم</h4>
+                </a>
+            </div>
+
+            <div class="item boxShadow">
+                <a href="" class="category">
+                    <img src="img/consutation.png" alt="Consulting">
+                    <h4>الاستشارات</h4>
+                </a>
+            </div>
+
+            <div class="item boxShadow">
+                <a href="" class="category">
+                    <img src="img/lifestyle.png" alt="Life style">
+                    <h4>لايف استايل</h4>
+                </a>
+            </div>
+
+            <div class="item boxShadow">
+                <a href="" class="category">
+                    <img src="img/mic_enmy.png" alt="Video and animation">
+                    <h4>الفيديو والانيميشن</h4>
+                </a>
+            </div>
+
+        </div>
+
+        <div class="addServBlock">
+            <span>الخدمات</span>
+            <a href="addService.html" class="btnDefault hvr-pulse">اضافة خدمة</a>
+        </div>
+
+        <div class="filterCont">
+            <select class="selectpicker" id="month" title="القسم">
+                <option>جرافيك وديزاين</option>
+                <option>تصوير</option>
+            </select>
+        </div>
         <div class="ordersInfo">
+            <table class="display nowrap orderTable" >
+                <thead>
+                <tr>
+                    <th>صورة الخدمة</th>
+                    <th>عنوان الخمة</th>
+                    <th>القسم</th>
+                    <th>تاريخ الاضافة</th>
+                    <th>ايام الانجاز</th>
+                    <th></th>
+                </tr>
+                </thead>
+                <tbody>
 
-            <div class="orderStatistic boxShadow">
-                <img src="img/chart_line.png" class="chartLine" alt="Chart line">
-                <div>
-                    <span>600</span>
-                    <span>عدد الطلبات</span>
-                </div>
-                <span class="icon-order_dashbord dashIcon"></span>
-            </div>
+                <tr>
+                    <td>
+                        <a href="providerServiceDetails.html"><img class="img-fluid" src="img/pic_o.png" alt="service"></a>
+                    </td>
+                    <td>
+                        <a href="providerServiceDetails.html">تعديلات فيديوهات ومونتاج</a>
+                    </td>
+                    <td>الجرافيك والديزاين</td>
+                    <td>15\3\2022</td>
+                    <td>15</td>
+                    <td>
+                        <a href="#" class="more">
+                            <span class="icon-more_provider"></span>
+                        </a>
+                    </td>
+                </tr>
 
-            <div class="orderStatistic boxShadow">
-                <img src="img/chart_line.png" class="chartLine" alt="Chart line">
-                <div>
-                    <span>600</span>
-                    <span>طلبات معلقة</span>
-                </div>
-                <span class="icon-pending_dashbored dashIcon"></span>
-            </div>
+                <tr>
+                    <td>
+                        <a href="providerServiceDetails.html"><img class="img-fluid" src="img/pic_o.png" alt="service"></a>
+                    </td>
+                    <td>
+                        <a href="providerServiceDetails.html">تعديلات فيديوهات ومونتاج</a>
+                    </td>
+                    <td>الجرافيك والديزاين</td>
+                    <td>15\3\2022</td>
+                    <td>15</td>
+                    <td>
+                        <a href="#" class="more">
+                            <span class="icon-more_provider"></span>
+                        </a>
+                    </td>
+                </tr>
 
-            <div class="orderStatistic boxShadow">
-                <img src="img/chart_line.png" class="chartLine" alt="Chart line">
-                <div>
-                    <span>600</span>
-                    <span>طلبات منتهية</span>
-                </div>
-                <span class="icon-sent_done_order dashIcon"></span>
-            </div>
+                <tr>
+                    <td>
+                        <a href="providerServiceDetails.html"><img class="img-fluid" src="img/pic_o.png" alt="service"></a>
+                    </td>
+                    <td>
+                        <a href="providerServiceDetails.html">تعديلات فيديوهات ومونتاج</a>
+                    </td>
+                    <td>الجرافيك والديزاين</td>
+                    <td>15\3\2022</td>
+                    <td>15</td>
+                    <td>
+                        <a href="#" class="more">
+                            <span class="icon-more_provider"></span>
+                        </a>
+                    </td>
+                </tr>
 
-            <div class="orderStatistic boxShadow">
-                <img src="img/chart_line.png" class="chartLine" alt="Chart line">
-                <div>
-                    <span>600</span>
-                    <span>طلبات قيد التنفيذ</span>
-                </div>
-                <span class="icon-fast_icon_order dashIcon"></span>
-            </div>
+                <tr>
+                    <td>
+                        <a href="providerServiceDetails.html"><img class="img-fluid" src="img/pic_o.png" alt="service"></a>
+                    </td>
+                    <td>
+                        <a href="providerServiceDetails.html">تعديلات فيديوهات ومونتاج</a>
+                    </td>
+                    <td>الجرافيك والديزاين</td>
+                    <td>15\3\2022</td>
+                    <td>15</td>
+                    <td>
+                        <a href="#" class="more">
+                            <span class="icon-more_provider"></span>
+                        </a>
+                    </td>
+                </tr>
 
-            <div class="orderStatistic boxShadow">
-                <img src="img/chart_line.png" class="chartLine" alt="Chart line">
-                <div>
-                    <span>600</span>
-                    <span>عدد الخدمات</span>
-                </div>
-                <span class="icon-filter_dashbored dashIcon"></span>
-            </div>
-
-            <div class="orderStatistic boxShadow">
-                <img src="img/chart_line.png" class="chartLine" alt="Chart line">
-                <div>
-                    <span>600</span>
-                    <span>الأكثر مبيعاً</span>
-                </div>
-                <span class="icon-sales_dasbord dashIcon"></span>
-            </div>
-
-            <div class="orderStatistic boxShadow">
-                <img src="img/chart_line.png" class="chartLine" alt="Chart line">
-                <div>
-                    <span>600</span>
-                    <span>الأعلي تقيماً</span>
-                </div>
-                <span class="icon-star_dashbord dashIcon"></span>
-            </div>
-
-            <div class="orderStatistic boxShadow">
-                <img src="img/chart_line.png" class="chartLine" alt="Chart line">
-                <div>
-                    <span>600</span>
-                    <span>متوسط التقييم</span>
-                </div>
-                <span class="icon-rating_dashbord dashIcon"></span>
-            </div>
-
-            <div class="orderStatistic boxShadow">
-                <img src="img/chart_line.png" class="chartLine" alt="Chart line">
-                <div>
-                    <span>600</span>
-                    <span>عدد التعليقات</span>
-                </div>
-                <span class="icon-conversation_dashbored dashIcon"></span>
-            </div>
-
-            <div class="orderStatistic boxShadow">
-                <img src="img/chart_line.png" class="chartLine" alt="Chart line">
-                <div>
-                    <span>600</span>
-                    <span>اجمالي الطلبات</span>
-                </div>
-                <span class="icon-choices_dashbored dashIcon"></span>
-            </div>
-
-            <div class="orderStatistic boxShadow">
-                <img src="img/chart_line.png" class="chartLine" alt="Chart line">
-                <div>
-                    <span>600</span>
-                    <span>عدد المبيعات</span>
-                </div>
-                <span class="icon-business_order_dashbored dashIcon"></span>
-            </div>
-
-            <div class="orderStatistic boxShadow">
-                <img src="img/chart_line.png" class="chartLine" alt="Chart line">
-                <div>
-                    <span>600</span>
-                    <span>عدد المشاهدات</span>
-                </div>
-                <span class="icon-view_order_dashbored dashIcon"></span>
-            </div>
-
+                </tbody>
+            </table>
         </div>
-
-        <div class="chartContainer bgWight p-4 mt-3">
-            <h4 class="chartTitle">المبيعات</h4>
-            <canvas id="myChart"></canvas>
-        </div>
-
     </div>
 </div>
-<!--end statistics-->
+<!--end services-->
 
 <!--start footer-->
 <footer>
@@ -424,50 +474,34 @@
 <script src="js/jquery-3.3.1.min.js"></script>
 <script src="js/popper.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap-select.min.js"></script>
+<script type="text/javascript" src="js/datatables.min.js"></script>
+<script type="text/javascript" src="js/jquery.dataTables.min.js"></script>
 <script src="js/owl.carousel.min.js"></script>
 <script src="js/script.js"></script>
 
-
-<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+<!--start select-->
 <script>
-    var ctx = document.getElementById('myChart').getContext('2d');
-    var gradient = ctx.createLinearGradient(0, 0, 0, 400);
-    gradient.addColorStop(0, 'rgba(86,196,41,0.7)');
-    gradient.addColorStop(1, 'rgba(86,196,41,0)');
-
-    var chart = new Chart(ctx, {
-        // The type of chart we want to create
-        type: 'line',
-
-        // The data for our dataset
-        data: {
-            labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul' , 'Aug' , 'Sep', 'Oct' , 'Nov' , 'Dec'],
-            datasets: [{
-                label: 'المبيعات',
-                backgroundColor: gradient,
-                borderColor: 'rgb(86, 196, 41)',
-                data: [140, 250, 180, 200, 330, 350, 300, 350, 400, 350, 410, 460],
-            }]
-        },
-
-        // Configuration options go here
-        options: {
-            legend: {
-                display: false,
-            },
-            scales: {
-                yAxes: [{
-                    ticks: {
-                        // Include a dollar sign in the ticks
-                        callback: function(value, index, values) {
-                            return 'SR ' + value;
-                        }
-                    }
-                }]
-            }
-        }
-    });
+    $('.selectpicker').selectpicker();
 </script>
+<!--end select-->
+
+<!--table-->
+<script>
+    $(document).ready(function() {
+        $('.orderTable').DataTable( {
+            // "language": {
+            //     "paginate": {
+            //         "next": '<i class="fas fa-chevron-left"></i>',
+            //         "previous": '<i class="fas fa-chevron-right"></i>',
+            //     }
+            // },
+            "scrollY": 200,
+            "scrollX": true
+        } );
+    } );
+</script>
+
 
 </body>
 </html>

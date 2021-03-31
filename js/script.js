@@ -15,6 +15,35 @@ $(document).ready(function () {
         $(".menu").removeClass("ulDir");
     });
 
+    $('#owl-demo1').owlCarousel({
+        // center: true,
+        dots: false,
+        nav: true,
+        navText: [
+            "<span class=\"icon-right_arrow\"></span>",
+            "<span class=\"icon-left_arrow\"></span>"
+        ],
+        autoplay: true,
+        loop: true,
+        animateOut: 'fadeOut',
+        responsive: {
+            0: {
+                items: 1,
+            },
+            768: {
+                items: 3,
+                center: false
+            },
+            992: {
+                items: 5,
+            },
+            1200: {
+                items: 6
+            }
+        }
+    });
+
+
     // ANIMATION
 
     Animate_box();

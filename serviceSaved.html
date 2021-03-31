@@ -21,9 +21,12 @@
     <!-- Bootstrap CSS -->
     <link href="css/all.min.css" rel="stylesheet"/>
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/bootstrap-select.min.css">
+    <link rel="stylesheet" type="text/css" href="css/datatables.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/jquery.dataTables.min.css"/>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/hover.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
     <link href="css/icomoon.css" rel="stylesheet"/>
     <link rel="stylesheet" href="css/ar.css">
 
@@ -59,22 +62,22 @@
 
         <div class="menu d-flex flex-wrap align-items-center">
 
-<!--             if user login-->
-                        <a href="profile.html" class="user d-md-none">
-                            <img src="img/pic.jpg" class="img-fluid" alt="profile">
-                            <p>
-                                أماني قاسم
-                            </p>
-                        </a>
+            <!--             if user login-->
+            <a href="profile.html" class="user d-md-none">
+                <img src="img/pic.jpg" class="img-fluid" alt="profile">
+                <p>
+                    أماني قاسم
+                </p>
+            </a>
 
 
-<!--            if user not login-->
-<!--            <a href="login.html" class="user d-md-none">-->
-<!--                <i class="far fa-user"></i>-->
-<!--                <p>-->
-<!--                    حسابي-->
-<!--                </p>-->
-<!--            </a>-->
+            <!--            if user not login-->
+            <!--            <a href="login.html" class="user d-md-none">-->
+            <!--                <i class="far fa-user"></i>-->
+            <!--                <p>-->
+            <!--                    حسابي-->
+            <!--                </p>-->
+            <!--            </a>-->
 
 
             <div class="d-flex align-items-center">
@@ -83,7 +86,7 @@
                 </a>
 
                 <ul class="menuLinks">
-                    <li class="active">
+                    <li>
                         <a href="providerHome.html">الرئيسية</a>
                     </li>
                     <li>
@@ -102,7 +105,7 @@
                             </ul>
                         </div>
                     </li>
-                    <li>
+                    <li class="active">
                         <a href="services.html">الخدمات المقدمة</a>
                     </li>
                     <li>
@@ -112,7 +115,7 @@
                         <a href="earnings.html">ارباح</a>
                     </li>
 
-<!--                    only in mobile-->
+                    <!--                    only in mobile-->
 
                     <li class="d-sm-none">
                         <div>
@@ -191,129 +194,68 @@
 
 <!--end header-->
 
-<!--start statistics-->
-<div class="statistics bgLightGray">
+<!--start addService-->
+<div class="bgLightGray addService">
     <div class="container">
-        <div class="ordersInfo">
 
-            <div class="orderStatistic boxShadow">
-                <img src="img/chart_line.png" class="chartLine" alt="Chart line">
-                <div>
-                    <span>600</span>
-                    <span>عدد الطلبات</span>
-                </div>
-                <span class="icon-order_dashbord dashIcon"></span>
-            </div>
+        <div class="mainTitles">
 
-            <div class="orderStatistic boxShadow">
-                <img src="img/chart_line.png" class="chartLine" alt="Chart line">
-                <div>
-                    <span>600</span>
-                    <span>طلبات معلقة</span>
-                </div>
-                <span class="icon-pending_dashbored dashIcon"></span>
-            </div>
+            <a class="active">
+                <span class="icon-information_provider_service icons"></span>
+                <h5>نظرة عامة</h5>
+            </a>
+            <i class="fas fa-chevron-left"></i>
 
-            <div class="orderStatistic boxShadow">
-                <img src="img/chart_line.png" class="chartLine" alt="Chart line">
-                <div>
-                    <span>600</span>
-                    <span>طلبات منتهية</span>
-                </div>
-                <span class="icon-sent_done_order dashIcon"></span>
-            </div>
+            <a>
+                <span class="icon-price_tag icons"></span>
+                <h5>خطط الاسعار</h5>
+            </a>
+            <i class="fas fa-chevron-left"></i>
 
-            <div class="orderStatistic boxShadow">
-                <img src="img/chart_line.png" class="chartLine" alt="Chart line">
-                <div>
-                    <span>600</span>
-                    <span>طلبات قيد التنفيذ</span>
-                </div>
-                <span class="icon-fast_icon_order dashIcon"></span>
-            </div>
+            <a>
+                <span class="icon-computer_provider icons"></span>
+                <h5>الوصف والشروط</h5>
+            </a>
+            <i class="fas fa-chevron-left"></i>
 
-            <div class="orderStatistic boxShadow">
-                <img src="img/chart_line.png" class="chartLine" alt="Chart line">
-                <div>
-                    <span>600</span>
-                    <span>عدد الخدمات</span>
-                </div>
-                <span class="icon-filter_dashbored dashIcon"></span>
-            </div>
+            <a>
+                <span class="icon-document_provider icons"></span>
+                <h5>متطلبات التقديم</h5>
+            </a>
+            <i class="fas fa-chevron-left"></i>
 
-            <div class="orderStatistic boxShadow">
-                <img src="img/chart_line.png" class="chartLine" alt="Chart line">
-                <div>
-                    <span>600</span>
-                    <span>الأكثر مبيعاً</span>
-                </div>
-                <span class="icon-sales_dasbord dashIcon"></span>
-            </div>
+            <a>
+                <span class="icon-image_provider icons"></span>
+                <h5>الصور</h5>
+            </a>
+            <i class="fas fa-chevron-left"></i>
 
-            <div class="orderStatistic boxShadow">
-                <img src="img/chart_line.png" class="chartLine" alt="Chart line">
-                <div>
-                    <span>600</span>
-                    <span>الأعلي تقيماً</span>
-                </div>
-                <span class="icon-star_dashbord dashIcon"></span>
-            </div>
+            <a>
+                <span class="icon-cloud_provider icons"></span>
+                <h5>نشر</h5>
+            </a>
+            <i class="fas fa-chevron-left"></i>
 
-            <div class="orderStatistic boxShadow">
-                <img src="img/chart_line.png" class="chartLine" alt="Chart line">
-                <div>
-                    <span>600</span>
-                    <span>متوسط التقييم</span>
-                </div>
-                <span class="icon-rating_dashbord dashIcon"></span>
-            </div>
-
-            <div class="orderStatistic boxShadow">
-                <img src="img/chart_line.png" class="chartLine" alt="Chart line">
-                <div>
-                    <span>600</span>
-                    <span>عدد التعليقات</span>
-                </div>
-                <span class="icon-conversation_dashbored dashIcon"></span>
-            </div>
-
-            <div class="orderStatistic boxShadow">
-                <img src="img/chart_line.png" class="chartLine" alt="Chart line">
-                <div>
-                    <span>600</span>
-                    <span>اجمالي الطلبات</span>
-                </div>
-                <span class="icon-choices_dashbored dashIcon"></span>
-            </div>
-
-            <div class="orderStatistic boxShadow">
-                <img src="img/chart_line.png" class="chartLine" alt="Chart line">
-                <div>
-                    <span>600</span>
-                    <span>عدد المبيعات</span>
-                </div>
-                <span class="icon-business_order_dashbored dashIcon"></span>
-            </div>
-
-            <div class="orderStatistic boxShadow">
-                <img src="img/chart_line.png" class="chartLine" alt="Chart line">
-                <div>
-                    <span>600</span>
-                    <span>عدد المشاهدات</span>
-                </div>
-                <span class="icon-view_order_dashbored dashIcon"></span>
-            </div>
-
-        </div>
-
-        <div class="chartContainer bgWight p-4 mt-3">
-            <h4 class="chartTitle">المبيعات</h4>
-            <canvas id="myChart"></canvas>
         </div>
 
     </div>
 </div>
-<!--end statistics-->
+<div class="addService">
+    <div class="container">
+        <div class="dataForm align-items-center flex-column py-5">
+            <a href="">
+                <img src="img/provider_vector_service.png" class="savedImg" alt="vector">
+            </a>
+            <div class="success">
+                <span class="icon-check_rules"></span>
+                تم التعديل بنجاح
+            </div>
+        </div>
+    </div>
+</div>
+<div class="bgLightGray p-2"></div>
+
+<!--end addService-->
 
 <!--start footer-->
 <footer>
@@ -427,47 +369,6 @@
 <script src="js/owl.carousel.min.js"></script>
 <script src="js/script.js"></script>
 
-
-<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
-<script>
-    var ctx = document.getElementById('myChart').getContext('2d');
-    var gradient = ctx.createLinearGradient(0, 0, 0, 400);
-    gradient.addColorStop(0, 'rgba(86,196,41,0.7)');
-    gradient.addColorStop(1, 'rgba(86,196,41,0)');
-
-    var chart = new Chart(ctx, {
-        // The type of chart we want to create
-        type: 'line',
-
-        // The data for our dataset
-        data: {
-            labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul' , 'Aug' , 'Sep', 'Oct' , 'Nov' , 'Dec'],
-            datasets: [{
-                label: 'المبيعات',
-                backgroundColor: gradient,
-                borderColor: 'rgb(86, 196, 41)',
-                data: [140, 250, 180, 200, 330, 350, 300, 350, 400, 350, 410, 460],
-            }]
-        },
-
-        // Configuration options go here
-        options: {
-            legend: {
-                display: false,
-            },
-            scales: {
-                yAxes: [{
-                    ticks: {
-                        // Include a dollar sign in the ticks
-                        callback: function(value, index, values) {
-                            return 'SR ' + value;
-                        }
-                    }
-                }]
-            }
-        }
-    });
-</script>
 
 </body>
 </html>

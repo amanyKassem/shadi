@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="84ecf738-5bf0-4e52-a2ff-559136de2256" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/chat.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/notifications.html" afterDir="false" />
@@ -17,6 +18,9 @@
       <change beforePath="$PROJECT_DIR$/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/script.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+=======
+    <list default="true" id="84ecf738-5bf0-4e52-a2ff-559136de2256" name="Default Changelist" comment="" />
+>>>>>>> ef7bf7b586afe5c201e31c8c3925cc75ba746f25
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -228,6 +232,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
+<<<<<<< HEAD
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -244,6 +249,19 @@
   <component name="SvnConfiguration">
     <configuration />
   </component>
+=======
+  <component name="RunManager">
+    <configuration name="completeAcc.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/shadi/completeAcc.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.completeAcc.html" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+>>>>>>> ef7bf7b586afe5c201e31c8c3925cc75ba746f25
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="84ecf738-5bf0-4e52-a2ff-559136de2256" name="Default Changelist" comment="" />
@@ -253,9 +271,14 @@
       <updated>1616066142592</updated>
       <workItem from="1616066143801" duration="8028000" />
       <workItem from="1616310619522" duration="24641000" />
+<<<<<<< HEAD
       <workItem from="1616412928008" duration="43203000" />
       <workItem from="1616668133104" duration="6433000" />
       <workItem from="1616915485031" duration="28053000" />
+=======
+      <workItem from="1616412928008" duration="49844000" />
+      <workItem from="1616915494230" duration="37883000" />
+>>>>>>> ef7bf7b586afe5c201e31c8c3925cc75ba746f25
     </task>
     <servers />
   </component>

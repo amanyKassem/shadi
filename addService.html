@@ -24,9 +24,10 @@
     <link rel="stylesheet" href="css/bootstrap-select.min.css">
     <link rel="stylesheet" type="text/css" href="css/datatables.min.css"/>
     <link rel="stylesheet" type="text/css" href="css/jquery.dataTables.min.css"/>
-    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/bootstrap-select.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/hover.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
     <link href="css/icomoon.css" rel="stylesheet"/>
     <link rel="stylesheet" href="css/ar.css">
 
@@ -89,7 +90,7 @@
                     <li>
                         <a href="providerHome.html">الرئيسية</a>
                     </li>
-                    <li class="active">
+                    <li>
                         <a href="providerOrders.html">الطلبات</a>
                     </li>
                     <li>
@@ -105,7 +106,7 @@
                             </ul>
                         </div>
                     </li>
-                    <li>
+                    <li class="active">
                         <a href="services.html">الخدمات المقدمة</a>
                     </li>
                     <li>
@@ -194,252 +195,131 @@
 
 <!--end header-->
 
-<!--start orderDetailsContainer-->
-<div class="orderDetailsContainer bgLightGray">
+<!--start addService-->
+<div class="bgLightGray addService">
     <div class="container">
 
-        <a href="providerOrders.html" class="bgWight orderInfo">
-            طلب معلق < <span>#123435345</span>
-        </a>
+        <div class="mainTitles">
 
-        <a href="providerOrders.html" class="bgWight orderInfo">
-            طلب قيد التنفيذ < <span>#123435345</span>
-        </a>
+            <a class="active">
+                <span class="icon-information_provider_service icons"></span>
+                <h5>نظرة عامة</h5>
+            </a>
+            <i class="fas fa-chevron-left"></i>
 
-        <a href="providerOrders.html" class="bgWight orderInfo">
-            طلب ملغي < <span>#123435345</span>
-        </a>
+            <a>
+                <span class="icon-price_tag icons"></span>
+                <h5>خطط الاسعار</h5>
+            </a>
+            <i class="fas fa-chevron-left"></i>
 
-        <a href="providerOrders.html" class="bgWight orderInfo">
-            طلب منتهي < <span>#123435345</span>
-        </a>
+            <a>
+                <span class="icon-computer_provider icons"></span>
+                <h5>الوصف والشروط</h5>
+            </a>
+            <i class="fas fa-chevron-left"></i>
 
-        <div class="alert alert-success alert-dismissible fade show" role="alert">
-            <span class="icon-hourglass alertIcon"></span>
-            في انتظار الموافقة علي الطلب
-            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                <span class="icon-cancel_black"></span>
-            </button>
-        </div>
+            <a>
+                <span class="icon-document_provider icons"></span>
+                <h5>متطلبات التقديم</h5>
+            </a>
+            <i class="fas fa-chevron-left"></i>
 
-        <div class="alert alert-success alert-dismissible fade show" role="alert">
-            <span class="icon-victory_black alertIcon"></span>
-            طلبك بدء !
-            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                <span class="icon-cancel_black"></span>
-            </button>
-        </div>
+            <a>
+                <span class="icon-image_provider icons"></span>
+                <h5>الصور</h5>
+            </a>
+            <i class="fas fa-chevron-left"></i>
 
-        <div class="alert alert-success alert-dismissible fade show" role="alert">
-            <span class="icon-finsh_icon_order alertIcon"></span>
-            يمكنك الطلب من جديد !
-            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                <span class="icon-cancel_black"></span>
-            </button>
-        </div>
+            <a>
+                <span class="icon-cloud_provider icons"></span>
+                <h5>نشر</h5>
+            </a>
+            <i class="fas fa-chevron-left"></i>
 
-        <div class="detailsCont">
-            <div class="rightCont">
-
-                <div class="details bgWight">
-                    <img src="img/order.png" class="orderImg img-fluid" alt="order image">
-                    <div class="leftInfo">
-                        <div class="idInfo">
-                            <span class="id">#123435345</span>
-                            <div class="quantity">
-                                الكميه (4)
-                                <span>120 ريال</span>
-                            </div>
-                        </div>
-                        <div class="user">
-                            <img src="img/user.png" alt="user">
-                            Awamer Alshabaka
-                        </div>
-                        <div class="processTime">
-                            <div class="date">
-                                <ul class="timeline">
-                                    <li class="active">4 يناير 2021</li>
-                                    <li class="cancelled">
-                                        <span class="icon-cancel"></span>
-                                        5 يناير 2021</li>
-                                </ul>
-                            </div>
-                            <div class="time">
-                                <span>وقت الانجاز</span>
-                                <span>2 يوم</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div id="clockdiv">
-                    <div class="count">
-                        <span class="days"></span>
-                        <div class="smalltext">يوم</div>
-                    </div>
-                    <span class="colMark">|</span>
-                    <div class="count">
-                        <span class="hours"></span>
-                        <div class="smalltext">ساعة</div>
-                    </div>
-                    <span class="colMark">|</span>
-                    <div class="count">
-                        <span class="minutes"></span>
-                        <div class="smalltext">دقيقة</div>
-                    </div>
-                    <span class="colMark">|</span>
-                    <div class="count">
-                        <span class="seconds"></span>
-                        <div class="smalltext">ثانية</div>
-                    </div>
-                </div>
-
-                <div class="packageCont bgWight">
-                    <h4 class="title">باقة اساسية - للشركات الناشئة</h4>
-                    <p class="desc">وصف للباقة وصف للباقة وصف للباقة</p>
-                    <div class="options">
-                        <div class="option">
-                            <span class="icon-check_rules"></span>
-                            3 ايام التسليم
-                        </div>
-                        <div class="option">
-                            <span class="icon-check_rules"></span>
-                            المفاهيم الاولية الدرجة
-                        </div>
-                        <div class="option">
-                            <span class="icon-check_rules"></span>
-                            مراجعات غير محدودة
-                        </div>
-                        <div class="option">
-                            <span class="icon-check_rules"></span>
-                            الشفافية شعار
-                        </div>
-                        <div class="option">
-                            <span class="icon-check_rules"></span>
-                            تضمين ملف المصدر
-                        </div>
-                        <div class="option">
-                            <span class="icon-check_rules"></span>
-                            ملف متجه
-                        </div>
-                        <div class="option">
-                            <span class="icon-check_rules"></span>
-                            ملف عالي الجودة
-                        </div>
-                    </div>
-                </div>
-
-                <div class="filesCont bgWight">
-                    <h4 class="title">الملفات اللازمة لطلبك</h4>
-                    <div class="files">
-                        <div class="file">
-                            <img src="img/attachment_pic.png" alt="file">
-                            <div class="info">
-                                <h5 class="name">new folder.zip</h5>
-                                <span class="size">1.1 k.b</span>
-                            </div>
-                        </div>
-                        <div class="file">
-                            <img src="img/attachment_pic.png" alt="file">
-                            <div class="info">
-                                <h5 class="name">new folder.zip</h5>
-                                <span class="size">1.1 k.b</span>
-                            </div>
-                        </div>
-                        <div class="file">
-                            <img src="img/attachment_pic.png" alt="file">
-                            <div class="info">
-                                <h5 class="name">new folder.zip</h5>
-                                <span class="size">1.1 k.b</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="btnCont">
-                    <a href="providerOrders.html" class="btnDefault hvr-pulse">موافقة</a>
-                    <a href="providerOrders.html" class="btnDefault redBtn hvr-pulse">رفض</a>
-                </div>
-
-                <div class="btnCont">
-                    <a href="providerOrders.html" class="btnDefault hvr-pulse">تحديث</a>
-                </div>
-
-                <div class="btnCont">
-                    <a href="providerOrders.html" class="btnDefault redBtn hvr-pulse">مسح</a>
-                </div>
-
-                <div class="btnCont">
-                    <a data-toggle="modal" data-target="#payInfo" class="btnDefault hvr-pulse">انهاء</a>
-                </div>
-
-                <!-- Modal -->
-                <div class="modal fade" id="payInfo" tabindex="-1" role="dialog" aria-labelledby="payInfoTitle" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered" role="document">
-                        <div class="modal-content">
-                            <div class="modal-body">
-                                <img class="vector" src="img/vector_payment.png" alt="vector payment">
-                                <p class="desc">تم تحويل المبلغ علي حسابك بنجاح وخصم العمولة</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="leftCont">
-                <div class="paymentDetails bgWight">
-                    <h4 class="title">التكلفة</h4>
-
-                    <div class="payBlock">
-                        <div class="sideTitle">
-                            تكلفة الخدمة
-                        </div>
-                        <div class="price">18 ريال</div>
-                    </div>
-
-                    <div class="payBlock">
-                        <div class="sideTitle">
-                            سعر الضريبة
-                        </div>
-                        <div class="price">18 ريال</div>
-                    </div>
-
-                    <div class="payBlock">
-                        <div class="sideTitle">
-                            كود الخصم
-                        </div>
-                        <div class="price">2v3i</div>
-                    </div>
-
-                    <hr class="customHr">
-
-                    <div class="payBlock">
-                        <div class="sideTitle">
-                           الاجمالي
-                        </div>
-                        <div class="prices">
-                            <div class="price oldPrice">18 ريال</div>
-                            <div class="price">18 ريال</div>
-                        </div>
-                    </div>
-
-                    <hr class="customHr">
-
-                    <div class="payBlock">
-                        <div class="sideTitle">
-                            طريقة الدفع
-                        </div>
-                        <img src="img/card.png" alt="">
-                    </div>
-
-                </div>
-            </div>
         </div>
 
     </div>
 </div>
-<!--end orderDetailsContainer-->
+<div class="addService">
+    <div class="container">
+        <div class="dataForm">
+
+            <form class="rightDiv">
+
+                <div class="requiredInfo">
+                    <div class="titleInfo">
+                        <h4>عنوان الخدمة</h4>
+                        <h5>يجب عليك كتابة عنوان يوصف خدمتك</h5>
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control textareaCount" placeholder="تفاصيل العنوان" maxlength="80" ></textarea>
+                        <div class="count">
+                            <span id="current">0</span>
+                            <span id="maximum">/ 80</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="requiredInfo">
+                    <div class="titleInfo">
+                        <h4>الاقسام</h4>
+                        <h5>يجب اختيار القسم لنسهيل البحث عن خدمتك</h5>
+                    </div>
+
+                    <div class="categories">
+                        <select class="selectpicker" id="catName" title="اسم القسم">
+                            <option>جرافيك وديزاين</option>
+                            <option>تصوير</option>
+                        </select>
+                        <select class="selectpicker" id="branchCat" title="القسم الفرعي">
+                            <option>جرافيك وديزاين</option>
+                            <option>تصوير</option>
+                        </select>
+                    </div>
+
+                </div>
+
+                <div class="requiredInfo">
+                    <div class="titleInfo">
+                        <h4>تصنيفات البحث</h4>
+                        <h5>يجب اختيار تصنيف لتظهر الخدمة في علامات البحث</h5>
+                    </div>
+
+                    <div class="flex-grow-1">
+                        <input class="form-control" type="text" id="tagsInput">
+
+                        <div class="hint"><img src="img/mark_info_provider.png" alt="info"> <span>من فضلك</span> بعض الخدمات تتطلب التأكد من الاقسام</div>
+
+                        <hr class="customHr">
+                    </div>
+                </div>
+
+                <div class="btnCont">
+                    <a href="serviceSaved.html" class="btnDefault hvr-pulse">حفظ واستمرار</a>
+                    <a href="services.html" class="btnDefault grayBtn hvr-pulse">الغاء</a>
+                </div>
+
+
+            </form>
+
+            <div class="leftDiv">
+                <img src="img/idea_provider.png" class="idea" alt="idea">
+                <iframe src="https://player.vimeo.com/video/60814695?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+                <ul class="info">
+                    <li>تعليمات لرفع اول خدمة</li>
+                    <li>تعليمات لرفع اول خدمة</li>
+                    <li>تعليمات لرفع اول خدمة</li>
+                    <li>تعليمات لرفع اول خدمة</li>
+                    <li>تعليمات لرفع اول خدمة</li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</div>
+<div class="bgLightGray p-2"></div>
+<!--end addService-->
 
 <!--start footer-->
 <footer>
@@ -550,54 +430,220 @@
 <script src="js/jquery-3.3.1.min.js"></script>
 <script src="js/popper.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap-select.min.js"></script>
 <script src="js/owl.carousel.min.js"></script>
 <script src="js/script.js"></script>
 
-<!--count down-->
+<!--start select-->
 <script>
-    function getTimeRemaining(endtime) {
-        var t = Date.parse(endtime) - Date.parse(new Date());
-        var seconds = Math.floor((t / 1000) % 60);
-        var minutes = Math.floor((t / 1000 / 60) % 60);
-        var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
-        var days = Math.floor(t / (1000 * 60 * 60 * 24));
-        return {
-            'total': t,
-            'days': days,
-            'hours': hours,
-            'minutes': minutes,
-            'seconds': seconds
-        };
+    $('.selectpicker').selectpicker();
+</script>
+<!--end select-->
+
+<!--start textarea count-->
+<script>
+    $('.textareaCount').keyup(function() {
+
+    var characterCount = $(this).val().length,
+    current = $('#current'),
+    maximum = $('#maximum'),
+    theCount = $('#the-count');
+
+    current.text(characterCount);
+
+    if (characterCount >= 80) {
+        maximum.css('color', '#8f0001');
+        current.css('color', '#8f0001');
+    } else {
+        maximum.css('color','#3A3A3A');
+        current.css('color','#3A3A3A');
     }
 
-    function initializeClock(id, endtime) {
-        var clock = document.getElementById(id);
-        var daysSpan = clock.querySelector('.days');
-        var hoursSpan = clock.querySelector('.hours');
-        var minutesSpan = clock.querySelector('.minutes');
-        var secondsSpan = clock.querySelector('.seconds');
 
-        function updateClock() {
-            var t = getTimeRemaining(endtime);
+    });
+</script>
+<!--end textarea count-->
 
-            daysSpan.innerHTML = t.days;
-            hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
-            minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
-            secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
+<!--start tags-->
 
-            if (t.total <= 0) {
-                clearInterval(timeinterval);
-            }
+<script>
+    (function(){
+
+        "use strict"
+
+
+        // Plugin Constructor
+        var TagsInput = function(opts){
+            this.options = Object.assign(TagsInput.defaults , opts);
+            this.init();
         }
 
-        updateClock();
-        var timeinterval = setInterval(updateClock, 1000);
-    }
+        // Initialize the plugin
+        TagsInput.prototype.init = function(opts){
+            this.options = opts ? Object.assign(this.options, opts) : this.options;
 
-    var deadline = new Date(Date.parse(new Date()) + 15 * 24 * 60 * 60 * 1000);
-    initializeClock('clockdiv', deadline);
+            if(this.initialized)
+                this.destroy();
+
+            if(!(this.orignal_input = document.getElementById(this.options.selector)) ){
+                console.error("tags-input couldn't find an element with the specified ID");
+                return this;
+            }
+
+            this.arr = [];
+            this.wrapper = document.createElement('div');
+            this.input = document.createElement('input');
+            init(this);
+            initEvents(this);
+
+            this.initialized =  true;
+            return this;
+        }
+
+        // Add Tags
+        TagsInput.prototype.addTag = function(string){
+
+            if(this.anyErrors(string))
+                return ;
+
+            this.arr.push(string);
+            var tagInput = this;
+
+            var tag = document.createElement('span');
+            tag.className = this.options.tagClass;
+            tag.innerText = string;
+
+            var closeIcon = document.createElement('a');
+            closeIcon.innerHTML = '&times;';
+
+            // delete the tag when icon is clicked
+            closeIcon.addEventListener('click' , function(e){
+                e.preventDefault();
+                var tag = this.parentNode;
+
+                for(var i =0 ;i < tagInput.wrapper.childNodes.length ; i++){
+                    if(tagInput.wrapper.childNodes[i] == tag)
+                        tagInput.deleteTag(tag , i);
+                }
+            })
+
+
+            tag.appendChild(closeIcon);
+            this.wrapper.insertBefore(tag , this.input);
+            this.orignal_input.value = this.arr.join(',');
+
+            return this;
+        }
+
+        // Delete Tags
+        TagsInput.prototype.deleteTag = function(tag , i){
+            tag.remove();
+            this.arr.splice( i , 1);
+            this.orignal_input.value =  this.arr.join(',');
+            return this;
+        }
+
+        // Make sure input string have no error with the plugin
+        TagsInput.prototype.anyErrors = function(string){
+            if( this.options.max != null && this.arr.length >= this.options.max ){
+                console.log('max tags limit reached');
+                return true;
+            }
+
+            if(!this.options.duplicate && this.arr.indexOf(string) != -1 ){
+                console.log('duplicate found " '+string+' " ')
+                return true;
+            }
+
+            return false;
+        }
+
+        // Add tags programmatically
+        TagsInput.prototype.addData = function(array){
+            var plugin = this;
+
+            array.forEach(function(string){
+                plugin.addTag(string);
+            })
+            return this;
+        }
+
+        // Get the Input String
+        TagsInput.prototype.getInputString = function(){
+            return this.arr.join(',');
+        }
+
+
+        // destroy the plugin
+        TagsInput.prototype.destroy = function(){
+            this.orignal_input.removeAttribute('hidden');
+
+            delete this.orignal_input;
+            var self = this;
+
+            Object.keys(this).forEach(function(key){
+                if(self[key] instanceof HTMLElement)
+                    self[key].remove();
+
+                if(key != 'options')
+                    delete self[key];
+            });
+
+            this.initialized = false;
+        }
+
+        // Private function to initialize the tag input plugin
+        function init(tags){
+            tags.wrapper.append(tags.input);
+            tags.wrapper.classList.add(tags.options.wrapperClass);
+            tags.orignal_input.setAttribute('hidden' , 'true');
+            tags.orignal_input.parentNode.insertBefore(tags.wrapper , tags.orignal_input);
+        }
+
+        // initialize the Events
+        function initEvents(tags){
+            tags.wrapper.addEventListener('click' ,function(){
+                tags.input.focus();
+            });
+
+
+            tags.input.addEventListener('keydown' , function(e){
+                var str = tags.input.value.trim();
+
+                if( !!(~[9 , 13 , 188].indexOf( e.keyCode ))  )
+                {
+                    e.preventDefault();
+                    tags.input.value = "";
+                    if(str != "")
+                        tags.addTag(str);
+                }
+
+            });
+        }
+
+
+        // Set All the Default Values
+        TagsInput.defaults = {
+            selector : '',
+            wrapperClass : 'tags-input-wrapper',
+            tagClass : 'tag',
+            max : null,
+            duplicate: false
+        }
+
+        window.TagsInput = TagsInput;
+
+    })();
+
+    var tagInput1 = new TagsInput({
+        selector: 'tagsInput',
+        duplicate : false,
+        // max : 10
+    });
+    tagInput1.addData(['PHP' , 'JavaScript' , 'CSS'])
+
 </script>
-
+<!--end tags-->
 
 </body>
 </html>

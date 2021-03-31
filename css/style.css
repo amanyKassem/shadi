@@ -146,6 +146,7 @@ button{
 .bootstrap-select .dropdown-menu li a {
     display: flex;
     justify-content: flex-start;
+    font-size: 14px;
 }
 
 .bootstrap-select .dropdown-toggle:focus, .bootstrap-select>select.mobile-device:focus+.dropdown-toggle {
@@ -190,6 +191,7 @@ select{
     color: #afafaf;
     transform: translateY(-50%);
 }
+
 .form-group .form-control {
     position: relative;
     z-index: 1;
@@ -1190,6 +1192,53 @@ p{
 
 /* Style ChickBox */
 
+.modal-dialog .modal-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 400px;
+    padding: 50px 10px;
+}
+.modal-dialog .modal-body .vector {
+    width: 200px;
+    margin-bottom: 15px;
+}
+.modal-dialog .modal-body .desc {
+    font-size: 15px;
+    color: #818181;
+    max-width: 250px;
+    text-align: center;
+    line-height: 1.8;
+}
+.modal-body form{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 20px;
+}
+.modal-body form .form-group .form-control , .addService .dataForm .rightDiv .requiredInfo .form-group .form-control{
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 45px;
+    outline: none;
+    color: #818181;
+    font-size: 14px;
+    background: #f8f8f8;
+    border: 1px solid #eaeaea;
+    border-radius: 5px;
+}
+
+.modal-body form .form-group {
+    margin-bottom: 15px;
+}
+.modal-body .btnDefault {
+    margin-top: 25px;
+}
+    /* Style ChickBox */
+>>>>>>> ef7bf7b586afe5c201e31c8c3925cc75ba746f25
 .custom-checkbox {
     padding-right: 1.5rem;
     padding-left: 0;
@@ -1276,6 +1325,12 @@ p{
     background: #66c42b;
 }
 
+
+.custom-control-input:checked~.custom-control-label::before {
+    color: #fff;
+    border-color: #56C429;
+    background-color: #56C429;
+}
 
 
 /* start Loading */
@@ -1682,7 +1737,7 @@ p{
     align-items: center;
     margin: 15px 0 20px;
 }
-.register .btnGray , .register .btnDefault {
+.register .btnGray , .register .btnDefault  {
     padding: 10px 35px;
     border-radius: 10px;
     display: block;
@@ -2009,13 +2064,13 @@ header .toggle .fa {
 .statistics {
     padding: 30px 0;
 }
-.statistics .ordersInfo{
+.statistics .ordersInfo , .earnings .earningsInfo{
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
 }
-.statistics .ordersInfo .orderStatistic{
+.statistics .ordersInfo .orderStatistic , .earnings .earningsInfo .orderStatistic{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -2027,25 +2082,25 @@ header .toggle .fa {
     border-radius: 5px;
     margin-bottom: 20px;
 }
-.statistics .ordersInfo .orderStatistic .chartLine{
+.statistics .ordersInfo .orderStatistic .chartLine , .earnings .earningsInfo .orderStatistic .chartLine{
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
     width: 100%;
 }
-.statistics .ordersInfo .orderStatistic > div span{
+.statistics .ordersInfo .orderStatistic > div span , .earnings .earningsInfo .orderStatistic > div span{
     color: #818181;
     display: block;
     font-size: 14px;
     font-weight: bold;
 }
-.statistics .ordersInfo .orderStatistic > div span:first-child{
+.statistics .ordersInfo .orderStatistic > div span:first-child , .earnings .earningsInfo .orderStatistic > div span:first-child{
     font-size: 25px;
-    margin-bottom: 5px;
+    margin-bottom: 7px;
     font-weight: normal;
 }
-.statistics .ordersInfo .orderStatistic .dashIcon{
+.statistics .ordersInfo .orderStatistic .dashIcon , .earnings .earningsInfo .orderStatistic .dashIcon{
     background:#56C429 ;
     width: 50px;
     height: 50px;
@@ -2061,7 +2116,7 @@ header .toggle .fa {
     -webkit-transition: all 0.4s ease-in-out;
 }
 
-.statistics .ordersInfo .orderStatistic:hover .dashIcon {
+.statistics .ordersInfo .orderStatistic:hover .dashIcon , .earnings .earningsInfo .orderStatistic:hover .dashIcon {
     transform: rotate(360deg);
 }
 
@@ -2191,6 +2246,9 @@ div.dataTables_wrapper .dataTables_scrollBody table tbody tr td {
 div.dataTables_wrapper .dataTables_scrollBody table tbody tr td.price {
     color: #56C429;
 }
+div.dataTables_wrapper .dataTables_scrollBody table tbody tr td.rate {
+    color: #f7c133;
+}
 div.dataTables_wrapper .dataTables_scrollBody table tbody tr td a {
     justify-content: center;
     color: #3A3A3A;
@@ -2198,6 +2256,11 @@ div.dataTables_wrapper .dataTables_scrollBody table tbody tr td a {
 div.dataTables_wrapper .dataTables_scrollBody table tbody tr td a:hover {
     color: #56C429;
 }
+div.dataTables_wrapper .dataTables_scrollBody table tbody tr td img {
+    width: 100px;
+    height: 60px;
+}
+
 div.dataTables_wrapper .dataTables_scrollBody table tbody tr td a img {
     width: 50px;
     height: 50px;
@@ -2241,6 +2304,9 @@ table.dataTable.hover tbody tr:hover, table.dataTable.display tbody tr:hover{
 .orderDetailsContainer .orderInfo {
     padding: 15px 20px;
     color: #818181;
+    margin-bottom: 20px;
+    width: 100%;
+    display: flex;
 }
 .orderDetailsContainer .orderInfo span{
     color: #3A3A3A;
@@ -2249,17 +2315,17 @@ table.dataTable.hover tbody tr:hover, table.dataTable.display tbody tr:hover{
 .orderDetailsContainer .alert-success {
     background-color: #e7f1e2;
     border-color: #e7f1e2;
-    height: 60px;
+    min-height: 60px;
     display: flex;
     align-items: center;
-    margin: 20px 0;
+    margin: 0 0 20px;
     color: #56C429;
     padding-right: 20px;
     font-size: 15px;
 }
 
-.orderDetailsContainer .alert-success span.icon-hourglass {
-    font-size: 30px;
+.orderDetailsContainer .alert-success span.alertIcon {
+    font-size: 25px;
     margin-left: 15px;
 }
 
@@ -2285,7 +2351,8 @@ table.dataTable.hover tbody tr:hover, table.dataTable.display tbody tr:hover{
 }
 .orderDetailsContainer .detailsCont .rightCont .details ,
 .orderDetailsContainer .detailsCont .rightCont .packageCont ,
-.orderDetailsContainer .detailsCont .rightCont .filesCont{
+.orderDetailsContainer .detailsCont .rightCont .filesCont,
+.orderDetailsContainer .detailsCont .leftCont .paymentDetails{
     padding: 20px;
     display: flex;
     flex-wrap: wrap;
@@ -2378,6 +2445,29 @@ table.dataTable.hover tbody tr:hover, table.dataTable.display tbody tr:hover{
     top: 50%;
     transform: translateY(-50%);
 }
+.orderDetailsContainer .detailsCont .rightCont .details .processTime ul.timeline > li.cancelled:before {
+    background: #e93f33;
+    border: 1px solid #e93f33;
+}
+.orderDetailsContainer .detailsCont .rightCont .details .processTime ul.timeline > li.cancelled .icon-cancel {
+    position: absolute;
+    right: -2px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 6px;
+}
+.orderDetailsContainer .detailsCont .rightCont .details .processTime ul.timeline > li.active:after {
+    content: ' ';
+    background: #56C429;
+    position: absolute;
+    border-radius: 50%;
+    right: -5px;
+    width: 11px;
+    height: 11px;
+    top: 50%;
+    transform: translateY(-50%);
+}
 .orderDetailsContainer .detailsCont .rightCont .details .processTime .time{
     display: flex;
     justify-content: space-between;
@@ -2393,12 +2483,15 @@ table.dataTable.hover tbody tr:hover, table.dataTable.display tbody tr:hover{
     color: #56C429;
 }
 .orderDetailsContainer .detailsCont .rightCont .packageCont ,
-.orderDetailsContainer .detailsCont .rightCont .filesCont{
+.orderDetailsContainer .detailsCont .rightCont .filesCont,
+.orderDetailsContainer .detailsCont .leftCont .paymentDetails{
     margin-top: 20px;
     flex-direction: column;
     align-items: flex-start;
 }
-.orderDetailsContainer .detailsCont .rightCont .packageCont .title , .orderDetailsContainer .detailsCont .rightCont .filesCont .title {
+.orderDetailsContainer .detailsCont .rightCont .packageCont .title ,
+.orderDetailsContainer .detailsCont .rightCont .filesCont .title,
+.orderDetailsContainer .detailsCont .leftCont .paymentDetails .title{
     color: #1C3624;
     font-size: 16px;
     margin: 0;
@@ -2432,36 +2525,86 @@ table.dataTable.hover tbody tr:hover, table.dataTable.display tbody tr:hover{
     margin-left: 10px;
 }
 
-.orderDetailsContainer .detailsCont .rightCont .filesCont{
-
-}
-.orderDetailsContainer .detailsCont .rightCont .filesCont .title{
+.orderDetailsContainer .detailsCont .rightCont .filesCont .title , .orderDetailsContainer .detailsCont .leftCont .paymentDetails .title{
     color: #3A3A3A;
+    margin-bottom: 30px;
 }
 .orderDetailsContainer .detailsCont .rightCont .filesCont .files{
-
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 }
 .orderDetailsContainer .detailsCont .rightCont .filesCont .files .file{
-
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #bababa;
+    padding-bottom: 20px;
+}
+.orderDetailsContainer .detailsCont .rightCont .filesCont .files .file:last-child{
+    border: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
 .orderDetailsContainer .detailsCont .rightCont .filesCont .files .file img{
-
+    width: 35px;
+}
+.orderDetailsContainer .detailsCont .rightCont .filesCont .files .file .info{
+    margin-right: 20px;
 }
 .orderDetailsContainer .detailsCont .rightCont .filesCont .files .file .name{
-
+    color: #3A3A3A;
+    margin: 0 0 5px;
+    font-size: 15px;
+    font-weight: bold;
 }
 .orderDetailsContainer .detailsCont .rightCont .filesCont .files .file .size{
-
+    color: #818181;
+    font-size: 14px;
+    font-weight: bold;
+}
+.orderDetailsContainer .detailsCont .rightCont .btnCont , .addService .dataForm .rightDiv .btnCont{
+    margin: 40px 0 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.orderDetailsContainer .detailsCont .rightCont .btnDefault  , .addService .dataForm .rightDiv .btnDefault {
+    min-width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    border-radius: 10px;
+}
+.orderDetailsContainer .detailsCont .rightCont .btnDefault.redBtn{
+    margin-right: 20px;
+    background: #e93f33 !important;
+    border-color: #e93f33 !important;
 }
 
-
-.orderDetailsContainer .detailsCont .leftCont{
-    padding: 20px;
-    width: 25%;
+.addService .dataForm .rightDiv .btnDefault.grayBtn{
+    margin-right: 20px;
+    color: #3b5342 !important;
+    background: #f1f1f1 !important;
+    border-color: #f1f1f1 !important;
+}
+.addService .dataForm .savedImg{
+    width: 240px;
 }
 
-/*end orderDetailsContainer*/
+.addService .dataForm .success{
+    color: #0b2e13;
+    font-size: 19px;
+    margin-top: 30px;
+}
 
+.addService .dataForm .success span{
+    color: #56C429;
+}
 
 
 /* start footer*/
@@ -2527,6 +2670,442 @@ footer .lightLamp{
         transform: rotateZ(-10deg); }
 }
 
+.orderDetailsContainer .detailsCont .leftCont{
+    width: 25%;
+}
+.orderDetailsContainer .detailsCont .leftCont .paymentDetails{
+    margin-top: 0;
+}
+.orderDetailsContainer .detailsCont .leftCont .paymentDetails .title{
+    margin-bottom: 15px;
+}
+.orderDetailsContainer .detailsCont .leftCont .paymentDetails .payBlock{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 5px;
+}
+.orderDetailsContainer .detailsCont .leftCont .paymentDetails .payBlock .sideTitle{
+    color: #3A3A3A;
+}
+.orderDetailsContainer .detailsCont .leftCont .paymentDetails .payBlock .prices{
+    display: flex;
+    align-items: center;
+}
+.orderDetailsContainer .detailsCont .leftCont .paymentDetails .payBlock .price{
+    color: #56C429;
+}
+.orderDetailsContainer .detailsCont .leftCont .paymentDetails .payBlock .price.oldPrice{
+    color: #818181;
+    text-decoration: line-through;
+    margin-left: 7px;
+}
+
+.orderDetailsContainer .detailsCont .leftCont .paymentDetails .payBlock img{
+    width: 22px;
+}
+
+.orderDetailsContainer .detailsCont .leftCont .paymentDetails .customHr{
+    margin: 15px 0;
+}
+
+#clockdiv {
+    display: flex;
+    align-items: center;
+    margin: 70px 0;
+    justify-content: center;
+}
+#clockdiv .count {
+    display: inline-block;
+    text-align: center;
+}
+#clockdiv .count .smalltext {
+    font-size: 20px;
+    font-weight: bold;
+    color: #818181;
+    text-transform: capitalize;
+    margin-top: 5px;
+}
+#clockdiv .count span {
+    display: block;
+    color: #274730;
+    font-size: 50px;
+    margin-bottom: 40px;
+}
+#clockdiv .colMark {
+    margin: 0 35px;
+    font-size: 30px;
+    color: #ddd;
+}
+
+/*end orderDetailsContainer*/
+
+/*start analytics*/
+.analytics{
+    padding: 50px 0;
+}
+.analytics .ordersInfo {
+    padding: 30px;
+    background: #fff;
+}
+.analytics .filterCont{
+    display: flex;
+    justify-content: flex-end;
+}
+.analytics .filterCont .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn){
+    color: #818181;
+    background: #fff;
+    width: auto;
+    margin-bottom: 30px;
+}
+.analytics .filterCont .bootstrap-select>.dropdown-toggle {
+    border: 1px solid #cecccc;
+    font-size: 14px;
+    width: 250px;
+}
+/*end analytics*/
+
+/*start earnings*/
+
+.earnings .earningsInfo {
+    margin-bottom: 10px;
+}
+.earnings .earningsInfo .orderStatistic .dashIcon{
+    font-size: 25px;
+}
+.earnings .bankAccCont {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background: #fff;
+    margin-top: 20px;
+    padding: 20px 25px;
+    border-radius: 5px;
+}
+
+.earnings .bankAccCont p , .services .addServBlock span{
+   font-size: 14px;
+    color: #3A3A3A;
+}
+
+.earnings .bankAccCont .btnDefault , .modal-body .btnDefault, .services .addServBlock .btnDefault{
+    min-width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    border-radius: 10px;
+}
+
+
+/*end earnings*/
+
+/*start services*/
+
+.services .addEditCat{
+    font-size: 15px;
+    color: #56C429;
+}
+.services #owl-demo1{
+    margin-bottom: 25px;
+}
+.services #owl-demo1 .item {
+    max-width: 160px;
+    margin: 10px 0;
+}
+.services #owl-demo1 .item a{
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 15px 10px;
+    border: 1px solid transparent;
+    height: 115px;
+}
+.services #owl-demo1 .item a:hover{
+    border-color:#56C429;
+}
+.services #owl-demo1 .item a img{
+    height: 40px;
+    max-width: 50px;
+    margin-bottom: 5px;
+}
+.services #owl-demo1 .item a h4 {
+    font-size: 13px;
+    text-align: center;
+    color: #818181;
+    margin: 0;
+    line-height: 1.5;
+}
+.services #owl-demo1 .owl-nav {
+    display: block;
+}
+.services #owl-demo1 .owl-prev, .services #owl-demo1 .owl-next {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: #fff;
+    background-color: #56C429;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid transparent;
+    text-align: center;
+    margin: auto;
+    font-size: 15px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}
+
+.services #owl-demo1 .owl-prev:hover, .services #owl-demo1 .owl-next:hover {
+    background-color: #FFF;
+    color: #56C429;
+    border: 1px solid #56C429;
+}
+.services #owl-demo1 .owl-next {
+    right: -15px;
+    left:auto;
+}
+
+.services #owl-demo1 .owl-prev {
+    left: -15px;
+    right: auto;
+}
+.services .addServBlock{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+}
+.services .addServBlock span{
+    font-size: 15px;
+}
+/*end services*/
+
+/*start addService*/
+
+.addService{
+    padding: 50px 0;
+}
+
+.addService .mainTitles{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.addService .mainTitles a{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    color: #3A3A3A;
+}
+.addService .mainTitles i{
+    color: #3A3A3A;
+    margin-left: 20px;
+    font-size: 15px;
+}
+.addService .mainTitles a .icons{
+    width: 35px;
+    height: 35px;
+    background: #3A3A3A;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+}
+.addService .mainTitles a.active .icons{
+    background: #56C429;
+}
+.addService .mainTitles a h5{
+    font-size: 14px;
+    margin: 0 20px;
+}
+
+.addService .dataForm{
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+.addService .dataForm .rightDiv{
+    flex: 1;
+}
+
+.addService .dataForm .rightDiv .requiredInfo{
+    display: flex;
+    margin-bottom: 20px;
+}
+.addService .dataForm .rightDiv .requiredInfo .form-group{
+    flex: 1;
+    margin-bottom: 0;
+}
+.addService .dataForm .rightDiv .requiredInfo .form-group .count{
+    color: #3A3A3A;
+    margin-top: 5px;
+    text-align: left;
+}
+.addService .dataForm .rightDiv .requiredInfo .form-group .form-control{
+    border: 1px solid #eaeaea !important;
+    height: 120px;
+    min-height: unset;
+    overflow-y: auto;
+    padding: 15px 10px;
+}
+
+.addService .dataForm .rightDiv .requiredInfo .categories{
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.addService .dataForm .rightDiv .requiredInfo .categories .dropdown.bootstrap-select:first-child {
+    margin-left: 25px;
+}
+
+.addService .dataForm .rightDiv .requiredInfo .categories .bootstrap-select>.dropdown-toggle {
+    background: #f8f8f8;
+    border: 1px solid #eaeaea;
+    height: 50px;
+    color: #3A3A3A;
+    font-size: 14px;
+}
+
+
+.addService .dataForm .rightDiv .requiredInfo .titleInfo{
+    margin-left: 45px;
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+}
+
+.addService .dataForm .rightDiv .requiredInfo .titleInfo h4{
+    color: #3A3A3A;
+    font-size: 16px;
+}
+.addService .dataForm .rightDiv .requiredInfo .titleInfo h5{
+    line-height: 1.5;
+    color: #818181;
+    font-size: 14px;
+}
+
+.addService .dataForm .rightDiv .requiredInfo .tags-input-wrapper{
+    background: #f8f8f8;
+    padding: 20px 15px;
+    border-radius: 5px;
+    border: 1px solid #56C429;
+    min-height: 120px;
+    display: flex;
+    align-items: flex-start;
+    flex: 1;
+    flex-wrap: wrap;
+}
+.addService .dataForm .rightDiv .requiredInfo .tags-input-wrapper input{
+    border: none;
+    background: transparent;
+    outline: none;
+    width: 100%;
+}
+.addService .dataForm .rightDiv .requiredInfo .tags-input-wrapper .tag{
+    background-color: #ffffff;
+    color: #3a3a3a;
+    padding: 5px 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.addService .dataForm .rightDiv .requiredInfo .tags-input-wrapper .tag a {
+    color: #818181;
+    margin-right: 20px;
+    font-size: 20px;
+}
+
+.addService .dataForm .rightDiv .requiredInfo .hint {
+    color: #3A3A3A;
+    margin-top: 20px;
+}
+.addService .dataForm .rightDiv .requiredInfo .hint span{
+    color: #E6AE00;
+}
+
+.addService .dataForm .rightDiv .requiredInfo .hint img{
+    margin-left: 5px;
+    width: 20px;
+}
+
+.addService .dataForm .leftDiv{
+    width: 25%;
+    background: #defad2;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 15px;
+    margin: 20px 25px 0 0;
+    border-radius: 10px;
+}
+.addService .dataForm .leftDiv:before{
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-left: 15px solid #defad2;
+    border-bottom: 10px solid transparent;
+    right: -15px;
+    top: 35px;
+}
+.addService .dataForm .leftDiv .idea{
+    position: absolute;
+    top: -29px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30px;
+}
+.addService .dataForm .leftDiv .info{
+    color: #274730;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.addService .dataForm .leftDiv .info li{
+    position: relative;
+    padding-right: 20px;
+    margin-bottom: 5px;
+}
+.addService .dataForm .leftDiv .info li:before{
+    position: absolute;
+    content: '';
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #274730;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+/*end addService*/
+
+/* start footer*/
+footer .lightLamp{
+    width: 215px;
+}
 footer .footerInfo{
     display: flex;
     justify-content: space-between;
@@ -2669,7 +3248,9 @@ footer .footerInfo > div .apps img{
     .terms .termsContent .bgGray {
         padding: 15px 20px;
     }
-    .terms .termsContent .bgGray p , .custom-control-label , .terms .btnDefault , .register p , .statistics .chartTitle{
+    .terms .termsContent .bgGray p , .custom-control-label , .terms .btnDefault ,
+    .register p , .statistics .chartTitle , .orderDetailsContainer .detailsCont .rightCont .details .idInfo,
+    .orderDetailsContainer .detailsCont .rightCont .details .user{
         font-size: 14px;
     }
     .register .registerImg {
@@ -2775,7 +3356,6 @@ footer .footerInfo > div .apps img{
     }
 
     header .menu .menuLinks {
-        align-items: flex-start;
         margin: 15px 0 !important;
         align-items: flex-start;
         flex-direction: column;
@@ -2815,13 +3395,13 @@ footer .footerInfo > div .apps img{
 
 
 
-    .statistics .ordersInfo .orderStatistic {
+    .statistics .ordersInfo .orderStatistic , .earnings .earningsInfo  .orderStatistic {
         width: 48%;
         flex-direction: column;
         justify-content: center;
     }
 
-    .statistics .ordersInfo .orderStatistic > div {
+    .statistics .ordersInfo .orderStatistic > div  , .earnings .earningsInfo .orderStatistic > div {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -2829,15 +3409,15 @@ footer .footerInfo > div .apps img{
         margin-bottom: 5px;
     }
 
-    .statistics .ordersInfo .orderStatistic > div span:first-child {
+    .statistics .ordersInfo .orderStatistic > div span:first-child , .earnings .earningsInfo .orderStatistic > div span:first-child {
         font-size: 19px;
-        margin-bottom: 0;
+        margin-bottom: 5px;
     }
-    .statistics .ordersInfo .orderStatistic > div span {
+    .statistics .ordersInfo .orderStatistic > div span , .earnings .earningsInfo .orderStatistic > div span {
         font-size: 13px;
     }
 
-    .statistics .ordersInfo .orderStatistic .dashIcon {
+    .statistics .ordersInfo .orderStatistic .dashIcon , .earnings .earningsInfo .orderStatistic .dashIcon {
         width: 40px;
         height: 40px;
         font-size: 15px;
@@ -2914,7 +3494,185 @@ footer .footerInfo > div .apps img{
         border-color: #56C429;
         background-color: #56C429;
     }
+    .orderDetailsContainer .orderInfo {
+        font-size: 13px;
+    }
+    .orderDetailsContainer .alert-success {
+        font-size: 13px;
+        padding: 10px 10px 10px 35px;
+    }
+    .orderDetailsContainer .alert-success span.alertIcon {
+        font-size: 20px;
+    }
+    .orderDetailsContainer .detailsCont .rightCont {
+        margin-left: 0;
+        width: 100%;
+    }
+    .orderDetailsContainer .detailsCont .rightCont .details {
+        flex-direction: column;
+    }
+    .orderDetailsContainer .detailsCont .rightCont .details .orderImg {
+        width: 200px;
+        height: auto;
+        margin-bottom: 20px;
+    }
+    .orderDetailsContainer .detailsCont .rightCont .details .leftInfo {
+        margin-right: 0;
+    }
+    .orderDetailsContainer .detailsCont .rightCont .details .processTime .time {
+        margin: 20px auto 0;
+    }
+    #clockdiv {
+        margin: 40px 0;
+    }
+    #clockdiv .colMark {
+        margin: 0 15px;
+    }
+    #clockdiv .count span {
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+    #clockdiv .count .smalltext , .orderDetailsContainer .detailsCont .rightCont .filesCont .files .file .name{
+        font-size: 14px;
+    }
+    .orderDetailsContainer .detailsCont .rightCont .packageCont .title, .orderDetailsContainer .detailsCont .rightCont .filesCont .title, .orderDetailsContainer .detailsCont .leftCont .paymentDetails .title {
+        font-size: 15px;
+    }
+    .orderDetailsContainer .detailsCont .rightCont .packageCont .desc ,
+    .orderDetailsContainer .detailsCont .rightCont .packageCont .options ,
+    .orderDetailsContainer .detailsCont .rightCont .filesCont .files .file .size ,
+    .orderDetailsContainer .detailsCont .leftCont .paymentDetails .payBlock ,
+    .orderDetailsContainer .modal-dialog .modal-body .desc{
+        font-size: 13px;
+    }
+    .orderDetailsContainer .detailsCont .rightCont .packageCont .options {
+        width: 100%;
+    }
+    .orderDetailsContainer .detailsCont .rightCont .filesCont .files .file img {
+        width: 25px;
+    }
+    .orderDetailsContainer .detailsCont .rightCont .btnCont , .addService .dataForm .rightDiv .btnCont{
+        justify-content: center;
+    }
+    .orderDetailsContainer .detailsCont .rightCont .btnDefault.redBtn , .addService .dataForm .rightDiv .btnDefault.grayBtn {
+        margin: 20px 0;
+    }
+    .orderDetailsContainer .detailsCont .leftCont {
+        width: 100%;
+    }
+    .orderDetailsContainer .detailsCont .rightCont .btnDefault {
+        font-size: 13px;
+    }
 
+    .modal-dialog .modal-body {
+        min-height: auto;
+    }
+
+    .modal-dialog .modal-body .vector {
+        width: 140px;
+    }
+    .modal-body form {
+        width: 90%;
+        align-items: center;
+    }
+    .analytics .filterCont{
+        justify-content: center;
+    }
+
+    .analytics .filterCont .bootstrap-select>.dropdown-toggle {
+        font-size: 13px;
+        width: 220px;
+    }
+    div.dataTables_wrapper .dataTables_length input, div.dataTables_wrapper .dataTables_filter input {
+        margin-left: 0;
+        margin-right: 0;
+        width: 220px;
+    }
+    div.dataTables_wrapper .dataTables_scrollBody table tbody tr td img {
+        width: 60px;
+    }
+    .earnings .bankAccCont {
+        justify-content: center;
+    }
+    .earnings .bankAccCont p {
+        font-size: 13px;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    .btnDefault {
+        font-size: 13px;
+    }
+    .services #owl-demo1 .item {
+        max-width: 100%;
+        margin: 10px 0;
+    }
+    .services #owl-demo1 .owl-prev, .services #owl-demo1 .owl-next {
+        width: 35px;
+        height: 35px;
+    }
+    .services #owl-demo1 .owl-prev span, .services #owl-demo1 .owl-next span{
+        font-size: 10px;
+    }
+    .addService {
+        padding: 25px 0;
+    }
+    .addService .mainTitles a {
+        margin-bottom: 10px;
+        width: 90%;
+    }
+    .addService .mainTitles a .icons {
+        width: 30px;
+        height: 30px;
+        font-size: 12px;
+    }
+
+    .addService .mainTitles {
+        justify-content: center;
+    }
+    .addService .mainTitles i {
+        font-size: 13px;
+        margin: 0 0 10px 0;
+    }
+    .addService .mainTitles a h5 {
+        font-size: 13px;
+    }
+
+    .addService .dataForm {
+        flex-direction: column;
+    }
+
+    .addService .dataForm .leftDiv {
+        width: 100%;
+        margin: 0;
+    }
+
+    .addService .dataForm .rightDiv .requiredInfo {
+        flex-direction: column;
+    }
+    .addService .dataForm .rightDiv .requiredInfo .titleInfo {
+        margin-left: 0;
+        width: auto;
+    }
+    .addService .dataForm .rightDiv .requiredInfo .titleInfo h4 {
+        font-size: 14px;
+        margin-bottom: 0;
+    }
+    .addService .dataForm .rightDiv .requiredInfo .titleInfo h5 , .addService .dataForm .rightDiv .requiredInfo .categories .bootstrap-select>.dropdown-toggle ,
+    .bootstrap-select .dropdown-menu li a{
+        font-size: 13px;
+    }
+    .addService .dataForm .rightDiv .requiredInfo .categories .dropdown.bootstrap-select:first-child {
+        margin-left: 10px;
+    }
+    .addService .dataForm .rightDiv .btnCont {
+        margin: 10px 0 20px;
+    }
+    .addService .dataForm .savedImg {
+        width: 210px;
+    }
+    .addService .dataForm .success {
+        font-size: 15px;
+    }
 }
 
 
@@ -2966,6 +3724,52 @@ footer .footerInfo > div .apps img{
     .statistics .ordersInfo .orderStatistic {
         width: 31%;
     }
+
+    .orderDetailsContainer .detailsCont .leftCont {
+        width: 30%;
+    }
+    .orderDetailsContainer .detailsCont .rightCont .details .orderImg {
+        width: 130px;
+    }
+    .orderDetailsContainer .detailsCont .rightCont .details .idInfo ,
+    .orderDetailsContainer .detailsCont .rightCont .details .user ,
+    .orderDetailsContainer .detailsCont .rightCont .details .processTime .time,
+    .orderDetailsContainer .detailsCont .leftCont .paymentDetails .title{
+        font-size: 14px;
+    }
+    .orderDetailsContainer .detailsCont .rightCont .details .processTime .time{
+        margin: 20px 20px 0;
+    }
+
+    .orderDetailsContainer .detailsCont .leftCont .paymentDetails .payBlock {
+        font-size: 13px;
+    }
+    #clockdiv .count span {
+        font-size: 30px;
+    }
+    #clockdiv .count .smalltext {
+        font-size: 17px;
+    }
+    .earnings .earningsInfo .orderStatistic {
+        width: 48.5%;
+    }
+
+    .addService .mainTitles {
+        justify-content: center;
+    }
+
+    .addService .mainTitles a , .addService .mainTitles i{
+        margin-bottom: 10px;
+    }
+    .addService .dataForm {
+        flex-direction: column;
+    }
+    .addService .dataForm .leftDiv {
+        width: 50%;
+        margin: 45px auto;
+        align-self: center;
+    }
+
 }
 @media(min-width: 992px) and (max-width: 1199px) {
     .authForm .authImg .vector {
@@ -2980,11 +3784,19 @@ footer .footerInfo > div .apps img{
     .completeAcc .termsContent .bgGray {
         padding: 45px 50px;
     }
+    .addService .mainTitles {
+        justify-content: center;
+    }
+
+    .addService .mainTitles a , .addService .mainTitles i{
+        margin-bottom: 10px;
+    }
 }
 @media(min-width: 1200px){
-
+    .modal-dialog {
+        max-width: 800px;
+    }
 }
-
 /********************* Sh3wZa Media *********************/
 
 @media(max-width: 1024px){
@@ -3006,3 +3818,4 @@ footer .footerInfo > div .apps img{
 }
 
 /********************* Sh3wZa Media *********************/
+
