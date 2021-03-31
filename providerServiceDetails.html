@@ -97,7 +97,7 @@
                                 100
                             </div>
                             الرسائل
-                            <span class="icon-down_arrow_drop"></span>
+                            <span class="fas fa-chevron-down"></span>
                             <ul class="boxShadow">
                                 <li><a href="chat.html"><span class="icon-email_gray"></span> الرسائل</a></li>
                                 <li><a href="notifications.html"><span class="icon-notification"></span> الاشعارات</a></li>
@@ -157,7 +157,7 @@
 
                 <div class="profile d-none d-md-flex">
                     <img class="img-fluid" src="img/pic.jpg" alt="profile">
-                    <span class="icon-down_arrow_drop"></span>
+                    <span class="fas fa-chevron-down"></span>
                     <img src="img/triangle.png" alt="arrow" class="triangle">
                     <ul class="boxShadow">
                         <li><a href="profile.html">عرض الملف الشخصي</a></li>
@@ -199,7 +199,7 @@
         <div class="container">
             <div class="bgGray flex flexSpace">
 
-                <div class="">
+                <div class="listUl">
                     <ul class="flex flexRowCenter">
                         <li class="mr-3 ml-3"><a href="">نظره عامة</a></li>
                         <li class="mr-3 ml-3"><a href="">الوصف والشروط</a></li>
@@ -208,11 +208,11 @@
                     </ul>
                 </div>
 
-                <div class="">
+                <div class="listUl">
                     <ul class="flex flexRowCenter">
                         <li class="mr-1 ml-1">
                             <a href="" class="colorDefault">
-                                <i class="icon-tag colorDefault"></i>
+                                <img src="img/tag.png" alt="" style="max-width: 18px;">
                                 <span class="mr-1 ml-1">آضف خصم</span>
                             </a>
                         </li>
@@ -459,7 +459,7 @@
                                 <div class="boxTo mt-3 mb-2">
                                     <button class="toggleBox bgGray borderCli flex flexSpace p-3 w-100">
                                         <span>أي سؤال خاص بالخدمه يضعه مقدم الخدمه ؟</span>
-                                        <h6 class="icon-down_arrow_drop"></h6>
+                                        <h6 class="fas fa-chevron-down"></h6>
                                     </button>
                                     <div class="slideBoxDrop p-2">
                                         <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
@@ -470,7 +470,7 @@
                                 <div class="boxTo mt-3 mb-2">
                                     <button class="toggleBox bgGray borderCli flex flexSpace p-3 w-100">
                                         <span>أي سؤال خاص بالخدمه يضعه مقدم الخدمه ؟</span>
-                                        <h6 class="icon-down_arrow_drop"></h6>
+                                        <h6 class="fas fa-chevron-down"></h6>
                                     </button>
                                     <div class="slideBoxDrop p-2">
                                         <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
@@ -480,7 +480,7 @@
                                 <div class="boxTo mt-3 mb-2">
                                     <button class="toggleBox bgGray borderCli flex flexSpace p-3 w-100">
                                         <span>أي سؤال خاص بالخدمه يضعه مقدم الخدمه ؟</span>
-                                        <h6 class="icon-down_arrow_drop"></h6>
+                                        <h6 class="fas fa-chevron-down"></h6>
                                     </button>
                                     <div class="slideBoxDrop p-2">
                                         <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
@@ -511,12 +511,11 @@
                                 </div>
                                 <div class="flex flexRowCenter">
                                     <span class="colorBlack mr-2 ml-2">تصنيف ب</span>
-                                    <div class="selector p-2 bgGray borderCli flex flexSpace w150 Radius5">
-                                        <select name="country">
-                                            <option value="26">الاعلي تقييما</option>
-                                            <option value="27">الاقل تقييما</option>
+                                    <div class="filterCont bgGray w150">
+                                        <select class="selectpicker">
+                                            <option>الاعلي تقيما</option>
+                                            <option>الاقل تقيما</option>
                                         </select>
-                                        <span class="icon-down_arrow_drop colorBlack"></span>
                                     </div>
                                 </div>
                             </div>
@@ -565,7 +564,7 @@
 
                             </div>
 
-                            <div class="mt-5 mb-5 pb-4 borderBCli">
+                            <div class="mt-5 pb-4 borderBCli">
 
                                 <div class="flex flexRowCenter">
                                     <label class="switch" for="checkbox">
@@ -585,7 +584,7 @@
 
                             <div class="allComments">
 
-                                <div class="sectionComment">
+                                <div class="sectionComment pt-5 pb-3 borderBCli">
 
                                    <div class="flex flexRow">
                                        <div class="flex5">
@@ -605,9 +604,54 @@
                                                    </div>
                                                    <p class="colorGray m-0">مصر</p>
                                                </div>
-                                               <button>
-                                                   <i class="fas fa-flag colorGray"></i>
+                                               <button data-toggle="modal" data-target="#modalReport">
+                                                   <i class="fas fa-flag colorGray" style="font-size: 20px;"></i>
                                                </button>
+                                               <!-- Modal -->
+                                               <div class="modal fade" id="modalReport" tabindex="-1" role="dialog" aria-labelledby="payInfoTitle" aria-hidden="true">
+                                                   <div class="modal-dialog modal-dialog-centered" role="document">
+                                                       <div class="modal-content">
+                                                           <div class="modal-body">
+
+                                                               <div class="borderBCli pb-4 mb-3">
+                                                                   <img class="vector" src="img/vector_rebort.png" alt="vector payment">
+                                                                   <p class="text-center colorGray">الإبلاغ علي التعليق</p>
+                                                               </div>
+
+                                                               <div class="">
+
+                                                                   <label class="radioButton w-100 mt-3 mb-3 colorGray">
+                                                                       <input type="radio" checked="checked" name="radio">
+                                                                       <span class="checkmark"></span>
+                                                                       تعليق غير لائق
+                                                                   </label>
+
+                                                                   <label class="radioButton w-100 mt-3 mb-3 colorGray">
+                                                                       <input type="radio" checked="checked" name="radio">
+                                                                       <span class="checkmark"></span>
+                                                                       تعليق غير لائق
+                                                                   </label>
+
+                                                                   <label class="radioButton w-100 mt-3 mb-3 colorGray">
+                                                                       <input type="radio" checked="checked" name="radio">
+                                                                       <span class="checkmark"></span>
+                                                                       تعليق غير لائق
+                                                                   </label>
+
+                                                                   <label class="radioButton w-100 mt-3 mb-3 colorGray">
+                                                                       <input type="radio" checked="checked" name="radio">
+                                                                       <span class="checkmark"></span>
+                                                                       تعليق غير لائق
+                                                                   </label>
+
+                                                                   <button class="bgGreen pr-5 pl-5 pt-2 pb-2 mt-4 colorWight Radius5" data-dismiss="modal" aria-label="Close">إرسال</button>
+
+                                                               </div>
+
+                                                           </div>
+                                                       </div>
+                                                   </div>
+                                               </div>
                                            </div>
                                            <div class="flex flexRowCenter">
                                                <div class="flex90 pl-3">
@@ -628,16 +672,31 @@
                                             </div>
                                         </div>
                                         <div class="pr-2 pl-2 flex95">
-                                            <div class="flex flexRowCenter">
-                                                <div class="w-100">
-                                                    <h6 class="m-0">شعوذه الندم</h6>
-                                                    <div class="flex flexRowCenter">
-                                                        <div class="">
-                                                            <p class="m-0 colorGray">شكرا جزيلا لك سيدي المقدم</p>
+                                            <div class="viewComMe">
+                                                <div class="flex flexRowCenter pb-3 mb-3 borderBCli boxComMe">
+                                                    <div class="w-100">
+                                                        <h6 class="m-0">شعوذه الندم</h6>
+                                                        <div class="flex flexRowCenter">
+                                                            <div class="">
+                                                                <p class="m-0 colorGray">شكرا جزيلا لك سيدي المقدم</p>
+                                                            </div>
+                                                            <button class="mr-2 ml-2">
+                                                                <span class="icon-delete_charts colorRed"></span>
+                                                            </button>
                                                         </div>
-                                                        <button class="mr-2 ml-2">
-                                                            <span class="icon-delete_charts colorRed"></span>
-                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="flex flexRowCenter pb-3 mb-3 borderBCli boxComMe">
+                                                    <div class="w-100">
+                                                        <h6 class="m-0">شعوذه الندم</h6>
+                                                        <div class="flex flexRowCenter">
+                                                            <div class="">
+                                                                <p class="m-0 colorGray">شكرا جزيلا لك سيدي المقدم</p>
+                                                            </div>
+                                                            <button class="mr-2 ml-2">
+                                                                <span class="icon-delete_charts colorRed"></span>
+                                                            </button>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -646,6 +705,272 @@
                                                     <textarea placeholder="اضف تعليقك ..."></textarea>
                                                     <button class="bgDefault pt-2 pb-2 pl-4 pr-4 colorWight Radius5 mt-2 mb-2">اضف تعليقك</button>
                                                 </form>
+                                            </div>
+                                            <div class="flex flexRowCenter w-100">
+                                                <span class="icon-clock_black colorGray"></span>
+                                                <p class="colorGray mr-2 ml-2">منذ 5 اسابيع</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="sectionComment pt-5 pb-3 borderBCli">
+
+                                    <div class="flex flexRow">
+                                        <div class="flex5">
+                                            <div class="imgUserMassage flex flexCenter bgDefault">
+                                                <span class="colorWight">E</span>
+                                            </div>
+                                        </div>
+                                        <div class="pr-2 pl-2 flex95">
+                                            <div class="iconUser flex flexSpace">
+                                                <div class="mr-2 ml-2">
+                                                    <div class="flex flexRowCenter">
+                                                        <h6 class="m-0">شعوذه الندم</h6>
+                                                        <div class="flex flexRowCenter mr-2 ml-2">
+                                                            <span class="icon-ic_star_24px colorYellow"></span>
+                                                            <span class="colorYellow">4.4</span>
+                                                        </div>
+                                                    </div>
+                                                    <p class="colorGray m-0">مصر</p>
+                                                </div>
+                                                <button data-toggle="modal" data-target="#modalReport">
+                                                    <i class="fas fa-flag colorGray" style="font-size: 20px;"></i>
+                                                </button>
+                                                <!-- Modal -->
+                                                <div class="modal fade" id="modalReport" tabindex="-1" role="dialog" aria-labelledby="payInfoTitle" aria-hidden="true">
+                                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                                        <div class="modal-content">
+                                                            <div class="modal-body">
+
+                                                                <div class="borderBCli pb-4 mb-3">
+                                                                    <img class="vector" src="img/vector_rebort.png" alt="vector payment">
+                                                                    <p class="text-center colorGray">الإبلاغ علي التعليق</p>
+                                                                </div>
+
+                                                                <div class="">
+
+                                                                    <label class="radioButton w-100 mt-3 mb-3 colorGray">
+                                                                        <input type="radio" checked="checked" name="radio">
+                                                                        <span class="checkmark"></span>
+                                                                        تعليق غير لائق
+                                                                    </label>
+
+                                                                    <label class="radioButton w-100 mt-3 mb-3 colorGray">
+                                                                        <input type="radio" checked="checked" name="radio">
+                                                                        <span class="checkmark"></span>
+                                                                        تعليق غير لائق
+                                                                    </label>
+
+                                                                    <label class="radioButton w-100 mt-3 mb-3 colorGray">
+                                                                        <input type="radio" checked="checked" name="radio">
+                                                                        <span class="checkmark"></span>
+                                                                        تعليق غير لائق
+                                                                    </label>
+
+                                                                    <label class="radioButton w-100 mt-3 mb-3 colorGray">
+                                                                        <input type="radio" checked="checked" name="radio">
+                                                                        <span class="checkmark"></span>
+                                                                        تعليق غير لائق
+                                                                    </label>
+
+                                                                    <button class="bgGreen pr-5 pl-5 pt-2 pb-2 mt-4 colorWight Radius5" data-dismiss="modal" aria-label="Close">إرسال</button>
+
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="flex flexRowCenter">
+                                                <div class="flex90 pl-3">
+                                                    <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
+                                                        إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى </p>
+                                                </div>
+                                                <div class="flex10">
+                                                    <img src="img/thomas-le-dQNiTdka3Xw-unsplash.png" alt="" class="w-100" style="height: 70px">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="flex flexRow mt-3 mb-3">
+                                        <div class="flex5">
+                                            <div class="imgUserMassage flex flexCenter bgDefault">
+                                                <img src="img/pic.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="pr-2 pl-2 flex95">
+                                            <div class="viewComMe">
+                                                <div class="flex flexRowCenter pb-3 mb-3 borderBCli boxComMe">
+                                                    <div class="w-100">
+                                                        <h6 class="m-0">شعوذه الندم</h6>
+                                                        <div class="flex flexRowCenter">
+                                                            <div class="">
+                                                                <p class="m-0 colorGray">شكرا جزيلا لك سيدي المقدم</p>
+                                                            </div>
+                                                            <button class="mr-2 ml-2">
+                                                                <span class="icon-delete_charts colorRed"></span>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="flex flexRowCenter pb-3 mb-3 borderBCli boxComMe">
+                                                    <div class="w-100">
+                                                        <h6 class="m-0">شعوذه الندم</h6>
+                                                        <div class="flex flexRowCenter">
+                                                            <div class="">
+                                                                <p class="m-0 colorGray">شكرا جزيلا لك سيدي المقدم</p>
+                                                            </div>
+                                                            <button class="mr-2 ml-2">
+                                                                <span class="icon-delete_charts colorRed"></span>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="mt-3 mb-3">
+                                                <form action="" class="addComment">
+                                                    <textarea placeholder="اضف تعليقك ..."></textarea>
+                                                    <button class="bgDefault pt-2 pb-2 pl-4 pr-4 colorWight Radius5 mt-2 mb-2">اضف تعليقك</button>
+                                                </form>
+                                            </div>
+                                            <div class="flex flexRowCenter w-100">
+                                                <span class="icon-clock_black colorGray"></span>
+                                                <p class="colorGray mr-2 ml-2">منذ 5 اسابيع</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="sectionComment pt-5 pb-3 borderBCli">
+
+                                    <div class="flex flexRow">
+                                        <div class="flex5">
+                                            <div class="imgUserMassage flex flexCenter bgDefault">
+                                                <span class="colorWight">E</span>
+                                            </div>
+                                        </div>
+                                        <div class="pr-2 pl-2 flex95">
+                                            <div class="iconUser flex flexSpace">
+                                                <div class="mr-2 ml-2">
+                                                    <div class="flex flexRowCenter">
+                                                        <h6 class="m-0">شعوذه الندم</h6>
+                                                        <div class="flex flexRowCenter mr-2 ml-2">
+                                                            <span class="icon-ic_star_24px colorYellow"></span>
+                                                            <span class="colorYellow">4.4</span>
+                                                        </div>
+                                                    </div>
+                                                    <p class="colorGray m-0">مصر</p>
+                                                </div>
+                                                <button data-toggle="modal" data-target="#modalReport">
+                                                    <i class="fas fa-flag colorGray" style="font-size: 20px;"></i>
+                                                </button>
+                                                <!-- Modal -->
+                                                <div class="modal fade" id="modalReport" tabindex="-1" role="dialog" aria-labelledby="payInfoTitle" aria-hidden="true">
+                                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                                        <div class="modal-content">
+                                                            <div class="modal-body">
+
+                                                                <div class="borderBCli pb-4 mb-3">
+                                                                    <img class="vector" src="img/vector_rebort.png" alt="vector payment">
+                                                                    <p class="text-center colorGray">الإبلاغ علي التعليق</p>
+                                                                </div>
+
+                                                                <div class="">
+
+                                                                    <label class="radioButton w-100 mt-3 mb-3 colorGray">
+                                                                        <input type="radio" checked="checked" name="radio">
+                                                                        <span class="checkmark"></span>
+                                                                        تعليق غير لائق
+                                                                    </label>
+
+                                                                    <label class="radioButton w-100 mt-3 mb-3 colorGray">
+                                                                        <input type="radio" checked="checked" name="radio">
+                                                                        <span class="checkmark"></span>
+                                                                        تعليق غير لائق
+                                                                    </label>
+
+                                                                    <label class="radioButton w-100 mt-3 mb-3 colorGray">
+                                                                        <input type="radio" checked="checked" name="radio">
+                                                                        <span class="checkmark"></span>
+                                                                        تعليق غير لائق
+                                                                    </label>
+
+                                                                    <label class="radioButton w-100 mt-3 mb-3 colorGray">
+                                                                        <input type="radio" checked="checked" name="radio">
+                                                                        <span class="checkmark"></span>
+                                                                        تعليق غير لائق
+                                                                    </label>
+
+                                                                    <button class="bgGreen pr-5 pl-5 pt-2 pb-2 mt-4 colorWight Radius5" data-dismiss="modal" aria-label="Close">إرسال</button>
+
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="flex flexRowCenter">
+                                                <div class="flex90 pl-3">
+                                                    <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
+                                                        إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى </p>
+                                                </div>
+                                                <div class="flex10">
+                                                    <img src="img/thomas-le-dQNiTdka3Xw-unsplash.png" alt="" class="w-100" style="height: 70px">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="flex flexRow mt-3 mb-3">
+                                        <div class="flex5">
+                                            <div class="imgUserMassage flex flexCenter bgDefault">
+                                                <img src="img/pic.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="pr-2 pl-2 flex95">
+                                            <div class="viewComMe">
+                                                <div class="flex flexRowCenter pb-3 mb-3 borderBCli boxComMe">
+                                                    <div class="w-100">
+                                                        <h6 class="m-0">شعوذه الندم</h6>
+                                                        <div class="flex flexRowCenter">
+                                                            <div class="">
+                                                                <p class="m-0 colorGray">شكرا جزيلا لك سيدي المقدم</p>
+                                                            </div>
+                                                            <button class="mr-2 ml-2">
+                                                                <span class="icon-delete_charts colorRed"></span>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="flex flexRowCenter pb-3 mb-3 borderBCli boxComMe">
+                                                    <div class="w-100">
+                                                        <h6 class="m-0">شعوذه الندم</h6>
+                                                        <div class="flex flexRowCenter">
+                                                            <div class="">
+                                                                <p class="m-0 colorGray">شكرا جزيلا لك سيدي المقدم</p>
+                                                            </div>
+                                                            <button class="mr-2 ml-2">
+                                                                <span class="icon-delete_charts colorRed"></span>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="mt-3 mb-3">
+                                                <form action="" class="addComment">
+                                                    <textarea placeholder="اضف تعليقك ..."></textarea>
+                                                    <button class="bgDefault pt-2 pb-2 pl-4 pr-4 colorWight Radius5 mt-2 mb-2">اضف تعليقك</button>
+                                                </form>
+                                            </div>
+                                            <div class="flex flexRowCenter w-100">
+                                                <span class="icon-clock_black colorGray"></span>
+                                                <p class="colorGray mr-2 ml-2">منذ 5 اسابيع</p>
                                             </div>
                                         </div>
                                     </div>
@@ -659,10 +984,196 @@
 
                     </div>
 
-
-
-
                     <div class="col-md-4 col-xs-12">
+
+                        <div class="bgGray borderCli mt-5">
+                            <!-- Start Ul For Tabs Filter -->
+
+                            <ul class="nav nav-tabs TabsNav flex flexSpace borderBCli bgWightOpacity" id="myTab" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link p-3 active" id="tabs1" data-toggle="tab" href="#tab1" role="tab" aria-controls="tab1" aria-selected="true">
+                                        الاساسي
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link p-3" id="tabs2" data-toggle="tab" href="#tab2" role="tab" aria-controls="tab2" aria-selected="false">
+                                        المتعارف عليها
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link p-3" id="tabs3" data-toggle="tab" href="#tab3" role="tab" aria-controls="tab3" aria-selected="false">
+                                        المميز
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <!-- Start Section For Tabs Filter -->
+
+                            <div class="tab-content" id="myTabContent">
+                                <div class="tab-pane fade show active" id="tab1" role="tabpanel" aria-labelledby="tabs1">
+                                    <div class="p-3">
+
+                                        <div class="flex flexSpace">
+                                            <p>
+                                                الاساسي : 100 دولار
+                                            </p>
+                                            <span class="colorDefault">10 دولار</span>
+                                        </div>
+
+                                        <p>
+                                            هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
+                                            إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى
+                                        </p>
+
+                                        <div class="flex flexSpace">
+
+                                            <div class="flex flexRowCenter">
+                                                <span class="icon-clock_black colorGreen"></span>
+                                                <p class="colorGreen mr-2 ml-2">يوم إنتهاء الخدمة 1</p>
+                                            </div>
+
+                                            <div class="flex flexRowCenter">
+                                                <span class="icon-reload_black colorGreen"></span>
+                                                <p class="colorGreen mr-2 ml-2">مرات المراجعة 4</p>
+                                            </div>
+
+                                        </div>
+
+                                        <ul>
+                                            <li class="flex flexRowCenter w-100 mb-2">
+                                                <span class="icon-check_rules colorDefault" style="font-size: 10px;"></span>
+                                                <span class="mt-2 mr-2 colorGray font-weight-bold">الاشياء المرفقه في هذه الاشياء</span>
+                                            </li>
+                                            <li class="flex flexRowCenter w-100 mb-2">
+                                                <span class="icon-check_rules colorDefault" style="font-size: 10px;"></span>
+                                                <span class="mt-2 mr-2 colorGray font-weight-bold">الاشياء المرفقه في هذه الاشياء</span>
+                                            </li>
+                                            <li class="flex flexRowCenter w-100 mb-2">
+                                                <span class="icon-check_rules colorDefault" style="font-size: 10px;"></span>
+                                                <span class="mt-2 mr-2 colorGray font-weight-bold">الاشياء المرفقه في هذه الاشياء</span>
+                                            </li>
+                                            <li class="flex flexRowCenter w-100 mb-2">
+                                                <span class="icon-check_rules colorDefault" style="font-size: 10px;"></span>
+                                                <span class="mt-2 mr-2 colorGray font-weight-bold">الاشياء المرفقه في هذه الاشياء</span>
+                                            </li>
+                                        </ul>
+
+                                        <a href="" class="btnButton btnDefault w-100 displayBlock mt-4 mb-4 Radius10">آشتري ب 10 دولار</a>
+
+                                        <a href="" class="colorDefault displayBlock text-center">قارن بين الباقات</a>
+
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="tab2" role="tabpanel" aria-labelledby="tabs2">
+                                    <div class="p-3">
+
+                                        <div class="flex flexSpace">
+                                            <p>
+                                                الاساسي : 100 دولار
+                                            </p>
+                                            <span class="colorDefault">10 دولار</span>
+                                        </div>
+
+                                        <p>
+                                            هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
+                                            إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى
+                                        </p>
+
+                                        <div class="flex flexSpace">
+
+                                            <div class="flex flexRowCenter">
+                                                <span class="icon-clock_black colorGreen"></span>
+                                                <p class="colorGreen mr-2 ml-2">يوم إنتهاء الخدمة 1</p>
+                                            </div>
+
+                                            <div class="flex flexRowCenter">
+                                                <span class="icon-reload_black colorGreen"></span>
+                                                <p class="colorGreen mr-2 ml-2">مرات المراجعة 4</p>
+                                            </div>
+
+                                        </div>
+
+                                        <ul>
+                                            <li class="flex flexRowCenter w-100 mb-2">
+                                                <span class="icon-check_rules colorDefault" style="font-size: 10px;"></span>
+                                                <span class="mt-2 mr-2 colorGray font-weight-bold">الاشياء المرفقه في هذه الاشياء</span>
+                                            </li>
+                                            <li class="flex flexRowCenter w-100 mb-2">
+                                                <span class="icon-check_rules colorDefault" style="font-size: 10px;"></span>
+                                                <span class="mt-2 mr-2 colorGray font-weight-bold">الاشياء المرفقه في هذه الاشياء</span>
+                                            </li>
+                                            <li class="flex flexRowCenter w-100 mb-2">
+                                                <span class="icon-check_rules colorDefault" style="font-size: 10px;"></span>
+                                                <span class="mt-2 mr-2 colorGray font-weight-bold">الاشياء المرفقه في هذه الاشياء</span>
+                                            </li>
+                                            <li class="flex flexRowCenter w-100 mb-2">
+                                                <span class="icon-check_rules colorDefault" style="font-size: 10px;"></span>
+                                                <span class="mt-2 mr-2 colorGray font-weight-bold">الاشياء المرفقه في هذه الاشياء</span>
+                                            </li>
+                                        </ul>
+
+                                        <a href="" class="btnButton btnDefault w-100 displayBlock mt-4 mb-4 Radius10">آشتري ب 10 دولار</a>
+
+                                        <a href="" class="colorDefault displayBlock text-center">قارن بين الباقات</a>
+
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="tab3" role="tabpanel" aria-labelledby="tabs3">
+                                    <div class="p-3">
+
+                                        <div class="flex flexSpace">
+                                            <p>
+                                                الاساسي : 100 دولار
+                                            </p>
+                                            <span class="colorDefault">10 دولار</span>
+                                        </div>
+
+                                        <p>
+                                            هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
+                                            إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى
+                                        </p>
+
+                                        <div class="flex flexSpace">
+
+                                            <div class="flex flexRowCenter">
+                                                <span class="icon-clock_black colorGreen"></span>
+                                                <p class="colorGreen mr-2 ml-2">يوم إنتهاء الخدمة 1</p>
+                                            </div>
+
+                                            <div class="flex flexRowCenter">
+                                                <span class="icon-reload_black colorGreen"></span>
+                                                <p class="colorGreen mr-2 ml-2">مرات المراجعة 4</p>
+                                            </div>
+
+                                        </div>
+
+                                        <ul>
+                                            <li class="flex flexRowCenter w-100 mb-2">
+                                                <span class="icon-check_rules colorDefault" style="font-size: 10px;"></span>
+                                                <span class="mt-2 mr-2 colorGray font-weight-bold">الاشياء المرفقه في هذه الاشياء</span>
+                                            </li>
+                                            <li class="flex flexRowCenter w-100 mb-2">
+                                                <span class="icon-check_rules colorDefault" style="font-size: 10px;"></span>
+                                                <span class="mt-2 mr-2 colorGray font-weight-bold">الاشياء المرفقه في هذه الاشياء</span>
+                                            </li>
+                                            <li class="flex flexRowCenter w-100 mb-2">
+                                                <span class="icon-check_rules colorDefault" style="font-size: 10px;"></span>
+                                                <span class="mt-2 mr-2 colorGray font-weight-bold">الاشياء المرفقه في هذه الاشياء</span>
+                                            </li>
+                                            <li class="flex flexRowCenter w-100 mb-2">
+                                                <span class="icon-check_rules colorDefault" style="font-size: 10px;"></span>
+                                                <span class="mt-2 mr-2 colorGray font-weight-bold">الاشياء المرفقه في هذه الاشياء</span>
+                                            </li>
+                                        </ul>
+
+                                        <a href="" class="btnButton btnDefault w-100 displayBlock mt-4 mb-4 Radius10">آشتري ب 10 دولار</a>
+
+                                        <a href="" class="colorDefault displayBlock text-center">قارن بين الباقات</a>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
                     </div>
                 </div>
@@ -789,6 +1300,11 @@
 <script src="js/owl.carousel.min.js"></script>
 <script src="js/script.js"></script>
 
+<!--start select-->
+<script>
+    $('.selectpicker').selectpicker();
+</script>
+<!--end select-->
 <script>
     $('#sync1').owlCarousel({
         items:1,
@@ -832,6 +1348,20 @@
             }
         }
     });
+    // Click Slide Toggle Box In footer
+
+    $('.slideBoxDrop').slideUp();
+    $('.boxTo .fa-chevron-down').removeClass('iconR');
+
+    $(document).on("click", ".toggleBox", function () {
+        $(this).parents('.boxTo').find('.slideBoxDrop').slideToggle(500);
+        $(this).parents('.boxTo').find('.fa-chevron-down').toggleClass('iconR');
+    });
+
+    $(document).on("click", ".boxComMe button", function () {
+        $(this).parents('.boxComMe').remove();
+    });
+
 </script>
 
 </body>

@@ -12,6 +12,14 @@ body {
     font-family: 'Sukar';
 }
 
+.hvr-backward:hover, .hvr-backward:focus, .hvr-backward:active {
+    -webkit-transform: translateX(8px);
+    transform: translateX(8px);
+}
+
+.pr-3{
+    padding-left: 1rem!important;
+}
 
 .selector i{
     left: 10px;
@@ -81,6 +89,270 @@ body {
 #sync2 .owl-stage{
     float: left;
 }
+
+/* start amany style */
+.menu .menuLinks {
+    margin-left: 30px;
+}
+.form-group>label{
+    left: 15px;
+}
+.form-group input:focus + label, .form-group input:valid + label.form-group input:focus + label, .form-group input:valid + label , .owl-prev {
+    left: 10px;
+}
+
+.slider:before {
+    right: 4px;
+}
+
+.noChat , .listPoint li:before , .overLayBT , .upload-img:before ,.loader ,
+.orderDetailsContainer .detailsCont .rightCont .details .processTime ul.timeline:before ,
+.addService .dataForm .leftDiv .info li:before{
+    left: 0;
+}
+
+.close_model {
+    right: -10px;
+}
+
+.closeChat {
+    right: 0;
+}
+
+.custom-checkbox {
+    padding-left: 1.5rem;
+    padding-right: 0;
+}
+
+.custom-checkbox .custom-control-label::before ,.custom-checkbox .custom-control-label::after{
+    left: -1.5rem;
+    right: 0;
+}
+
+.authForm .forget span, .authForm .createAcc span{
+    margin-left: 7px;
+}
+.register .btnGray{
+    margin-left: 20px;
+}
+.menu .menuLinks li {
+    margin-left: 25px;
+}
+.menu .msgs .icon-down_arrow_drop{
+    margin-left: 7px;
+}
+.menu .msgs .num{
+    right: -8px;
+}
+.menu .msgs .num:before {
+    left: 50%;
+    transform: translateX(-50%);
+}
+div.dataTables_wrapper .dataTables_length input, div.dataTables_wrapper .dataTables_filter input {
+    margin-right: 3px;
+    margin-left: 10px;
+}
+.orderDetailsContainer .alert-success {
+    padding-left: 20px;
+}
+
+.orderDetailsContainer .alert-dismissible .close {
+    right: 20px;
+    left: auto;
+}
+.orderDetailsContainer .detailsCont .rightCont .details .leftInfo{
+    margin-left: 15px;
+}
+.orderDetailsContainer .detailsCont .rightCont{
+    margin-right: 20px;
+}
+.orderDetailsContainer .detailsCont .rightCont .details .processTime ul.timeline > li:before {
+    left: -7px;
+}
+.orderDetailsContainer .detailsCont .rightCont .details .processTime ul.timeline > li.cancelled .icon-cancel {
+    left: -2px;
+}
+.orderDetailsContainer .detailsCont .rightCont .details .processTime ul.timeline > li.active:after {
+    left: -5px;
+}
+.orderDetailsContainer .detailsCont .rightCont .details .processTime .time{
+    margin-left: 25px;
+}
+.orderDetailsContainer .detailsCont .rightCont .filesCont .files .file .info ,
+.orderDetailsContainer .detailsCont .rightCont .btnDefault.redBtn , .addService .dataForm .rightDiv .btnDefault.grayBtn ,
+.addService .dataForm .rightDiv .requiredInfo .tags-input-wrapper .tag a{
+    margin-left: 20px;
+}
+
+.owl-next{
+    right: 10px;
+}
+
+.btnFullScreen{
+    right: 15px;
+}
+.services #owl-demo1 .owl-next {
+    left: -15px;
+    right:auto;
+}
+
+.services #owl-demo1 .owl-prev {
+    right: -15px;
+    left: auto;
+}
+.addService .dataForm .leftDiv:before{
+    border-right: 15px solid #defad2;
+    left: -15px;
+}
+.addService .dataForm .leftDiv .info li{
+    padding-left: 20px;
+}
+
+.authForm .copyright h4{
+    margin-right: 15px;
+}
+.terms .light_green_lamb{
+    right: 0;
+}
+.register .copyright h4 , footer .copyright h4{
+    margin-right: 15px;
+}
+
+header .overlay {
+    transform-origin: right;
+}
+.menu .transferBuyer{
+    margin-right: 30px;
+}
+.menu .profile img{
+    margin-right: 7px;
+}
+.menu .profile ul , .menu .msgs ul {
+    right: 0;
+}
+.menu .msgs ul li a span{
+    margin-right: 15px;
+}
+.menu .msgs ul li a span.icon-notification:after{
+    right: -2px;
+}
+
+.menu .profile .triangle{
+    right: -15px;
+}
+.orderDetailsContainer .alert-success span.alertIcon {
+    margin-right: 15px;
+}
+.orderDetailsContainer .detailsCont .rightCont .details .user img{
+    margin-right: 5px;
+}
+.orderDetailsContainer .detailsCont .rightCont .packageCont .options .option{
+    margin-right: 15px;
+}
+.orderDetailsContainer .detailsCont .rightCont .packageCont .options .option span {
+    margin-right: 10px;
+}
+.orderDetailsContainer .detailsCont .leftCont .paymentDetails .payBlock .price.oldPrice{
+    margin-right: 7px;
+}
+
+.addService .mainTitles i{
+    margin-right: 20px;
+}
+
+.addService .dataForm .rightDiv .requiredInfo .form-group .count{
+    text-align: right;
+}
+
+
+.addService .dataForm .rightDiv .requiredInfo .categories .dropdown.bootstrap-select:first-child {
+    margin-right: 25px;
+}
+
+.addService .dataForm .rightDiv .requiredInfo .titleInfo{
+    margin-right: 45px;
+}
+.addService .dataForm .rightDiv .requiredInfo .tags-input-wrapper .tag{
+    margin-right: 10px;
+}
+.addService .dataForm .rightDiv .requiredInfo .hint img{
+    margin-right: 5px;
+}
+
+footer .footerInfo > div .apps img{
+    margin-right: 15px;
+}
+
+.addComment button{
+    float: right;
+}
+
+.inpEdit{
+    text-align: left;
+}
+
+.viewPopInfo .listPoint li:before {
+    left: -11px;
+}
+
+@media(max-width: 767px){
+    .register .btnGray {
+        margin-left: 0;
+    }
+
+    header .menuBar .toggle {
+        text-align: left;
+    }
+    .menu {
+        text-align: left;
+        left: -100%;
+        transform-origin: left;
+    }
+    .menu.ulDir , .menu .profile ul, .menu .msgs ul {
+        left: 0
+    }
+
+    .orderDetailsContainer .detailsCont .rightCont .details .leftInfo {
+        margin-left: 0;
+    }
+
+    header .user img {
+        margin-right: 20px;
+    }
+    header .user  i{
+        margin-right: 20px;
+    }
+
+    .orderDetailsContainer .detailsCont .rightCont {
+        margin-right: 0;
+    }
+    .addService .dataForm .rightDiv .requiredInfo .titleInfo {
+        margin-right: 0;
+    }
+    .addService .dataForm .rightDiv .requiredInfo .categories .dropdown.bootstrap-select:first-child {
+        margin-right: 10px;
+    }
+}
+
+@media(min-width: 768px) and (max-width: 991px){
+    .menu .menuLinks {
+        margin-left: 0px;
+    }
+    .menu .menuLinks li {
+        margin-left: 15px;
+    }
+    .menu .transferBuyer {
+        margin-right: 15px;
+    }
+}
+
+@media(max-width: 1024px){
+    .chatAll .menuChat{
+        left: 0;
+    }
+}
+
+/* end amany style */
 
 /* Media Screen */
 

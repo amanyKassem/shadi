@@ -376,16 +376,11 @@
 <script src="js/bootstrap-select.min.js"></script>
 <script src="js/owl.carousel.min.js"></script>
 <script src="js/script.js"></script>
-
-<!--start select-->
 <script>
-    $('.selectpicker').selectpicker();
-</script>
-<!--end select-->
-
-<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
-<script>
-
+    // on Remove Note
+    $('.blockNote').on('click', '.removeNote',function (){
+        $(this).parents('.blockNote').remove();
+    });
 </script>
 
 </body>
