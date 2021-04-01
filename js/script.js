@@ -110,15 +110,41 @@ $(window).on('load', function () {
 
 
 // ADD IMAGE
-$('.image-uploader').change(function (event) {
+$('.addImage').change(function (event) {
     for (var one = 0; one < event.target.files.length; one++) {
-        $(this).parents('.images-upload-block').find('.upload-area').append('<div class="uploaded-block" data-count-order="' + one + '"><img src="' + URL.createObjectURL(event.target.files[one]) + '"><button class="close"><i class="icon-close colorWight"></i></button></div>');
+        $(this).parents('.imagesUploadBlock').find('.uploadArea').append('<div class="uploadedBlock" data-count-order="' + one + '"><img src="' + URL.createObjectURL(event.target.files[one]) + '"><button class="close"><i class="icon-delete_charts colorRed"></i></button></div>');
+    }
+});
+
+// ADD VIDEO
+$('.addVideo').change(function (event) {
+    for (var one = 0; one < event.target.files.length; one++) {
+        $(this).parents('.imagesUploadBlock').find('.uploadArea').append('<div class="uploadedBlock" data-count-order="' + one + '"><video src="' + URL.createObjectURL(event.target.files[one]) + '" controls></video><button class="close"><i class="icon-delete_charts colorRed"></i></button></div>');
     }
 });
 
 // REMOVE IMAGE
-$('.images-upload-block').on('click', '.close',function (){
-    $(this).parents('.uploaded-block').remove();
+$('.imagesUploadBlock').on('click', '.close',function (){
+    $(this).parents('.uploadedBlock').remove();
+});
+
+// Upload File
+
+$('.wrap input[type="file"]').each(function() {
+
+    let label = $(this).parents('.custom-file-upload').find('p').text();
+    label = (label) ? label : 'اسحب pdf او <span class="colorDefault">رفع</span> من علي جهازك';
+
+    $(this).wrap('<div class="input-file"></div>');
+    $(this).before('<span class="file-selected">'+label+'</span>');
+
+    $(document).on('change', '.wrap input[type="file"]', function(event) {
+        let val         = $(this).val();
+        let filename    = val.replace(/^.*[\\\/]/, '');
+        $(this).siblings('.file-selected').text(filename);
+        $(this).siblings('.file-selected').addClass('colorDefault');
+
+    });
 });
 
 ////////////////////   Sh3wZa JS //////////////////////////

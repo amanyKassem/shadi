@@ -24,6 +24,7 @@
     <link rel="stylesheet" href="css/bootstrap-select.min.css">
     <link rel="stylesheet" type="text/css" href="css/datatables.min.css"/>
     <link rel="stylesheet" type="text/css" href="css/jquery.dataTables.min.css"/>
+    <link rel="stylesheet" href="css/bootstrap-select.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/hover.css">
     <link rel="stylesheet" href="css/owl.carousel.css">
@@ -42,7 +43,6 @@
 <!-- Start Overlay Page -->
 
 <div class="OverLay"></div>
-
 
 <!--  Start Header  -->
 
@@ -195,36 +195,37 @@
 <!--end header-->
 
 <!--start addService-->
+
 <div class="bgLightGray addService">
     <div class="container">
 
         <div class="mainTitles">
 
-            <a class="active">
+            <a class="active" href="addService.html">
                 <span class="icon-information_provider_service icons"></span>
                 <h5>نظرة عامة</h5>
             </a>
             <i class="fas fa-chevron-left"></i>
 
-            <a>
+            <a class="active" href="pricePlans.html">
                 <span class="icon-price_tag icons"></span>
                 <h5>خطط الاسعار</h5>
             </a>
             <i class="fas fa-chevron-left"></i>
 
-            <a>
+            <a class="active" href="descriptionConditions.html">
                 <span class="icon-computer_provider icons"></span>
                 <h5>الوصف والشروط</h5>
             </a>
             <i class="fas fa-chevron-left"></i>
 
-            <a>
+            <a href="applicationRequirements.html" class="active">
                 <span class="icon-document_provider icons"></span>
                 <h5>متطلبات التقديم</h5>
             </a>
             <i class="fas fa-chevron-left"></i>
 
-            <a>
+            <a class="active">
                 <span class="icon-image_provider icons"></span>
                 <h5>الصور</h5>
             </a>
@@ -240,20 +241,163 @@
 
     </div>
 </div>
-<div class="addService">
-    <div class="container">
-        <div class="dataForm align-items-center flex-column py-5">
-            <a href="pricePlans.html">
-                <img src="img/provider_vector_service.png" class="savedImg" alt="vector">
-            </a>
-            <div class="success">
-                <span class="icon-check_rules"></span>
-                تم التعديل بنجاح
+
+<div class="statistics pt-0 pb-3 bgGray">
+
+    <div class="bgWight minBody">
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-md-8 col-xs-12">
+
+                    <div class="flex flexSpace borderBCli pt-4 pb-4 mt-4">
+                        <div class="mt-2 mb-2">
+                            <h6 class="colorGreen m-0">ضع صور ف الخدمة</h6>
+                            <p class="m-0 colorGray">اضف محتوي لا ينسي ليميزك عن منافسيك</p>
+                        </div>
+                    </div>
+
+                    <div class="sectionUploadImage pt-3 pb-5 borderBCli">
+                        <div class="pt-4">
+                            <h6 class="colorGreen m-0">صور الخدمة</h6>
+                            <div class="flex flexSpace">
+                                <p class="m-0 colorGray">ارفع الصور الخاصه بالخدمة والصور التي توصف</p>
+                                <span class="colorGray">( 0 / 3 )</span>
+                            </div>
+                        </div>
+
+                        <div class="row">
+
+                            <div class="col-md-4 col-xs-12">
+
+                                <div class="imagesUploadBlock width_full mt-4 mb-2">
+                                    <label class="uploadImg flex flexColumn flexCenter m-0">
+                                        <input type="file" accept="image/*" class="imageUploader addImage">
+                                        <span class="icon-image_placeholder colorGray" style="font-size: 40px"></span>
+                                        <p style="font-size: 12px">
+                                            اسحب صوره او <span class="colorDefault">رفع</span> من علي جهازك
+                                        </p>
+                                    </label>
+                                    <div class="uploadArea flexRow flexCenter"></div>
+                                </div>
+
+                            </div>
+
+                            <div class="col-md-4 col-xs-12">
+
+                                <div class="imagesUploadBlock width_full mt-4 mb-2">
+                                    <label class="uploadImg flex flexColumn flexCenter m-0">
+                                        <input type="file" accept="image/*" class="imageUploader addImage">
+                                        <span class="icon-image_placeholder colorGray" style="font-size: 40px"></span>
+                                        <p style="font-size: 12px">
+                                            اسحب صوره او <span class="colorDefault">رفع</span> من علي جهازك
+                                        </p>
+                                    </label>
+                                    <div class="uploadArea flexRow flexCenter"></div>
+                                </div>
+
+                            </div>
+
+                            <div class="col-md-4 col-xs-12">
+
+                                <div class="imagesUploadBlock width_full mt-4 mb-2">
+                                    <label class="uploadImg flex flexColumn flexCenter m-0">
+                                        <input type="file" accept="image/*" class="imageUploader addImage">
+                                        <span class="icon-image_placeholder colorGray" style="font-size: 40px"></span>
+                                        <p style="font-size: 12px">
+                                            اسحب صوره او <span class="colorDefault">رفع</span> من علي جهازك
+                                        </p>
+                                    </label>
+                                    <div class="uploadArea flexRow flexCenter"></div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="sectionUploadVideo pt-3 pb-5 borderBCli">
+                        <div class="pt-4">
+                            <h6 class="colorGreen m-0">فيديو الخدمة</h6>
+                            <div class="flex flexSpace">
+                                <p class="m-0 colorGray">اضف مقطع فيديو لائما وعالي الجوده يقدم افضل عرض لخدماتك الرجاء اختيار مقطع فيديو اقصر من 75 ثانيه واصغر من 50</p>
+                                <span class="colorGray">( 0 / 1 )</span>
+                            </div>
+                        </div>
+
+                        <div class="row">
+
+                            <div class="col-md-4 col-xs-12">
+
+                                <div class="imagesUploadBlock width_full mt-4 mb-2">
+                                    <label class="uploadImg flex flexColumn flexCenter m-0">
+                                        <input type="file" accept="video/*" class="imageUploader addVideo">
+                                        <span class="icon-vedio_provider colorGray" style="font-size: 40px"></span>
+                                        <p style="font-size: 12px">
+                                            اسحب فيديو او <span class="colorDefault">رفع</span> من علي جهازك
+                                        </p>
+                                    </label>
+                                    <div class="uploadArea flexRow flexCenter"></div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="sectionUploadFile pt-3 pb-5 borderBCli">
+                        <div class="pt-4">
+                            <h6 class="colorGreen m-0">فيديو الخدمة</h6>
+                            <div class="flex flexSpace">
+                                <p class="m-0 colorGray">نوصي باضافه بملف pdf اذا كان يوضح الخدمه التي سيقدمها</p>
+                                <span class="colorGray">( 0 / 2 )</span>
+                            </div>
+                        </div>
+
+                        <div class="row">
+
+                            <div class="col-md-4 col-xs-12">
+
+                                <div class="imagesUploadBlock wrap width_full mt-4 mb-2">
+                                    <label class="uploadImg flex flexColumn flexCenter m-0 custom-file-upload">
+                                        <input type="file" name="file" id="file" class="file_upload">
+                                        <span class="icon-pdf_provider colorGray" style="font-size: 40px"></span>
+                                    </label>
+                                    <div class="uploadArea flexRow flexCenter"></div>
+                                </div>
+
+                            </div>
+
+                            <div class="col-md-4 col-xs-12">
+
+                                <div class="imagesUploadBlock wrap width_full mt-4 mb-2">
+                                    <label class="uploadImg flex flexColumn flexCenter m-0 custom-file-upload">
+                                        <input type="file" name="file" id="file" class="file_upload">
+                                        <span class="icon-pdf_provider colorGray" style="font-size: 40px"></span>
+                                        <p for="file" class="nameUpload colorBlack"></p>
+                                    </label>
+                                    <div class="uploadArea flexRow flexCenter"></div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="btnCont mb-5 flex flexRowCenter flexEnd mt-5">
+                        <a href="descriptionConditions.html" class="btnDefault pr-4 pl-4 pt-2 pb-2 Radius10 hvr-pulse">حفظ واستمرار</a>
+                        <a href="addService.html" class="colorDefault hvr-pulse mr-3 ml-3" style="font-size: 16px">رجوع</a>
+                    </div>
+
+                </div>
+
             </div>
+
         </div>
     </div>
+
 </div>
-<div class="bgLightGray p-2"></div>
 
 <!--end addService-->
 
@@ -366,9 +510,8 @@
 <script src="js/jquery-3.3.1.min.js"></script>
 <script src="js/popper.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap-select.min.js"></script>
 <script src="js/owl.carousel.min.js"></script>
 <script src="js/script.js"></script>
-
-
 </body>
 </html>

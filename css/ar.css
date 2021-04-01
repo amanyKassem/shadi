@@ -258,15 +258,29 @@ footer .footerInfo > div .apps img{
 }
 
 .viewPopInfo .listPoint li:before {
-    right: -11px;
+    right: 0px;
 }
 .editCategory .interests > div {
     margin-left: 20px;
+}
+.viewPopInfo {
+    left: -50px;
 }
 
 .addService .dataForm.step3 .rightDiv .requiredInfo .addQues img , .addService .dataForm.step3 .rightDiv .requiredInfo .addAnotherQues img{
     margin-left: 10px;
 }
+
+.viewPopInfo:before {
+    border-left: 15px solid #defbd2;
+    right: -15px;
+}
+
+
+.addService .dataForm.step3 .rightDiv .requiredInfo .titleInfo.titleImg img{
+    margin-left: 15px;
+}
+
 @media(max-width: 767px){
     .register .btnGray {
         margin-right: 0;
