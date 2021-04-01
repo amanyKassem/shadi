@@ -299,6 +299,10 @@ footer .footerInfo > div .apps img{
     margin-right: 20px;
 }
 
+.viewPopInfo {
+    right: -50px;
+}
+
 @media(max-width: 767px){
     .register .btnGray {
         margin-left: 0;

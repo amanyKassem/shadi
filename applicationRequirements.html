@@ -44,7 +44,6 @@
 
 <div class="OverLay"></div>
 
-
 <!--  Start Header  -->
 
 <header>
@@ -196,6 +195,7 @@
 <!--end header-->
 
 <!--start addService-->
+
 <div class="bgLightGray addService">
     <div class="container">
 
@@ -207,13 +207,13 @@
             </a>
             <i class="fas fa-chevron-left"></i>
 
-            <a href="pricePlans.html">
+            <a class="active" href="pricePlans.html">
                 <span class="icon-price_tag icons"></span>
                 <h5>خطط الاسعار</h5>
             </a>
             <i class="fas fa-chevron-left"></i>
 
-            <a>
+            <a href="descriptionConditions.html">
                 <span class="icon-computer_provider icons"></span>
                 <h5>الوصف والشروط</h5>
             </a>
@@ -241,84 +241,164 @@
 
     </div>
 </div>
-<div class="addService">
-    <div class="container">
-        <div class="dataForm">
 
-            <form class="rightDiv">
+<div class="statistics pt-0 pb-3 bgGray">
 
-                <div class="requiredInfo">
-                    <div class="titleInfo">
-                        <h4>عنوان الخدمة</h4>
-                        <h5>يجب عليك كتابة عنوان يوصف خدمتك</h5>
-                    </div>
-                    <div class="form-group">
-                        <textarea class="form-control textareaCount" placeholder="تفاصيل العنوان" maxlength="80" ></textarea>
-                        <div class="count">
-                            <span class="current">0</span>
-                            <span class="maximum">/ 80</span>
+    <div class="bgWight minBody">
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-md-8 col-xs-12">
+
+                    <div class="flex flexSpace borderBCli pt-4 pb-4 mt-4">
+                        <div class="mt-2 mb-2">
+                            <h6 class="colorGreen m-0">ضع صور ف الخدمة</h6>
+                            <p class="m-0 colorGray">اضف محتوي لا ينسي ليميزك عن منافسيك</p>
                         </div>
                     </div>
-                </div>
 
-                <div class="requiredInfo">
-                    <div class="titleInfo">
-                        <h4>الاقسام</h4>
-                        <h5>يجب اختيار القسم لنسهيل البحث عن خدمتك</h5>
+                    <div class="sectionUploadImage pt-3 pb-5 borderBCli">
+                        <div class="pt-4">
+                            <h6 class="colorGreen m-0">صور الخدمة</h6>
+                            <div class="flex flexSpace">
+                                <p class="m-0 colorGray">ارفع الصور الخاصه بالخدمة والصور التي توصف</p>
+                                <span class="colorGray">( 0 / 3 )</span>
+                            </div>
+                        </div>
+
+                        <div class="row">
+
+                            <div class="col-md-4 col-xs-12">
+
+                                <div class="imagesUploadBlock width_full mt-4 mb-2">
+                                    <label class="uploadImg flex flexColumn flexCenter m-0">
+                                        <input type="file" accept="image/*" class="imageUploader addImage">
+                                        <span class="icon-image_placeholder colorGray" style="font-size: 40px"></span>
+                                        <p style="font-size: 12px">
+                                            اسحب صوره او <span class="colorDefault">رفع</span> من علي جهازك
+                                        </p>
+                                    </label>
+                                    <div class="uploadArea flexRow flexCenter"></div>
+                                </div>
+
+                            </div>
+
+                            <div class="col-md-4 col-xs-12">
+
+                                <div class="imagesUploadBlock width_full mt-4 mb-2">
+                                    <label class="uploadImg flex flexColumn flexCenter m-0">
+                                        <input type="file" accept="image/*" class="imageUploader addImage">
+                                        <span class="icon-image_placeholder colorGray" style="font-size: 40px"></span>
+                                        <p style="font-size: 12px">
+                                            اسحب صوره او <span class="colorDefault">رفع</span> من علي جهازك
+                                        </p>
+                                    </label>
+                                    <div class="uploadArea flexRow flexCenter"></div>
+                                </div>
+
+                            </div>
+
+                            <div class="col-md-4 col-xs-12">
+
+                                <div class="imagesUploadBlock width_full mt-4 mb-2">
+                                    <label class="uploadImg flex flexColumn flexCenter m-0">
+                                        <input type="file" accept="image/*" class="imageUploader addImage">
+                                        <span class="icon-image_placeholder colorGray" style="font-size: 40px"></span>
+                                        <p style="font-size: 12px">
+                                            اسحب صوره او <span class="colorDefault">رفع</span> من علي جهازك
+                                        </p>
+                                    </label>
+                                    <div class="uploadArea flexRow flexCenter"></div>
+                                </div>
+
+                            </div>
+
+                        </div>
                     </div>
 
-                    <div class="categories">
-                        <select class="selectpicker" id="catName" title="اسم القسم">
-                            <option>جرافيك وديزاين</option>
-                            <option>تصوير</option>
-                        </select>
-                        <select class="selectpicker" id="branchCat" title="القسم الفرعي">
-                            <option>جرافيك وديزاين</option>
-                            <option>تصوير</option>
-                        </select>
+                    <div class="sectionUploadVideo pt-3 pb-5 borderBCli">
+                        <div class="pt-4">
+                            <h6 class="colorGreen m-0">فيديو الخدمة</h6>
+                            <div class="flex flexSpace">
+                                <p class="m-0 colorGray">اضف مقطع فيديو لائما وعالي الجوده يقدم افضل عرض لخدماتك الرجاء اختيار مقطع فيديو اقصر من 75 ثانيه واصغر من 50</p>
+                                <span class="colorGray">( 0 / 1 )</span>
+                            </div>
+                        </div>
+
+                        <div class="row">
+
+                            <div class="col-md-4 col-xs-12">
+
+                                <div class="imagesUploadBlock width_full mt-4 mb-2">
+                                    <label class="uploadImg flex flexColumn flexCenter m-0">
+                                        <input type="file" accept="video/*" class="imageUploader addVideo">
+                                        <span class="icon-vedio_provider colorGray" style="font-size: 40px"></span>
+                                        <p style="font-size: 12px">
+                                            اسحب فيديو او <span class="colorDefault">رفع</span> من علي جهازك
+                                        </p>
+                                    </label>
+                                    <div class="uploadArea flexRow flexCenter"></div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="sectionUploadFile pt-3 pb-5 borderBCli">
+                        <div class="pt-4">
+                            <h6 class="colorGreen m-0">فيديو الخدمة</h6>
+                            <div class="flex flexSpace">
+                                <p class="m-0 colorGray">نوصي باضافه بملف pdf اذا كان يوضح الخدمه التي سيقدمها</p>
+                                <span class="colorGray">( 0 / 2 )</span>
+                            </div>
+                        </div>
+
+                        <div class="row">
+
+                            <div class="col-md-4 col-xs-12">
+
+                                <div class="imagesUploadBlock wrap width_full mt-4 mb-2">
+                                    <label class="uploadImg flex flexColumn flexCenter m-0 custom-file-upload">
+                                        <input type="file" name="file" id="file" class="file_upload">
+                                        <span class="icon-pdf_provider colorGray" style="font-size: 40px"></span>
+                                    </label>
+                                    <div class="uploadArea flexRow flexCenter"></div>
+                                </div>
+
+                            </div>
+
+                            <div class="col-md-4 col-xs-12">
+
+                                <div class="imagesUploadBlock wrap width_full mt-4 mb-2">
+                                    <label class="uploadImg flex flexColumn flexCenter m-0 custom-file-upload">
+                                        <input type="file" name="file" id="file" class="file_upload">
+                                        <span class="icon-pdf_provider colorGray" style="font-size: 40px"></span>
+                                        <p for="file" class="nameUpload colorBlack"></p>
+                                    </label>
+                                    <div class="uploadArea flexRow flexCenter"></div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="btnCont mb-5 flex flexRowCenter flexEnd mt-5">
+                        <a href="descriptionConditions.html" class="btnDefault pr-4 pl-4 pt-2 pb-2 Radius10 hvr-pulse">حفظ واستمرار</a>
+                        <a href="addService.html" class="colorDefault hvr-pulse mr-3 ml-3" style="font-size: 16px">رجوع</a>
                     </div>
 
                 </div>
 
-                <div class="requiredInfo">
-                    <div class="titleInfo">
-                        <h4>تصنيفات البحث</h4>
-                        <h5>يجب اختيار تصنيف لتظهر الخدمة في علامات البحث</h5>
-                    </div>
-
-                    <div class="flex-grow-1">
-                        <input class="form-control" type="text" id="tagsInput">
-
-                        <div class="hint"><img src="img/mark_info_provider.png" alt="info"> <span>من فضلك</span> بعض الخدمات تتطلب التأكد من الاقسام</div>
-
-                        <hr class="customHr">
-                    </div>
-                </div>
-
-                <div class="btnCont">
-                    <a href="serviceSaved.html" class="btnDefault hvr-pulse">حفظ واستمرار</a>
-                    <a href="services.html" class="btnDefault grayBtn hvr-pulse">الغاء</a>
-                </div>
-
-
-            </form>
-
-            <div class="leftDiv">
-                <img src="img/idea_provider.png" class="idea" alt="idea">
-                <iframe src="https://player.vimeo.com/video/60814695?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
-                <ul class="info">
-                    <li>تعليمات لرفع اول خدمة</li>
-                    <li>تعليمات لرفع اول خدمة</li>
-                    <li>تعليمات لرفع اول خدمة</li>
-                    <li>تعليمات لرفع اول خدمة</li>
-                    <li>تعليمات لرفع اول خدمة</li>
-                </ul>
             </div>
 
         </div>
     </div>
+
 </div>
-<div class="bgLightGray p-2"></div>
+
 <!--end addService-->
 
 <!--start footer-->
@@ -433,193 +513,5 @@
 <script src="js/bootstrap-select.min.js"></script>
 <script src="js/owl.carousel.min.js"></script>
 <script src="js/script.js"></script>
-
-<!--start select-->
-<script>
-    $('.selectpicker').selectpicker();
-</script>
-<!--end select-->
-
-<!--start tags-->
-
-<script>
-    (function(){
-
-        "use strict"
-
-
-        // Plugin Constructor
-        var TagsInput = function(opts){
-            this.options = Object.assign(TagsInput.defaults , opts);
-            this.init();
-        }
-
-        // Initialize the plugin
-        TagsInput.prototype.init = function(opts){
-            this.options = opts ? Object.assign(this.options, opts) : this.options;
-
-            if(this.initialized)
-                this.destroy();
-
-            if(!(this.orignal_input = document.getElementById(this.options.selector)) ){
-                console.error("tags-input couldn't find an element with the specified ID");
-                return this;
-            }
-
-            this.arr = [];
-            this.wrapper = document.createElement('div');
-            this.input = document.createElement('input');
-            init(this);
-            initEvents(this);
-
-            this.initialized =  true;
-            return this;
-        }
-
-        // Add Tags
-        TagsInput.prototype.addTag = function(string){
-
-            if(this.anyErrors(string))
-                return ;
-
-            this.arr.push(string);
-            var tagInput = this;
-
-            var tag = document.createElement('span');
-            tag.className = this.options.tagClass;
-            tag.innerText = string;
-
-            var closeIcon = document.createElement('a');
-            closeIcon.innerHTML = '&times;';
-
-            // delete the tag when icon is clicked
-            closeIcon.addEventListener('click' , function(e){
-                e.preventDefault();
-                var tag = this.parentNode;
-
-                for(var i =0 ;i < tagInput.wrapper.childNodes.length ; i++){
-                    if(tagInput.wrapper.childNodes[i] == tag)
-                        tagInput.deleteTag(tag , i);
-                }
-            })
-
-
-            tag.appendChild(closeIcon);
-            this.wrapper.insertBefore(tag , this.input);
-            this.orignal_input.value = this.arr.join(',');
-
-            return this;
-        }
-
-        // Delete Tags
-        TagsInput.prototype.deleteTag = function(tag , i){
-            tag.remove();
-            this.arr.splice( i , 1);
-            this.orignal_input.value =  this.arr.join(',');
-            return this;
-        }
-
-        // Make sure input string have no error with the plugin
-        TagsInput.prototype.anyErrors = function(string){
-            if( this.options.max != null && this.arr.length >= this.options.max ){
-                console.log('max tags limit reached');
-                return true;
-            }
-
-            if(!this.options.duplicate && this.arr.indexOf(string) != -1 ){
-                console.log('duplicate found " '+string+' " ')
-                return true;
-            }
-
-            return false;
-        }
-
-        // Add tags programmatically
-        TagsInput.prototype.addData = function(array){
-            var plugin = this;
-
-            array.forEach(function(string){
-                plugin.addTag(string);
-            })
-            return this;
-        }
-
-        // Get the Input String
-        TagsInput.prototype.getInputString = function(){
-            return this.arr.join(',');
-        }
-
-
-        // destroy the plugin
-        TagsInput.prototype.destroy = function(){
-            this.orignal_input.removeAttribute('hidden');
-
-            delete this.orignal_input;
-            var self = this;
-
-            Object.keys(this).forEach(function(key){
-                if(self[key] instanceof HTMLElement)
-                    self[key].remove();
-
-                if(key != 'options')
-                    delete self[key];
-            });
-
-            this.initialized = false;
-        }
-
-        // Private function to initialize the tag input plugin
-        function init(tags){
-            tags.wrapper.append(tags.input);
-            tags.wrapper.classList.add(tags.options.wrapperClass);
-            tags.orignal_input.setAttribute('hidden' , 'true');
-            tags.orignal_input.parentNode.insertBefore(tags.wrapper , tags.orignal_input);
-        }
-
-        // initialize the Events
-        function initEvents(tags){
-            tags.wrapper.addEventListener('click' ,function(){
-                tags.input.focus();
-            });
-
-
-            tags.input.addEventListener('keydown' , function(e){
-                var str = tags.input.value.trim();
-
-                if( !!(~[9 , 13 , 188].indexOf( e.keyCode ))  )
-                {
-                    e.preventDefault();
-                    tags.input.value = "";
-                    if(str != "")
-                        tags.addTag(str);
-                }
-
-            });
-        }
-
-
-        // Set All the Default Values
-        TagsInput.defaults = {
-            selector : '',
-            wrapperClass : 'tags-input-wrapper',
-            tagClass : 'tag',
-            max : null,
-            duplicate: false
-        }
-
-        window.TagsInput = TagsInput;
-
-    })();
-
-    var tagInput1 = new TagsInput({
-        selector: 'tagsInput',
-        duplicate : false,
-        // max : 10
-    });
-    tagInput1.addData(['PHP' , 'JavaScript' , 'CSS'])
-
-</script>
-<!--end tags-->
-
 </body>
 </html>

@@ -260,6 +260,9 @@ footer .footerInfo > div .apps img{
 .editCategory .interests > div {
     margin-left: 20px;
 }
+.viewPopInfo {
+    left: -50px;
+}
 
 @media(max-width: 767px){
     .register .btnGray {
