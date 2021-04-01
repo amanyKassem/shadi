@@ -257,6 +257,9 @@ footer .footerInfo > div .apps img{
 .viewPopInfo .listPoint li:before {
     right: -11px;
 }
+.editCategory .interests > div {
+    margin-left: 20px;
+}
 
 @media(max-width: 767px){
     .register .btnGray {
@@ -296,6 +299,9 @@ footer .footerInfo > div .apps img{
     }
     .addService .dataForm .rightDiv .requiredInfo .categories .dropdown.bootstrap-select:first-child {
         margin-left: 10px;
+    }
+    .editCategory .interests > div {
+        margin-left:0;
     }
 
 }

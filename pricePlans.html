@@ -787,11 +787,18 @@
     // });
 
     $(".radioItem").change(function () {
-        if ($("input[name=radio1]:checked")) {
+        // if ($("input[name=radio1]:checked")) {
+        //     $('.blockItemMoreAdd').slideDown();
+        // } else {
+        //     $('.blockItemMoreAdd').slideUp();
+        // }
+
+        if ($("input[name=radio1]").checked == true){
             $('.blockItemMoreAdd').slideDown();
         } else {
             $('.blockItemMoreAdd').slideUp();
         }
+
     });
 </script>
 

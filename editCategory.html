@@ -196,171 +196,128 @@
 <!--end header-->
 
 <!--start services-->
-<div class="ordersContainer analytics services bgLightGray">
+<div class="editCategory bgLightGray">
     <div class="container">
+        <h5 class="title">
+            الاقسام
+        </h5>
 
-        <div class="addServBlock">
-            <span>الاقسام</span>
-            <a href="editCategory.html" class="addEditCat">تعديل او اضافة قسم</a>
-        </div>
+        <div class="interests">
 
-
-        <div id="owl-demo1" class="owl-carousel">
-
-            <div class="item boxShadow">
-                <a href="" class="category">
+            <div>
+                <input type="checkbox" id="checkboxOne" value="Graphic design">
+                <label for="checkboxOne" class="interestBlock boxShadow">
                     <img src="img/graphic_design.png" alt="Graphic design">
                     <h4>الجرافيك والديزاين</h4>
-                </a>
+                </label>
             </div>
 
-            <div class="item boxShadow">
-                <a href="" class="category">
+            <div>
+                <input type="checkbox" id="checkboxTwo" value="Technology and Marketing Online">
+                <label for="checkboxTwo" class="interestBlock boxShadow">
                     <img src="img/Seo.png" alt="Technology and Marketing Online">
                     <h4>التكنولوجيا والتسويق لكتروني</h4>
-                </a>
+                </label>
             </div>
 
-            <div class="item boxShadow">
-                <a href="" class="category">
+            <div>
+                <input type="checkbox" id="checkboxThree" value="Writing and translation">
+                <label for="checkboxThree" class="interestBlock boxShadow">
                     <img src="img/translate.png" alt="Writing and translation">
                     <h4>الكتابة والترجمة</h4>
-                </a>
+                </label>
             </div>
 
-            <div class="item boxShadow">
-                <a href="" class="category">
+            <div>
+                <input type="checkbox" id="checkboxFour" value="Photography and montage">
+                <label for="checkboxFour" class="interestBlock boxShadow">
                     <img src="img/photography.png" alt="Photography and montage">
                     <h4>التصوير والمونتاج</h4>
-                </a>
+                </label>
             </div>
 
-            <div class="item boxShadow">
-                <a href="" class="category">
+            <div>
+                <input type="checkbox" id="checkboxFive" value="Education">
+                <label for="checkboxFive" class="interestBlock boxShadow">
                     <img src="img/education.png" alt="Education">
                     <h4>التعليم</h4>
-                </a>
+                </label>
             </div>
 
-            <div class="item boxShadow">
-                <a href="" class="category">
+            <div>
+                <input type="checkbox" id="checkboxSix" value="Consulting">
+                <label for="checkboxSix" class="interestBlock boxShadow">
                     <img src="img/consutation.png" alt="Consulting">
                     <h4>الاستشارات</h4>
-                </a>
+                </label>
             </div>
 
-            <div class="item boxShadow">
-                <a href="" class="category">
+            <div>
+                <input type="checkbox" id="checkboxSeven" value="Life style">
+                <label for="checkboxSeven" class="interestBlock boxShadow">
                     <img src="img/lifestyle.png" alt="Life style">
                     <h4>لايف استايل</h4>
-                </a>
+                </label>
             </div>
 
-            <div class="item boxShadow">
-                <a href="" class="category">
+            <div>
+                <input type="checkbox" id="checkboxEight" value="Video and animation">
+                <label for="checkboxEight" class="interestBlock boxShadow">
                     <img src="img/mic_enmy.png" alt="Video and animation">
                     <h4>الفيديو والانيميشن</h4>
-                </a>
+                </label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="checkboxNine" value="Video and animation">
+                <label for="checkboxEight" class="interestBlock boxShadow">
+                    <img src="img/phone-call.png" alt="Video and animation">
+                    <h4>خدمات عامة</h4>
+                </label>
             </div>
 
         </div>
 
-        <div class="addServBlock">
-            <span>الخدمات</span>
-            <a href="addService.html" class="btnDefault hvr-pulse">اضافة خدمة</a>
+        <a href="services.html" class="btnDefault hvr-pulse">حفظ</a>
+
+        <hr class="customHr">
+
+        <a data-toggle="modal" data-target="#addCat" class="addService boxShadow">
+            <img src="img/plus_green.png" alt="plus">
+            اضافة قسم اخر
+        </a>
+
+        <!-- Modal -->
+        <div class="modal fade" id="addCat" tabindex="-1" role="dialog" aria-labelledby="addCatTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">اضافة قسم</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span class="icon-cancel_black"></span>
+                        </button>
+                    </div>
+                    <div class="modal-body minHeightAuto px-md-4 py-0 justify-content-start">
+                        <form action="" class="w-100 innerForm">
+                            <div class="form-group">
+                                <input type="text" name="category" id="email" class="form-control" required>
+                                <label for="category">اسم القسم</label>
+                            </div>
+
+                            <div class="form-group">
+                                <input type="text" class="form-control docPhoto" id="docPhoto" placeholder="ايقون معبرة" disabled>
+                                <input id="photo-upload" class="uploadFile" name='upload_cont_file' type="file">
+                                <i class="fas fa-camera"></i>
+                            </div>
+
+                            <a href="services.html" data-dismiss="modal" class="btnDefault hvr-pulse mb-5">حفظ</a>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <div class="filterCont">
-            <select class="selectpicker" id="month" title="القسم">
-                <option>جرافيك وديزاين</option>
-                <option>تصوير</option>
-            </select>
-        </div>
-        <div class="ordersInfo">
-            <table class="display nowrap orderTable" >
-                <thead>
-                <tr>
-                    <th>صورة الخدمة</th>
-                    <th>عنوان الخمة</th>
-                    <th>القسم</th>
-                    <th>تاريخ الاضافة</th>
-                    <th>ايام الانجاز</th>
-                    <th></th>
-                </tr>
-                </thead>
-                <tbody>
-
-                <tr>
-                    <td>
-                        <a href="providerServiceDetails.html"><img class="img-fluid" src="img/pic_o.png" alt="service"></a>
-                    </td>
-                    <td>
-                        <a href="providerServiceDetails.html">تعديلات فيديوهات ومونتاج</a>
-                    </td>
-                    <td>الجرافيك والديزاين</td>
-                    <td>15\3\2022</td>
-                    <td>15</td>
-                    <td>
-                        <a href="#" class="more">
-                            <span class="icon-more_provider"></span>
-                        </a>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td>
-                        <a href="providerServiceDetails.html"><img class="img-fluid" src="img/pic_o.png" alt="service"></a>
-                    </td>
-                    <td>
-                        <a href="providerServiceDetails.html">تعديلات فيديوهات ومونتاج</a>
-                    </td>
-                    <td>الجرافيك والديزاين</td>
-                    <td>15\3\2022</td>
-                    <td>15</td>
-                    <td>
-                        <a href="#" class="more">
-                            <span class="icon-more_provider"></span>
-                        </a>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td>
-                        <a href="providerServiceDetails.html"><img class="img-fluid" src="img/pic_o.png" alt="service"></a>
-                    </td>
-                    <td>
-                        <a href="providerServiceDetails.html">تعديلات فيديوهات ومونتاج</a>
-                    </td>
-                    <td>الجرافيك والديزاين</td>
-                    <td>15\3\2022</td>
-                    <td>15</td>
-                    <td>
-                        <a href="#" class="more">
-                            <span class="icon-more_provider"></span>
-                        </a>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td>
-                        <a href="providerServiceDetails.html"><img class="img-fluid" src="img/pic_o.png" alt="service"></a>
-                    </td>
-                    <td>
-                        <a href="providerServiceDetails.html">تعديلات فيديوهات ومونتاج</a>
-                    </td>
-                    <td>الجرافيك والديزاين</td>
-                    <td>15\3\2022</td>
-                    <td>15</td>
-                    <td>
-                        <a href="#" class="more">
-                            <span class="icon-more_provider"></span>
-                        </a>
-                    </td>
-                </tr>
-
-                </tbody>
-            </table>
-        </div>
     </div>
 </div>
 <!--end services-->
@@ -474,34 +431,19 @@
 <script src="js/jquery-3.3.1.min.js"></script>
 <script src="js/popper.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
-<script src="js/bootstrap-select.min.js"></script>
 <script type="text/javascript" src="js/datatables.min.js"></script>
 <script type="text/javascript" src="js/jquery.dataTables.min.js"></script>
 <script src="js/owl.carousel.min.js"></script>
 <script src="js/script.js"></script>
 
-<!--start select-->
-<script>
-    $('.selectpicker').selectpicker();
-</script>
-<!--end select-->
 
-<!--table-->
 <script>
-    $(document).ready(function() {
-        $('.orderTable').DataTable( {
-            // "language": {
-            //     "paginate": {
-            //         "next": '<i class="fas fa-chevron-left"></i>',
-            //         "previous": '<i class="fas fa-chevron-right"></i>',
-            //     }
-            // },
-            "scrollY": 200,
-            "scrollX": true
-        } );
-    } );
+    $('.uploadFile').change(function() {
+        var i = $(this).prev('.custom-file-upload').clone();
+        var file = $(this)[0].files[0].name;
+        $(this).prev('.docPhoto').attr('placeholder',file);
+    });
 </script>
-
 
 </body>
 </html>
