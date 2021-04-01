@@ -272,6 +272,10 @@ header .overlay {
 .addService .dataForm .rightDiv .requiredInfo .titleInfo{
     margin-right: 45px;
 }
+
+.addService .dataForm .rightDiv .requiredInfo .titleInfo {
+    margin-right: 0;
+}
 .addService .dataForm .rightDiv .requiredInfo .tags-input-wrapper .tag{
     margin-right: 10px;
 }
@@ -292,15 +296,22 @@ footer .footerInfo > div .apps img{
 }
 
 .viewPopInfo .listPoint li:before {
-    left: -11px;
+    left: 0px;
 }
 
 .editCategory .interests > div {
     margin-right: 20px;
 }
-
 .viewPopInfo {
     right: -50px;
+}
+.addService .dataForm.step3 .rightDiv .requiredInfo .addQues img , .addService .dataForm.step3 .rightDiv .requiredInfo .addAnotherQues img{
+    margin-right: 10px;
+}
+
+.viewPopInfo:before {
+    border-right: 15px solid #defbd2;
+    left: -15px;
 }
 
 @media(max-width: 767px){
