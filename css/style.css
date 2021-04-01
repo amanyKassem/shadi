@@ -3308,6 +3308,17 @@ footer .lightLamp{
 .addService .dataForm.step3 .rightDiv .requiredInfo .titleInfo {
     width: 100%;
 }
+.addService .dataForm.step3 .rightDiv .requiredInfo .titleInfo.titleImg {
+   flex-direction: row;
+    align-items: center;
+}
+.addService .dataForm.step3 .rightDiv .requiredInfo .titleInfo.titleImg img{
+    width: 45px;
+}
+.addService .dataForm.step3 .rightDiv .requiredInfo .titleInfo.titleImg h5{
+    margin-bottom: 0;
+    line-height: 1.8;
+}
 .addService .dataForm.step3 .rightDiv .requiredInfo .titleInfo h4 {
     font-size: 15px;
     margin: 0;
@@ -3335,6 +3346,19 @@ footer .lightLamp{
 
 .addService .dataForm.step3 .rightDiv .requiredInfo .addAnotherQues{
     display: none;
+}
+
+.addService .dataForm.step3 .rightDiv .requiredInfo .quesDiv{
+    margin-bottom: 15px;
+}
+.addService .dataForm.step3 .rightDiv .requiredInfo .quesDiv .ques{
+    color: #3A3A3A;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+.addService .dataForm.step3 .rightDiv .requiredInfo .quesDiv .answer{
+    color: #818181;
+    font-size: 13px;
 }
 .addService .dataForm .rightDiv .grayBtn.backBtn{
     background: none !important;

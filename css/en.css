@@ -314,6 +314,10 @@ footer .footerInfo > div .apps img{
     left: -15px;
 }
 
+.addService .dataForm.step3 .rightDiv .requiredInfo .titleInfo.titleImg img{
+    margin-right: 15px;
+}
+
 @media(max-width: 767px){
     .register .btnGray {
         margin-left: 0;
