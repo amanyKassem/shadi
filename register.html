@@ -125,6 +125,13 @@
 <!--start select-->
 <script>
     $('.selectpicker').selectpicker();
+
+    $(".selectpicker").on("hide.bs.select", function() {
+        var val = $(this).val().toString();
+        if (val) {
+            $('.authForm .bootstrap-select>.dropdown-toggle').css('border' , '1px solid #56C429');
+        }
+    })
 </script>
 <!--end select-->
 
