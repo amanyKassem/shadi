@@ -272,6 +272,10 @@ header .overlay {
 .addService .dataForm .rightDiv .requiredInfo .titleInfo{
     margin-right: 45px;
 }
+
+.addService .dataForm .rightDiv .requiredInfo .titleInfo {
+    margin-right: 0;
+}
 .addService .dataForm .rightDiv .requiredInfo .tags-input-wrapper .tag{
     margin-right: 10px;
 }
@@ -297,6 +301,10 @@ footer .footerInfo > div .apps img{
 
 .editCategory .interests > div {
     margin-right: 20px;
+}
+
+.addService .dataForm.step3 .rightDiv .requiredInfo .addQues img , .addService .dataForm.step3 .rightDiv .requiredInfo .addAnotherQues img{
+    margin-right: 10px;
 }
 
 @media(max-width: 767px){

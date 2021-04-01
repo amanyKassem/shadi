@@ -2787,6 +2787,19 @@ table.dataTable.hover tbody tr:hover, table.dataTable.display tbody tr:hover{
     color: #56C429;
 }
 
+.addService .dataForm .opacityDiv{
+    display: none;
+    top: -15px;
+    position: absolute;
+    background: #ffffffc9;
+    z-index: 4;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 
 /* start footer*/
 
@@ -3111,6 +3124,7 @@ footer .lightLamp{
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: flex-start;
+    position: relative;
 }
 .addService .dataForm .rightDiv{
     flex: 1;
@@ -3231,12 +3245,31 @@ footer .lightLamp{
     border-bottom: 10px solid transparent;
     top: 35px;
 }
+.addService .dataForm .leftDiv:after{
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 17px solid white;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
 .addService .dataForm .leftDiv .idea{
     position: absolute;
     top: -29px;
     left: 50%;
     transform: translateX(-50%);
     width: 30px;
+    z-index: 1;
+}
+.addService .dataForm .leftDiv .title{
+    color: #274730;
+    font-size: 14px;
+    margin: 0;
 }
 .addService .dataForm .leftDiv .info{
     color: #274730;
@@ -3257,6 +3290,47 @@ footer .lightLamp{
     background: #274730;
     top: 50%;
     transform: translateY(-50%);
+}
+
+.addService .dataForm.step3 .rightDiv .requiredInfo{
+    flex-direction: column;
+}
+.addService .dataForm.step3 .rightDiv .requiredInfo .titleInfo {
+    width: 100%;
+}
+.addService .dataForm.step3 .rightDiv .requiredInfo .titleInfo h4 {
+    font-size: 15px;
+    margin: 0;
+}
+.addService .dataForm.step3 .rightDiv .requiredInfo .titleInfo h5 {
+    line-height: 1;
+    font-size: 14px;
+}
+.addService .dataForm.step3 .rightDiv .requiredInfo .titleInfo h5.greenText {
+    color: #274730;
+}
+
+.addService .dataForm.step3 .rightDiv .requiredInfo .form-group .inputAuo{
+    height: auto;
+}
+
+.addService .dataForm.step3 .rightDiv .requiredInfo .addQues , .addService .dataForm.step3 .rightDiv .requiredInfo .addAnotherQues{
+    color: #56C429;
+    font-size: 14px;
+}
+
+.addService .dataForm.step3 .rightDiv .requiredInfo .addQues img , .addService .dataForm.step3 .rightDiv .requiredInfo .addAnotherQues img{
+    width: 20px;
+}
+
+.addService .dataForm.step3 .rightDiv .requiredInfo .addAnotherQues{
+    display: none;
+}
+.addService .dataForm .rightDiv .grayBtn.backBtn{
+    background: none !important;
+    border: 0 !important;
+    color: #56C429 !important;
+    font-size: 17px;
 }
 /*end addService*/
 
@@ -3803,6 +3877,9 @@ footer .footerInfo > div .apps img{
         width: 100%;
         margin: 30px 0;
     }
+    .addService .dataForm .rightDiv {
+        width: 100%;
+    }
 
     .addService .dataForm .rightDiv .requiredInfo {
         flex-direction: column;
@@ -3810,14 +3887,20 @@ footer .footerInfo > div .apps img{
     .addService .dataForm .rightDiv .requiredInfo .titleInfo {
         width: auto;
     }
-    .addService .dataForm .rightDiv .requiredInfo .titleInfo h4 {
+    .addService .dataForm .rightDiv .requiredInfo .titleInfo h4 , .addService .dataForm.step3 .rightDiv .requiredInfo .titleInfo h4{
         font-size: 14px;
         margin-bottom: 0;
     }
     .addService .dataForm .rightDiv .requiredInfo .titleInfo h5 , .addService .dataForm .rightDiv .requiredInfo .categories .bootstrap-select>.dropdown-toggle ,
-    .bootstrap-select .dropdown-menu li a , .editCategory .addService{
+    .bootstrap-select .dropdown-menu li a , .editCategory .addService , .addService .dataForm.step3 .rightDiv .requiredInfo .titleInfo h5 , .addService .dataForm .rightDiv .requiredInfo .form-group .form-control ,
+    .addService .dataForm.step3 .rightDiv .requiredInfo .addQues, .addService .dataForm.step3 .rightDiv .requiredInfo .addAnotherQues{
         font-size: 13px;
     }
+
+    .addService .dataForm .rightDiv .grayBtn.backBtn {
+        font-size: 15px;
+    }
+
     .addService .dataForm .rightDiv .btnCont {
         margin: 10px 0 20px;
     }
@@ -3849,6 +3932,9 @@ footer .footerInfo > div .apps img{
 
     .modal-header .close {
         font-size: 15px;
+    }
+    .addService .dataForm .leftDiv:before{
+        content: none;
     }
 }
 
@@ -3937,6 +4023,13 @@ footer .footerInfo > div .apps img{
         width: 50%;
         margin:10px auto 45px;
         align-self: center;
+    }
+
+    .addService .dataForm .rightDiv {
+        width: 100%;
+    }
+    .addService .dataForm .leftDiv:before{
+        content: none;
     }
 
 }

@@ -233,6 +233,9 @@ header .overlay {
     margin-left: 45px;
 }
 
+.addService .dataForm .rightDiv .requiredInfo .titleInfo {
+    margin-left: 0;
+}
 
 .addService .dataForm .rightDiv .requiredInfo .tags-input-wrapper .tag{
     margin-left: 10px;
@@ -261,6 +264,9 @@ footer .footerInfo > div .apps img{
     margin-left: 20px;
 }
 
+.addService .dataForm.step3 .rightDiv .requiredInfo .addQues img , .addService .dataForm.step3 .rightDiv .requiredInfo .addAnotherQues img{
+    margin-left: 10px;
+}
 @media(max-width: 767px){
     .register .btnGray {
         margin-right: 0;

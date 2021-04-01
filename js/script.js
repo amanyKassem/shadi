@@ -15,6 +15,8 @@ $(document).ready(function () {
         $(".menu").removeClass("ulDir");
     });
 
+    // categories slider
+
     $('#owl-demo1').owlCarousel({
         // center: true,
         dots: false,
@@ -43,6 +45,25 @@ $(document).ready(function () {
         }
     });
 
+
+    //textarea count
+    $('body').on('keyup', '.textareaCount', function() {
+        var characterCount = $(this).val().length,
+            length = $(this).attr('maxlength'),
+            current = $(this).next('.count').find('.current'),
+            maximum = $(this).next('.count').find('.maximum');
+
+        current.text(characterCount);
+
+        if (characterCount >= length) {
+            maximum.css('color', '#8f0001');
+            current.css('color', '#8f0001');
+        } else {
+            maximum.css('color','#3A3A3A');
+            current.css('color','#3A3A3A');
+        }
+
+    });
 
     // ANIMATION
 
