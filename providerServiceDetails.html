@@ -211,24 +211,54 @@
                 <div class="listUl">
                     <ul class="flex flexRowCenter">
                         <li class="mr-1 ml-1">
-                            <a href="" class="colorDefault">
+                            <a class="colorDefault" data-toggle="modal" data-target="#addCat">
                                 <img src="img/tag.png" alt="" style="max-width: 18px;">
                                 <span class="mr-1 ml-1">آضف خصم</span>
                             </a>
                         </li>
                         <li class="mr-1 ml-1">
-                            <a href="" class="colorDefault">
+                            <a href="addService.html" class="colorDefault">
                                 <i class="far fa-edit colorDefault"></i>
                                 <span class="mr-1 ml-1">تعديل الخدمة</span>
                             </a>
                         </li>
                         <li class="mr-1 ml-1">
-                            <a href="" class="colorRed">
+                            <a href="services.html" class="colorRed">
                                 <i class="icon-delete_charts colorRed"></i>
                                 <span class="mr-1 ml-1">حذف الخدمة</span>
                             </a>
                         </li>
                     </ul>
+                </div>
+
+                <!-- Modal -->
+                <div class="modal fade" id="addCat" tabindex="-1" role="dialog" aria-labelledby="addCatTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">اضافة عرض</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span class="icon-cancel_black"></span>
+                                </button>
+                            </div>
+                            <div class="modal-body minHeightAuto px-md-4 py-0 justify-content-start">
+                                <form action="" class="w-100 innerForm">
+                                    <div class="form-group">
+                                        <input type="text" name="category" class="form-control" required>
+                                        <label for="category">السعر بعد العرض</label>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <input type="text" name="category" class="form-control" required>
+                                        <label for="category">مده العرض</label>
+                                    </div>
+
+                                    <a href="services.html" data-dismiss="modal" class="btnDefault hvr-pulse mb-5">حفظ</a>
+
+                                </form>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
             </div>
@@ -247,11 +277,57 @@
                     </div>
                 </div>
                 <div class="flex flexRowCenter">
-                    <a href="" class="btnButton btnDefault displayInline">
+                    <a data-toggle="modal" data-target="#Share" class="btnButton btnDefault displayInline">
                         شارك خدمتك
                     </a>
                 </div>
             </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="Share" tabindex="-1" role="dialog" aria-labelledby="addCatTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+
+                        <div class="modal-body pt-4 pb-4 minHeightAuto px-md-4 py-0 justify-content-start">
+
+                            <img src="img/friends__invite_vector.png" alt="" style="max-width: 240px;">
+
+                            <div class="mt-5 text-center">
+                                <h6>اوشكت علي الإنتهاء</h6>
+                                <h6>دعنا نقوم بإول بيع لخدماتك ونزيد ارباحك</h6>
+                            </div>
+
+                            <ul class="linkSocial mt-3 mb-3 flex flexRowCenter ">
+                                <li class="faceBook">
+                                    <a href="" class="flex flexCenter">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                </li>
+                                <li class="twitter">
+                                    <a href="" class="flex flexCenter">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                </li>
+                                <li class="linkedIn">
+                                    <a href="" class="flex flexCenter">
+                                        <i class="fab fa-linkedin-in"></i>
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <h6>نسخ الرابط</h6>
+
+                            <span class="bgLightGray p-3 borderCli Radius5 colorGray">
+                                https://marvelapp.com/prototype/25ee2bc6/screen/73731393
+                            </span>
+
+                        </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
 
             <div class="mt-2">
 
@@ -1182,6 +1258,7 @@
 
         </div>
     </div>
+
 
 </div>
 <!--end statistics-->
