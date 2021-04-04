@@ -233,8 +233,8 @@
                                         <span class="colorGray">12 Jun</span>
                                     </div>
                                     <div class="flex flexSpace">
-                                        <p class="m-0 colorOp">عذاب عمرك ف عشق الندم</p>
-                                        <span></span>
+                                        <p class="m-0 colorOp MSG">كيف الحال يا اخي العزيز ؟</p>
+                                        <span class="colorGray"><i class="far fa-check-circle"></i></span>
                                     </div>
                                 </div>
                             </div>
@@ -249,7 +249,8 @@
                                         <span class="colorGray">12 Jun</span>
                                     </div>
                                     <div class="flex flexSpace">
-                                        <p class="m-0 colorOp">عذاب عمرك ف عشق الندم</p>
+                                        <p class="m-0 colorOp MSG">كيف الحال يا اخي العزيز ؟</p>
+                                        <span class="colorGray"><i class="fas fa-check-circle"></i></span>
                                     </div>
                                 </div>
                             </div>
@@ -264,8 +265,7 @@
                                         <span class="colorGray">12 Jun</span>
                                     </div>
                                     <div class="flex flexSpace">
-                                        <p class="m-0 colorOp">عذاب عمرك ف عشق الندم</p>
-                                        <span></span>
+                                        <p class="m-0 colorOp MSG">كيف الحال يا اخي العزيز ؟</p>
                                     </div>
                                 </div>
                             </div>
@@ -280,7 +280,7 @@
                                         <span class="colorGray">12 Jun</span>
                                     </div>
                                     <div class="flex flexSpace">
-                                        <p class="m-0 colorOp">عذاب عمرك ف عشق الندم</p>
+                                        <p class="m-0 colorOp MSG">كيف الحال يا اخي العزيز ؟</p>
                                     </div>
                                 </div>
                             </div>
@@ -295,7 +295,7 @@
                                         <span class="colorGray">12 Jun</span>
                                     </div>
                                     <div class="flex flexSpace">
-                                        <p class="m-0 colorOp">عذاب عمرك ف عشق الندم</p>
+                                        <p class="m-0 colorOp MSG">كيف الحال يا اخي العزيز ؟</p>
                                         <span></span>
                                     </div>
                                 </div>
@@ -311,7 +311,7 @@
                                         <span class="colorGray">12 Jun</span>
                                     </div>
                                     <div class="flex flexSpace">
-                                        <p class="m-0 colorOp">عذاب عمرك ف عشق الندم</p>
+                                        <p class="m-0 colorOp MSG">كيف الحال يا اخي العزيز ؟</p>
                                     </div>
                                 </div>
                             </div>
@@ -337,7 +337,7 @@
                                         <img src="img/pic.jpg" alt="">
                                     </div>
                                     <div class="infoSender flex90">
-                                        <p class="m-0 p-3 float-right">اهلا بك يابن الندم اهلا بك يابن الندم اهلا بك يابن الندم اهلا بك يابن الندم اهلا بك يابن الندم اهلا بك يابن الندم</p>
+                                        <p class="m-0 p-3 float-right">كيف الحال يا اخي العزيز ؟</p>
                                     </div>
                                 </div>
                                 <span class="text-center d-block w-100 colorGray mt-2 mb-2">19/1/2020 , 3:39 AM</span>
@@ -345,18 +345,18 @@
 
                             <div class="blockRecent pb-4 pt-4">
                                 <div class="recent flex flexRow rowReverse">
-                                    <div class="imgUserMassage imgRecent flex10 text-center position-relative mt-2 mb-2">
-                                        <img src="img/pic.jpg" alt="">
-                                    </div>
-                                    <div class="infoRecent flex90">
-                                        <p class="bgDefault m-0 p-3 float-left colorWight">اهلا بك يابن الندم</p>
+                                    <div class="flex flex-column">
+                                        <div class="infoRecent">
+                                            <p class="bgDefault m-0 p-3 float-left colorWight">الحمد لله بخير </p>
+                                        </div>
+                                        <h6 class="colorGray seenSp">تم المشاهده</h6>
                                     </div>
                                 </div>
                                 <span class="text-center d-block w-100 colorGray mt-2 mb-2">19/1/2020 , 3:39 AM</span>
                             </div>
                         </div>
 
-                        <div class="formAction sentMassage p-3 bgWight">
+                        <div class="formAction sentMassage pt-4 pb-2 bgWight borderTCli">
                             <form action="" class="position-relative overflow-hidden formChat">
                                 <a class="position-absolute btnButton btnDefault w-auto pl-3 pr-3 posRightSec">
                                     <span class="icon-paperclip"></span>
@@ -518,7 +518,7 @@
                 event.preventDefault();
                 var date = new Date();
                 var dateTime = date.getFullYear() + "-" + (date.getMonth() + 1) + "-" + date.getDate() + " " +  date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds();
-                var message = $('.blockSent').first().clone();
+                var message = $('.blockRecent').first().clone();
                 message.find('p').text($('.input-custom-size').val());
                 message.find('span').text(dateTime);
                 message.appendTo('.contentChat');

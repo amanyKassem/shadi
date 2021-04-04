@@ -281,6 +281,10 @@ footer .footerInfo > div .apps img{
     margin-left: 15px;
 }
 
+.seenSp{
+    text-align: left;
+}
+
 @media(max-width: 767px){
     .register .btnGray {
         margin-right: 0;

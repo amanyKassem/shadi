@@ -1075,9 +1075,18 @@ p{
     background-color: #0077B5;
 }
 
+.seenSp{
+    text-align: left;
+    margin-top: 8px;
+    font-size: 11px;
+}
 
-
-
+.MSG{
+    width: 140px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
 
 
 
