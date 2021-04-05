@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="9bc48199-1b3c-454e-ae85-acd912d6d62e" name="Sh3wZa" url="http://abdo.arabsdesign.com">
+        <fileTransfer rootFolder="/public_html" host="abdo.arabsdesign.com" port="21">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+      <webServer id="19c22baa-b013-48e5-8d19-ddca58a9c2f4" name="offerita" url="http://offerit.aait-sa.com">
+        <fileTransfer rootFolder="/public_html" host="offerit.aait-sa.com" port="21">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+      <webServer id="4e7ec5ae-69e8-4fd2-869b-5e38048929b6" name="mnsatnajran" url="http://mnsatnajran.aait-sa.com">
+        <fileTransfer rootFolder="/public_html" host="mnsatnajran.aait-sa.com" port="21">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

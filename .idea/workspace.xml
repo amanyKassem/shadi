@@ -2,8 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="84ecf738-5bf0-4e52-a2ff-559136de2256" name="Default Changelist" comment="">
+<<<<<<< HEAD
       <change afterPath="$PROJECT_DIR$/sellOnLight.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/support.html" afterDir="false" />
+=======
+      <change afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/userHome.html" afterDir="false" />
+>>>>>>> 9889fda22e6ddf8f6cb43d20eadb3416d02fe04b
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/addService.html" beforeDir="false" afterPath="$PROJECT_DIR$/addService.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/analytics.html" beforeDir="false" afterPath="$PROJECT_DIR$/analytics.html" afterDir="false" />
@@ -14,6 +19,7 @@
       <change beforePath="$PROJECT_DIR$/css/ar.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/ar.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/en.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/en.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/descriptionConditions.html" beforeDir="false" afterPath="$PROJECT_DIR$/descriptionConditions.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/earnings.html" beforeDir="false" afterPath="$PROJECT_DIR$/earnings.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/editCategory.html" beforeDir="false" afterPath="$PROJECT_DIR$/editCategory.html" afterDir="false" />
@@ -28,6 +34,8 @@
       <change beforePath="$PROJECT_DIR$/publish.html" beforeDir="false" afterPath="$PROJECT_DIR$/publish.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/publishDone.html" beforeDir="false" afterPath="$PROJECT_DIR$/publishDone.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/services.html" beforeDir="false" afterPath="$PROJECT_DIR$/services.html" afterDir="false" />
+=======
+>>>>>>> 9889fda22e6ddf8f6cb43d20eadb3416d02fe04b
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -129,7 +137,12 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -169,7 +182,7 @@
       <workItem from="1616310619522" duration="24641000" />
       <workItem from="1616412928008" duration="49844000" />
       <workItem from="1616915494230" duration="55074000" />
-      <workItem from="1617520581629" duration="630000" />
+      <workItem from="1617520581629" duration="30288000" />
     </task>
     <servers />
   </component>

@@ -304,6 +304,33 @@ header .headerTop .closeTopHeader{
 header .headerTop span {
     margin-left: 5px;
 }
+.xHeader{
+    left: 15px;
+}
+
+.linkAfter li a{
+    border-right: 1px solid #CCC;
+}
+
+.searchBox button{
+    border-radius: 10px 0px 0px 10px;
+}
+
+.searchBox input{
+    border-radius: 0px 10px 10px 0px;
+}
+
+#owlProduct .owl-next{
+    left: 0px;
+}
+
+#owlProduct .owl-prev{
+    right: 0px;
+}
+
+.infoWo {
+    padding-left: 100px;
+}
 
 @media(max-width: 767px){
     .register .btnGray {
@@ -365,6 +392,9 @@ header .headerTop span {
         left: auto;
         padding: 0 5px;
     }
+    .topCategories .catLinks li {
+        margin-left: 30px;
+    }
 
 }
 
@@ -384,6 +414,9 @@ header .headerTop span {
     .userHeader .searchCont .form-control {
         padding-right: 30px;
     }
+    .topCategories .catLinks li {
+        margin-left: 30px;
+    }
 }
 
 @media(min-width: 992px) and (max-width: 1199px) {
@@ -393,11 +426,17 @@ header .headerTop span {
     .userHeader .searchCont .form-control {
         padding-right: 35px;
     }
+    .topCategories .catLinks li {
+        margin-left: 30px;
+    }
 }
 
 @media(max-width: 1024px){
     .chatAll .menuChat{
         right: 0;
+    }
+    .infoWo {
+        padding-left: 0px;
     }
 }
 
