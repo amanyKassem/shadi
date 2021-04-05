@@ -285,6 +285,34 @@ footer .footerInfo > div .apps img{
     text-align: left;
 }
 
+.xHeader{
+    left: 15px;
+}
+
+.linkAfter li a{
+    border-right: 1px solid #CCC;
+}
+
+.searchBox button{
+    border-radius: 10px 0px 0px 10px;
+}
+
+.searchBox input{
+    border-radius: 0px 10px 10px 0px;
+}
+
+#owlProduct .owl-next{
+    left: 0px;
+}
+
+#owlProduct .owl-prev{
+    right: 0px;
+}
+
+.infoWo {
+    padding-left: 100px;
+}
+
 @media(max-width: 767px){
     .register .btnGray {
         margin-right: 0;
@@ -345,6 +373,9 @@ footer .footerInfo > div .apps img{
 @media(max-width: 1024px){
     .chatAll .menuChat{
         right: 0;
+    }
+    .infoWo {
+        padding-left: 0px;
     }
 }
 

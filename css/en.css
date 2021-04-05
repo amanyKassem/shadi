@@ -322,6 +322,20 @@ footer .footerInfo > div .apps img{
     text-align: right;
 }
 
+.xHeader{
+    right: 15px;
+}
+
+.linkAfter li a{
+    border-left: 1px solid #CCC;
+}
+
+.infoWo {
+    padding-right: 100px;
+}
+
+
+
 @media(max-width: 767px){
     .register .btnGray {
         margin-left: 0;
@@ -380,6 +394,9 @@ footer .footerInfo > div .apps img{
 @media(max-width: 1024px){
     .chatAll .menuChat{
         left: 0;
+    }
+    .infoWo {
+        padding-right: 0px;
     }
 }
 
