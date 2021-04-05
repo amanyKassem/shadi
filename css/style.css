@@ -4035,9 +4035,14 @@ footer .lightLamp{
 /*end topCategories*/
 
 /*start social*/
-.social{
+.socialContainer{
+    padding: 15px 0;
+}
+
+.socialContainer .title{
 
 }
+
 /*end social*/
 
 
