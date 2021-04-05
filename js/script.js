@@ -15,6 +15,39 @@ $(document).ready(function () {
         $(".menu").removeClass("ulDir");
     });
 
+    // remove header discount
+
+    $(".closeTopHeader").click(function () {
+        $(this).parent().fadeOut(300);
+        setTimeout(function(){ $('body').toggleClass('pT175') }, 300);
+        if(window.matchMedia("(max-width: 767px)").matches){
+            // The viewport is less than 768 pixels wide
+            setTimeout(function(){ $(".userHeader").css({"height": "85px" , "flex-direction": "row"}); }, 300);
+        }else{
+            setTimeout(function(){ $(".userHeader").css({"height": "115px" , "flex-direction": "row"}); }, 300);
+        }
+    });
+
+    // search box
+
+    $(".searchIcon").click(function () {
+
+        if(window.matchMedia("(min-width: 768px) and (max-width: 991px)").matches){
+            $(this).prev('.form-control').css({"zIndex": "0" , "opacity": "1" , "width" : "200px"});
+        }else if(window.matchMedia("(min-width: 992px) and (max-width: 1199px)").matches){
+            $(this).prev('.form-control').css({"zIndex": "0" , "opacity": "1" , "width" : "300px"});
+        }else{
+            $(this).prev('.form-control').css({"zIndex": "0" , "opacity": "1" , "width" : "400px"});
+        }
+        setTimeout(function(){ $('.closeSearch').css({"zIndex": "1" , "opacity": "1"}); }, 500);
+    });
+
+    $(".closeSearch").click(function () {
+        $(this).parent('.searchCont').find('.form-control').css({"zIndex": "-1" , "opacity": "0" , "width" : "0"});
+        $(this).parent('.searchCont').find('.form-control').val('');
+        $(this).css({"zIndex": "-1" , "opacity": "0"});
+    });
+
     // categories slider
 
     $('#owl-demo1').owlCarousel({

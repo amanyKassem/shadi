@@ -372,10 +372,10 @@
                 <h5 class="title">المجتمع</h5>
                 <ul>
                     <li>
-                        <a href="inviteFriend.html" class="hvr-backward">دعوة صديق</a>
+                        <a data-toggle="modal" data-target="#inviteFriend" class="hvr-backward">دعوة صديق</a>
                     </li>
                     <li>
-                        <a href="beBuyer.html" class="hvr-backward">أصبح بائع</a>
+                        <a href="beSeller.html" class="hvr-backward">أصبح بائع</a>
                     </li>
                 </ul>
             </div>
@@ -395,6 +395,49 @@
         </div>
 
     </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="inviteFriend" tabindex="-1" role="dialog" aria-labelledby="inviteFriendTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <a data-dismiss="modal" class="closeModal" type="submit">
+                    <span class="icon-cancel_black"></span>
+                </a>
+                <div class="modal-body">
+                    <img class="vector" src="img/vector_invite.png" alt="vector invite friend">
+                    <p class="title">دعوة الاصدقاء وكلاكما تحصلان علي ما يصل الي 100 دولار</p>
+                    <p class="desc maxWidthAuto">تعريف اصدقائك علي اسهل طريقة لإنجاز الامور</p>
+
+                    <form action="" class="inviteFriend">
+                        <div class="form-group">
+                            <input type="text" name="email" id="email" class="form-control" placeholder="اضف البريد الالكتروني">
+                        </div>
+                        <a data-dismiss="modal" class="btnDefault hvr-pulse" type="submit">ارسال</a>
+                    </form>
+                    <p class="title my-4">رابط الدعوه الخاص بك</p>
+                    <a href="" class="bgLightGray py-3 px-md-5 px-2 borderCli Radius5 colorBlack w-75 wordBreak text-center">
+                        https://marvelapp.com/prototype/25ee2bc6/screen/73731393
+                    </a>
+
+                    <p class="title mt-4 mb-2">شارك عبر وسائل التواصل</p>
+
+                    <div class="social">
+                        <a class="twitter hvr-float-shadow">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a class="faceBook hvr-float-shadow">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a class="linkedIn hvr-float-shadow">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
 </footer>
 <!--end footer-->
 

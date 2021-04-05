@@ -21,18 +21,14 @@
     <!-- Bootstrap CSS -->
     <link href="css/all.min.css" rel="stylesheet"/>
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/bootstrap-select.min.css">
-    <link rel="stylesheet" type="text/css" href="css/datatables.min.css"/>
-    <link rel="stylesheet" type="text/css" href="css/jquery.dataTables.min.css"/>
-    <link rel="stylesheet" href="css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/hover.css">
-    <link rel="stylesheet" href="css/owl.carousel.css">
     <link href="css/icomoon.css" rel="stylesheet"/>
     <link rel="stylesheet" href="css/ar.css">
 
 </head>
-<body class="pT115">
+<body class="pT115 pT175">
 
 <!-- Start Loading Page -->
 
@@ -44,13 +40,18 @@
 
 <div class="OverLay"></div>
 
+
 <!--  Start Header  -->
 
-<header>
+<header class="userHeader">
+    <div class="headerTop">
+        <span>احصل علي 20%</span> علي اول طلب تطلبه من موقعنا
+        <span class="icon-cancel closeTopHeader"></span>
+    </div>
     <div class="container">
 
         <div class="menuBar d-flex d-md-none justify-content-between align-items-center">
-            <a href="providerHome.html">
+            <a href="home.html">
                 <img src="img/logo_icon.png" class="logo" alt="logo">
             </a>
             <div class="toggle">
@@ -81,16 +82,16 @@
 
 
             <div class="d-flex align-items-center">
-                <a href="providerHome.html" class="d-none d-md-block">
+                <a href="home.html" class="d-none d-md-block">
                     <img src="img/logo_icon.png" class="logo" alt="logo">
                 </a>
 
                 <ul class="menuLinks">
                     <li>
-                        <a href="providerHome.html">الرئيسية</a>
+                        <a href="home.html">الرئيسية</a>
                     </li>
                     <li>
-                        <a href="providerOrders.html">الطلبات</a>
+                        <a href="beSeller.html">ترقية لمقدم</a>
                     </li>
                     <li>
                         <div class="msgs">
@@ -105,28 +106,17 @@
                             </ul>
                         </div>
                     </li>
-                    <li class="active">
-                        <a href="services.html">الخدمات المقدمة</a>
+                    <li>
+                        <a href="saves.html">المحفوظات</a>
                     </li>
                     <li>
-                        <a href="analytics.html">تحليلات</a>
-                    </li>
-                    <li>
-                        <a href="earnings.html">ارباح</a>
+                        <a href="orders.html">الطلبات</a>
                     </li>
 
                     <!--                    only in mobile-->
 
-                    <li class="d-sm-none">
-                        <div>
-                            <span>الحالة</span>
-                            <div class="custom-control custom-switch">
-                                <input type="checkbox" class="custom-control-input" id="aval2">
-                                <label class="custom-control-label" for="aval2"></label>
-                            </div>
-                        </div>
-                    </li>
-
+                    <li class="d-sm-none"><a href="interests.html">الاهتمامات</a></li>
+                    <li class="d-sm-none"><a href="providerHome.html">تحويل للوحة التحكم</a></li>
                     <li class="d-sm-none"><a href="settings.html">الاعدادات</a></li>
                     <li class="d-sm-none">
                         <div>
@@ -146,10 +136,6 @@
 
             <div class="d-flex flex-column align-items-start flex-md-row align-items-md-center">
 
-                <a href="transferBuyer" class="transferBuyer">
-                    حول الي مشتري
-                </a>
-
                 <!-- if user login-->
                 <!--                <a href="profile.html" class="profile d-none d-md-flex">-->
                 <!--                    <img src="img/pic.jpg" class="img-fluid" alt="profile">-->
@@ -162,15 +148,8 @@
                     <img src="img/triangle.png" alt="arrow" class="triangle">
                     <ul class="boxShadow">
                         <li><a href="profile.html">عرض الملف الشخصي</a></li>
-                        <li>
-                            <div>
-                                <span>الحالة</span>
-                                <div class="custom-control custom-switch">
-                                    <input type="checkbox" class="custom-control-input" id="aval">
-                                    <label class="custom-control-label" for="aval"></label>
-                                </div>
-                            </div>
-                        </li>
+                        <li><a href="interests.html">الاهتمامات</a></li>
+                        <li><a href="providerHome.html">تحويل للوحة التحكم</a></li>
                         <li><a href="settings.html">الاعدادات</a></li>
                         <li>
                             <div>
@@ -186,7 +165,21 @@
                     </ul>
                 </div>
 
+
+
+                <div class="searchCont">
+                    <span class="icon-cancel closeSearch d-none d-sm-block"></span>
+                    <span class="borderR d-none d-sm-block">|</span>
+                    <input type="text" class="form-control" placeholder="ابحث عن الخدمه او القسم الذي تريده">
+                    <button class="searchIcon" type="submi">
+                        <span class="icon-search"></span>
+                    </button>
+                </div>
+
             </div>
+
+
+
         </div>
 
     </div>
@@ -194,90 +187,55 @@
 
 <!--end header-->
 
-<!--start addService-->
 
-<div class="bgLightGray addService">
+<!--start top categories-->
+<div class="topCategories">
     <div class="container">
-
-        <div class="mainTitles">
-            <a class="active" href="addService.html">
-                <span class="icon-information_provider_service icons"></span>
-                <h5>نظرة عامة</h5>
-            </a>
-            <i class="fas fa-chevron-left"></i>
-            <a class="active" href="pricePlans.html">
-                <span class="icon-price_tag icons"></span>
-                <h5>خطط الاسعار</h5>
-            </a>
-            <i class="fas fa-chevron-left"></i>
-            <a class="active" href="descriptionConditions.html">
-                <span class="icon-computer_provider icons"></span>
-                <h5>الوصف والشروط</h5>
-            </a>
-            <i class="fas fa-chevron-left"></i>
-            <a href="applicationRequirements.html" class="active">
-                <span class="icon-document_provider icons"></span>
-                <h5>متطلبات التقديم</h5>
-            </a>
-            <i class="fas fa-chevron-left"></i>
-            <a class="active">
-                <span class="icon-image_provider icons"></span>
-                <h5>الصور</h5>
-            </a>
-            <i class="fas fa-chevron-left"></i>
-            <a class="active">
-                <span class="icon-cloud_provider icons"></span>
-                <h5>نشر</h5>
-            </a>
-            <i class="fas fa-chevron-left"></i>
-        </div>
-
+        <ul class="catLinks">
+            <li>
+                <a href="visitorsSeen.html">مشاهدات الزوار</a>
+            </li>
+            <li>
+                <a href="graphicDesign.html">الجرافيك والديزاين</a>
+            </li>
+            <li>
+                <a href="technology.html">التكنولوجيا والتسويق الرقمي</a>
+            </li>
+            <li>
+                <a href="writingTranslation.html">الكتابة والترجمة</a>
+            </li>
+            <li>
+                <a href="photography.html">التصوير والمونتاج</a>
+            </li>
+            <li>
+                <a href="video.html">الفيديو والانيميشن</a>
+            </li>
+            <li>
+                <a href="education.html">التعليم</a>
+            </li>
+            <li>
+                <a href="lifeStyle.html">لايف ستايل</a>
+            </li>
+            <li>
+                <a href="consulting.html">الاستشارات</a>
+            </li>
+            <li>
+                <a href="publicServices.html">خدمات عامة</a>
+            </li>
+        </ul>
     </div>
 </div>
+<!--end top categories-->
 
-<div class="statistics pt-0 pb-3 bgGray">
-
-    <div class="bgWight minBody flex flexCenter flexColumn">
-        <div class="container">
-
-            <div class="flex flexCenter flexColumn">
-
-                <div class="mt-5 mb-5 text-center">
-                    <h6>اوشكت علي الإنتهاء</h6>
-                    <h6>دعنا نقوم بإول بيع لخدماتك ونزيد ارباحك</h6>
-                </div>
-
-                <a href="" class="bgLightGray p-3 borderCli Radius5 colorGray wordBreak text-center">
-                    https://marvelapp.com/prototype/25ee2bc6/screen/73731393
-                </a>
-
-                <ul class="linkSocial flex flexRowCenter mt-5 mb-5">
-                    <li class="faceBook">
-                        <a href="" class="flex flexCenter">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                    </li>
-                    <li class="twitter">
-                        <a href="" class="flex flexCenter">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                    </li>
-                    <li class="linkedIn">
-                        <a href="" class="flex flexCenter">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
-                    </li>
-                </ul>
-
-            </div>
-
-
-        </div>
+<!--start social-->
+<div class="social bgGray">
+    <div class="container">
+        <h4 class="title colorGreen">وسائل التواصل</h4>
     </div>
-
 </div>
+<!--end social-->
 
-<!--end addService-->
+
 
 <!--start footer-->
 <footer>
@@ -378,6 +336,49 @@
         </div>
 
     </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="inviteFriend" tabindex="-1" role="dialog" aria-labelledby="inviteFriendTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <a data-dismiss="modal" class="closeModal" type="submit">
+                    <span class="icon-cancel_black"></span>
+                </a>
+                <div class="modal-body">
+                    <img class="vector" src="img/vector_invite.png" alt="vector invite friend">
+                    <p class="title">دعوة الاصدقاء وكلاكما تحصلان علي ما يصل الي 100 دولار</p>
+                    <p class="desc maxWidthAuto">تعريف اصدقائك علي اسهل طريقة لإنجاز الامور</p>
+
+                    <form action="" class="inviteFriend">
+                        <div class="form-group">
+                            <input type="text" name="email" id="email" class="form-control" placeholder="اضف البريد الالكتروني">
+                        </div>
+                        <a data-dismiss="modal" class="btnDefault hvr-pulse" type="submit">ارسال</a>
+                    </form>
+                    <p class="title my-4">رابط الدعوه الخاص بك</p>
+                    <a href="" class="bgLightGray py-3 px-md-5 px-2 borderCli Radius5 colorBlack w-75 wordBreak text-center">
+                        https://marvelapp.com/prototype/25ee2bc6/screen/73731393
+                    </a>
+
+                    <p class="title mt-4 mb-2">شارك عبر وسائل التواصل</p>
+
+                    <div class="social">
+                        <a class="twitter hvr-float-shadow">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a class="faceBook hvr-float-shadow">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a class="linkedIn hvr-float-shadow">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
 </footer>
 <!--end footer-->
 
@@ -388,8 +389,8 @@
 <script src="js/jquery-3.3.1.min.js"></script>
 <script src="js/popper.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
-<script src="js/bootstrap-select.min.js"></script>
 <script src="js/owl.carousel.min.js"></script>
 <script src="js/script.js"></script>
+
 </body>
 </html>

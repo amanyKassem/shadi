@@ -281,9 +281,37 @@ footer .footerInfo > div .apps img{
     margin-left: 15px;
 }
 
+.seenSp{
+    text-align: left;
+}
+
+.completeAcc.sellOn .bottomInfo span{
+    margin-left: 25px;
+}
+.modal-body form.inviteFriend .btnDefault{
+    margin: 0 25px 0 0 !important;
+}
+.userHeader .searchCont .form-control {
+    left: 35px;
+    padding-right: 40px;
+}
+.userHeader .searchCont .closeSearch{
+    right: -338px;
+}
+header .headerTop .closeTopHeader{
+    left: 40px;
+}
+header .headerTop span {
+    margin-left: 5px;
+}
+
 @media(max-width: 767px){
     .register .btnGray {
         margin-right: 0;
+    }
+
+    header .headerTop .closeTopHeader {
+        left: 10px;
     }
 
     header .menuBar .toggle {
@@ -324,6 +352,20 @@ footer .footerInfo > div .apps img{
         margin-left:0;
     }
 
+
+    .modal-body form.inviteFriend .btnDefault {
+        margin: 0 !important;
+    }
+
+    .userHeader .searchCont .closeSearch {
+        right: auto;
+    }
+
+    .userHeader .searchCont .form-control {
+        left: auto;
+        padding: 0 5px;
+    }
+
 }
 
 @media(min-width: 768px) and (max-width: 991px){
@@ -335,6 +377,21 @@ footer .footerInfo > div .apps img{
     }
     .menu .transferBuyer {
         margin-left: 15px;
+    }
+    .userHeader .searchCont .closeSearch {
+        right: -140px;
+    }
+    .userHeader .searchCont .form-control {
+        padding-right: 30px;
+    }
+}
+
+@media(min-width: 992px) and (max-width: 1199px) {
+    .userHeader .searchCont .closeSearch {
+        right: -240px;
+    }
+    .userHeader .searchCont .form-control {
+        padding-right: 35px;
     }
 }
 
