@@ -21,6 +21,7 @@
     <!-- Bootstrap CSS -->
     <link href="css/all.min.css" rel="stylesheet"/>
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-select.min.css">
     <link rel="stylesheet" href="css/owl.carousel.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/hover.css">
@@ -39,7 +40,6 @@
 <!-- Start Overlay Page -->
 
 <div class="OverLay"></div>
-
 
 <!--  Start Header  -->
 
@@ -101,7 +101,7 @@
                             الرسائل
                             <span class="icon-down_arrow_drop"></span>
                             <ul class="boxShadow">
-                                <li><a href="userChat.html"><span class="icon-email_gray"></span> الرسائل</a></li>
+                                <li class="active"><a href="userChat.html"><span class="icon-email_gray"></span> الرسائل</a></li>
                                 <li><a href="userNotifications.html"><span class="icon-notification"></span> الاشعارات</a></li>
                             </ul>
                         </div>
@@ -227,67 +227,192 @@
 </div>
 <!--end top categories-->
 
-<!--start social-->
-<div class="socialContainer bgGray">
+
+<!--start statistics-->
+<div class="statistics bgLightGray minBody">
     <div class="container">
-        <h4 class="title colorGreen">وسائل التواصل</h4>
 
-        <ul class="contacts">
+        <div class="flex flexSpace">
+            <h5 class="colorGreen m-0">الرسائل</h5>
+            <div class="flex flexRowCenter">
+                <label class="switch mr-2 ml-2" for="checkbox">
+                    <input type="checkbox" id="checkbox" />
+                    <div class="slider round"></div>
+                </label>
+                <h6 class="colorBla m-0 mr-2">صوت الرسايل</h6>
+            </div>
+        </div>
 
-            <li>
-                <a class="hvr-pulse-grow">
-                    <img src="img/phone_contact.png" alt="phone">
-                    0102345678
-                </a>
-            </li>
 
-            <li>
-                <a class="hvr-pulse-grow">
-                    <img src="img/message_ssupport.png" alt="email">
-                    amany@gmail.com
-                </a>
-            </li>
+        <div class="mt-4 mb-4">
+            <div class="chatAll flex flexRow overflow-hidden position-relative">
+                <div class="menuChat flex30 pr-2 pl-2">
+                    <div class="bgWight overScroll heightChat pl-3 pr-3 pt-4 pb-4 mt-3 mb-3  Radius10 boxShadow">
 
-            <li>
-                <a class="hvr-pulse-grow">
-                    <img src="img/whats.png" alt="whats app">
-                    0102345678
-                </a>
-            </li>
+                        <div class="formAction Radius5 overflow-hidden">
+                            <form action="" class="position-relative overflow-hidden">
+                                <input class="Radius10" type="text" placeholder="ابحث عن اسم المستخدم">
+                                <button class="btnButton btnDefault w-auto pl-3 pr-3 Radius10">
+                                    <span class="icon-search colorWight"></span>
+                                </button>
+                            </form>
+                        </div>
 
-        </ul>
-        <h4 class="title colorGreen">وسائل التواصل الاجتماعي</h4>
+                        <div class="pt-3 pb-3">
+                            <div class="boxMessage clickTo flex flexRowCenter pt-3 pb-3 pr-1 pl-1">
+                                <div class="imgUserMassage flex15 text-center position-relative">
+                                    <img src="img/pic.jpg" alt="">
+                                    <span class="point pointRed"></span>
+                                </div>
+                                <div class="infoMassage flex85 pr-2 pl-2">
+                                    <div class="flex flexSpace">
+                                        <h6 class="m-0">شعوذه</h6>
+                                        <span class="colorGray">12 Jun</span>
+                                    </div>
+                                    <div class="flex flexSpace">
+                                        <p class="m-0 colorOp MSG">كيف الحال يا اخي العزيز ؟</p>
+                                        <span class="colorGray"><i class="far fa-check-circle"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="boxMessage clickTo flex flexRowCenter pt-3 pb-3 pr-1 pl-1">
+                                <div class="imgUserMassage flex15 text-center position-relative">
+                                    <img src="img/pic.jpg" alt="">
+                                    <span class="point pointGreen"></span>
+                                </div>
+                                <div class="infoMassage flex85 pr-2 pl-2">
+                                    <div class="flex flexSpace">
+                                        <h6 class="m-0">شعوذه</h6>
+                                        <span class="colorGray">12 Jun</span>
+                                    </div>
+                                    <div class="flex flexSpace">
+                                        <p class="m-0 colorOp MSG">كيف الحال يا اخي العزيز ؟</p>
+                                        <span class="colorGray"><i class="fas fa-check-circle"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="boxMessage clickTo flex flexRowCenter pt-3 pb-3 pr-1 pl-1">
+                                <div class="imgUserMassage flex15 text-center position-relative">
+                                    <img src="img/pic.jpg" alt="">
+                                    <span class="point pointRed"></span>
+                                </div>
+                                <div class="infoMassage flex85 pr-2 pl-2">
+                                    <div class="flex flexSpace">
+                                        <h6 class="m-0">شعوذه</h6>
+                                        <span class="colorGray">12 Jun</span>
+                                    </div>
+                                    <div class="flex flexSpace">
+                                        <p class="m-0 colorOp MSG">كيف الحال يا اخي العزيز ؟</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="boxMessage clickTo flex flexRowCenter pt-3 pb-3 pr-1 pl-1">
+                                <div class="imgUserMassage flex15 text-center position-relative">
+                                    <img src="img/pic.jpg" alt="">
+                                    <span class="point pointGreen"></span>
+                                </div>
+                                <div class="infoMassage flex85 pr-2 pl-2">
+                                    <div class="flex flexSpace">
+                                        <h6 class="m-0">شعوذه</h6>
+                                        <span class="colorGray">12 Jun</span>
+                                    </div>
+                                    <div class="flex flexSpace">
+                                        <p class="m-0 colorOp MSG">كيف الحال يا اخي العزيز ؟</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="boxMessage clickTo flex flexRowCenter pt-3 pb-3 pr-1 pl-1">
+                                <div class="imgUserMassage flex15 text-center position-relative">
+                                    <img src="img/pic.jpg" alt="">
+                                    <span class="point pointRed"></span>
+                                </div>
+                                <div class="infoMassage flex85 pr-2 pl-2">
+                                    <div class="flex flexSpace">
+                                        <h6 class="m-0">شعوذه</h6>
+                                        <span class="colorGray">12 Jun</span>
+                                    </div>
+                                    <div class="flex flexSpace">
+                                        <p class="m-0 colorOp MSG">كيف الحال يا اخي العزيز ؟</p>
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="boxMessage clickTo flex flexRowCenter pt-3 pb-3 pr-1 pl-1">
+                                <div class="imgUserMassage flex15 text-center position-relative">
+                                    <img src="img/pic.jpg" alt="">
+                                    <span class="point pointGreen"></span>
+                                </div>
+                                <div class="infoMassage flex85">
+                                    <div class="flex flexSpace">
+                                        <h6 class="m-0">شعوذه</h6>
+                                        <span class="colorGray">12 Jun</span>
+                                    </div>
+                                    <div class="flex flexSpace">
+                                        <p class="m-0 colorOp MSG">كيف الحال يا اخي العزيز ؟</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
-        <ul class="contacts">
+                    </div>
+                </div>
+                <div class="boxChat flex70 pr-2 pl-2 position-relative">
+                    <button class="clickTo closeChat">
+                        <span class="icon-cancel"></span>
+                    </button>
+                    <div class="bgWight p-4 mt-3 mb-3 Radius10 boxShadow position-relative">
 
-            <li>
-                <a class="hvr-pulse-grow">
-                    <img src="img/facebook_support.png" alt="facebook">
-                    lightUpGo
-                </a>
-            </li>
+                        <div class="noChat">
+                            <img src="img/chat.png" alt="">
+                            <p class="font_16">قم بإختيار المحادثة للتواصل</p>
+                        </div>
 
-            <li>
-                <a class="hvr-pulse-grow">
-                    <img src="img/twitter_support.png" alt="twitter">
-                    lightUpGo
-                </a>
-            </li>
+                        <div class="contentChat overScroll heightChat pb-3">
+                            <div class="blockSent pb-4 pt-4">
+                                <div class="sent flex flexRow">
+                                    <div class="imgUserMassage imgSender flex10 text-center position-relative mt-2 mb-2">
+                                        <img src="img/pic.jpg" alt="">
+                                    </div>
+                                    <div class="infoSender flex90">
+                                        <p class="m-0 p-3 float-right">كيف الحال يا اخي العزيز ؟</p>
+                                    </div>
+                                </div>
+                                <span class="text-center d-block w-100 colorGray mt-2 mb-2">19/1/2020 , 3:39 AM</span>
+                            </div>
 
-            <li>
-                <a class="hvr-pulse-grow">
-                    <img src="img/insta_support.png" alt="instagram">
-                    lightUpGo
-                </a>
-            </li>
+                            <div class="blockRecent pb-4 pt-4">
+                                <div class="recent flex flexRow rowReverse">
+                                    <div class="flex flex-column">
+                                        <div class="infoRecent">
+                                            <p class="bgDefault m-0 p-3 float-left colorWight">الحمد لله بخير </p>
+                                        </div>
+                                        <h6 class="colorGray seenSp">تم المشاهده</h6>
+                                    </div>
+                                </div>
+                                <span class="text-center d-block w-100 colorGray mt-2 mb-2">19/1/2020 , 3:39 AM</span>
+                            </div>
+                        </div>
 
-        </ul>
+                        <div class="formAction sentMassage pt-4 pb-2 bgWight borderTCli">
+                            <form action="" class="position-relative overflow-hidden formChat">
+                                <a class="position-absolute btnButton btnDefault w-auto pl-3 pr-3 posRightSec">
+                                    <span class="icon-paperclip"></span>
+                                </a>
+                                <input class="input-custom-size" type="text" placeholder="اكتب نص الرسالة">
+                                <button class="btnButton btnDefault w-auto pl-3 pr-3 posLeftSec" type="submit">
+                                    <span class="icon-send"></span>
+                                </button>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
 
     </div>
 </div>
-<!--end social-->
-
-
+<!--end statistics-->
 
 <!--start footer-->
 <footer>
@@ -441,8 +566,65 @@
 <script src="js/jquery-3.3.1.min.js"></script>
 <script src="js/popper.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap-select.min.js"></script>
 <script src="js/owl.carousel.min.js"></script>
 <script src="js/script.js"></script>
+<script>
+
+    // Open Chat
+
+    if ($(window).width() > 1024) {
+        $('.clickTo').on('click', function() {
+            $('.noChat').toggleClass('fading');
+        });
+    }
+
+    if ($(window).width() < 1025) {
+        $('.clickTo').on('click', function () {
+            $('.noChat').toggleClass('fading');
+            $('.menuChat').toggleClass('fading');
+            $('.closeChat').toggleClass('fadeShow');
+        });
+    }
+
+    // Start Chat ScrollDown
+
+    (function() {
+
+        $(".contentChat").animate({ scrollTop: $('.contentChat').prop("scrollHeight")}, 1000);
+
+        $(function () {
+            $('.formChat').on('submit', function (event) {
+                event.preventDefault();
+                var date = new Date();
+                var dateTime = date.getFullYear() + "-" + (date.getMonth() + 1) + "-" + date.getDate() + " " +  date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds();
+                var message = $('.blockRecent').first().clone();
+                message.find('p').text($('.input-custom-size').val());
+                message.find('span').text(dateTime);
+                message.appendTo('.contentChat');
+                $('input').val('');
+
+                $(".contentChat").animate({ scrollTop: $('.contentChat').prop("scrollHeight")}, 1000);
+            });
+        });
+
+    })(jQuery);
+
+    // Send With Enter In Chat
+
+    $('.input-custom-size').keyup(function (event) {
+        if (event.keyCode == 13 && event.shiftKey) {
+            var content = this.value;
+            var caret = getCaret(this);
+            this.value = content.substring(0,caret)+"\n"+content.substring(carent,content.length-1);
+            event.stopPropagation();
+
+        }else if(event.keyCode == 13){
+            $('.formChat').submit();
+        }
+    });
+
+</script>
 
 </body>
 </html>

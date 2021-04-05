@@ -4040,7 +4040,36 @@ footer .lightLamp{
 }
 
 .socialContainer .title{
-
+    font-size: 15px;
+}
+.socialContainer .contacts{
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    margin: 25px 0;
+}
+.socialContainer .contacts li{
+    border-bottom: 2.5px solid #f8f8f8;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+.socialContainer .contacts li:last-child{
+    border-bottom: 0;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+.socialContainer .contacts li a{
+    font-size: 15px;
+    color: #818181;
+}
+.socialContainer .contacts li a:hover{
+    color: #56C429;
+}
+.socialContainer .contacts li a img{
+    width: 35px;
+    height: 35px;
 }
 
 /*end social*/
@@ -4466,7 +4495,8 @@ footer .footerInfo > div .apps img{
         font-size: 22px;
         margin-bottom: 20px;
     }
-    #clockdiv .count .smalltext , .orderDetailsContainer .detailsCont .rightCont .filesCont .files .file .name{
+    #clockdiv .count .smalltext , .orderDetailsContainer .detailsCont .rightCont .filesCont .files .file .name ,
+    .socialContainer .title , .socialContainer .contacts li a{
         font-size: 14px;
     }
     .orderDetailsContainer .detailsCont .rightCont .packageCont .title, .orderDetailsContainer .detailsCont .rightCont .filesCont .title, .orderDetailsContainer .detailsCont .leftCont .paymentDetails .title {
@@ -4672,7 +4702,7 @@ footer .footerInfo > div .apps img{
         margin-bottom: 15px;
     }
 
-    .minBody {
+    .mt-75 {
         margin-top: 75px;
     }
     .headerAfterIn{
@@ -4691,6 +4721,11 @@ footer .footerInfo > div .apps img{
     }
     .topCategories .catLinks li a:before {
         height: 3px;
+    }
+
+    .socialContainer .contacts li a img {
+        width: 30px;
+        height: 30px;
     }
 
 }

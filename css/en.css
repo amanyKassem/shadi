@@ -353,6 +353,9 @@ header .headerTop span {
 .infoWo {
     padding-right: 100px;
 }
+.socialContainer .contacts li a img{
+    margin-right: 25px;
+}
 
 @media(max-width: 767px){
     .register .btnGray {
