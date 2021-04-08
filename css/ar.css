@@ -373,6 +373,10 @@ header .headerTop span {
     direction: rtl;
 }
 
+.bronz{
+    right: 0px;
+}
+
 @media(max-width: 767px){
     .register .btnGray {
         margin-right: 0;

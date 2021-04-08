@@ -1816,7 +1816,16 @@ p{
     right: -22px;
 }
 
+.imgProvider{
+    display: table;
+    margin: auto;
+}
 
+.bronz{
+    position: absolute;
+    bottom: -20px;
+    max-width: 70px
+}
 
 
 

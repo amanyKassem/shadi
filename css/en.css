@@ -391,6 +391,10 @@ header .headerTop span {
     left: -10px;
 }
 
+.bronz{
+    left: 0px;
+}
+
 @media(max-width: 767px){
     .register .btnGray {
         margin-left: 0;
