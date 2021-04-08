@@ -23,6 +23,13 @@
           </advancedOptions>
         </fileTransfer>
       </webServer>
+      <webServer id="b391c8ee-2c84-412c-9b1e-9f96dc301b32" name="JAK" url="http://jakest.com.sa">
+        <fileTransfer rootFolder="/public_html" host="jakest.com.sa" port="21">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
     </option>
   </component>
 </project>

@@ -357,6 +357,40 @@ header .headerTop span {
     margin-right: 25px;
 }
 
+.slideInfoSite .owl-dots {
+    left: 25px;
+}
+
+.owlProduct2 .owl-next {
+    left: 65px;
+    right: auto;
+}
+
+.conPo{
+    right: 0px;
+}
+
+.I{
+    right: 10px;
+}
+
+.pointAct{
+    right: 5px;
+}
+
+.wrapFix{
+    right: 20px;
+}
+
+.dropFil{
+    left: 5px;
+}
+
+.thier:before {
+    border-right: 10px solid #5cc431;
+    left: -10px;
+}
+
 @media(max-width: 767px){
     .register .btnGray {
         margin-left: 0;
