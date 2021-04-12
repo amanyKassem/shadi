@@ -395,6 +395,14 @@ header .headerTop span {
     left: 0px;
 }
 
+.lisOr li:before {
+    left: 6px;
+}
+
+.icFl{
+    left: 0;
+}
+
 @media(max-width: 767px){
     .register .btnGray {
         margin-left: 0;

@@ -24,10 +24,9 @@
     <link rel="stylesheet" href="css/bootstrap-select.min.css">
     <link rel="stylesheet" type="text/css" href="css/datatables.min.css"/>
     <link rel="stylesheet" type="text/css" href="css/jquery.dataTables.min.css"/>
-    <link rel="stylesheet" href="css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/hover.css">
-    <link rel="stylesheet" href="css/owl.carousel.css">
     <link href="css/icomoon.css" rel="stylesheet"/>
     <link rel="stylesheet" href="css/ar.css">
 
@@ -90,7 +89,7 @@
                     <li>
                         <a href="providerHome.html">الرئيسية</a>
                     </li>
-                    <li>
+                    <li class="active">
                         <a href="providerOrders.html">الطلبات</a>
                     </li>
                     <li>
@@ -106,7 +105,7 @@
                             </ul>
                         </div>
                     </li>
-                    <li class="active">
+                    <li>
                         <a href="services.html">الخدمات المقدمة</a>
                     </li>
                     <li>
@@ -195,142 +194,277 @@
 
 <!--end header-->
 
-<!--start addService-->
-<div class="bgLightGray addService">
+
+<div class="bgLightGray addService borderBCli">
     <div class="container">
 
-        <div class="mainTitles">
+        <div class="flex flexSpace">
 
-            <a class="active" href="addService.html">
-                <span class="icon-information_provider_service icons"></span>
-                <h5>نظرة عامة</h5>
-            </a>
-            <i class="fas fa-chevron-left"></i>
+            <div class="mainTitles">
 
-            <a href="pricePlans.html">
-                <span class="icon-price_tag icons"></span>
-                <h5>خطط الاسعار</h5>
-            </a>
-            <i class="fas fa-chevron-left"></i>
+                <a class="active" href="userOrderDetails.html">
+                    <span class="icon-check_rules icons"></span>
+                    <h5 class="colorDefault font-weight-bold">المتطلبات المرسله</h5>
+                </a>
 
-            <a>
-                <span class="icon-computer_provider icons"></span>
-                <h5>الوصف والشروط</h5>
-            </a>
-            <i class="fas fa-chevron-left"></i>
+                <a class="active" href="PostingRequirements.html">
+                    <span class="icon-location icons bgYellow"></span>
+                    <h5 class="colorYellow font-weight-bold">الطلب معلق حتي يتم الموافقه عليه</h5>
+                </a>
 
-            <a>
-                <span class="icon-document_provider icons"></span>
-                <h5>متطلبات التقديم</h5>
-            </a>
-            <i class="fas fa-chevron-left"></i>
 
-            <a>
-                <span class="icon-image_provider icons"></span>
-                <h5>الصور</h5>
-            </a>
-            <i class="fas fa-chevron-left"></i>
-
-            <a>
-                <span class="icon-cloud_provider icons"></span>
-                <h5>نشر</h5>
-            </a>
-            <i class="fas fa-chevron-left"></i>
+            </div>
 
         </div>
 
     </div>
 </div>
 
-<div class="addService">
+<!--start orderDetailsContainer-->
+<div class="orderDetailsContainer">
     <div class="container">
-        <div class="dataForm">
 
-            <div class="opacityDiv">
-                <img src="img/provider_vector_service.png" class="savedImg" alt="vector">
-                <div class="success">
-                    <span class="icon-check_rules"></span>
-                    تم التعديل بنجاح
+        <div class="detailsCont">
+            <div class="rightCont">
+
+                <div class="alert alert-success alert-dismissible fade show" role="alert">
+                    <span class="icon-hourglass alertIcon"></span>
+                    في انتظار الموافقة علي الطلب
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span class="icon-cancel_black"></span>
+                    </button>
                 </div>
-            </div>
 
+                <div class="alert alert-success alert-dismissible fade show" role="alert">
+                    <span class="icon-victory_black alertIcon"></span>
+                    طلبك بدء !
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span class="icon-cancel_black"></span>
+                    </button>
+                </div>
 
-            <form class="rightDiv">
-
-                <div class="requiredInfo">
-                    <div class="titleInfo">
-                        <h4>عنوان الخدمة</h4>
-                        <h5>يجب عليك كتابة عنوان يوصف خدمتك</h5>
-                    </div>
-                    <div class="form-group">
-                        <textarea class="form-control textareaCount" placeholder="تفاصيل العنوان" maxlength="80" ></textarea>
-                        <div class="count">
-                            <span class="current">0</span>
-                            <span class="maximum">/ 80</span>
+                <div class="details bgFa borderCli clickShowInPro">
+                    <img src="img/order.png" class="orderImg img-fluid" alt="order image">
+                    <div class="leftInfo">
+                        <div class="idInfo">
+                            <span class="id">#123435345</span>
+                            <div class="quantity">
+                                <span>120 ريال</span>
+                            </div>
+                        </div>
+                        <div class="user">
+                            <img src="img/user.png" alt="user">
+                            Awamer Alshabaka
+                        </div>
+                        <div class="processTime">
+                            <div class="date">
+                                <ul class="timeline">
+                                    <li class="active">4 يناير 2021</li>
+                                    <li>
+                                        5 يناير 2021</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="requiredInfo">
-                    <div class="titleInfo">
-                        <h4>الاقسام</h4>
-                        <h5>يجب اختيار القسم لنسهيل البحث عن خدمتك</h5>
+                <div class="faDiv">
+                    <div id="clockdiv">
+                        <div class="count">
+                            <span class="days"></span>
+                            <div class="smalltext">يوم</div>
+                        </div>
+                        <span class="colMark">|</span>
+                        <div class="count">
+                            <span class="hours"></span>
+                            <div class="smalltext">ساعة</div>
+                        </div>
+                        <span class="colMark">|</span>
+                        <div class="count">
+                            <span class="minutes"></span>
+                            <div class="smalltext">دقيقة</div>
+                        </div>
+                        <span class="colMark">|</span>
+                        <div class="count">
+                            <span class="seconds"></span>
+                            <div class="smalltext">ثانية</div>
+                        </div>
                     </div>
-
-                    <div class="categories">
-                        <select class="selectpicker" id="catName" title="اسم القسم">
-                            <option>جرافيك وديزاين</option>
-                            <option>تصوير</option>
-                        </select>
-                        <select class="selectpicker" id="branchCat" title="القسم الفرعي">
-                            <option>جرافيك وديزاين</option>
-                            <option>تصوير</option>
-                        </select>
-                    </div>
-
                 </div>
 
-                <div class="requiredInfo">
-                    <div class="titleInfo">
-                        <h4>تصنيفات البحث</h4>
-                        <h5>يجب اختيار تصنيف لتظهر الخدمة في علامات البحث</h5>
+                <div class="bgFa p-3 mt-3 mb-3 borderCli">
+                    <div class="flex flexSpace">
+
+                        <div class="">
+                            <h5 class="colorGreen font-weight-bold">متطلبات الطلب</h5>
+                            <p>لقد استوفيت المتطلبات</p>
+                        </div>
+
+                        <a href="" class="colorDefault font-weight-bold">شاهد الطلبات</a>
+
+                    </div>
+                </div>
+
+                <div class="faDiv">
+                    <div class="flex flexRow">
+                        <div class="flex flexRowCenter">
+                            <h6 class="m-0 font-weight-bold colorGreen">بدء الطلب :</h6>
+                            <p class="lineHText0 m-0 font-weight-bold mr-2 ml-2">موعد التسليم 34 يناير 2022</p>
+                        </div>
+                        <hr class="flex1">
                     </div>
 
-                    <div class="flex-grow-1">
-                        <input class="form-control" type="text" id="tagsInput">
+                    <div class="flex flexRowCenter flexEnd">
+                        <span class="colorDefault">onLine</span>
+                        <i class="fas fa-circle colorDefault mr-1 ml-1 font10"></i>
+                        <p>Sh3wZa</p>
+                    </div>
 
-                        <div class="hint"><img src="img/mark_info_provider.png" alt="info"> <span>من فضلك</span> بعض الخدمات تتطلب التأكد من الاقسام</div>
+                    <form action="" class="w-100 innerFormThink mt-0">
+                        <div class="w-100 pt-3 pb-3 position-relative">
+                            <div class="form-group">
+                                <textarea class="form-control textareaCount m-0 font13 font-weight-bold p-3" placeholder="ارسل رساله الي المقدم" style="height: 260px;background-color: #fafafa !important;border: 1px solid #f3f3f3 !important;" maxlength="2500" ></textarea>
+                                <div class="count conPo bgF1 p-3 flex flexSpace">
+                                    <div class="">
+                                        <span class="current">0</span>
+                                        <span class="maximum">/ 2500</span>
+                                    </div>
+                                    <div class="wrap width_full">
+                                        <label class="uploadImg flex flexRowCenter m-0 custom-file-upload">
+                                            <input type="file" name="file" id="file" class="file_upload">
+                                            <p class="colorDefault d-none">إرفاق ملف</p>
+                                            <span class="icon-paperclip colorDefault" style="font-size: 15px"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
 
-                        <hr class="customHr">
+                    <div class="flex flexCenter mt-2 mb-2">
+                        <a href="chat.html" class="colorDefault font-weight-bold">شاهد المحادثه</a>
+                        <p class="lineHText0 font-weight-bold m-0 mr-1 ml-1">في صندوق البريد الخاص بك</p>
                     </div>
                 </div>
 
                 <div class="btnCont">
-                    <a class="btnDefault hvr-pulse saveForm">حفظ واستمرار</a>
-                    <a href="services.html" class="btnDefault grayBtn hvr-pulse">الغاء</a>
+                    <a href="userHome.html" class="btnDefault hvr-pulse">عوده للرئيسيه</a>
+                    <a href="providerOrders.html" class="btnDefault redBtn hvr-pulse" data-toggle="modal" data-target="#revOrder">إلغاء الطلب</a>
                 </div>
 
-
-            </form>
-
-            <div class="leftDiv">
-                <img src="img/idea_provider.png" class="idea" alt="idea">
-                <iframe src="https://player.vimeo.com/video/60814695?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
-                <ul class="info">
-                    <li>تعليمات لرفع اول خدمة</li>
-                    <li>تعليمات لرفع اول خدمة</li>
-                    <li>تعليمات لرفع اول خدمة</li>
-                    <li>تعليمات لرفع اول خدمة</li>
-                    <li>تعليمات لرفع اول خدمة</li>
-                </ul>
             </div>
 
+            <div class="leftCont">
+
+                <div class="bgGray borderCli p-2 mb-3">
+                    <ul class="lisOr">
+                        <li class="displayBlock pb-3 position-relative pr-4 pl-4 font13">
+                            <div class="icFl">
+                                <i class="fas fa-check-circle colorDefault"></i>
+                            </div>
+                            <strong class="colorBla">طلبات المتقدم</strong>
+                        </li>
+                        <li class="displayBlock pb-3 position-relative pr-4 pl-4 font13">
+                            <div class="icFl">
+                                <i class="fas fa-circle colorDefault"></i>
+                            </div>
+                            <strong class="colorBla">طلب مفلق</strong>
+                        </li>
+                        <li class="displayBlock pb-3 position-relative pr-4 pl-4 font13">
+                            <div class="icFl">
+                                <i class="fas fa-circle colorGray"></i>
+                            </div>
+                            <p class="colorDefault lineHText0 m-0">الطلب قيد التنفيذ</p>
+                            <p class="colorBla lineHText0 m-0">نعمل الان علي توصيل الطلب في يوم 4/4/2020</p>
+                        </li>
+                        <li class="displayBlock pb-3 position-relative pr-4 pl-4 font13">
+                            <div class="icFl">
+                                <i class="fas fa-circle colorWight"></i>
+                            </div>
+                            <strong class="colorBla">طلبات المتقدم</strong>
+                        </li>
+                    </ul>
+
+                    <div class="displayBlock pb-3 position-relative pr-4 pl-4 font13">
+                        <div class="icFl">
+                            <i class="fas fa-info-circle colorDefault"></i>
+                        </div>
+                        <p class="colorBla lineHText0 m-0">هل هناك شئ غير واضح ؟</p>
+                        <p class="lineHText0 m-0 colorDefault">شاهد الاسئله الشائعه</p>
+                    </div>
+
+                </div>
+
+                <div class="bgDefaultOp borderCliG p-3">
+                    <i class="fas fa-info-circle colorDefault" style="font-size: 23px;vertical-align: text-top;"></i>
+                    <span class="font-weight-bold text-center colorBla" style="font-size: 15px;line-height: 30px;">اذا كان لديك اي مشكله مع الطلب يمكنك زياره مركز العملاء</span>
+                    <span class="colorDefault font-weight-bold" data-toggle="modal" data-target="#contact" style="font-size: 15px;line-height: 30px;">خدمه العملاء</span>
+                </div>
+
+                <a href="chat.html" class="btnDefault p-2 mt-3 mb-3 w-100 displayInline Radius10 text-center">محادثه مع البائع</a>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+<!--end orderDetailsContainer-->
+
+<!-- Modal -->
+<div class="modal fade" id="revOrder" tabindex="-1" role="dialog" aria-labelledby="inviteFriendTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <a data-dismiss="modal" class="closeModal" type="submit">
+                <span class="icon-cancel_black"></span>
+            </a>
+            <div class="modal-body pt-0">
+                <div class="text-center">
+
+                    <img src="img/undraw_stranded_traveler_pdbw.png" style="max-width: 200px">
+
+                    <p class="font-weight-bold colorGray">يجب عليك اعطاء سبب لالغاء الرفض</p>
+
+                </div>
+
+                <form action="">
+
+                    <textarea placeholder="سبب الالغاء" class="bgFa" style="height: 200px"></textarea>
+
+                    <button data-dismiss="modal" class="btnDefault hvr-pulse" type="submit">ارسال</button>
+                </form>
+
+            </div>
         </div>
     </div>
 </div>
 
-<div class="bgLightGray p-2"></div>
-<!--end addService-->
+<!-- Modal -->
+<div class="modal fade" id="contact" tabindex="-1" role="dialog" aria-labelledby="inviteFriendTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <a data-dismiss="modal" class="closeModal" type="submit">
+                <span class="icon-cancel_black"></span>
+            </a>
+            <div class="modal-body pt-0">
+                <div class="text-center">
+
+                    <img src="img/undraw_Chat_bot_re_e2gj.png" style="max-width: 200px">
+
+                    <p class="font-weight-bold colorGray">يمكنك التواصل مباشر مع فريق الدعم عن طريق الاتصال المباشر بهذا الرقم</p>
+
+                    <a href="" class="bgDefaultOp pt-2 pb-2 pr-5 pl-5 mt-3 mb-3 displayInline">
+                        <i class="fab fa-whatsapp colorDefault" style="font-size: 22px;vertical-align: top;margin: 0px 7px;"></i>
+                        <strong class="colorBla">345259898435</strong>
+                    </a>
+
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+</div>
 
 <!--start footer-->
 <footer>
@@ -477,215 +611,65 @@
 </footer>
 <!--end footer-->
 
-
 <!--===============================
     SCRIPT
 ===================================-->
 <script src="js/jquery-3.3.1.min.js"></script>
 <script src="js/popper.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
-<script src="js/bootstrap-select.min.js"></script>
 <script src="js/owl.carousel.min.js"></script>
 <script src="js/script.js"></script>
-
-<!--start select-->
+<!--count down-->
 <script>
-    $('.selectpicker').selectpicker();
+    function getTimeRemaining(endtime) {
+        var t = Date.parse(endtime) - Date.parse(new Date());
+        var seconds = Math.floor((t / 1000) % 60);
+        var minutes = Math.floor((t / 1000 / 60) % 60);
+        var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
+        var days = Math.floor(t / (1000 * 60 * 60 * 24));
+        return {
+            'total': t,
+            'days': days,
+            'hours': hours,
+            'minutes': minutes,
+            'seconds': seconds
+        };
+    }
+
+    function initializeClock(id, endtime) {
+        var clock = document.getElementById(id);
+        var daysSpan = clock.querySelector('.days');
+        var hoursSpan = clock.querySelector('.hours');
+        var minutesSpan = clock.querySelector('.minutes');
+        var secondsSpan = clock.querySelector('.seconds');
+
+        function updateClock() {
+            var t = getTimeRemaining(endtime);
+
+            daysSpan.innerHTML = t.days;
+            hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
+            minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
+            secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
+
+            if (t.total <= 0) {
+                clearInterval(timeinterval);
+            }
+        }
+
+        updateClock();
+        var timeinterval = setInterval(updateClock, 1000);
+    }
+
+    var deadline = new Date(Date.parse(new Date()) + 15 * 24 * 60 * 60 * 1000);
+    initializeClock('clockdiv', deadline);
 </script>
-<!--end select-->
 
-<!--start show loader to navigate-->
 <script>
-    $(".saveForm").click(function() {
-        $('.opacityDiv').fadeIn().css('display','flex')
-        var delay = 2000;
-        var url = 'pricePlans.html'
-        setTimeout(function(){ window.location = url; }, delay);
+    $('.faDiv').slideUp();
+    $(document).on("click", ".clickShowInPro", function () {
+        $('.faDiv').slideToggle();
     });
-
 </script>
-<!--end show loader to navigate-->
-
-<!--start tags-->
-
-<script>
-    (function(){
-
-        "use strict"
-
-
-        // Plugin Constructor
-        var TagsInput = function(opts){
-            this.options = Object.assign(TagsInput.defaults , opts);
-            this.init();
-        }
-
-        // Initialize the plugin
-        TagsInput.prototype.init = function(opts){
-            this.options = opts ? Object.assign(this.options, opts) : this.options;
-
-            if(this.initialized)
-                this.destroy();
-
-            if(!(this.orignal_input = document.getElementById(this.options.selector)) ){
-                console.error("tags-input couldn't find an element with the specified ID");
-                return this;
-            }
-
-            this.arr = [];
-            this.wrapper = document.createElement('div');
-            this.input = document.createElement('input');
-            init(this);
-            initEvents(this);
-
-            this.initialized =  true;
-            return this;
-        }
-
-        // Add Tags
-        TagsInput.prototype.addTag = function(string){
-
-            if(this.anyErrors(string))
-                return ;
-
-            this.arr.push(string);
-            var tagInput = this;
-
-            var tag = document.createElement('span');
-            tag.className = this.options.tagClass;
-            tag.innerText = string;
-
-            var closeIcon = document.createElement('a');
-            closeIcon.innerHTML = '&times;';
-
-            // delete the tag when icon is clicked
-            closeIcon.addEventListener('click' , function(e){
-                e.preventDefault();
-                var tag = this.parentNode;
-
-                for(var i =0 ;i < tagInput.wrapper.childNodes.length ; i++){
-                    if(tagInput.wrapper.childNodes[i] == tag)
-                        tagInput.deleteTag(tag , i);
-                }
-            })
-
-
-            tag.appendChild(closeIcon);
-            this.wrapper.insertBefore(tag , this.input);
-            this.orignal_input.value = this.arr.join(',');
-
-            return this;
-        }
-
-        // Delete Tags
-        TagsInput.prototype.deleteTag = function(tag , i){
-            tag.remove();
-            this.arr.splice( i , 1);
-            this.orignal_input.value =  this.arr.join(',');
-            return this;
-        }
-
-        // Make sure input string have no error with the plugin
-        TagsInput.prototype.anyErrors = function(string){
-            if( this.options.max != null && this.arr.length >= this.options.max ){
-                console.log('max tags limit reached');
-                return true;
-            }
-
-            if(!this.options.duplicate && this.arr.indexOf(string) != -1 ){
-                console.log('duplicate found " '+string+' " ')
-                return true;
-            }
-
-            return false;
-        }
-
-        // Add tags programmatically
-        TagsInput.prototype.addData = function(array){
-            var plugin = this;
-
-            array.forEach(function(string){
-                plugin.addTag(string);
-            })
-            return this;
-        }
-
-        // Get the Input String
-        TagsInput.prototype.getInputString = function(){
-            return this.arr.join(',');
-        }
-
-
-        // destroy the plugin
-        TagsInput.prototype.destroy = function(){
-            this.orignal_input.removeAttribute('hidden');
-
-            delete this.orignal_input;
-            var self = this;
-
-            Object.keys(this).forEach(function(key){
-                if(self[key] instanceof HTMLElement)
-                    self[key].remove();
-
-                if(key != 'options')
-                    delete self[key];
-            });
-
-            this.initialized = false;
-        }
-
-        // Private function to initialize the tag input plugin
-        function init(tags){
-            tags.wrapper.append(tags.input);
-            tags.wrapper.classList.add(tags.options.wrapperClass);
-            tags.orignal_input.setAttribute('hidden' , 'true');
-            tags.orignal_input.parentNode.insertBefore(tags.wrapper , tags.orignal_input);
-        }
-
-        // initialize the Events
-        function initEvents(tags){
-            tags.wrapper.addEventListener('click' ,function(){
-                tags.input.focus();
-            });
-
-
-            tags.input.addEventListener('keydown' , function(e){
-                var str = tags.input.value.trim();
-
-                if( !!(~[9 , 13 , 188].indexOf( e.keyCode ))  )
-                {
-                    e.preventDefault();
-                    tags.input.value = "";
-                    if(str != "")
-                        tags.addTag(str);
-                }
-
-            });
-        }
-
-
-        // Set All the Default Values
-        TagsInput.defaults = {
-            selector : '',
-            wrapperClass : 'tags-input-wrapper',
-            tagClass : 'tag',
-            max : null,
-            duplicate: false
-        }
-
-        window.TagsInput = TagsInput;
-
-    })();
-
-    var tagInput1 = new TagsInput({
-        selector: 'tagsInput',
-        duplicate : false,
-        // max : 10
-    });
-    tagInput1.addData(['PHP' , 'JavaScript' , 'CSS'])
-
-</script>
-<!--end tags-->
 
 </body>
 </html>

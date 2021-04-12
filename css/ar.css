@@ -377,6 +377,14 @@ header .headerTop span {
     right: 0px;
 }
 
+.lisOr li:before {
+    right: 6px;
+}
+
+.icFl{
+    right: 0;
+}
+
 @media(max-width: 767px){
     .register .btnGray {
         margin-right: 0;

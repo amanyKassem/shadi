@@ -196,142 +196,211 @@
 <!--end header-->
 
 <!--start addService-->
-<div class="bgLightGray addService">
+<div class="bgLightGray addService borderBCli">
     <div class="container">
 
-        <div class="mainTitles">
+        <div class="flex flexSpace">
 
-            <a class="active" href="addService.html">
-                <span class="icon-information_provider_service icons"></span>
-                <h5>نظرة عامة</h5>
-            </a>
-            <i class="fas fa-chevron-left"></i>
+            <div class="mainTitles">
 
-            <a href="pricePlans.html">
-                <span class="icon-price_tag icons"></span>
-                <h5>خطط الاسعار</h5>
-            </a>
-            <i class="fas fa-chevron-left"></i>
+                <a class="active" href="userOrderDetails.html">
+                    <span class="icon-box_order icons"></span>
+                    <h5>تفاصيل الطلب</h5>
+                </a>
+                <i class="fas fa-chevron-left"></i>
 
-            <a>
-                <span class="icon-computer_provider icons"></span>
-                <h5>الوصف والشروط</h5>
-            </a>
-            <i class="fas fa-chevron-left"></i>
+                <a class="active" href="PostingRequirements.html">
+                    <span class="icon-checklists_order icons"></span>
+                    <h5>متطلبات الارسال</h5>
+                </a>
+                <i class="fas fa-chevron-left"></i>
 
-            <a>
-                <span class="icon-document_provider icons"></span>
-                <h5>متطلبات التقديم</h5>
-            </a>
-            <i class="fas fa-chevron-left"></i>
+                <a href="">
+                    <span class="icon-credit-card-5 icons"></span>
+                    <h5>التاكيد والدفع</h5>
+                </a>
+                <i class="fas fa-chevron-left"></i>
 
-            <a>
-                <span class="icon-image_provider icons"></span>
-                <h5>الصور</h5>
-            </a>
-            <i class="fas fa-chevron-left"></i>
 
-            <a>
-                <span class="icon-cloud_provider icons"></span>
-                <h5>نشر</h5>
-            </a>
-            <i class="fas fa-chevron-left"></i>
+            </div>
+
+            <div class="flex flexCenter flex-column">
+                <p class="lineHText0 m-0 font-weight-bold mb-2">معدل الإنجاز : 55 %</p>
+                <div class="progress Radius10 w150 bgWight mr-3 ml-3">
+                    <div class="progress-bar bgDefault" role="progressbar" style="width: 55%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
 
         </div>
 
     </div>
 </div>
 
-<div class="addService">
+<div class="minBody">
     <div class="container">
-        <div class="dataForm">
 
-            <div class="opacityDiv">
-                <img src="img/provider_vector_service.png" class="savedImg" alt="vector">
-                <div class="success">
-                    <span class="icon-check_rules"></span>
-                    تم التعديل بنجاح
-                </div>
-            </div>
+        <div class="">
+            <div class="row">
 
+                <div class="col-md-8 col-xs-12">
 
-            <form class="rightDiv">
+                    <div class="mt-5 pb-4">
 
-                <div class="requiredInfo">
-                    <div class="titleInfo">
-                        <h4>عنوان الخدمة</h4>
-                        <h5>يجب عليك كتابة عنوان يوصف خدمتك</h5>
-                    </div>
-                    <div class="form-group">
-                        <textarea class="form-control textareaCount" placeholder="تفاصيل العنوان" maxlength="80" ></textarea>
-                        <div class="count">
-                            <span class="current">0</span>
-                            <span class="maximum">/ 80</span>
+                        <div class="bgFa borderCli">
+
+                            <div class="bgF1 p-3">
+                                <p class="m-0 font-weight-bold lineHText0 colorGreen">ارسال المتطلبات لارسال طلبك</p>
+                            </div>
+
+                            <div class="p-4">
+
+                                <p class="font-weight-bold m-0 lineHText0">البائع يريد المعلومات المتعلقه بطلبك لكي يستطيع بدء الطلب</p>
+
+                                <p class="font-weight-bold">- معلومات مفصله</p>
+
+                                <form action="" class="w-100 innerFormThink mt-0">
+                                    <div class="w-100 pt-3 pb-3 position-relative">
+                                        <div class="form-group">
+                                            <textarea class="form-control textareaCount m-0" style="height: 260px;background-color: #fff !important;border: 1px solid #f3f3f3 !important;" maxlength="2500" ></textarea>
+                                            <div class="count conPo bgF1 p-3 flex flexSpace">
+                                                <div class="">
+                                                    <span class="current">0</span>
+                                                    <span class="maximum">/ 2500</span>
+                                                </div>
+                                                <div class="wrap width_full">
+                                                    <label class="uploadImg flex flexRowCenter m-0 custom-file-upload">
+                                                        <input type="file" name="file" id="file" class="file_upload">
+                                                        <p class="colorDefault d-none">إرفاق ملف</p>
+                                                        <span class="icon-paperclip colorDefault" style="font-size: 15px"></span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+
+                            </div>
+
                         </div>
+
+                        <div class="pt-5 pb-5 borderBCli">
+
+                            <label class="chickBox colorGray">
+                                <input type="checkbox" name="radio22" checked>
+                                <span class="checkmark"></span>
+                                <strong class="font13 mr-1 ml-1 colorDefault">
+                                    المعلومات التي قدمتها دقيقه وكامله وستتطلب اي تغييرات موافقه البائع وقد تخضع لتكاليف اضافيه
+                                </strong>
+                            </label>
+
+                        </div>
+
+                        <div class="flex flexRowCenter mt-4 mb-4">
+                            <a href="startOrder.html" class="btnDefault pl-5 pr-5 pt-2 pb-2 Radius10">ابدء طلبك</a>
+                            <a href="orders.html" class="colorBla mr-4 ml-4 font-weight-bold">ذكرني لاحقا</a>
+                        </div>
+
                     </div>
+
                 </div>
 
-                <div class="requiredInfo">
-                    <div class="titleInfo">
-                        <h4>الاقسام</h4>
-                        <h5>يجب اختيار القسم لنسهيل البحث عن خدمتك</h5>
-                    </div>
+                <div class="col-md-4 col-xs-12">
 
-                    <div class="categories">
-                        <select class="selectpicker" id="catName" title="اسم القسم">
-                            <option>جرافيك وديزاين</option>
-                            <option>تصوير</option>
-                        </select>
-                        <select class="selectpicker" id="branchCat" title="القسم الفرعي">
-                            <option>جرافيك وديزاين</option>
-                            <option>تصوير</option>
-                        </select>
+                    <div class="mt-5 borderCli">
+
+                        <div class="bgGray p-3">
+
+                            <div class="flex flexRowCenter mt-3 mb-3 pb-4 borderBCli">
+                                <div class="i flex30">
+                                    <img src="img/order.png" alt="" style="width: 100%;height: 80px">
+                                </div>
+                                <div class="pr-2 pl-2 flex70">
+                                    <h6 class="font-weight-bold lineHText0 m-0 colorGreen">سوف اصنع لك فيديو مميز لك بذكرياتك باستخدام صورك الخاصه</h6>
+                                </div>
+                            </div>
+
+                            <div class="mt-2 mb-2">
+
+                                <div class="flex flexSpace">
+                                    <p class="colorBla font-weight-bold">الباقه الاصليه المشترك بها</p>
+                                    <span class="colorDefault">132 ريال</span>
+                                </div>
+
+                                <ul>
+                                    <li class="flex flexRowCenter w-100 mb-2">
+                                        <span class="icon-check_rules colorDefault" style="font-size: 10px;"></span>
+                                        <span class="mt-2 mr-2 colorGray font-weight-bold">الاشياء المرفقه في هذه الاشياء</span>
+                                    </li>
+                                    <li class="flex flexRowCenter w-100 mb-2">
+                                        <span class="icon-check_rules colorDefault" style="font-size: 10px;"></span>
+                                        <span class="mt-2 mr-2 colorGray font-weight-bold">الاشياء المرفقه في هذه الاشياء</span>
+                                    </li>
+                                    <li class="flex flexRowCenter w-100 mb-2">
+                                        <span class="icon-check_rules colorDefault" style="font-size: 10px;"></span>
+                                        <span class="mt-2 mr-2 colorGray font-weight-bold">الاشياء المرفقه في هذه الاشياء</span>
+                                    </li>
+                                    <li class="flex flexRowCenter w-100 mb-2">
+                                        <span class="icon-check_rules colorDefault" style="font-size: 10px;"></span>
+                                        <span class="mt-2 mr-2 colorGray font-weight-bold">الاشياء المرفقه في هذه الاشياء</span>
+                                    </li>
+                                </ul>
+
+                            </div>
+                            
+                        </div>
+
+                        <div class="p-3 borderBCli">
+
+                            <div class="flex flexSpace">
+                                <p class="lineHText0 m-0 font-weight-bold font13">تخفيض</p>
+                                <span class="colorDefault font-weight-bold font13">20 ريال</span>
+                            </div>
+
+                        </div>
+
+                        <div class="p-3 borderBCli">
+
+                            <div class="flex flexSpace mb-2">
+                                <p class="lineHText0 m-0 font-weight-bold font13">سعر الضريبه</p>
+                                <span class="colorDefault font-weight-bold font13">10 ريال</span>
+                            </div>
+
+                            <div class="flex flexSpace mb-2">
+                                <p class="lineHText0 m-0 font-weight-bold font13">نسبه الخصم</p>
+                                <span class="colorDefault font-weight-bold font13">20 ريال</span>
+                            </div>
+
+                        </div>
+
+                        <div class="p-3 borderBCli">
+
+                            <div class="flex flexSpace mb-2">
+                                <p class="lineHText0 m-0 font-weight-bold font13">الاجمالي</p>
+                                <div class="flex flexRowCenter">
+                                    <span class="colorGray textThrough font-weight-bold font13 mr-2 ml-2">10 ريال</span>
+                                    <span class="colorDefault font-weight-bold font13">10 ريال</span>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="flex flexSpace p-3 bgGray">
+                            <p class="lineHText0 m-0 font-weight-bold font13">وقت الانجاز</p>
+                            <span class="colorDefault font-weight-bold font13">2 يومين</span>
+                        </div>
+
+
                     </div>
 
                 </div>
 
-                <div class="requiredInfo">
-                    <div class="titleInfo">
-                        <h4>تصنيفات البحث</h4>
-                        <h5>يجب اختيار تصنيف لتظهر الخدمة في علامات البحث</h5>
-                    </div>
-
-                    <div class="flex-grow-1">
-                        <input class="form-control" type="text" id="tagsInput">
-
-                        <div class="hint"><img src="img/mark_info_provider.png" alt="info"> <span>من فضلك</span> بعض الخدمات تتطلب التأكد من الاقسام</div>
-
-                        <hr class="customHr">
-                    </div>
-                </div>
-
-                <div class="btnCont">
-                    <a class="btnDefault hvr-pulse saveForm">حفظ واستمرار</a>
-                    <a href="services.html" class="btnDefault grayBtn hvr-pulse">الغاء</a>
-                </div>
-
-
-            </form>
-
-            <div class="leftDiv">
-                <img src="img/idea_provider.png" class="idea" alt="idea">
-                <iframe src="https://player.vimeo.com/video/60814695?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
-                <ul class="info">
-                    <li>تعليمات لرفع اول خدمة</li>
-                    <li>تعليمات لرفع اول خدمة</li>
-                    <li>تعليمات لرفع اول خدمة</li>
-                    <li>تعليمات لرفع اول خدمة</li>
-                    <li>تعليمات لرفع اول خدمة</li>
-                </ul>
             </div>
-
         </div>
+
     </div>
 </div>
 
-<div class="bgLightGray p-2"></div>
-<!--end addService-->
-
+<div class="bgGray p-2 mt-4"></div>
 <!--start footer-->
 <footer>
     <div class="container">
@@ -487,205 +556,5 @@
 <script src="js/bootstrap-select.min.js"></script>
 <script src="js/owl.carousel.min.js"></script>
 <script src="js/script.js"></script>
-
-<!--start select-->
-<script>
-    $('.selectpicker').selectpicker();
-</script>
-<!--end select-->
-
-<!--start show loader to navigate-->
-<script>
-    $(".saveForm").click(function() {
-        $('.opacityDiv').fadeIn().css('display','flex')
-        var delay = 2000;
-        var url = 'pricePlans.html'
-        setTimeout(function(){ window.location = url; }, delay);
-    });
-
-</script>
-<!--end show loader to navigate-->
-
-<!--start tags-->
-
-<script>
-    (function(){
-
-        "use strict"
-
-
-        // Plugin Constructor
-        var TagsInput = function(opts){
-            this.options = Object.assign(TagsInput.defaults , opts);
-            this.init();
-        }
-
-        // Initialize the plugin
-        TagsInput.prototype.init = function(opts){
-            this.options = opts ? Object.assign(this.options, opts) : this.options;
-
-            if(this.initialized)
-                this.destroy();
-
-            if(!(this.orignal_input = document.getElementById(this.options.selector)) ){
-                console.error("tags-input couldn't find an element with the specified ID");
-                return this;
-            }
-
-            this.arr = [];
-            this.wrapper = document.createElement('div');
-            this.input = document.createElement('input');
-            init(this);
-            initEvents(this);
-
-            this.initialized =  true;
-            return this;
-        }
-
-        // Add Tags
-        TagsInput.prototype.addTag = function(string){
-
-            if(this.anyErrors(string))
-                return ;
-
-            this.arr.push(string);
-            var tagInput = this;
-
-            var tag = document.createElement('span');
-            tag.className = this.options.tagClass;
-            tag.innerText = string;
-
-            var closeIcon = document.createElement('a');
-            closeIcon.innerHTML = '&times;';
-
-            // delete the tag when icon is clicked
-            closeIcon.addEventListener('click' , function(e){
-                e.preventDefault();
-                var tag = this.parentNode;
-
-                for(var i =0 ;i < tagInput.wrapper.childNodes.length ; i++){
-                    if(tagInput.wrapper.childNodes[i] == tag)
-                        tagInput.deleteTag(tag , i);
-                }
-            })
-
-
-            tag.appendChild(closeIcon);
-            this.wrapper.insertBefore(tag , this.input);
-            this.orignal_input.value = this.arr.join(',');
-
-            return this;
-        }
-
-        // Delete Tags
-        TagsInput.prototype.deleteTag = function(tag , i){
-            tag.remove();
-            this.arr.splice( i , 1);
-            this.orignal_input.value =  this.arr.join(',');
-            return this;
-        }
-
-        // Make sure input string have no error with the plugin
-        TagsInput.prototype.anyErrors = function(string){
-            if( this.options.max != null && this.arr.length >= this.options.max ){
-                console.log('max tags limit reached');
-                return true;
-            }
-
-            if(!this.options.duplicate && this.arr.indexOf(string) != -1 ){
-                console.log('duplicate found " '+string+' " ')
-                return true;
-            }
-
-            return false;
-        }
-
-        // Add tags programmatically
-        TagsInput.prototype.addData = function(array){
-            var plugin = this;
-
-            array.forEach(function(string){
-                plugin.addTag(string);
-            })
-            return this;
-        }
-
-        // Get the Input String
-        TagsInput.prototype.getInputString = function(){
-            return this.arr.join(',');
-        }
-
-
-        // destroy the plugin
-        TagsInput.prototype.destroy = function(){
-            this.orignal_input.removeAttribute('hidden');
-
-            delete this.orignal_input;
-            var self = this;
-
-            Object.keys(this).forEach(function(key){
-                if(self[key] instanceof HTMLElement)
-                    self[key].remove();
-
-                if(key != 'options')
-                    delete self[key];
-            });
-
-            this.initialized = false;
-        }
-
-        // Private function to initialize the tag input plugin
-        function init(tags){
-            tags.wrapper.append(tags.input);
-            tags.wrapper.classList.add(tags.options.wrapperClass);
-            tags.orignal_input.setAttribute('hidden' , 'true');
-            tags.orignal_input.parentNode.insertBefore(tags.wrapper , tags.orignal_input);
-        }
-
-        // initialize the Events
-        function initEvents(tags){
-            tags.wrapper.addEventListener('click' ,function(){
-                tags.input.focus();
-            });
-
-
-            tags.input.addEventListener('keydown' , function(e){
-                var str = tags.input.value.trim();
-
-                if( !!(~[9 , 13 , 188].indexOf( e.keyCode ))  )
-                {
-                    e.preventDefault();
-                    tags.input.value = "";
-                    if(str != "")
-                        tags.addTag(str);
-                }
-
-            });
-        }
-
-
-        // Set All the Default Values
-        TagsInput.defaults = {
-            selector : '',
-            wrapperClass : 'tags-input-wrapper',
-            tagClass : 'tag',
-            max : null,
-            duplicate: false
-        }
-
-        window.TagsInput = TagsInput;
-
-    })();
-
-    var tagInput1 = new TagsInput({
-        selector: 'tagsInput',
-        duplicate : false,
-        // max : 10
-    });
-    tagInput1.addData(['PHP' , 'JavaScript' , 'CSS'])
-
-</script>
-<!--end tags-->
-
 </body>
 </html>
