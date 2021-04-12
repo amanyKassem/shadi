@@ -1,0 +1,467 @@
+<!doctype html>
+<html lang="ar">
+<head>
+
+    <!-- Title Page -->
+    <title>shadi</title>
+
+    <!-- favicon Page -->
+    <link rel="shortcut icon" href="img/fav.png">
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="HandheldFriendly" content="true">
+
+    <meta name="theme-color" content="#121320">
+    <meta name="msapplication-navbutton-color" content="#121320">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#121320">
+
+    <!-- Bootstrap CSS -->
+    <link href="css/all.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/hover.css">
+    <link href="css/icomoon.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/ar.css">
+
+</head>
+<body class="pT115 pT175">
+
+<!-- Start Loading Page -->
+
+<div class="loader">
+    <div class="loading"></div>
+</div>
+
+<!-- Start Overlay Page -->
+
+<div class="OverLay"></div>
+
+<!--  Start Header  -->
+
+<header class="userHeader">
+    <div class="headerTop">
+        <span>احصل علي 20%</span> علي اول طلب تطلبه من موقعنا
+        <span class="icon-cancel closeTopHeader"></span>
+    </div>
+    <div class="container">
+
+        <div class="menuBar d-flex d-md-none justify-content-between align-items-center">
+            <a href="userHome.html">
+                <img src="img/logo_icon.png" class="logo" alt="logo">
+            </a>
+            <div class="toggle">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </div>
+        </div>
+
+        <div class="overlay"></div>
+
+        <div class="menu d-flex flex-wrap align-items-center">
+
+            <!--             if user login-->
+            <a href="profile.html" class="user d-md-none">
+                <img src="img/pic.jpg" class="img-fluid" alt="profile">
+                <p>
+                    أماني قاسم
+                </p>
+            </a>
+
+
+            <!--            if user not login-->
+            <!--            <a href="login.html" class="user d-md-none">-->
+            <!--                <i class="far fa-user"></i>-->
+            <!--                <p>-->
+            <!--                    حسابي-->
+            <!--                </p>-->
+            <!--            </a>-->
+
+
+            <div class="d-flex align-items-center">
+                <a href="userHome.html" class="d-none d-md-block">
+                    <img src="img/logo_icon.png" class="logo" alt="logo">
+                </a>
+
+                <ul class="menuLinks">
+                    <li>
+                        <a href="userHome.html">الرئيسية</a>
+                    </li>
+                    <li>
+                        <a href="beSeller.html">ترقية لمقدم</a>
+                    </li>
+                    <li>
+                        <div class="msgs">
+                            <div class="num">
+                                100
+                            </div>
+                            الرسائل
+                            <span class="icon-down_arrow_drop"></span>
+                            <ul class="boxShadow">
+                                <li><a href="userChat.html"><span class="icon-email_gray"></span> الرسائل</a></li>
+                                <li class="active"><a href="userNotifications.html"><span class="icon-notification"></span> الاشعارات</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="saves.html">المحفوظات</a>
+                    </li>
+                    <li>
+                        <a href="orders.html">الطلبات</a>
+                    </li>
+
+                    <!--                    only in mobile-->
+
+                    <li class="d-sm-none"><a href="interests.html">الاهتمامات</a></li>
+                    <li class="d-sm-none"><a href="providerHome.html">تحويل للوحة التحكم</a></li>
+                    <li class="d-sm-none"><a href="settings.html">الاعدادات</a></li>
+                    <li class="d-sm-none">
+                        <div>
+                            <span>اللغة</span>
+                            <div class="lang">
+                                <a class="active py-0 px-3">Ar</a>
+                                |
+                                <a class="py-0 pr-3 pl-0">En</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="d-sm-none"><a href="login.html">تسجيل الخروج</a></li>
+
+
+                </ul>
+            </div>
+
+            <div class="d-flex flex-column align-items-start flex-md-row align-items-md-center">
+
+                <!-- if user login-->
+                <!--                <a href="profile.html" class="profile d-none d-md-flex">-->
+                <!--                    <img src="img/pic.jpg" class="img-fluid" alt="profile">-->
+                <!--                    أماني قاسم-->
+                <!--                </a>-->
+
+                <div class="profile d-none d-md-flex">
+                    <img class="img-fluid" src="img/pic.jpg" alt="profile">
+                    <span class="icon-down_arrow_drop"></span>
+                    <img src="img/triangle.png" alt="arrow" class="triangle">
+                    <ul class="boxShadow">
+                        <li><a href="profile.html">عرض الملف الشخصي</a></li>
+                        <li><a href="interests.html">الاهتمامات</a></li>
+                        <li><a href="providerHome.html">تحويل للوحة التحكم</a></li>
+                        <li><a href="settings.html">الاعدادات</a></li>
+                        <li>
+                            <div>
+                                <span>اللغة</span>
+                                <div class="lang">
+                                    <a class="active py-0 pl-3 pr-0">Ar</a>
+                                    |
+                                    <a class="py-0 pr-3 pl-0">En</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="login.html">تسجيل الخروج</a></li>
+                    </ul>
+                </div>
+
+
+
+                <div class="searchCont">
+                    <span class="icon-cancel closeSearch d-none d-sm-block"></span>
+                    <span class="borderR d-none d-sm-block">|</span>
+                    <input type="text" class="form-control" placeholder="ابحث عن الخدمه او القسم الذي تريده">
+                    <button class="searchIcon" type="submi">
+                        <span class="icon-search"></span>
+                    </button>
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+    </div>
+</header>
+
+<!--end header-->
+
+
+<!--start top categories-->
+<div class="topCategories">
+    <div class="container">
+        <ul class="catLinks">
+            <li>
+                <a href="visitorsSeen.html">مشاهدات الزوار</a>
+            </li>
+            <li>
+                <a href="graphicDesign.html">الجرافيك والديزاين</a>
+            </li>
+            <li>
+                <a href="technology.html">التكنولوجيا والتسويق الرقمي</a>
+            </li>
+            <li>
+                <a href="writingTranslation.html">الكتابة والترجمة</a>
+            </li>
+            <li>
+                <a href="photography.html">التصوير والمونتاج</a>
+            </li>
+            <li>
+                <a href="video.html">الفيديو والانيميشن</a>
+            </li>
+            <li>
+                <a href="education.html">التعليم</a>
+            </li>
+            <li>
+                <a href="lifeStyle.html">لايف ستايل</a>
+            </li>
+            <li>
+                <a href="consulting.html">الاستشارات</a>
+            </li>
+            <li>
+                <a href="publicServices.html">خدمات عامة</a>
+            </li>
+        </ul>
+    </div>
+</div>
+<!--end top categories-->
+
+
+<!--start statistics-->
+<div class="statistics bgLightGray minBody">
+    <div class="container">
+
+        <div class="flex flexSpace">
+            <h5 class="colorGreen m-0">الاشعارات</h5>
+            <div class="flex flexRowCenter">
+                <label class="switch mr-2 ml-2" for="checkbox">
+                    <input type="checkbox" id="checkbox" />
+                    <div class="slider round"></div>
+                </label>
+                <h6 class="colorBla m-0 mr-2">صوت الاشعارات</h6>
+            </div>
+        </div>
+
+
+        <div class="mt-4 mb-4">
+            <div class="boxNote bgWight p-3 flex flexRow overflow-hidden position-relative Radius10 boxShadow">
+
+                <div class="blockNote flex flexRow w-100 pl-2 pr-2 pt-4 pb-4">
+                    <div class="imgNote imgUserMassage flex6 position-relative mb-3">
+                        <img src="img/pic.jpg" alt="" class="wImgIcon45">
+                    </div>
+                    <div class="infoNote flex94">
+                        <div class="flex flexSpace">
+                            <h6 class="m-0">تم الإنتهاء من الطلب وجاري تحويل المبلغ</h6>
+                            <button class="removeNote">
+                                <span class="icon-cancel"></span>
+                            </button>
+                        </div>
+                        <p class="mt-1 mb-1 colorGray">15 Jun</p>
+                    </div>
+                </div>
+
+                <div class="blockNote flex flexRow w-100 pl-2 pr-2 pt-4 pb-4">
+                    <div class="imgNote imgUserMassage flex6 position-relative mt-2 mb-3">
+                        <img src="img/pic.jpg" alt="" class="overDown">
+                        <img src="img/pic.jpg" alt="" class="overUp">
+                    </div>
+                    <div class="infoNote flex94">
+                        <div class="flex flexSpace">
+                            <h6 class="m-0">تم التعليق علي منتج و5 آخرين</h6>
+                            <button class="removeNote">
+                                <span class="icon-cancel"></span>
+                            </button>
+                        </div>
+                        <p class="mt-1 mb-1 colorGray">15 Jun</p>
+                    </div>
+                </div>
+
+                <div class="blockNote flex flexRow w-100 pl-2 pr-2 pt-4 pb-4">
+                    <div class="imgNote imgUserMassage flex6 position-relative mb-3">
+                        <img src="img/pic.jpg" alt="" class="wImgIcon45">
+                    </div>
+                    <div class="infoNote flex94">
+                        <div class="flex flexSpace">
+                            <h6 class="m-0">تم إرسال رساله من شعوذه الندم لك</h6>
+                            <button class="removeNote">
+                                <span class="icon-cancel"></span>
+                            </button>
+                        </div>
+                        <p class="mt-1 mb-1 colorGray">15 Jun</p>
+                        <a href="" class="btnButton btnDefault displayInline mt-2">بدء المحادثة</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+<!--end statistics-->
+
+<!--start footer-->
+<footer>
+    <div class="container">
+        <img src="img/light_green_lamb.svg" class="lightLamp" alt="ight_green_lamb">
+        <div class="footerInfo">
+
+            <div>
+                <h5 class="title">فئات</h5>
+                <ul>
+                    <li>
+                        <a href="graphicDesign.html" class="hvr-backward">الجرافيم والديزاين</a>
+                    </li>
+                    <li>
+                        <a href="graphicDesign.html" class="hvr-backward">التكنولوجيا والتسويق الالكتروني</a>
+                    </li>
+                    <li>
+                        <a href="graphicDesign.html" class="hvr-backward">التصوير والمونتاج</a>
+                    </li>
+                    <li>
+                        <a href="graphicDesign.html" class="hvr-backward">الكتابة والترجمة</a>
+                    </li>
+                    <li>
+                        <a href="graphicDesign.html" class="hvr-backward">الفيديو والانيميشن</a>
+                    </li>
+                    <li>
+                        <a href="graphicDesign.html" class="hvr-backward">التعليم</a>
+                    </li>
+                    <li>
+                        <a href="graphicDesign.html" class="hvr-backward">الاستشارات</a>
+                    </li>
+                    <li>
+                        <a href="graphicDesign.html" class="hvr-backward">لايف ستايل</a>
+                    </li>
+                    <li>
+                        <a href="graphicDesign.html" class="hvr-backward">خدمات عامة</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <h5 class="title">عن</h5>
+                <ul>
+                    <li>
+                        <a href="terms.html" class="hvr-backward">سياسة الخصوصية</a>
+                    </li>
+                    <li>
+                        <a href="terms.html" class="hvr-backward">شروط الخدمة</a>
+                    </li>
+                </ul>
+                <h5 class="title">تحميل تطبيق الموبايل</h5>
+                <div class="apps">
+                    <a href="" class="hvr-float-shadow"><img src="img/google-play.png" alt="google play"></a>
+                    <a href="" class="hvr-float-shadow"><img src="img/appstore.png" alt="app store"></a>
+                </div>
+
+            </div>
+
+            <div>
+                <h5 class="title">دعم</h5>
+                <ul>
+                    <li>
+                        <a href="support.html" class="hvr-backward">المساعدة والدعم</a>
+                    </li>
+                    <li>
+                        <a href="sellOnLight.html" class="hvr-backward">بيع علي <span>Light Up</span></a>
+                    </li>
+                    <li>
+                        <a href="completeAcc.html" class="hvr-backward">الشراء علي <span>Light Up</span></a>
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <h5 class="title">المجتمع</h5>
+                <ul>
+                    <li>
+                        <a data-toggle="modal" data-target="#inviteFriend" class="hvr-backward">دعوة صديق</a>
+                    </li>
+                    <li>
+                        <a href="beSeller.html" class="hvr-backward">أصبح بائع</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+        <hr class="customHr">
+        <div class="info">
+            <div class="copyright justify-content-center justify-content-sm-start">
+                <h4>Light Up</h4>
+                <p>جميع الحقوق محفوظة ل <a href="">اوامر الشبكة 2021</a></p>
+            </div>
+            <div class="social">
+                <a href="" class="hvr-float-shadow"><span class="icon-linkedin"></span></a>
+                <a href="" class="hvr-float-shadow"><span class="icon-facebook"></span></a>
+                <a href="" class="hvr-float-shadow"><span class="icon-instagram"></span></a>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="inviteFriend" tabindex="-1" role="dialog" aria-labelledby="inviteFriendTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <a data-dismiss="modal" class="closeModal" type="submit">
+                    <span class="icon-cancel_black"></span>
+                </a>
+                <div class="modal-body">
+                    <img class="vector" src="img/vector_invite.png" alt="vector invite friend">
+                    <p class="title">دعوة الاصدقاء وكلاكما تحصلان علي ما يصل الي 100 دولار</p>
+                    <p class="desc maxWidthAuto">تعريف اصدقائك علي اسهل طريقة لإنجاز الامور</p>
+
+                    <form action="" class="inviteFriend">
+                        <div class="form-group">
+                            <input type="text" name="email" id="email" class="form-control" placeholder="اضف البريد الالكتروني">
+                        </div>
+                        <a data-dismiss="modal" class="btnDefault hvr-pulse" type="submit">ارسال</a>
+                    </form>
+                    <p class="title my-4">رابط الدعوه الخاص بك</p>
+                    <a href="" class="bgLightGray py-3 px-md-5 px-2 borderCli Radius5 colorBlack w-75 wordBreak text-center">
+                        https://marvelapp.com/prototype/25ee2bc6/screen/73731393
+                    </a>
+
+                    <p class="title mt-4 mb-2">شارك عبر وسائل التواصل</p>
+
+                    <div class="social">
+                        <a class="twitter hvr-float-shadow">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a class="faceBook hvr-float-shadow">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a class="linkedIn hvr-float-shadow">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</footer>
+<!--end footer-->
+
+
+<!--===============================
+    SCRIPT
+===================================-->
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap-select.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/script.js"></script>
+<script>
+    // on Remove Note
+    $('.blockNote').on('click', '.removeNote',function (){
+        $(this).parents('.blockNote').remove();
+    });
+</script>
+
+</body>
+</html>

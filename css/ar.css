@@ -61,8 +61,16 @@ body {
 
 .noChat , .listPoint li:before , .overLayBT , .upload-img:before , .loader,
 .orderDetailsContainer .detailsCont .rightCont .details .processTime ul.timeline:before ,
+.userOrders .tab-pane .orderBlock ul.timeline:before ,
 .addService .dataForm .leftDiv .info li:before{
     right: 0;
+}
+
+.orderDetailsContainer .detailsCont .rightCont .details .processTime ul.timeline {
+    margin: 10px 10px 0 0;
+}
+.userOrders .tab-pane .orderBlock ul.timeline {
+    margin: 5px 5px 0 0;
 }
 
 .close_model {
@@ -122,16 +130,20 @@ div.dataTables_wrapper .dataTables_length input, div.dataTables_wrapper .dataTab
 .orderDetailsContainer .detailsCont .rightCont{
     margin-left: 20px;
 }
+.userOrders .tab-pane .orderBlock  ul.timeline > li ,
 .orderDetailsContainer .detailsCont .rightCont .details .processTime ul.timeline > li {
-    padding-left: 20px;
+    padding-right: 20px;
 }
-.orderDetailsContainer .detailsCont .rightCont .details .processTime ul.timeline > li:before {
+.orderDetailsContainer .detailsCont .rightCont .details .processTime ul.timeline > li:before ,
+.userOrders .tab-pane .orderBlock ul.timeline > li:before {
     right: -7px;
 }
-.orderDetailsContainer .detailsCont .rightCont .details .processTime ul.timeline > li.cancelled .icon-cancel {
+.orderDetailsContainer .detailsCont .rightCont .details .processTime ul.timeline > li.cancelled .icon-cancel ,
+.userOrders .tab-pane .orderBlock ul.timeline > li.cancelled .icon-cancel {
     right: -2px;
 }
-.orderDetailsContainer .detailsCont .rightCont .details .processTime ul.timeline > li.active:after {
+.orderDetailsContainer .detailsCont .rightCont .details .processTime ul.timeline > li.active:after ,
+.userOrders .tab-pane .orderBlock ul.timeline > li.active:after {
     right: -5px;
 }
 .orderDetailsContainer .detailsCont .rightCont .details .processTime .time{
@@ -205,7 +217,8 @@ header .overlay {
 .orderDetailsContainer .alert-success span.alertIcon {
     margin-left: 15px;
 }
-.orderDetailsContainer .detailsCont .rightCont .details .user img{
+.orderDetailsContainer .detailsCont .rightCont .details .user img,
+.userOrders .tab-pane .orderBlock .user img{
     margin-left: 5px;
 }
 .orderDetailsContainer .detailsCont .rightCont .packageCont .options .option{
@@ -334,6 +347,9 @@ header .headerTop span {
 .socialContainer .contacts li a img{
     margin-left: 25px;
 }
+.userOrders .nav-pills .nav-item .nav-link span{
+    margin-left: 20px;
+}
 
 @media(max-width: 767px){
     .register .btnGray {
@@ -397,6 +413,10 @@ header .headerTop span {
     }
     .topCategories .catLinks li {
         margin-left: 30px;
+    }
+
+    .userOrders .nav-pills .nav-item .nav-link span {
+        margin-left: 10px;
     }
 
 }

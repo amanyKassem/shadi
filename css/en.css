@@ -107,9 +107,18 @@ body {
 
 .noChat , .listPoint li:before , .overLayBT , .upload-img:before ,.loader ,
 .orderDetailsContainer .detailsCont .rightCont .details .processTime ul.timeline:before ,
+.userOrders .tab-pane .orderBlock ul.timeline:before ,
 .addService .dataForm .leftDiv .info li:before{
     left: 0;
 }
+
+.orderDetailsContainer .detailsCont .rightCont .details .processTime ul.timeline {
+    margin: 10px 0 0 10px;
+}
+.userOrders .tab-pane .orderBlock ul.timeline {
+    margin: 5px 0 0 5px;
+}
+
 
 .close_model {
     right: -10px;
@@ -166,13 +175,23 @@ div.dataTables_wrapper .dataTables_length input, div.dataTables_wrapper .dataTab
 .orderDetailsContainer .detailsCont .rightCont{
     margin-right: 20px;
 }
+
+
+.userOrders .tab-pane .orderBlock  ul.timeline > li ,
+.orderDetailsContainer .detailsCont .rightCont .details .processTime ul.timeline > li {
+    padding-left: 20px;
+}
+
+.userOrders .tab-pane .orderBlock  ul.timeline > li:before ,
 .orderDetailsContainer .detailsCont .rightCont .details .processTime ul.timeline > li:before {
     left: -7px;
 }
-.orderDetailsContainer .detailsCont .rightCont .details .processTime ul.timeline > li.cancelled .icon-cancel {
+.orderDetailsContainer .detailsCont .rightCont .details .processTime ul.timeline > li.cancelled .icon-cancel ,
+.userOrders .tab-pane .orderBlock ul.timeline > li.cancelled .icon-cancel {
     left: -2px;
 }
-.orderDetailsContainer .detailsCont .rightCont .details .processTime ul.timeline > li.active:after {
+.orderDetailsContainer .detailsCont .rightCont .details .processTime ul.timeline > li.active:after ,
+.userOrders .tab-pane .orderBlock ul.timeline > li.active:after {
     left: -5px;
 }
 .orderDetailsContainer .detailsCont .rightCont .details .processTime .time{
@@ -243,7 +262,8 @@ header .overlay {
 .orderDetailsContainer .alert-success span.alertIcon {
     margin-right: 15px;
 }
-.orderDetailsContainer .detailsCont .rightCont .details .user img{
+.orderDetailsContainer .detailsCont .rightCont .details .user img ,
+.userOrders .tab-pane .orderBlock .user img{
     margin-right: 5px;
 }
 .orderDetailsContainer .detailsCont .rightCont .packageCont .options .option{
@@ -356,6 +376,9 @@ header .headerTop span {
 .socialContainer .contacts li a img{
     margin-right: 25px;
 }
+.userOrders .nav-pills .nav-item .nav-link span{
+    margin-right: 20px;
+}
 
 @media(max-width: 767px){
     .register .btnGray {
@@ -417,6 +440,10 @@ header .headerTop span {
     }
     .topCategories .catLinks li {
         margin-right: 30px;
+    }
+
+    .userOrders .nav-pills .nav-item .nav-link span {
+        margin-right: 10px;
     }
 }
 
