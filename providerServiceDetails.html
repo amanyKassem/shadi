@@ -235,6 +235,9 @@
                 <div class="modal fade" id="addCat" tabindex="-1" role="dialog" aria-labelledby="addCatTitle" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered" role="document">
                         <div class="modal-content">
+                            <a data-dismiss="modal" class="closeModal" type="submit">
+                                <span class="icon-cancel_black"></span>
+                            </a>
                             <div class="modal-header">
                                 <h5 class="modal-title">اضافة عرض</h5>
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -334,14 +337,14 @@
                 <div class="row">
                     <div class="col-md-8 col-xs-12">
 
-                        <div class="">
+                        <div class="listVI">
                             <ul>
-                               <li class="mr-1 ml-1">
-                                   <a href="" class="colorDefault">
-                                       قسم نمط الحياه
-                                   </a>
-                               </li>
-                                <li class="mr-1 ml-1">
+                                <li>
+                                    <a href="" class="colorDefault">
+                                        قسم نمط الحياه
+                                    </a>
+                                </li>
+                                <li>
                                     <a href="" class="colorDefault">
                                         فيديوهات وبطاقات معايده
                                     </a>
@@ -350,12 +353,12 @@
                         </div>
 
                         <div class="viewInfoUserDec mt-4">
-                            <h5 class="mb-4 colorBlack">سوف أصنع لك فديو مميز لك بذكرياتك بأستخدام صورك الخاصه</h5>
+                            <h5 class="mb-4 colorBlack font-weight-bold">سوف أصنع لك فديو مميز لك بذكرياتك بأستخدام صورك الخاصه</h5>
                             <div class="flex flexRowCenter">
                                 <div class="imgUserMassage wImgIcon45">
                                     <img src="img/pic.jpg" alt="" class="wImgIcon45">
                                 </div>
-                                <p class="mb-0 mt-0 pr-3 pl-3">شعوذه الندم</p>
+                                <p class="mb-0 mt-0 pr-3 pl-3 font-weight-bold">اسم مقدم الخدمه</p>
                             </div>
                         </div>
 
@@ -415,17 +418,17 @@
                         </div>
 
                         <div class="mt-4">
-                            <h5 class="mb-5 mt-3">عن البائع</h5>
+                            <h5 class="mb-5 mt-3 font-weight-bold colorGreen">عن البائع</h5>
                             <div class="flex flexRowCenter">
                                 <div class="imgUserMassage wImgIcon75">
                                     <img src="img/pic.jpg" alt="" class="wImgIcon75">
                                 </div>
                                 <div class="infoAboutSaller pr-3 pl-3">
                                     <div class="flex flexRowCenter">
-                                        <h6 class="mb-0 mt-0">شعوذه الندم</h6>
+                                        <h6 class="mb-0 mt-0 font-weight-bold">شعوذه الندم</h6>
                                         <a href="" class="pl-4 pr-4 pt-2 pb-2 Radius5 btnDefault displayInline mr-3 ml-3">متصل</a>
                                     </div>
-                                    <p class="colorGray">تعديل الفديوهات | مصمم الفديوهات | مصمم جرافيك</p>
+                                    <p class="colorGray font-weight-bold">تعديل الفديوهات | مصمم الفديوهات | مصمم جرافيك</p>
                                 </div>
                             </div>
                         </div>
@@ -687,14 +690,17 @@
                                                <div class="modal fade" id="modalReport" tabindex="-1" role="dialog" aria-labelledby="payInfoTitle" aria-hidden="true">
                                                    <div class="modal-dialog modal-dialog-centered" role="document">
                                                        <div class="modal-content">
+                                                           <a data-dismiss="modal" class="closeModal" type="submit">
+                                                               <span class="icon-cancel_black"></span>
+                                                           </a>
                                                            <div class="modal-body">
 
-                                                               <div class="borderBCli pb-4 mb-3">
+                                                               <div class="pb-4 mb-3">
                                                                    <img class="vector" src="img/vector_rebort.png" alt="vector payment">
                                                                    <p class="text-center colorGray">الإبلاغ علي التعليق</p>
                                                                </div>
 
-                                                               <div class="">
+                                                               <div class="borderTCli p-4">
 
                                                                    <label class="radioButton w-100 mt-3 mb-3 colorGray">
                                                                        <input type="radio" checked="checked" name="radio">
@@ -814,51 +820,6 @@
                                                 <button data-toggle="modal" data-target="#modalReport">
                                                     <i class="fas fa-flag colorGray" style="font-size: 20px;"></i>
                                                 </button>
-                                                <!-- Modal -->
-                                                <div class="modal fade" id="modalReport" tabindex="-1" role="dialog" aria-labelledby="payInfoTitle" aria-hidden="true">
-                                                    <div class="modal-dialog modal-dialog-centered" role="document">
-                                                        <div class="modal-content">
-                                                            <div class="modal-body">
-
-                                                                <div class="borderBCli pb-4 mb-3">
-                                                                    <img class="vector" src="img/vector_rebort.png" alt="vector payment">
-                                                                    <p class="text-center colorGray">الإبلاغ علي التعليق</p>
-                                                                </div>
-
-                                                                <div class="">
-
-                                                                    <label class="radioButton w-100 mt-3 mb-3 colorGray">
-                                                                        <input type="radio" checked="checked" name="radio">
-                                                                        <span class="checkmark"></span>
-                                                                        تعليق غير لائق
-                                                                    </label>
-
-                                                                    <label class="radioButton w-100 mt-3 mb-3 colorGray">
-                                                                        <input type="radio" checked="checked" name="radio">
-                                                                        <span class="checkmark"></span>
-                                                                        تعليق غير لائق
-                                                                    </label>
-
-                                                                    <label class="radioButton w-100 mt-3 mb-3 colorGray">
-                                                                        <input type="radio" checked="checked" name="radio">
-                                                                        <span class="checkmark"></span>
-                                                                        تعليق غير لائق
-                                                                    </label>
-
-                                                                    <label class="radioButton w-100 mt-3 mb-3 colorGray">
-                                                                        <input type="radio" checked="checked" name="radio">
-                                                                        <span class="checkmark"></span>
-                                                                        تعليق غير لائق
-                                                                    </label>
-
-                                                                    <button class="bgGreen pr-5 pl-5 pt-2 pb-2 mt-4 colorWight Radius5" data-dismiss="modal" aria-label="Close">إرسال</button>
-
-                                                                </div>
-
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
                                             </div>
                                             <div class="flex flexRowCenter">
                                                 <div class="flex90 pl-3">
@@ -945,51 +906,6 @@
                                                 <button data-toggle="modal" data-target="#modalReport">
                                                     <i class="fas fa-flag colorGray" style="font-size: 20px;"></i>
                                                 </button>
-                                                <!-- Modal -->
-                                                <div class="modal fade" id="modalReport" tabindex="-1" role="dialog" aria-labelledby="payInfoTitle" aria-hidden="true">
-                                                    <div class="modal-dialog modal-dialog-centered" role="document">
-                                                        <div class="modal-content">
-                                                            <div class="modal-body">
-
-                                                                <div class="borderBCli pb-4 mb-3">
-                                                                    <img class="vector" src="img/vector_rebort.png" alt="vector payment">
-                                                                    <p class="text-center colorGray">الإبلاغ علي التعليق</p>
-                                                                </div>
-
-                                                                <div class="">
-
-                                                                    <label class="radioButton w-100 mt-3 mb-3 colorGray">
-                                                                        <input type="radio" checked="checked" name="radio">
-                                                                        <span class="checkmark"></span>
-                                                                        تعليق غير لائق
-                                                                    </label>
-
-                                                                    <label class="radioButton w-100 mt-3 mb-3 colorGray">
-                                                                        <input type="radio" checked="checked" name="radio">
-                                                                        <span class="checkmark"></span>
-                                                                        تعليق غير لائق
-                                                                    </label>
-
-                                                                    <label class="radioButton w-100 mt-3 mb-3 colorGray">
-                                                                        <input type="radio" checked="checked" name="radio">
-                                                                        <span class="checkmark"></span>
-                                                                        تعليق غير لائق
-                                                                    </label>
-
-                                                                    <label class="radioButton w-100 mt-3 mb-3 colorGray">
-                                                                        <input type="radio" checked="checked" name="radio">
-                                                                        <span class="checkmark"></span>
-                                                                        تعليق غير لائق
-                                                                    </label>
-
-                                                                    <button class="bgGreen pr-5 pl-5 pt-2 pb-2 mt-4 colorWight Radius5" data-dismiss="modal" aria-label="Close">إرسال</button>
-
-                                                                </div>
-
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
                                             </div>
                                             <div class="flex flexRowCenter">
                                                 <div class="flex90 pl-3">

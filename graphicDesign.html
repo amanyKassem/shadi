@@ -1,0 +1,1213 @@
+<!doctype html>
+<html lang="ar">
+<head>
+
+    <!-- Title Page -->
+    <title>shadi</title>
+
+    <!-- favicon Page -->
+    <link rel="shortcut icon" href="img/fav.png">
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="HandheldFriendly" content="true">
+
+    <meta name="theme-color" content="#121320">
+    <meta name="msapplication-navbutton-color" content="#121320">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#121320">
+
+    <!-- Bootstrap CSS -->
+    <link href="css/all.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/hover.css">
+    <link href="css/icomoon.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/ar.css">
+
+</head>
+<body class="pT115 pT175">
+
+<!-- Start Loading Page -->
+
+<div class="loader">
+    <div class="loading"></div>
+</div>
+
+<!-- Start Overlay Page -->
+
+<div class="OverLay"></div>
+
+
+<!--  Start Header  -->
+
+<header class="userHeader">
+    <div class="headerTop">
+        <span>احصل علي 20%</span> علي اول طلب تطلبه من موقعنا
+        <span class="icon-cancel closeTopHeader"></span>
+    </div>
+    <div class="container">
+
+        <div class="menuBar d-flex d-md-none justify-content-between align-items-center">
+            <a href="userHome.html">
+                <img src="img/logo_icon.png" class="logo" alt="logo">
+            </a>
+            <div class="toggle">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </div>
+        </div>
+
+        <div class="overlay"></div>
+
+        <div class="menu d-flex flex-wrap align-items-center">
+
+            <!--             if user login-->
+            <a href="profile.html" class="user d-md-none">
+                <img src="img/pic.jpg" class="img-fluid" alt="profile">
+                <p>
+                    أماني قاسم
+                </p>
+            </a>
+
+
+            <!--            if user not login-->
+            <!--            <a href="login.html" class="user d-md-none">-->
+            <!--                <i class="far fa-user"></i>-->
+            <!--                <p>-->
+            <!--                    حسابي-->
+            <!--                </p>-->
+            <!--            </a>-->
+
+
+            <div class="d-flex align-items-center">
+                <a href="userHome.html" class="d-none d-md-block">
+                    <img src="img/logo_icon.png" class="logo" alt="logo">
+                </a>
+
+                <ul class="menuLinks">
+                    <li>
+                        <a href="userHome.html">الرئيسية</a>
+                    </li>
+                    <li>
+                        <a href="beSeller.html">ترقية لمقدم</a>
+                    </li>
+                    <li>
+                        <div class="msgs">
+                            <div class="num">
+                                100
+                            </div>
+                            الرسائل
+                            <span class="icon-down_arrow_drop"></span>
+                            <ul class="boxShadow">
+                                <li><a href="userChat.html"><span class="icon-email_gray"></span> الرسائل</a></li>
+                                <li><a href="userNotifications.html"><span class="icon-notification"></span> الاشعارات</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="saves.html">المحفوظات</a>
+                    </li>
+                    <li>
+                        <a href="orders.html">الطلبات</a>
+                    </li>
+
+                    <!--                    only in mobile-->
+
+                    <li class="d-sm-none"><a href="interests.html">الاهتمامات</a></li>
+                    <li class="d-sm-none"><a href="providerHome.html">تحويل للوحة التحكم</a></li>
+                    <li class="d-sm-none"><a href="settings.html">الاعدادات</a></li>
+                    <li class="d-sm-none">
+                        <div>
+                            <span>اللغة</span>
+                            <div class="lang">
+                                <a class="active py-0 px-3">Ar</a>
+                                |
+                                <a class="py-0 pr-3 pl-0">En</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="d-sm-none"><a href="login.html">تسجيل الخروج</a></li>
+
+
+                </ul>
+            </div>
+
+            <div class="d-flex flex-column align-items-start flex-md-row align-items-md-center">
+
+                <!-- if user login-->
+                <!--                <a href="profile.html" class="profile d-none d-md-flex">-->
+                <!--                    <img src="img/pic.jpg" class="img-fluid" alt="profile">-->
+                <!--                    أماني قاسم-->
+                <!--                </a>-->
+
+                <div class="profile d-none d-md-flex">
+                    <img class="img-fluid" src="img/pic.jpg" alt="profile">
+                    <span class="icon-down_arrow_drop"></span>
+                    <img src="img/triangle.png" alt="arrow" class="triangle">
+                    <ul class="boxShadow">
+                        <li><a href="profile.html">عرض الملف الشخصي</a></li>
+                        <li><a href="interests.html">الاهتمامات</a></li>
+                        <li><a href="providerHome.html">تحويل للوحة التحكم</a></li>
+                        <li><a href="settings.html">الاعدادات</a></li>
+                        <li>
+                            <div>
+                                <span>اللغة</span>
+                                <div class="lang">
+                                    <a class="active py-0 pl-3 pr-0">Ar</a>
+                                    |
+                                    <a class="py-0 pr-3 pl-0">En</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="login.html">تسجيل الخروج</a></li>
+                    </ul>
+                </div>
+
+
+
+                <div class="searchCont">
+                    <span class="icon-cancel closeSearch d-none d-sm-block"></span>
+                    <span class="borderR d-none d-sm-block">|</span>
+                    <input type="text" class="form-control" placeholder="ابحث عن الخدمه او القسم الذي تريده">
+                    <button class="searchIcon" type="submi">
+                        <span class="icon-search"></span>
+                    </button>
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+    </div>
+</header>
+
+<!--end header-->
+
+<!--start top categories-->
+<div class="topCategories">
+    <div class="container">
+        <ul class="catLinks">
+            <li>
+                <a href="visitorsSeen.html">مشاهدات الزوار</a>
+            </li>
+            <li>
+                <a href="graphicDesign.html">الجرافيك والديزاين</a>
+            </li>
+            <li>
+                <a href="technology.html">التكنولوجيا والتسويق الرقمي</a>
+            </li>
+            <li>
+                <a href="writingTranslation.html">الكتابة والترجمة</a>
+            </li>
+            <li>
+                <a href="photography.html">التصوير والمونتاج</a>
+            </li>
+            <li>
+                <a href="video.html">الفيديو والانيميشن</a>
+            </li>
+            <li>
+                <a href="education.html">التعليم</a>
+            </li>
+            <li>
+                <a href="lifeStyle.html">لايف ستايل</a>
+            </li>
+            <li>
+                <a href="consulting.html">الاستشارات</a>
+            </li>
+            <li>
+                <a href="publicServices.html">خدمات عامة</a>
+            </li>
+        </ul>
+    </div>
+</div>
+<!--end top categories-->
+
+<!--start social-->
+
+<div class="minBody mt-75">
+
+    <div class="container">
+
+        <div class="pb-4">
+
+            <div class="listVI mt-4 mb-4">
+                <ul>
+                    <li><a href="userHome.html" class="colorBla font-weight-bold">الرئيسية</a></li>
+                    <li><a href="" class="colorBla font-weight-bold">التصميم</a></li>
+                </ul>
+            </div>
+
+            <div class="">
+                <p class="font-weight-bold m-0 lineHText0">اسم القسم الفرعي</p>
+                <div class="flex flexRowCenter">
+                    <p class="font-weight-bold font13">يمكن ان تصمم الهويه الخاصه بك بحسب ما تريد</p>
+                    <a href="https://www.youtube.com/embed/tgbNymZ7vqY" data-fancybox="watermrk" data-caption="caption #1" class="flex flexRowCenter mr-2 ml-2">
+                        <i class="fas fa-play-circle colorDefault mr-2 ml-2" style="font-size: 23px"></i>
+                        <p class="font-weight-bold colorDefault">شاهد فيديو عن طريق العمل</p>
+                    </a>
+                </div>
+            </div>
+
+            <div class="flex flexRowCenter">
+                <div class="filterContIt bg-transparent colorGreen mr-2 ml-2 mt-2 mb-2" style="width: 130px;">
+                    <select class="selectpicker">
+                        <option class="colorGreen">اسم القسم</option>
+                        <option class="colorGreen">ديزاين</option>
+                        <option class="colorGreen">مصمم</option>
+                        <option class="colorGreen">مطور</option>
+                    </select>
+                </div>
+                <div class="position-relative dopBox mt-2 mb-2">
+
+                    <button class="filterContIt flex flexSpace borderCli mr-2 ml-2 h50 pr-2 pl-2 Radius5" style="width: 170px;">
+                        <strong class="colorGreen font13 font-weight-bold">خصائص مقدم الخدمة</strong>
+                        <i class="fas fa-chevron-down colorBla"></i>
+                    </button>
+
+                    <form class="position-absolute shadow bgWight p-2 dropFil">
+
+                        <div class="borderBCli pb-4">
+
+                            <p class="colorGreen font-weight-bold pr-2 pl-2 lineHText0">مستوي المقدم</p>
+
+                            <div class="flex flexRowCenter">
+
+                                <label class="chickBox pl-1 pr-1 mt-2 mb-2 colorGray flex50">
+                                    <input type="radio" name="radio22">
+                                    <span class="checkmark"></span>
+                                    <strong class="font12">
+                                        المقدمين الآعلي تقييما ( 43 )
+                                    </strong>
+                                </label>
+
+                                <label class="chickBox pl-1 pr-1 mt-2 mb-2 colorGray flex50">
+                                    <input type="radio" name="radio22">
+                                    <span class="checkmark"></span>
+                                    <strong class="font12">
+                                        مستوي تاني ( 43 )
+                                    </strong>
+                                </label>
+
+                                <label class="chickBox pl-1 pr-1 mt-2 mb-2 colorGray flex50">
+                                    <input type="radio" name="radio22">
+                                    <span class="checkmark"></span>
+                                    <strong class="font12">
+                                        مستوي اول ( 43 )
+                                    </strong>
+                                </label>
+
+                                <label class="chickBox pl-1 pr-1 mt-2 mb-2 colorGray flex50">
+                                    <input type="radio" name="radio22">
+                                    <span class="checkmark"></span>
+                                    <strong class="font12">
+                                        بائع مقدم ( 43 )
+                                    </strong>
+                                </label>
+
+                            </div>
+
+                        </div>
+
+                        <div class="borderBCli pb-4">
+
+                            <p class="colorGreen font-weight-bold pr-2 pl-2 lineHText0">لغه المقدم</p>
+
+                            <div class="flex flexRowCenter">
+
+                                <label class="chickBox pl-1 pr-1 mt-2 mb-2 colorGray flex100">
+                                    <input type="radio" name="radio33">
+                                    <span class="checkmark"></span>
+                                    <strong class="font12">
+                                        English ( 323 )
+                                    </strong>
+                                </label>
+
+                                <label class="chickBox pl-1 pr-1 mt-2 mb-2 colorGray flex100">
+                                    <input type="radio" name="radio33">
+                                    <span class="checkmark"></span>
+                                    <strong class="font12">
+                                        عربي ( 43 )
+                                    </strong>
+                                </label>
+
+                            </div>
+
+                        </div>
+
+                        <div class="borderBCli pb-4">
+
+                            <p class="colorGreen font-weight-bold pr-2 pl-2 lineHText0">منطقه المقدم</p>
+
+                            <div class="flex flexRowCenter">
+
+                                <label class="chickBox pl-1 pr-1 mt-2 mb-2 colorGray flex50">
+                                    <input type="radio" name="radio22">
+                                    <span class="checkmark"></span>
+                                    <strong class="font12">
+                                        الولايات المتحده ( 43 )
+                                    </strong>
+                                </label>
+
+                                <label class="chickBox pl-1 pr-1 mt-2 mb-2 colorGray flex50">
+                                    <input type="radio" name="radio22">
+                                    <span class="checkmark"></span>
+                                    <strong class="font12">
+                                        بريطانيا ( 43 )
+                                    </strong>
+                                </label>
+
+                                <label class="chickBox pl-1 pr-1 mt-2 mb-2 colorGray flex50">
+                                    <input type="radio" name="radio22">
+                                    <span class="checkmark"></span>
+                                    <strong class="font12">
+                                        مصر ( 43 )
+                                    </strong>
+                                </label>
+
+                                <label class="chickBox pl-1 pr-1 mt-2 mb-2 colorGray flex50">
+                                    <input type="radio" name="radio22">
+                                    <span class="checkmark"></span>
+                                    <strong class="font12">
+                                        كندا ( 43 )
+                                    </strong>
+                                </label>
+
+                            </div>
+
+                        </div>
+
+                        <div class="flex flexSpace pt-3 pb-2">
+                            <button class="colorBla">حذف الكل</button>
+                            <button class="bgDefault Radius5 pt-2 pb-2 pr-4 pl-4 colorWight">تطبيق</button>
+                        </div>
+
+                    </form>
+
+                </div>
+                <div class="position-relative dopBox mt-2 mb-2">
+
+                    <button class="filterContIt flex flexSpace borderCli mr-2 ml-2 h50 pr-2 pl-2 Radius5" style="width: 130px;">
+                        <strong class="colorGreen font13 font-weight-bold">ميزانيتك</strong>
+                        <i class="fas fa-chevron-down colorBla"></i>
+                    </button>
+
+                    <form class="position-absolute shadow bgWight p-2 dropFil w250">
+
+                        <div class="borderBCli pb-4">
+
+                            <p class="colorGreen font-weight-bold pr-2 pl-2 lineHText0">اقل</p>
+
+                            <div class="flex flexRowCenter">
+                                <div class="form-group m-0">
+                                    <input type="text" name="category" class="form-control bgGray borderCli font12" placeholder="اكتب السعر" required>
+                                    <span class="I">$</span>
+                                </div>
+                            </div>
+
+                            <p class="colorGreen font-weight-bold pr-2 pl-2 lineHText0">اكبر</p>
+
+                            <div class="flex flexRowCenter">
+                                <div class="form-group m-0">
+                                    <input type="text" name="category" class="form-control bgGray borderCli font12" placeholder="اكتب السعر" required>
+                                    <span class="I">$</span>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="flex flexSpace pt-3 pb-2">
+                            <button class="colorBla">حذف الكل</button>
+                            <button class="bgDefault Radius5 pt-2 pb-2 pr-4 pl-4 colorWight">تطبيق</button>
+                        </div>
+
+                    </form>
+
+                </div>
+                <div class="position-relative dopBox mt-2 mb-2">
+
+                    <button class="filterContIt flex flexSpace borderCli mr-2 ml-2 h50 pr-2 pl-2 Radius5" style="width: 130px;">
+                        <strong class="colorGreen font13 font-weight-bold">وقت العمل</strong>
+                        <i class="fas fa-chevron-down colorBla"></i>
+                    </button>
+
+                    <form class="position-absolute shadow bgWight p-2 dropFil w250">
+
+                        <div class="borderBCli pb-4">
+
+                            <p class="colorGreen font-weight-bold pr-2 pl-2 lineHText0">مستوي المقدم</p>
+
+                            <div class="flex flexRowCenter">
+
+                                <label class="radioButton w-100 pl-1 pr-1 mt-2 mb-2 colorGray">
+                                    <input type="radio" name="radio22">
+                                    <span class="checkmark"></span>
+                                    <strong class="font12">
+                                        في خلال 5 ايام
+                                    </strong>
+                                </label>
+
+                                <label class="radioButton w-100 pl-1 pr-1 mt-2 mb-2 colorGray">
+                                    <input type="radio" name="radio22">
+                                    <span class="checkmark"></span>
+                                    <strong class="font12">
+                                        في خلال 7 ايام
+                                    </strong>
+                                </label>
+
+                                <label class="radioButton w-100 pl-1 pr-1 mt-2 mb-2 colorGray">
+                                    <input type="radio" name="radio22">
+                                    <span class="checkmark"></span>
+                                    <strong class="font12">
+                                        في خلال 10 ايام
+                                    </strong>
+                                </label>
+
+                            </div>
+
+                        </div>
+
+                        <div class="flex flexSpace pt-3 pb-2">
+                            <button class="colorBla">حذف الكل</button>
+                            <button class="bgDefault Radius5 pt-2 pb-2 pr-4 pl-4 colorWight">تطبيق</button>
+                        </div>
+
+                    </form>
+
+                </div>
+                <div class="flex flexRowCenter mt-2 mb-2">
+                    <label class="switch mr-2 ml-2" for="checkbox1">
+                        <input type="checkbox" id="checkbox1" />
+                        <div class="slider round"></div>
+                    </label>
+                    <h6 class="colorBla m-0 mr-2 font13 font-weight-bold">الخدمات الخاصه</h6>
+                </div>
+                <div class="flex flexRowCenter mt-2 mb-2">
+                    <label class="switch mr-2 ml-2" for="checkbox2">
+                        <input type="checkbox" id="checkbox2" />
+                        <div class="slider round"></div>
+                    </label>
+                    <h6 class="colorBla m-0 mr-2 font13 font-weight-bold">البائعين المحلين</h6>
+                </div>
+                <div class="flex flexRowCenter mt-2 mb-2">
+                    <label class="switch mr-2 ml-2" for="checkbox3">
+                        <input type="checkbox" id="checkbox3" />
+                        <div class="slider round"></div>
+                    </label>
+                    <h6 class="colorBla m-0 mr-2 font13 font-weight-bold">البائعين اونلاين</h6>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="bgGray pt-4 pb-4">
+        <div class="container">
+
+            <div class="flex flexSpace mb-4">
+                <div class="flex flexRowCenter">
+                    <strong class="colorBla">عدد نتائج البحث</strong>
+                    <strong class="colorBla mr-2 ml-2">324</strong>
+                </div>
+                <div class="flex flexRowCenter">
+                    <strong class="colorBla">تصنيف بي</strong>
+                    <div class="flex flexSpace mr-2 ml-2" style="width: 100px">
+                        <select name="" id="">
+                            <option value="">الاكثر مبيعا</option>
+                            <option value="">الاقل مبيعا</option>
+                        </select>
+                        <i class="fas fa-chevron-down colorBla"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-3 mb-3">
+
+                <div class="row">
+
+                    <div class="col-md-4 col-xs-12">
+                        <!-- Start Ul For Tabs Filter -->
+
+                        <div class="bgWight p-3 tabDes">
+                            <ul class="nav nav-tabs border-0 TabsNav flex flexSpace w-100 flexColumn" id="myTab" role="tablist">
+                                <li class="nav-item w-100 borderBCli">
+                                    <a class="nav-link active pl-3 pr-3 pt-4 pb-4 w-100 font-weight-bold bg-transparent" id="tabs1" data-toggle="tab" href="#tab1" role="tab" aria-controls="tab1" aria-selected="true">
+                                        تصميم الجرافيك والديزاين
+                                    </a>
+                                </li>
+                                <li class="nav-item w-100 borderBCli">
+                                    <a class="nav-link pl-3 pr-3 pt-4 pb-4 w-100 font-weight-bold bg-transparent" id="tabs2" data-toggle="tab" href="#tab2" role="tab" aria-controls="tab2" aria-selected="false">
+                                        تصميم الواجهات
+                                    </a>
+                                </li>
+                                <li class="nav-item w-100 borderBCli">
+                                    <a class="nav-link pl-3 pr-3 pt-4 pb-4 w-100 font-weight-bold bg-transparent" id="tabs3" data-toggle="tab" href="#tab3" role="tab" aria-controls="tab3" aria-selected="false">
+                                        تصميم المجلدات
+                                    </a>
+                                </li>
+                                <li class="nav-item w-100 borderBCli">
+                                    <a class="nav-link pl-3 pr-3 pt-4 pb-4 w-100 font-weight-bold bg-transparent" id="tabs4" data-toggle="tab" href="#tab4" role="tab" aria-controls="tab4" aria-selected="false">
+                                        تصميم 3d
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-md-8 col-xs-12">
+                        <!-- Start Section For Tabs Filter -->
+
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="tab1" role="tabpanel" aria-labelledby="tabs1">
+                                <!-- Start Best Seller -->
+
+                                <div class="row">
+                                    <div class="col-md-6 col-xs-12">
+                                        <div class="bgWight p-3 w-100 displayBlock overflow-hidden Radius5 mt-2 mb-2">
+                                            <a href="userServiceDetails.html" class="position-relative displayInline w-100">
+                                                <div class="flex flexSpace infoMo position-absolute">
+                                                    <div class="bgDefault displayInline Radius5 pl-3 pr-3 pt-1 pb-1 text-center">
+                                                        <span class="colorWight font12 font-weight-bold">المبيعات : 122</span>
+                                                    </div>
+                                                    <div class="bgDefault displayInline Radius10 pl-3 pr-3 pt-1 pb-1 text-center bgYellow">
+                                                        <span class="colorWight font12 font-weight-bold">3.3</span>
+                                                        <i class="icon-ic_star_24px colorWight font12" style="vertical-align: middle;position: relative;top: -2px;"></i>
+                                                    </div>
+                                                </div>
+                                                <img src="./img/pic_ooo.png" alt="" class="w-100" style="height: 140px">
+                                            </a>
+                                            <div class="boxInfoMo p-2">
+                                                <div class="flex flexSpace">
+                                                    <a href="userServiceDetails.html" class="abUs">
+                                                        <img src="./img/pic_ooo.png" alt="">
+                                                    </a>
+                                                    <button class="clickFavItem">
+                                                        <span class="icon-like-3 colorGray" style="font-size: 20px;"></span>
+                                                    </button>
+                                                </div>
+                                                <a href="userServiceDetails.html" class="mt-1 mb-1">
+                                                    <p class="colorBlack m-0">اسم مقدم الخدمه</p>
+                                                    <h6 class="colorBlack font-weight-bold m-0">عنوان الخدمه بالتفصيل</h6>
+                                                    <p class="colorBlack m-0">اصنع لنفسك ماركتك الخاصه بك</p>
+                                                </a>
+                                                <div class="flex flexRowCenter">
+                                                    <h5 class="colorDefault">122 ريال</h5>
+                                                    <p class="colorGray mr-2 ml-2 textThrough">22 ريال</p>
+                                                </div>
+                                                <div class="flex flexSpace mt-3">
+                                                    <a href="userServiceDetails.html" class="btnButton btnGreen Radius10">شراء الخدمة</a>
+                                                    <button class="btnButton btnGrayOf Radius10" data-toggle="modal" data-target="#sentMass">محادثة الآستفسار</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-xs-12">
+                                        <div class="bgWight p-3 w-100 displayBlock overflow-hidden Radius5 mt-2 mb-2">
+                                            <a href="userServiceDetails.html" class="position-relative displayInline w-100">
+                                                <div class="flex flexSpace infoMo position-absolute">
+                                                    <div class="bgDefault displayInline Radius5 pl-3 pr-3 pt-1 pb-1 text-center">
+                                                        <span class="colorWight font12 font-weight-bold">المبيعات : 122</span>
+                                                    </div>
+                                                    <div class="bgDefault displayInline Radius10 pl-3 pr-3 pt-1 pb-1 text-center bgYellow">
+                                                        <span class="colorWight font12 font-weight-bold">3.3</span>
+                                                        <i class="icon-ic_star_24px colorWight font12" style="vertical-align: middle;position: relative;top: -2px;"></i>
+                                                    </div>
+                                                </div>
+                                                <img src="./img/pic_ooo.png" alt="" class="w-100" style="height: 140px">
+                                            </a>
+                                            <div class="boxInfoMo p-2">
+                                                <div class="flex flexSpace">
+                                                    <a href="userServiceDetails.html" class="abUs">
+                                                        <img src="./img/pic_ooo.png" alt="">
+                                                    </a>
+                                                    <button class="clickFavItem">
+                                                        <span class="icon-like-3 colorGray" style="font-size: 20px;"></span>
+                                                    </button>
+                                                </div>
+                                                <a href="userServiceDetails.html" class="mt-1 mb-1">
+                                                    <p class="colorBlack m-0">اسم مقدم الخدمه</p>
+                                                    <h6 class="colorBlack font-weight-bold m-0">عنوان الخدمه بالتفصيل</h6>
+                                                    <p class="colorBlack m-0">اصنع لنفسك ماركتك الخاصه بك</p>
+                                                </a>
+                                                <div class="flex flexRowCenter">
+                                                    <h5 class="colorDefault">122 ريال</h5>
+                                                    <p class="colorGray mr-2 ml-2 textThrough">22 ريال</p>
+                                                </div>
+                                                <div class="flex flexSpace mt-3">
+                                                    <a href="userServiceDetails.html" class="btnButton btnGreen Radius10">شراء الخدمة</a>
+                                                    <button class="btnButton btnGrayOf Radius10" data-toggle="modal" data-target="#sentMass">محادثة الآستفسار</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-xs-12">
+                                        <div class="bgWight p-3 w-100 displayBlock overflow-hidden Radius5 mt-2 mb-2">
+                                            <a href="userServiceDetails.html" class="position-relative displayInline w-100">
+                                                <div class="flex flexSpace infoMo position-absolute">
+                                                    <div class="bgDefault displayInline Radius5 pl-3 pr-3 pt-1 pb-1 text-center">
+                                                        <span class="colorWight font12 font-weight-bold">المبيعات : 122</span>
+                                                    </div>
+                                                    <div class="bgDefault displayInline Radius10 pl-3 pr-3 pt-1 pb-1 text-center bgYellow">
+                                                        <span class="colorWight font12 font-weight-bold">3.3</span>
+                                                        <i class="icon-ic_star_24px colorWight font12" style="vertical-align: middle;position: relative;top: -2px;"></i>
+                                                    </div>
+                                                </div>
+                                                <img src="./img/pic_ooo.png" alt="" class="w-100" style="height: 140px">
+                                            </a>
+                                            <div class="boxInfoMo p-2">
+                                                <div class="flex flexSpace">
+                                                    <a href="userServiceDetails.html" class="abUs">
+                                                        <img src="./img/pic_ooo.png" alt="">
+                                                    </a>
+                                                    <button class="clickFavItem">
+                                                        <span class="icon-like-3 colorGray" style="font-size: 20px;"></span>
+                                                    </button>
+                                                </div>
+                                                <a href="userServiceDetails.html" class="mt-1 mb-1">
+                                                    <p class="colorBlack m-0">اسم مقدم الخدمه</p>
+                                                    <h6 class="colorBlack font-weight-bold m-0">عنوان الخدمه بالتفصيل</h6>
+                                                    <p class="colorBlack m-0">اصنع لنفسك ماركتك الخاصه بك</p>
+                                                </a>
+                                                <div class="flex flexRowCenter">
+                                                    <h5 class="colorDefault">122 ريال</h5>
+                                                    <p class="colorGray mr-2 ml-2 textThrough">22 ريال</p>
+                                                </div>
+                                                <div class="flex flexSpace mt-3">
+                                                    <a href="userServiceDetails.html" class="btnButton btnGreen Radius10">شراء الخدمة</a>
+                                                    <button class="btnButton btnGrayOf Radius10" data-toggle="modal" data-target="#sentMass">محادثة الآستفسار</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="tab-pane fade" id="tab2" role="tabpanel" aria-labelledby="tabs2">
+                                <!-- Start Recent Product -->
+
+                                <div class="row">
+                                    <div class="col-md-6 col-xs-12">
+                                        <div class="bgWight p-3 w-100 displayBlock overflow-hidden Radius5 mt-2 mb-2">
+                                            <a href="userServiceDetails.html" class="position-relative displayInline w-100">
+                                                <div class="flex flexSpace infoMo position-absolute">
+                                                    <div class="bgDefault displayInline Radius5 pl-3 pr-3 pt-1 pb-1 text-center">
+                                                        <span class="colorWight font12 font-weight-bold">المبيعات : 122</span>
+                                                    </div>
+                                                    <div class="bgDefault displayInline Radius10 pl-3 pr-3 pt-1 pb-1 text-center bgYellow">
+                                                        <span class="colorWight font12 font-weight-bold">3.3</span>
+                                                        <i class="icon-ic_star_24px colorWight font12" style="vertical-align: middle;position: relative;top: -2px;"></i>
+                                                    </div>
+                                                </div>
+                                                <img src="./img/vedio_pic.png" alt="" class="w-100" style="height: 140px">
+                                            </a>
+                                            <div class="boxInfoMo p-2">
+                                                <div class="flex flexSpace">
+                                                    <a href="userServiceDetails.html" class="abUs">
+                                                        <img src="./img/vedio_pic.png" alt="">
+                                                    </a>
+                                                    <button class="clickFavItem">
+                                                        <span class="icon-like-3 colorGray" style="font-size: 20px;"></span>
+                                                    </button>
+                                                </div>
+                                                <a href="userServiceDetails.html" class="mt-1 mb-1">
+                                                    <p class="colorBlack m-0">اسم مقدم الخدمه</p>
+                                                    <h6 class="colorBlack font-weight-bold m-0">عنوان الخدمه بالتفصيل</h6>
+                                                    <p class="colorBlack m-0">اصنع لنفسك ماركتك الخاصه بك</p>
+                                                </a>
+                                                <div class="flex flexRowCenter">
+                                                    <h5 class="colorDefault">122 ريال</h5>
+                                                    <p class="colorGray mr-2 ml-2 textThrough">22 ريال</p>
+                                                </div>
+                                                <div class="flex flexSpace mt-3">
+                                                    <a href="userServiceDetails.html" class="btnButton btnGreen Radius10">شراء الخدمة</a>
+                                                    <button class="btnButton btnGrayOf Radius10" data-toggle="modal" data-target="#sentMass">محادثة الآستفسار</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-xs-12">
+                                        <div class="bgWight p-3 w-100 displayBlock overflow-hidden Radius5 mt-2 mb-2">
+                                            <a href="userServiceDetails.html" class="position-relative displayInline w-100">
+                                                <div class="flex flexSpace infoMo position-absolute">
+                                                    <div class="bgDefault displayInline Radius5 pl-3 pr-3 pt-1 pb-1 text-center">
+                                                        <span class="colorWight font12 font-weight-bold">المبيعات : 122</span>
+                                                    </div>
+                                                    <div class="bgDefault displayInline Radius10 pl-3 pr-3 pt-1 pb-1 text-center bgYellow">
+                                                        <span class="colorWight font12 font-weight-bold">3.3</span>
+                                                        <i class="icon-ic_star_24px colorWight font12" style="vertical-align: middle;position: relative;top: -2px;"></i>
+                                                    </div>
+                                                </div>
+                                                <img src="./img/vedio_pic.png" alt="" class="w-100" style="height: 140px">
+                                            </a>
+                                            <div class="boxInfoMo p-2">
+                                                <div class="flex flexSpace">
+                                                    <a href="userServiceDetails.html" class="abUs">
+                                                        <img src="./img/vedio_pic.png" alt="">
+                                                    </a>
+                                                    <button class="clickFavItem">
+                                                        <span class="icon-like-3 colorGray" style="font-size: 20px;"></span>
+                                                    </button>
+                                                </div>
+                                                <a href="userServiceDetails.html" class="mt-1 mb-1">
+                                                    <p class="colorBlack m-0">اسم مقدم الخدمه</p>
+                                                    <h6 class="colorBlack font-weight-bold m-0">عنوان الخدمه بالتفصيل</h6>
+                                                    <p class="colorBlack m-0">اصنع لنفسك ماركتك الخاصه بك</p>
+                                                </a>
+                                                <div class="flex flexRowCenter">
+                                                    <h5 class="colorDefault">122 ريال</h5>
+                                                    <p class="colorGray mr-2 ml-2 textThrough">22 ريال</p>
+                                                </div>
+                                                <div class="flex flexSpace mt-3">
+                                                    <a href="userServiceDetails.html" class="btnButton btnGreen Radius10">شراء الخدمة</a>
+                                                    <button class="btnButton btnGrayOf Radius10" data-toggle="modal" data-target="#sentMass">محادثة الآستفسار</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="tab-pane fade" id="tab3" role="tabpanel" aria-labelledby="tabs3">
+                                <!-- Start Recent Product -->
+
+                                <div class="row">
+                                    <div class="col-md-6 col-xs-12">
+                                        <div class="bgWight p-3 w-100 displayBlock overflow-hidden Radius5 mt-2 mb-2">
+                                            <a href="userServiceDetails.html" class="position-relative displayInline w-100">
+                                                <div class="flex flexSpace infoMo position-absolute">
+                                                    <div class="bgDefault displayInline Radius5 pl-3 pr-3 pt-1 pb-1 text-center">
+                                                        <span class="colorWight font12 font-weight-bold">المبيعات : 122</span>
+                                                    </div>
+                                                    <div class="bgDefault displayInline Radius10 pl-3 pr-3 pt-1 pb-1 text-center bgYellow">
+                                                        <span class="colorWight font12 font-weight-bold">3.3</span>
+                                                        <i class="icon-ic_star_24px colorWight font12" style="vertical-align: middle;position: relative;top: -2px;"></i>
+                                                    </div>
+                                                </div>
+                                                <img src="./img/vedio_pic.png" alt="" class="w-100" style="height: 140px">
+                                            </a>
+                                            <div class="boxInfoMo p-2">
+                                                <div class="flex flexSpace">
+                                                    <a href="userServiceDetails.html" class="abUs">
+                                                        <img src="./img/vedio_pic.png" alt="">
+                                                    </a>
+                                                    <button class="clickFavItem">
+                                                        <span class="icon-like-3 colorGray" style="font-size: 20px;"></span>
+                                                    </button>
+                                                </div>
+                                                <a href="userServiceDetails.html" class="mt-1 mb-1">
+                                                    <p class="colorBlack m-0">اسم مقدم الخدمه</p>
+                                                    <h6 class="colorBlack font-weight-bold m-0">عنوان الخدمه بالتفصيل</h6>
+                                                    <p class="colorBlack m-0">اصنع لنفسك ماركتك الخاصه بك</p>
+                                                </a>
+                                                <div class="flex flexRowCenter">
+                                                    <h5 class="colorDefault">122 ريال</h5>
+                                                    <p class="colorGray mr-2 ml-2 textThrough">22 ريال</p>
+                                                </div>
+                                                <div class="flex flexSpace mt-3">
+                                                    <a href="userServiceDetails.html" class="btnButton btnGreen Radius10">شراء الخدمة</a>
+                                                    <button class="btnButton btnGrayOf Radius10" data-toggle="modal" data-target="#sentMass">محادثة الآستفسار</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-xs-12">
+                                        <div class="bgWight p-3 w-100 displayBlock overflow-hidden Radius5 mt-2 mb-2">
+                                            <a href="userServiceDetails.html" class="position-relative displayInline w-100">
+                                                <div class="flex flexSpace infoMo position-absolute">
+                                                    <div class="bgDefault displayInline Radius5 pl-3 pr-3 pt-1 pb-1 text-center">
+                                                        <span class="colorWight font12 font-weight-bold">المبيعات : 122</span>
+                                                    </div>
+                                                    <div class="bgDefault displayInline Radius10 pl-3 pr-3 pt-1 pb-1 text-center bgYellow">
+                                                        <span class="colorWight font12 font-weight-bold">3.3</span>
+                                                        <i class="icon-ic_star_24px colorWight font12" style="vertical-align: middle;position: relative;top: -2px;"></i>
+                                                    </div>
+                                                </div>
+                                                <img src="./img/vedio_pic.png" alt="" class="w-100" style="height: 140px">
+                                            </a>
+                                            <div class="boxInfoMo p-2">
+                                                <div class="flex flexSpace">
+                                                    <a href="userServiceDetails.html" class="abUs">
+                                                        <img src="./img/vedio_pic.png" alt="">
+                                                    </a>
+                                                    <button class="clickFavItem">
+                                                        <span class="icon-like-3 colorGray" style="font-size: 20px;"></span>
+                                                    </button>
+                                                </div>
+                                                <a href="userServiceDetails.html" class="mt-1 mb-1">
+                                                    <p class="colorBlack m-0">اسم مقدم الخدمه</p>
+                                                    <h6 class="colorBlack font-weight-bold m-0">عنوان الخدمه بالتفصيل</h6>
+                                                    <p class="colorBlack m-0">اصنع لنفسك ماركتك الخاصه بك</p>
+                                                </a>
+                                                <div class="flex flexRowCenter">
+                                                    <h5 class="colorDefault">122 ريال</h5>
+                                                    <p class="colorGray mr-2 ml-2 textThrough">22 ريال</p>
+                                                </div>
+                                                <div class="flex flexSpace mt-3">
+                                                    <a href="userServiceDetails.html" class="btnButton btnGreen Radius10">شراء الخدمة</a>
+                                                    <button class="btnButton btnGrayOf Radius10" data-toggle="modal" data-target="#sentMass">محادثة الآستفسار</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="tab-pane fade" id="tab4" role="tabpanel" aria-labelledby="tabs4">
+                                <!-- Start Recent Product -->
+
+                                <div class="row">
+                                    <div class="col-md-6 col-xs-12">
+                                        <div class="bgWight p-3 w-100 displayBlock overflow-hidden Radius5 mt-2 mb-2">
+                                            <a href="userServiceDetails.html" class="position-relative displayInline w-100">
+                                                <div class="flex flexSpace infoMo position-absolute">
+                                                    <div class="bgDefault displayInline Radius5 pl-3 pr-3 pt-1 pb-1 text-center">
+                                                        <span class="colorWight font12 font-weight-bold">المبيعات : 122</span>
+                                                    </div>
+                                                    <div class="bgDefault displayInline Radius10 pl-3 pr-3 pt-1 pb-1 text-center bgYellow">
+                                                        <span class="colorWight font12 font-weight-bold">3.3</span>
+                                                        <i class="icon-ic_star_24px colorWight font12" style="vertical-align: middle;position: relative;top: -2px;"></i>
+                                                    </div>
+                                                </div>
+                                                <img src="./img/vedio_pic.png" alt="" class="w-100" style="height: 140px">
+                                            </a>
+                                            <div class="boxInfoMo p-2">
+                                                <div class="flex flexSpace">
+                                                    <a href="userServiceDetails.html" class="abUs">
+                                                        <img src="./img/vedio_pic.png" alt="">
+                                                    </a>
+                                                    <button class="clickFavItem">
+                                                        <span class="icon-like-3 colorGray" style="font-size: 20px;"></span>
+                                                    </button>
+                                                </div>
+                                                <a href="userServiceDetails.html" class="mt-1 mb-1">
+                                                    <p class="colorBlack m-0">اسم مقدم الخدمه</p>
+                                                    <h6 class="colorBlack font-weight-bold m-0">عنوان الخدمه بالتفصيل</h6>
+                                                    <p class="colorBlack m-0">اصنع لنفسك ماركتك الخاصه بك</p>
+                                                </a>
+                                                <div class="flex flexRowCenter">
+                                                    <h5 class="colorDefault">122 ريال</h5>
+                                                    <p class="colorGray mr-2 ml-2 textThrough">22 ريال</p>
+                                                </div>
+                                                <div class="flex flexSpace mt-3">
+                                                    <a href="userServiceDetails.html" class="btnButton btnGreen Radius10">شراء الخدمة</a>
+                                                    <button class="btnButton btnGrayOf Radius10" data-toggle="modal" data-target="#sentMass">محادثة الآستفسار</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-xs-12">
+                                        <div class="bgWight p-3 w-100 displayBlock overflow-hidden Radius5 mt-2 mb-2">
+                                            <a href="userServiceDetails.html" class="position-relative displayInline w-100">
+                                                <div class="flex flexSpace infoMo position-absolute">
+                                                    <div class="bgDefault displayInline Radius5 pl-3 pr-3 pt-1 pb-1 text-center">
+                                                        <span class="colorWight font12 font-weight-bold">المبيعات : 122</span>
+                                                    </div>
+                                                    <div class="bgDefault displayInline Radius10 pl-3 pr-3 pt-1 pb-1 text-center bgYellow">
+                                                        <span class="colorWight font12 font-weight-bold">3.3</span>
+                                                        <i class="icon-ic_star_24px colorWight font12" style="vertical-align: middle;position: relative;top: -2px;"></i>
+                                                    </div>
+                                                </div>
+                                                <img src="./img/vedio_pic.png" alt="" class="w-100" style="height: 140px">
+                                            </a>
+                                            <div class="boxInfoMo p-2">
+                                                <div class="flex flexSpace">
+                                                    <a href="userServiceDetails.html" class="abUs">
+                                                        <img src="./img/vedio_pic.png" alt="">
+                                                    </a>
+                                                    <button class="clickFavItem">
+                                                        <span class="icon-like-3 colorGray" style="font-size: 20px;"></span>
+                                                    </button>
+                                                </div>
+                                                <a href="userServiceDetails.html" class="mt-1 mb-1">
+                                                    <p class="colorBlack m-0">اسم مقدم الخدمه</p>
+                                                    <h6 class="colorBlack font-weight-bold m-0">عنوان الخدمه بالتفصيل</h6>
+                                                    <p class="colorBlack m-0">اصنع لنفسك ماركتك الخاصه بك</p>
+                                                </a>
+                                                <div class="flex flexRowCenter">
+                                                    <h5 class="colorDefault">122 ريال</h5>
+                                                    <p class="colorGray mr-2 ml-2 textThrough">22 ريال</p>
+                                                </div>
+                                                <div class="flex flexSpace mt-3">
+                                                    <a href="userServiceDetails.html" class="btnButton btnGreen Radius10">شراء الخدمة</a>
+                                                    <button class="btnButton btnGrayOf Radius10" data-toggle="modal" data-target="#sentMass">محادثة الآستفسار</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="sentMass" tabindex="-1" role="dialog" aria-labelledby="addCatTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title colorGreen">مراسله مع البائع</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span class="icon-cancel_black"></span>
+                    </button>
+                </div>
+                <div class="modal-body minHeightAuto px-md-4 py-0 justify-content-start">
+
+                    <div class="flex flexRow w-100">
+                        <div class="flex30 p-2 borderCli">
+                            <div class="position-relative flex flexCenter flexColumn h-100">
+                                <div class="position-relative">
+                                    <img src="img/vedio_pic.png" alt="" style="width: 100px;height: 100px;border-radius: 50%">
+                                    <span class="pointAct"></span>
+                                </div>
+                                <h6 class="colorGreen mt-3 mb-3 font-weight-bold">اسم مقدم الخدمة</h6>
+                            </div>
+                        </div>
+                        <div class="flex70 p-4 borderCli">
+                            <div class="flex flexSpace bgDefaultOp p-2 mt-2 mb-2">
+                                <div class="flex flexRowCenter flex50 pr-2 pl-2">
+                                    <span class="icon-clock_black colorGreen"></span>
+                                    <h6 class="mr-2 ml-2 colorGreen">التوقيت المحلي</h6>
+                                    <span class="colorGreen">الاحد 24 / 4</span>
+                                </div>
+                                <div class="flex flexRowCenter flex50 pr-2 pl-2">
+                                    <span class="icon-clock_black colorGreen"></span>
+                                    <h6 class="mr-2 ml-2 colorGreen">وقت الإنجاز</h6>
+                                    <span class="colorGreen">2 ساعتين</span>
+                                </div>
+                            </div>
+                            <div class="mt-3 mb-3">
+                                <ul class="listPoint">
+                                    <li class="displayBlock colorGreen mt-2 mb-2 font-weight-bold font13 position-relative pr-3 pl-3">وسف المشروع</li>
+                                    <li class="displayBlock colorGreen mt-2 mb-2 font-weight-bold font13 position-relative pr-3 pl-3">تعليمات محددة</li>
+                                    <li class="displayBlock colorGreen mt-2 mb-2 font-weight-bold font13 position-relative pr-3 pl-3">الملفات ذات الصله</li>
+                                    <li class="displayBlock colorGreen mt-2 mb-2 font-weight-bold font13 position-relative pr-3 pl-3">ميزانيتك</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <form action="" class="w-100 innerFormThink mt-0">
+
+                        <div class="borderBCli w-100 pt-3 pb-3 position-relative">
+                            <div class="form-group">
+                                <textarea class="form-control textareaCount m-0" style="height: 190px;background-color: #f3f3f3 !important;border: 1px solid #f3f3f3 !important;" maxlength="2500" ></textarea>
+                                <div class="count conPo">
+                                    <span class="current">0</span>
+                                    <span class="maximum">/ 2500</span>
+                                </div>
+                            </div>
+                            <div class="wrap wrapFix width_full">
+                                <label class="uploadImg flex flexRowCenter m-0 custom-file-upload">
+                                    <input type="file" name="file" id="file" class="file_upload">
+                                    <p class="colorDefault d-none">إرفاق ملف</p>
+                                    <span class="icon-paperclip colorDefault" style="font-size: 15px"></span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <a href="services.html" data-dismiss="modal" class="btnDefault hvr-pulse mb-5">إرسال</a>
+
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<!--end social-->
+
+
+
+<!--start footer-->
+<footer>
+    <div class="container">
+        <img src="img/light_green_lamb.svg" class="lightLamp" alt="ight_green_lamb">
+        <div class="footerInfo">
+
+            <div>
+                <h5 class="title">فئات</h5>
+                <ul>
+                    <li>
+                        <a href="graphicDesign.html" class="hvr-backward">الجرافيم والديزاين</a>
+                    </li>
+                    <li>
+                        <a href="graphicDesign.html" class="hvr-backward">التكنولوجيا والتسويق الالكتروني</a>
+                    </li>
+                    <li>
+                        <a href="graphicDesign.html" class="hvr-backward">التصوير والمونتاج</a>
+                    </li>
+                    <li>
+                        <a href="graphicDesign.html" class="hvr-backward">الكتابة والترجمة</a>
+                    </li>
+                    <li>
+                        <a href="graphicDesign.html" class="hvr-backward">الفيديو والانيميشن</a>
+                    </li>
+                    <li>
+                        <a href="graphicDesign.html" class="hvr-backward">التعليم</a>
+                    </li>
+                    <li>
+                        <a href="graphicDesign.html" class="hvr-backward">الاستشارات</a>
+                    </li>
+                    <li>
+                        <a href="graphicDesign.html" class="hvr-backward">لايف ستايل</a>
+                    </li>
+                    <li>
+                        <a href="graphicDesign.html" class="hvr-backward">خدمات عامة</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <h5 class="title">عن</h5>
+                <ul>
+                    <li>
+                        <a href="terms.html" class="hvr-backward">سياسة الخصوصية</a>
+                    </li>
+                    <li>
+                        <a href="terms.html" class="hvr-backward">شروط الخدمة</a>
+                    </li>
+                </ul>
+                <h5 class="title">تحميل تطبيق الموبايل</h5>
+                <div class="apps">
+                    <a href="" class="hvr-float-shadow"><img src="img/google-play.png" alt="google play"></a>
+                    <a href="" class="hvr-float-shadow"><img src="img/appstore.png" alt="app store"></a>
+                </div>
+
+            </div>
+
+            <div>
+                <h5 class="title">دعم</h5>
+                <ul>
+                    <li>
+                        <a href="support.html" class="hvr-backward">المساعدة والدعم</a>
+                    </li>
+                    <li>
+                        <a href="sellOnLight.html" class="hvr-backward">بيع علي <span>Light Up</span></a>
+                    </li>
+                    <li>
+                        <a href="completeAcc.html" class="hvr-backward">الشراء علي <span>Light Up</span></a>
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <h5 class="title">المجتمع</h5>
+                <ul>
+                    <li>
+                        <a data-toggle="modal" data-target="#inviteFriend" class="hvr-backward">دعوة صديق</a>
+                    </li>
+                    <li>
+                        <a href="beSeller.html" class="hvr-backward">أصبح بائع</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+        <hr class="customHr">
+        <div class="info">
+            <div class="copyright justify-content-center justify-content-sm-start">
+                <h4>Light Up</h4>
+                <p>جميع الحقوق محفوظة ل <a href="">اوامر الشبكة 2021</a></p>
+            </div>
+            <div class="social">
+                <a href="" class="hvr-float-shadow"><span class="icon-linkedin"></span></a>
+                <a href="" class="hvr-float-shadow"><span class="icon-facebook"></span></a>
+                <a href="" class="hvr-float-shadow"><span class="icon-instagram"></span></a>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="inviteFriend" tabindex="-1" role="dialog" aria-labelledby="inviteFriendTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <a data-dismiss="modal" class="closeModal" type="submit">
+                    <span class="icon-cancel_black"></span>
+                </a>
+                <div class="modal-body">
+                    <img class="vector" src="img/vector_invite.png" alt="vector invite friend">
+                    <p class="title">دعوة الاصدقاء وكلاكما تحصلان علي ما يصل الي 100 دولار</p>
+                    <p class="desc maxWidthAuto">تعريف اصدقائك علي اسهل طريقة لإنجاز الامور</p>
+
+                    <form action="" class="inviteFriend">
+                        <div class="form-group">
+                            <input type="text" name="email" id="email" class="form-control" placeholder="اضف البريد الالكتروني">
+                        </div>
+                        <a data-dismiss="modal" class="btnDefault hvr-pulse" type="submit">ارسال</a>
+                    </form>
+                    <p class="title my-4">رابط الدعوه الخاص بك</p>
+                    <a href="" class="bgLightGray py-3 px-md-5 px-2 borderCli Radius5 colorBlack w-75 wordBreak text-center">
+                        https://marvelapp.com/prototype/25ee2bc6/screen/73731393
+                    </a>
+
+                    <p class="title mt-4 mb-2">شارك عبر وسائل التواصل</p>
+
+                    <div class="social">
+                        <a class="twitter hvr-float-shadow">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a class="faceBook hvr-float-shadow">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a class="linkedIn hvr-float-shadow">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</footer>
+<!--end footer-->
+
+
+<!--===============================
+    SCRIPT
+===================================-->
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/jquery.fancybox.min.js"></script>
+<script src="js/bootstrap-select.min.js"></script>
+<script src="js/script.js"></script>
+
+<!--start select-->
+<script>
+    $('.selectpicker').selectpicker();
+</script>
+<!--end select-->
+<script>
+    $(document).on('click', '.formEdit a',function (e){
+        e.preventDefault();
+        $(this).parents('.formEdit').find('input').focus();
+    });
+    $(document).on('click', '.clickFavItem',function (e){
+        e.preventDefault();
+        $(this).parents('.boxInfoMo').find('.icon-like-3').toggleClass('colorRed');
+    });
+    $(document).on('click', '.filterContIt',function (e){
+        e.preventDefault();
+        $('.dropFil').removeClass('fadDiv');
+        $(this).parents('.dopBox').find('.dropFil').toggleClass('fadDiv');
+    });
+</script>
+</body>
+</html>

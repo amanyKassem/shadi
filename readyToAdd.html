@@ -21,18 +21,16 @@
     <!-- Bootstrap CSS -->
     <link href="css/all.min.css" rel="stylesheet"/>
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/bootstrap-select.min.css">
-    <link rel="stylesheet" type="text/css" href="css/datatables.min.css"/>
-    <link rel="stylesheet" type="text/css" href="css/jquery.dataTables.min.css"/>
     <link rel="stylesheet" href="css/owl.carousel.css">
     <link rel="stylesheet" href="css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/hover.css">
     <link href="css/icomoon.css" rel="stylesheet"/>
     <link rel="stylesheet" href="css/ar.css">
 
 </head>
-<body class="pT115">
+<body class="pT115 pT175">
 
 <!-- Start Loading Page -->
 
@@ -47,11 +45,15 @@
 
 <!--  Start Header  -->
 
-<header>
+<header class="userHeader">
+    <div class="headerTop">
+        <span>احصل علي 20%</span> علي اول طلب تطلبه من موقعنا
+        <span class="icon-cancel closeTopHeader"></span>
+    </div>
     <div class="container">
 
         <div class="menuBar d-flex d-md-none justify-content-between align-items-center">
-            <a href="providerHome.html">
+            <a href="userHome.html">
                 <img src="img/logo_icon.png" class="logo" alt="logo">
             </a>
             <div class="toggle">
@@ -82,16 +84,16 @@
 
 
             <div class="d-flex align-items-center">
-                <a href="providerHome.html" class="d-none d-md-block">
+                <a href="userHome.html" class="d-none d-md-block">
                     <img src="img/logo_icon.png" class="logo" alt="logo">
                 </a>
 
                 <ul class="menuLinks">
                     <li>
-                        <a href="providerHome.html">الرئيسية</a>
+                        <a href="userHome.html">الرئيسية</a>
                     </li>
                     <li>
-                        <a href="providerOrders.html">الطلبات</a>
+                        <a href="beSeller.html">ترقية لمقدم</a>
                     </li>
                     <li>
                         <div class="msgs">
@@ -101,33 +103,22 @@
                             الرسائل
                             <span class="icon-down_arrow_drop"></span>
                             <ul class="boxShadow">
-                                <li><a href="chat.html"><span class="icon-email_gray"></span> الرسائل</a></li>
-                                <li><a href="notifications.html"><span class="icon-notification"></span> الاشعارات</a></li>
+                                <li><a href="userChat.html"><span class="icon-email_gray"></span> الرسائل</a></li>
+                                <li><a href="userNotifications.html"><span class="icon-notification"></span> الاشعارات</a></li>
                             </ul>
                         </div>
                     </li>
-                    <li class="active">
-                        <a href="services.html">الخدمات المقدمة</a>
+                    <li>
+                        <a href="saves.html">المحفوظات</a>
                     </li>
                     <li>
-                        <a href="analytics.html">تحليلات</a>
-                    </li>
-                    <li>
-                        <a href="earnings.html">ارباح</a>
+                        <a href="orders.html">الطلبات</a>
                     </li>
 
                     <!--                    only in mobile-->
 
-                    <li class="d-sm-none">
-                        <div>
-                            <span>الحالة</span>
-                            <div class="custom-control custom-switch">
-                                <input type="checkbox" class="custom-control-input" id="aval2">
-                                <label class="custom-control-label" for="aval2"></label>
-                            </div>
-                        </div>
-                    </li>
-
+                    <li class="d-sm-none"><a href="interests.html">الاهتمامات</a></li>
+                    <li class="d-sm-none"><a href="providerHome.html">تحويل للوحة التحكم</a></li>
                     <li class="d-sm-none"><a href="settings.html">الاعدادات</a></li>
                     <li class="d-sm-none">
                         <div>
@@ -147,10 +138,6 @@
 
             <div class="d-flex flex-column align-items-start flex-md-row align-items-md-center">
 
-                <a href="transferBuyer" class="transferBuyer">
-                    حول الي مشتري
-                </a>
-
                 <!-- if user login-->
                 <!--                <a href="profile.html" class="profile d-none d-md-flex">-->
                 <!--                    <img src="img/pic.jpg" class="img-fluid" alt="profile">-->
@@ -163,15 +150,8 @@
                     <img src="img/triangle.png" alt="arrow" class="triangle">
                     <ul class="boxShadow">
                         <li><a href="profile.html">عرض الملف الشخصي</a></li>
-                        <li>
-                            <div>
-                                <span>الحالة</span>
-                                <div class="custom-control custom-switch">
-                                    <input type="checkbox" class="custom-control-input" id="aval">
-                                    <label class="custom-control-label" for="aval"></label>
-                                </div>
-                            </div>
-                        </li>
+                        <li><a href="interests.html">الاهتمامات</a></li>
+                        <li><a href="providerHome.html">تحويل للوحة التحكم</a></li>
                         <li><a href="settings.html">الاعدادات</a></li>
                         <li>
                             <div>
@@ -187,7 +167,21 @@
                     </ul>
                 </div>
 
+
+
+                <div class="searchCont">
+                    <span class="icon-cancel closeSearch d-none d-sm-block"></span>
+                    <span class="borderR d-none d-sm-block">|</span>
+                    <input type="text" class="form-control" placeholder="ابحث عن الخدمه او القسم الذي تريده">
+                    <button class="searchIcon" type="submi">
+                        <span class="icon-search"></span>
+                    </button>
+                </div>
+
             </div>
+
+
+
         </div>
 
     </div>
@@ -195,175 +189,73 @@
 
 <!--end header-->
 
-<!--start services-->
-<div class="ordersContainer analytics services bgLightGray">
+<!--start social-->
+
+<div class="minBody mt-75">
+
     <div class="container">
 
-        <div class="addServBlock">
-            <span>الاقسام</span>
-            <a href="editCategory.html" class="addEditCat">تعديل او اضافة قسم</a>
+        <div class="row">
+            
+            <div class="col-md-6 col-xs-12">
+                <img src="" alt="">
+            </div>
+
+            <div class="col-md-6 col-xs-12">
+
+            </div>
+            
         </div>
 
+    </div>
 
-        <div id="owl-demo1" class="owl-carousel">
+</div>
+<!--end social-->
 
-            <div class="item boxShadow">
-                <a href="" class="category">
-                    <img src="img/graphic_design.png" alt="Graphic design">
-                    <h4>الجرافيك والديزاين</h4>
-                </a>
+<!-- Modal -->
+<div class="modal fade" id="addCom" tabindex="-1" role="dialog" aria-labelledby="payInfoTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+
+                <div class="mb-4 text-center">
+                    <img class="vector" src="img/vector_comment_rate_provider.png" alt="vector payment">
+                    <h4 class="colorGreen font-weight-bold text-center">اضف رايك</h4>
+                    <p class="font-weight-bold">لان رايك يهمنا دائما ونريد ان نزيد من مقدمي الخدمات حول العالم</p>
+                </div>
+
+                <div class="w-100 pr-5 pl-5 mt-3 mb-3">
+
+                    <form action="" class="w-100">
+
+                        <div class="form-group">
+                            <textarea class="form-control textareaCount m-0 p-3" placeholder="اكتب رايك بكل صدق" style="height: 260px;background-color: #fafafa !important;border: 1px solid #f3f3f3 !important;" maxlength="2500" ></textarea>
+                        </div>
+
+                        <div class="flex flexSpace w-100">
+
+                            <div class="flex flexRowCenter">
+                                <img src="img/order.png" style="width: 50px;height: 50px;border-radius: 50%" alt="order image">
+                                <div class="">
+                                    <p class="m-0 lineHText0 mr-2 ml-2 font-weight-bold">اسم مقدم الخدمه</p>
+                                    <p class="m-0 lineHText0 mr-2 ml-2 colorGray">مصمم جرافيك</p>
+                                </div>
+                            </div>
+
+                            <button data-dismiss="modal" class="btnDefault hvr-pulse" type="submit">ارسال</button>
+
+                        </div>
+
+                    </form>
+
+                </div>
+
+
             </div>
-
-            <div class="item boxShadow">
-                <a href="" class="category">
-                    <img src="img/Seo.png" alt="Technology and Marketing Online">
-                    <h4>التكنولوجيا والتسويق لكتروني</h4>
-                </a>
-            </div>
-
-            <div class="item boxShadow">
-                <a href="" class="category">
-                    <img src="img/translate.png" alt="Writing and translation">
-                    <h4>الكتابة والترجمة</h4>
-                </a>
-            </div>
-
-            <div class="item boxShadow">
-                <a href="" class="category">
-                    <img src="img/photography.png" alt="Photography and montage">
-                    <h4>التصوير والمونتاج</h4>
-                </a>
-            </div>
-
-            <div class="item boxShadow">
-                <a href="" class="category">
-                    <img src="img/education.png" alt="Education">
-                    <h4>التعليم</h4>
-                </a>
-            </div>
-
-            <div class="item boxShadow">
-                <a href="" class="category">
-                    <img src="img/consutation.png" alt="Consulting">
-                    <h4>الاستشارات</h4>
-                </a>
-            </div>
-
-            <div class="item boxShadow">
-                <a href="" class="category">
-                    <img src="img/lifestyle.png" alt="Life style">
-                    <h4>لايف استايل</h4>
-                </a>
-            </div>
-
-            <div class="item boxShadow">
-                <a href="" class="category">
-                    <img src="img/mic_enmy.png" alt="Video and animation">
-                    <h4>الفيديو والانيميشن</h4>
-                </a>
-            </div>
-
-        </div>
-
-        <div class="addServBlock">
-            <span>الخدمات</span>
-            <a href="addService.html" class="btnDefault hvr-pulse">اضافة خدمة</a>
-        </div>
-
-        <div class="filterCont">
-            <select class="selectpicker" id="month" title="القسم">
-                <option>جرافيك وديزاين</option>
-                <option>تصوير</option>
-            </select>
-        </div>
-        <div class="ordersInfo">
-            <table class="display nowrap orderTable" >
-                <thead>
-                <tr>
-                    <th>صورة الخدمة</th>
-                    <th>عنوان الخمة</th>
-                    <th>القسم</th>
-                    <th>تاريخ الاضافة</th>
-                    <th>ايام الانجاز</th>
-                    <th></th>
-                </tr>
-                </thead>
-                <tbody>
-
-                <tr>
-                    <td>
-                        <a href="providerServiceDetails.html"><img class="img-fluid" src="img/pic_o.png" alt="service"></a>
-                    </td>
-                    <td>
-                        <a href="providerServiceDetails.html">تعديلات فيديوهات ومونتاج</a>
-                    </td>
-                    <td>الجرافيك والديزاين</td>
-                    <td>15\3\2022</td>
-                    <td>15</td>
-                    <td>
-                        <a href="#" class="more">
-                            <span class="icon-more_provider"></span>
-                        </a>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td>
-                        <a href="providerServiceDetails.html"><img class="img-fluid" src="img/pic_o.png" alt="service"></a>
-                    </td>
-                    <td>
-                        <a href="providerServiceDetails.html">تعديلات فيديوهات ومونتاج</a>
-                    </td>
-                    <td>الجرافيك والديزاين</td>
-                    <td>15\3\2022</td>
-                    <td>15</td>
-                    <td>
-                        <a href="#" class="more">
-                            <span class="icon-more_provider"></span>
-                        </a>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td>
-                        <a href="providerServiceDetails.html"><img class="img-fluid" src="img/pic_o.png" alt="service"></a>
-                    </td>
-                    <td>
-                        <a href="providerServiceDetails.html">تعديلات فيديوهات ومونتاج</a>
-                    </td>
-                    <td>الجرافيك والديزاين</td>
-                    <td>15\3\2022</td>
-                    <td>15</td>
-                    <td>
-                        <a href="#" class="more">
-                            <span class="icon-more_provider"></span>
-                        </a>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td>
-                        <a href="providerServiceDetails.html"><img class="img-fluid" src="img/pic_o.png" alt="service"></a>
-                    </td>
-                    <td>
-                        <a href="providerServiceDetails.html">تعديلات فيديوهات ومونتاج</a>
-                    </td>
-                    <td>الجرافيك والديزاين</td>
-                    <td>15\3\2022</td>
-                    <td>15</td>
-                    <td>
-                        <a href="#" class="more">
-                            <span class="icon-more_provider"></span>
-                        </a>
-                    </td>
-                </tr>
-
-                </tbody>
-            </table>
         </div>
     </div>
 </div>
-<!--end services-->
+
 
 <!--start footer-->
 <footer>
@@ -517,66 +409,10 @@
 <script src="js/jquery-3.3.1.min.js"></script>
 <script src="js/popper.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
-<script src="js/bootstrap-select.min.js"></script>
-<script type="text/javascript" src="js/datatables.min.js"></script>
-<script type="text/javascript" src="js/jquery.dataTables.min.js"></script>
 <script src="js/owl.carousel.min.js"></script>
+<script src="js/jquery.fancybox.min.js"></script>
+<script src="js/bootstrap-select.min.js"></script>
 <script src="js/script.js"></script>
-
-<!--start select-->
-<script>
-    $('.selectpicker').selectpicker();
-</script>
-<!--end select-->
-
-<!--table-->
-<script>
-    $(document).ready(function() {
-        $('.orderTable').DataTable( {
-            // "language": {
-            //     "paginate": {
-            //         "next": '<i class="fas fa-chevron-left"></i>',
-            //         "previous": '<i class="fas fa-chevron-right"></i>',
-            //     }
-            // },
-            "scrollY": 200,
-            "scrollX": true
-        } );
-
-
-        // categories slider
-        $('#owl-demo1').owlCarousel({
-            // center: true,
-            dots: false,
-            nav: true,
-            navText: [
-                "<span class=\"icon-right_arrow\"></span>",
-                "<span class=\"icon-left_arrow\"></span>"
-            ],
-            autoplay: true,
-            loop: true,
-            animateOut: 'fadeOut',
-            responsive: {
-                0: {
-                    items: 1,
-                },
-                768: {
-                    items: 3,
-                    center: false
-                },
-                992: {
-                    items: 5,
-                },
-                1200: {
-                    items: 6
-                }
-            }
-        });
-
-
-    } );
-</script>
-
 
 </body>
 </html>

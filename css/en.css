@@ -348,11 +348,11 @@ footer .footerInfo > div .apps img{
 .modal-body form.inviteFriend .btnDefault{
     margin: 0 0 0 25px !important;
 }
-.userHeader .searchCont .form-control {
+header .searchCont .form-control {
     right: 35px;
     padding-left: 40px;
 }
-.userHeader .searchCont .closeSearch{
+header .searchCont .closeSearch{
     left: -338px;
 }
 header .headerTop .closeTopHeader{
@@ -378,6 +378,52 @@ header .headerTop span {
 }
 .userOrders .nav-pills .nav-item .nav-link span{
     margin-right: 20px;
+}
+
+.slideInfoSite .owl-dots {
+    left: 25px;
+}
+
+.owlProduct2 .owl-next {
+    left: 65px;
+    right: auto;
+}
+
+.conPo{
+    right: 0px;
+}
+
+.I{
+    right: 10px;
+}
+
+.pointAct{
+    right: 5px;
+}
+
+.wrapFix{
+    right: 20px;
+}
+
+.dropFil{
+    left: 5px;
+}
+
+.thier:before {
+    border-right: 10px solid #5cc431;
+    left: -10px;
+}
+
+.bronz{
+    left: 0px;
+}
+
+.lisOr li:before {
+    left: 6px;
+}
+
+.icFl{
+    left: 0;
 }
 
 @media(max-width: 767px){
@@ -430,11 +476,11 @@ header .headerTop span {
         margin: 0 !important;
     }
 
-    .userHeader .searchCont .closeSearch {
+    header .searchCont .closeSearch {
         left: auto;
     }
 
-    .userHeader .searchCont .form-control {
+    header .searchCont .form-control {
         right: auto;
         padding: 0 10px;
     }
@@ -457,10 +503,10 @@ header .headerTop span {
     .menu .transferBuyer {
         margin-right: 15px;
     }
-    .userHeader .searchCont .closeSearch {
+    header .searchCont .closeSearch {
         left: -140px;
     }
-    .userHeader .searchCont .form-control {
+    header .searchCont .form-control {
         padding-left: 30px;
     }
     .topCategories .catLinks li {
@@ -468,10 +514,10 @@ header .headerTop span {
     }
 }
 @media(min-width: 992px) and (max-width: 1199px) {
-    .userHeader .searchCont .closeSearch {
+    header .searchCont .closeSearch {
         left: -240px;
     }
-    .userHeader .searchCont .form-control {
+    header .searchCont .form-control {
         padding-left: 35px;
     }
     .topCategories .catLinks li {

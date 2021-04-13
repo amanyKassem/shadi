@@ -304,11 +304,11 @@ footer .footerInfo > div .apps img{
 .modal-body form.inviteFriend .btnDefault{
     margin: 0 25px 0 0 !important;
 }
-.userHeader .searchCont .form-control {
+header .searchCont .form-control {
     left: 35px;
     padding-right: 40px;
 }
-.userHeader .searchCont .closeSearch{
+header .searchCont .closeSearch{
     right: -338px;
 }
 header .headerTop .closeTopHeader{
@@ -349,6 +349,56 @@ header .headerTop span {
 }
 .userOrders .nav-pills .nav-item .nav-link span{
     margin-left: 20px;
+}
+
+.slideInfoSite .owl-dots {
+    right: 25px;
+}
+
+.owlProduct2 .owl-next {
+    left: auto;
+    right: 65px;
+}
+
+.conPo{
+    left: 0px;
+}
+
+.I{
+    left: 10px;
+}
+
+.pointAct{
+    left: 5px;
+}
+
+.wrapFix{
+    left: 20px;
+}
+
+.dropFil{
+    right: 5px;
+}
+
+.thier:before {
+    border-left: 10px solid #5cc431;
+    right: -10px;
+}
+
+.dirLtr{
+    direction: rtl;
+}
+
+.bronz{
+    right: 0px;
+}
+
+.lisOr li:before {
+    right: 6px;
+}
+
+.icFl{
+    right: 0;
 }
 
 @media(max-width: 767px){
@@ -403,11 +453,11 @@ header .headerTop span {
         margin: 0 !important;
     }
 
-    .userHeader .searchCont .closeSearch {
+    header .searchCont .closeSearch {
         right: auto;
     }
 
-    .userHeader .searchCont .form-control {
+    header .searchCont .form-control {
         left: auto;
         padding: 0 5px;
     }
@@ -431,10 +481,10 @@ header .headerTop span {
     .menu .transferBuyer {
         margin-left: 15px;
     }
-    .userHeader .searchCont .closeSearch {
+    header .searchCont .closeSearch {
         right: -140px;
     }
-    .userHeader .searchCont .form-control {
+    header .searchCont .form-control {
         padding-right: 30px;
     }
     .topCategories .catLinks li {
@@ -443,10 +493,10 @@ header .headerTop span {
 }
 
 @media(min-width: 992px) and (max-width: 1199px) {
-    .userHeader .searchCont .closeSearch {
+    header .searchCont .closeSearch {
         right: -240px;
     }
-    .userHeader .searchCont .form-control {
+    header .searchCont .form-control {
         padding-right: 35px;
     }
     .topCategories .catLinks li {

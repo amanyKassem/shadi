@@ -24,10 +24,10 @@
     <link rel="stylesheet" href="css/bootstrap-select.min.css">
     <link rel="stylesheet" type="text/css" href="css/datatables.min.css"/>
     <link rel="stylesheet" type="text/css" href="css/jquery.dataTables.min.css"/>
-    <link rel="stylesheet" href="css/owl.carousel.css">
     <link rel="stylesheet" href="css/bootstrap-select.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/hover.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
     <link href="css/icomoon.css" rel="stylesheet"/>
     <link rel="stylesheet" href="css/ar.css">
 
@@ -195,176 +195,241 @@
 
 <!--end header-->
 
-<!--start services-->
-<div class="ordersContainer analytics services bgLightGray">
+<!--start addService-->
+<div class="bgLightGray addService borderBCli">
     <div class="container">
 
-        <div class="addServBlock">
-            <span>الاقسام</span>
-            <a href="editCategory.html" class="addEditCat">تعديل او اضافة قسم</a>
-        </div>
+        <div class="flex flexSpace">
 
+            <div class="mainTitles">
 
-        <div id="owl-demo1" class="owl-carousel">
-
-            <div class="item boxShadow">
-                <a href="" class="category">
-                    <img src="img/graphic_design.png" alt="Graphic design">
-                    <h4>الجرافيك والديزاين</h4>
+                <a class="active" href="userOrderDetails.html">
+                    <span class="icon-box_order icons"></span>
+                    <h5>تفاصيل الطلب</h5>
                 </a>
+                <i class="fas fa-chevron-left"></i>
+
+                <a class="active" href="PostingRequirements.html">
+                    <span class="icon-checklists_order icons"></span>
+                    <h5>متطلبات الارسال</h5>
+                </a>
+                <i class="fas fa-chevron-left"></i>
+
+                <a href="">
+                    <span class="icon-credit-card-5 icons"></span>
+                    <h5>التاكيد والدفع</h5>
+                </a>
+                <i class="fas fa-chevron-left"></i>
+
+
             </div>
 
-            <div class="item boxShadow">
-                <a href="" class="category">
-                    <img src="img/Seo.png" alt="Technology and Marketing Online">
-                    <h4>التكنولوجيا والتسويق لكتروني</h4>
-                </a>
-            </div>
-
-            <div class="item boxShadow">
-                <a href="" class="category">
-                    <img src="img/translate.png" alt="Writing and translation">
-                    <h4>الكتابة والترجمة</h4>
-                </a>
-            </div>
-
-            <div class="item boxShadow">
-                <a href="" class="category">
-                    <img src="img/photography.png" alt="Photography and montage">
-                    <h4>التصوير والمونتاج</h4>
-                </a>
-            </div>
-
-            <div class="item boxShadow">
-                <a href="" class="category">
-                    <img src="img/education.png" alt="Education">
-                    <h4>التعليم</h4>
-                </a>
-            </div>
-
-            <div class="item boxShadow">
-                <a href="" class="category">
-                    <img src="img/consutation.png" alt="Consulting">
-                    <h4>الاستشارات</h4>
-                </a>
-            </div>
-
-            <div class="item boxShadow">
-                <a href="" class="category">
-                    <img src="img/lifestyle.png" alt="Life style">
-                    <h4>لايف استايل</h4>
-                </a>
-            </div>
-
-            <div class="item boxShadow">
-                <a href="" class="category">
-                    <img src="img/mic_enmy.png" alt="Video and animation">
-                    <h4>الفيديو والانيميشن</h4>
-                </a>
+            <div class="flex flexCenter flex-column">
+                <p class="lineHText0 m-0 font-weight-bold mb-2">معدل الإنجاز : 55 %</p>
+                <div class="progress Radius10 w150 bgWight mr-3 ml-3">
+                    <div class="progress-bar bgDefault" role="progressbar" style="width: 55%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
             </div>
 
         </div>
 
-        <div class="addServBlock">
-            <span>الخدمات</span>
-            <a href="addService.html" class="btnDefault hvr-pulse">اضافة خدمة</a>
-        </div>
-
-        <div class="filterCont">
-            <select class="selectpicker" id="month" title="القسم">
-                <option>جرافيك وديزاين</option>
-                <option>تصوير</option>
-            </select>
-        </div>
-        <div class="ordersInfo">
-            <table class="display nowrap orderTable" >
-                <thead>
-                <tr>
-                    <th>صورة الخدمة</th>
-                    <th>عنوان الخمة</th>
-                    <th>القسم</th>
-                    <th>تاريخ الاضافة</th>
-                    <th>ايام الانجاز</th>
-                    <th></th>
-                </tr>
-                </thead>
-                <tbody>
-
-                <tr>
-                    <td>
-                        <a href="providerServiceDetails.html"><img class="img-fluid" src="img/pic_o.png" alt="service"></a>
-                    </td>
-                    <td>
-                        <a href="providerServiceDetails.html">تعديلات فيديوهات ومونتاج</a>
-                    </td>
-                    <td>الجرافيك والديزاين</td>
-                    <td>15\3\2022</td>
-                    <td>15</td>
-                    <td>
-                        <a href="#" class="more">
-                            <span class="icon-more_provider"></span>
-                        </a>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td>
-                        <a href="providerServiceDetails.html"><img class="img-fluid" src="img/pic_o.png" alt="service"></a>
-                    </td>
-                    <td>
-                        <a href="providerServiceDetails.html">تعديلات فيديوهات ومونتاج</a>
-                    </td>
-                    <td>الجرافيك والديزاين</td>
-                    <td>15\3\2022</td>
-                    <td>15</td>
-                    <td>
-                        <a href="#" class="more">
-                            <span class="icon-more_provider"></span>
-                        </a>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td>
-                        <a href="providerServiceDetails.html"><img class="img-fluid" src="img/pic_o.png" alt="service"></a>
-                    </td>
-                    <td>
-                        <a href="providerServiceDetails.html">تعديلات فيديوهات ومونتاج</a>
-                    </td>
-                    <td>الجرافيك والديزاين</td>
-                    <td>15\3\2022</td>
-                    <td>15</td>
-                    <td>
-                        <a href="#" class="more">
-                            <span class="icon-more_provider"></span>
-                        </a>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td>
-                        <a href="providerServiceDetails.html"><img class="img-fluid" src="img/pic_o.png" alt="service"></a>
-                    </td>
-                    <td>
-                        <a href="providerServiceDetails.html">تعديلات فيديوهات ومونتاج</a>
-                    </td>
-                    <td>الجرافيك والديزاين</td>
-                    <td>15\3\2022</td>
-                    <td>15</td>
-                    <td>
-                        <a href="#" class="more">
-                            <span class="icon-more_provider"></span>
-                        </a>
-                    </td>
-                </tr>
-
-                </tbody>
-            </table>
-        </div>
     </div>
 </div>
-<!--end services-->
 
+<div class="minBody">
+    <div class="container">
+
+        <div class="">
+            <div class="row">
+
+                <div class="col-md-8 col-xs-12">
+
+                    <div class="mt-5 pb-4">
+
+                        <div class="bgFa borderCli">
+
+                            <div class="bgF1 p-3">
+                                <p class="m-0 font-weight-bold lineHText0 colorGreen">اختيارات الدفع</p>
+                            </div>
+
+                            <div class="p-4 flex flexRowCenter">
+
+                                <label class="radioButton">
+                                    <input type="radio" checked="checked" name="radio">
+                                    <span class="checkmark"></span>
+                                    <strong class="colorBla">credit & debit cards</strong>
+                                </label>
+
+                                <ul class="flex flexRowCenter mr-3 ml-3">
+                                    <li class="m-2"><a href=""><img src="img/card.png" alt="" style="max-width: 40px"></a></li>
+                                    <li class="m-2"><a href=""><img src="img/Image%202.png" alt="" style="max-width: 40px"></a></li>
+                                    <li class="m-2"><a href=""><img src="img/Image%203.png" alt="" style="max-width: 40px"></a></li>
+                                </ul>
+
+                            </div>
+
+                        </div>
+
+                        <div class="mt-4 mb-4 ">
+
+                            <form action="">
+
+                                <div class="row">
+                                    <div class="col-md-5 col-xs-12">
+                                        <div class="mt-2 mb-2">
+                                            <label class="colorGreen font-weight-bold font13 displayBlock">رقم البطاقه</label>
+                                            <input type="tel" class="bgGray borderCli p-2 w-100 Radius5">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-xs-12">
+                                        <div class="mt-2 mb-2">
+                                            <label class="colorGreen font-weight-bold font13 displayBlock">تاريخ انتهاء الصلاحيه</label>
+                                            <input type="date" class="bgGray borderCli p-2 w-100 Radius5">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-xs-12">
+                                        <div class="mt-2 mb-2">
+                                            <label class="colorGreen font-weight-bold font13 displayBlock">
+                                                <i class="fas fa-info-circle colorBla"></i>
+                                                cvv
+                                            </label>
+                                            <input type="tel" class="bgGray borderCli p-2 w-100 Radius5">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 col-xs-12">
+                                        <div class="mt-2 mb-2">
+                                            <label class="colorGreen font-weight-bold font13 displayBlock">الاسم بالكامل</label>
+                                            <input type="text" class="bgGray borderCli p-2 w-100 Radius5">
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </form>
+
+                        </div>
+
+                        <div>
+
+                            <label class="chickBox colorGray">
+                                <input type="checkbox" name="radio22" checked>
+                                <span class="checkmark"></span>
+                                <strong class="font13 mr-1 ml-1 colorDefault">
+                                    احفظه كاساس
+                                </strong>
+                            </label>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-4 col-xs-12">
+
+                    <div class="mt-5 borderCli">
+
+                        <div class="bgGray p-3">
+
+                            <div class="flex flexRowCenter mt-3 mb-3 pb-4 borderBCli">
+                                <div class="i flex30">
+                                    <img src="img/order.png" alt="" style="width: 100%;height: 80px">
+                                </div>
+                                <div class="pr-2 pl-2 flex70">
+                                    <h6 class="font-weight-bold lineHText0 m-0 colorGreen">سوف اصنع لك فيديو مميز لك بذكرياتك باستخدام صورك الخاصه</h6>
+                                </div>
+                            </div>
+
+                            <div class="mt-2 mb-2">
+
+                                <div class="flex flexSpace">
+                                    <p class="colorBla font-weight-bold">الباقه الاصليه المشترك بها</p>
+                                    <span class="colorDefault">132 ريال</span>
+                                </div>
+
+                                <ul>
+                                    <li class="flex flexRowCenter w-100 mb-2">
+                                        <span class="icon-check_rules colorDefault" style="font-size: 10px;"></span>
+                                        <span class="mt-2 mr-2 colorGray font-weight-bold">الاشياء المرفقه في هذه الاشياء</span>
+                                    </li>
+                                    <li class="flex flexRowCenter w-100 mb-2">
+                                        <span class="icon-check_rules colorDefault" style="font-size: 10px;"></span>
+                                        <span class="mt-2 mr-2 colorGray font-weight-bold">الاشياء المرفقه في هذه الاشياء</span>
+                                    </li>
+                                    <li class="flex flexRowCenter w-100 mb-2">
+                                        <span class="icon-check_rules colorDefault" style="font-size: 10px;"></span>
+                                        <span class="mt-2 mr-2 colorGray font-weight-bold">الاشياء المرفقه في هذه الاشياء</span>
+                                    </li>
+                                    <li class="flex flexRowCenter w-100 mb-2">
+                                        <span class="icon-check_rules colorDefault" style="font-size: 10px;"></span>
+                                        <span class="mt-2 mr-2 colorGray font-weight-bold">الاشياء المرفقه في هذه الاشياء</span>
+                                    </li>
+                                </ul>
+
+                            </div>
+
+                        </div>
+
+                        <div class="p-3 borderBCli">
+
+                            <div class="flex flexSpace">
+                                <p class="lineHText0 m-0 font-weight-bold font13">تخفيض</p>
+                                <span class="colorDefault font-weight-bold font13">20 ريال</span>
+                            </div>
+
+                        </div>
+
+                        <div class="p-3 borderBCli">
+
+                            <div class="flex flexSpace mb-2">
+                                <p class="lineHText0 m-0 font-weight-bold font13">سعر الضريبه</p>
+                                <span class="colorDefault font-weight-bold font13">10 ريال</span>
+                            </div>
+
+                            <div class="flex flexSpace mb-2">
+                                <p class="lineHText0 m-0 font-weight-bold font13">نسبه الخصم</p>
+                                <span class="colorDefault font-weight-bold font13">20 ريال</span>
+                            </div>
+
+                        </div>
+
+                        <div class="p-3 borderBCli">
+
+                            <div class="flex flexSpace mb-2">
+                                <p class="lineHText0 m-0 font-weight-bold font13">الاجمالي</p>
+                                <div class="flex flexRowCenter">
+                                    <span class="colorGray textThrough font-weight-bold font13 mr-2 ml-2">10 ريال</span>
+                                    <span class="colorDefault font-weight-bold font13">10 ريال</span>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="flex flexSpace p-3 bgGray">
+                            <p class="lineHText0 m-0 font-weight-bold font13">وقت الانجاز</p>
+                            <span class="colorDefault font-weight-bold font13">2 يومين</span>
+                        </div>
+
+                        <div class="p-3">
+                            <a href="continueAndPay.html" class="btnDefault p-2 mt-3 mb-3 w-100 displayInline Radius10 text-center">اكمل وادفع</a>
+
+                            <div class="flex flexCenter">
+                                <i class="fas fa-lock colorBla"></i>
+                                <p class="text-center pl-2 pr-2 font-weight-bold">SSL دفع مؤمن</p>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="bgGray p-2 mt-4"></div>
 <!--start footer-->
 <footer>
     <div class="container">
@@ -518,65 +583,7 @@
 <script src="js/popper.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/bootstrap-select.min.js"></script>
-<script type="text/javascript" src="js/datatables.min.js"></script>
-<script type="text/javascript" src="js/jquery.dataTables.min.js"></script>
 <script src="js/owl.carousel.min.js"></script>
 <script src="js/script.js"></script>
-
-<!--start select-->
-<script>
-    $('.selectpicker').selectpicker();
-</script>
-<!--end select-->
-
-<!--table-->
-<script>
-    $(document).ready(function() {
-        $('.orderTable').DataTable( {
-            // "language": {
-            //     "paginate": {
-            //         "next": '<i class="fas fa-chevron-left"></i>',
-            //         "previous": '<i class="fas fa-chevron-right"></i>',
-            //     }
-            // },
-            "scrollY": 200,
-            "scrollX": true
-        } );
-
-
-        // categories slider
-        $('#owl-demo1').owlCarousel({
-            // center: true,
-            dots: false,
-            nav: true,
-            navText: [
-                "<span class=\"icon-right_arrow\"></span>",
-                "<span class=\"icon-left_arrow\"></span>"
-            ],
-            autoplay: true,
-            loop: true,
-            animateOut: 'fadeOut',
-            responsive: {
-                0: {
-                    items: 1,
-                },
-                768: {
-                    items: 3,
-                    center: false
-                },
-                992: {
-                    items: 5,
-                },
-                1200: {
-                    items: 6
-                }
-            }
-        });
-
-
-    } );
-</script>
-
-
 </body>
 </html>
