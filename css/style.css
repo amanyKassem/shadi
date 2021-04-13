@@ -1899,7 +1899,11 @@ p{
     padding: 0px;
 }
 
-
+.formAddPro label:after{
+    content: "*";
+    color: #F00;
+    margin: 0px 5px;
+}
 
 
 
@@ -5625,7 +5629,7 @@ footer .footerInfo > div .apps img{
     .dopBox, .filterContIt{
         margin: 5px 0 !important;
     }
-    .w100, .w250, .w150{
+    .w100, .w250, .w150, .w-50{
         width: 100% !important;
     }
 }
