@@ -246,85 +246,16 @@
 
         </div>
 
-        <div class="borderBCli pb-2">
-            <p class="text-left font-weight-bold">الحقول التزاميه *</p>
-        </div>
+        <div class="borderBCli pt-4 pb-4"></div>
 
-        <form action="completUpgradedProvider.html" class="formAddPro pt-5 pb-5">
-
-            <div class="flex flexRow">
-
-                <div class="flex20 pr-3 pl-3">
-                    <div class="mt-3">
-                        <label class="displayBlock colorBla font-weight-bold">الاسم بالكامل</label>
-                        <p class="lineHText0 m-0 colorGray">مثلا : عبدالوهاب</p>
-                    </div>
-                </div>
-
-                <div class="flex80 pr-3 pl-3">
-                    <div class="form-group mt-3 mb-3">
-                        <input type="text" placeholder="الاسم بالكامل كما سجل" class="form-control bgFa borderCli Radius5 font13" required>
-                    </div>
-                </div>
-
-            </div>
+        <form action="linkedAccounts.html" class="formAddPro pt-5 pb-5">
 
             <div class="flex flexRow">
 
                 <div class="flex20 pr-3 pl-3">
                     <div class="mt-5">
-                        <label class="displayBlock colorBla font-weight-bold">الصوره الشخصيه</label>
-                        <p class="lineHText0 m-0 colorGray">يجب عليك وضع صوره شخصيه لكي يتعرف عليك العملاء مم يزيد ثقتهم فيك</p>
-                    </div>
-                </div>
-
-                <div class="flex80 pr-3 pl-3">
-
-                    <div class="imagesUploadBlock width_full mt-5 mb-3 position-relative">
-                        <img src="img/frame_upload.png" alt="" class="frame_upload">
-                        <label class="uploadImg flex flexColumn flexCenter m-0 position-relative">
-                            <input type="file" accept="image/*" class="imageUploader addImage">
-                            <span class="icon-upload_provider colorGray" style="font-size: 30px"></span>
-                            <p>رفع الصوره</p>
-                        </label>
-                        <div class="uploadArea flexRow flexCenter"></div>
-                    </div>
-
-                </div>
-
-            </div>
-
-            <div class="flex flexRow">
-
-                <div class="flex20 pr-3 pl-3">
-                    <div class="mt-5">
-                        <label class="displayBlock colorBla font-weight-bold">وصف نفسك</label>
-                        <p class="lineHText0 m-0 colorGray">يجب عليك كتابه بعض المعلومات عنك توصف به طبيعه خدماتك</p>
-                    </div>
-                </div>
-
-                <div class="flex80 pr-3 pl-3">
-
-                    <div class="form-group mt-5 mb-3">
-                        <div class="form-group">
-                            <textarea class="form-control textareaCount m-0 borderCli bgFa Radius5 font13 p-3" style="height: 200px;border: 1px solid #f3f3f3 !important;" placeholder="تحدث بطريقه مختصره عن اعمالك وخبراتك والمشاريع التي قمت بها" maxlength="600" ></textarea>
-                            <div class="count conPo bg-transparent flexEnd flex">
-                                <span class="current">0</span>
-                                <span class="maximum">/ 600</span>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-
-            <div class="flex flexRow">
-
-                <div class="flex20 pr-3 pl-3">
-                    <div class="mt-5">
-                        <label class="displayBlock colorBla font-weight-bold">اللغات</label>
-                        <p class="lineHText0 m-0 colorGray">حدد اللغات التي يمكنك التواصل بها ومستوي إجاده</p>
+                        <label class="displayBlock colorBla font-weight-bold">المهارات</label>
+                        <p class="lineHText0 m-0 colorGray">حدد المهارات التي تملكها ومستواك بها</p>
                     </div>
                 </div>
 
@@ -335,14 +266,14 @@
                         <div class="borderCli pt-3 pb-3 pr-2 pl-2 mb-4 Radius5 divAddLang">
 
                             <div class="flex1 pr-2 pl-2 form-group m-0">
-                                <input type="text" placeholder="اللغه" class="form-control Radius5 font-weight-bold">
+                                <input type="text" placeholder="المهاره" class="form-control Radius5 font-weight-bold">
                             </div>
 
                             <div class="flex1 pr-2 pl-2">
                                 <div class="filterCont">
                                     <select class="selectpicker">
-                                        <option class="colorGray">المستوي</option>
-                                        <option class="colorGray">عالي</option>
+                                        <option class="colorGray">الاعلي تقيما</option>
+                                        <option class="colorGray">الاقل تقيما</option>
                                     </select>
                                 </div>
                             </div>
@@ -359,7 +290,7 @@
                         <div class="borderCli pt-3 pb-3 pr-2 pl-2 flex flexSpace mb-4 Radius5 bgGray">
 
                             <div class="flex33">
-                                <p class="colorBla font-weight-bold lineHText0 m-0">اللغه</p>
+                                <p class="colorBla font-weight-bold lineHText0 m-0">المهاره</p>
                             </div>
 
                             <div class="flex33 flex flexCenter">
@@ -369,7 +300,7 @@
                             <div class="flex33 flex flexEnd">
 
                                 <a class="colorDefault font13 addLang">
-                                    <strong>إضافه لغه جديده</strong>
+                                    <strong>إضافه مهاره جديده</strong>
                                     <i class="fas fa-caret-left mr-2 ml-2"></i>
                                 </a>
 
@@ -410,10 +341,118 @@
 
             </div>
 
+            <div class="flex flexRow">
+
+                <div class="flex20 pr-3 pl-3">
+                    <div class="mt-5">
+                        <label class="displayBlock colorBla font-weight-bold">الشهادات</label>
+                        <p class="lineHText0 m-0 colorGray">اضف الشهادات التي حصلت عليها</p>
+                    </div>
+                </div>
+
+                <div class="flex80 pr-3 pl-3">
+
+                    <div class="mt-5 secLang">
+
+                        <div class="borderCli pt-3 pb-3 pr-2 pl-2 mb-4 Radius5 divAddLang">
+
+                            <div class="flex1 pr-2 pl-2 form-group m-0">
+                                <input type="text" placeholder="اسم الشهاده" class="form-control Radius5 font-weight-bold">
+                            </div>
+
+                            <div class="flex1 pr-2 pl-2 ">
+                                <div class="wrap wrapNoN width_full borderCli">
+                                    <label class="uploadImg flex flexSpace m-0 custom-file-upload w-100">
+                                        <input type="file" name="file" id="file" class="file_upload">
+                                        <p class="colorDefault d-none">حمل الشهاده</p>
+                                        <span class="icon-paperclip colorDefault" style="font-size: 15px"></span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="flex1 pr-2 pl-2">
+                                <div class="filterCont">
+                                    <select class="selectpicker">
+                                        <option class="colorGray">السنه</option>
+                                        <option class="colorGray">2020</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="pr-2 pl-2">
+
+                                <button class="btnDefault btnButton mr-2 ml-2 Radius10">حفظ</button>
+                                <button class="btnBorderDefault btnButton mr-2 ml-2 Radius10">إالغاء</button>
+
+                            </div>
+
+                        </div>
+
+                        <div class="borderCli pt-3 pb-3 pr-2 pl-2 flex flexSpace mb-4 Radius5 bgGray">
+
+                            <div class="flex25">
+                                <p class="colorBla font-weight-bold lineHText0 m-0">اسم الشهاده</p>
+                            </div>
+
+                            <div class="flex25 flex flexCenter">
+                                <p class="colorBla font-weight-bold lineHText0 m-0">صوره الشهاده</p>
+                            </div>
+
+                            <div class="flex25 flex flexCenter">
+                                <p class="colorBla font-weight-bold lineHText0 m-0">السنه</p>
+                            </div>
+
+                            <div class="flex25 flex flexEnd">
+
+                                <a class="colorDefault font13 addLang">
+                                    <strong>إضافه شهاده جديده</strong>
+                                    <i class="fas fa-caret-left mr-2 ml-2"></i>
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                        <div class="allLang">
+
+                            <div class="borderCli pt-3 pb-3 pr-2 pl-2 flex flexSpace mb-4 Radius5 dLang">
+
+                                <div class="flex25">
+                                    <p class="colorBla font-weight-bold lineHText0 m-0">ِArabic</p>
+                                </div>
+
+                                <div class="flex25 flex flexCenter">
+                                    <img src="img/user.png" alt="" style="width: 30px;height: 30px;border-radius: 10px">
+                                </div>
+
+                                <div class="flex25 flex flexCenter">
+                                    <p class="colorBla font-weight-bold lineHText0 m-0">2020</p>
+                                </div>
+
+                                <div class="flex25 flex flexEnd">
+
+                                    <a class="colorBla font13 mr-3 ml-3 addLang">
+                                        <i class="fas fa-pen"></i>
+                                    </a>
+                                    <a class="colorBla font13 removeLang">
+                                        <i class="fas fa-trash"></i>
+                                    </a>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
             <div class="flex flexEnd pr-3 pl-3">
                 <button type="submit" class="btnButton btnDefault">إستمرار</button>
             </div>
-
         </form>
 
     </div>

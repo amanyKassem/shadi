@@ -2433,7 +2433,7 @@ p{
 }
 
 .modal-body .social{
-   display: flex;
+    display: flex;
     align-items: center;
 }
 
@@ -4090,7 +4090,7 @@ table.dataTable.hover tbody tr:hover, table.dataTable.display tbody tr:hover{
 .userOrders .tab-pane .orderBlock .bottomDiv .price{
     color: #56C429;
 }
-    /*end userOrders*/
+/*end userOrders*/
 
 
 /* start footer*/
@@ -4591,7 +4591,7 @@ footer .lightLamp{
     width: 100%;
 }
 .addService .dataForm.step3 .rightDiv .requiredInfo .titleInfo.titleImg {
-   flex-direction: row;
+    flex-direction: row;
     align-items: center;
 }
 .addService .dataForm.step3 .rightDiv .requiredInfo .titleInfo.titleImg img{
