@@ -979,6 +979,14 @@ p{
     width: 250px !important;
 }
 
+.w350{
+    width: 350px !important;
+}
+
+.w450{
+    width: 450px !important;
+}
+
 .progress {
     height: 11px;
 }
@@ -1574,6 +1582,9 @@ p{
 .textThrough{
     text-decoration: line-through;
 }
+.textDir{
+    text-decoration: underline;
+}
 
 .boxInfoMo .btnButton {
     font-size: 12px;
@@ -1740,7 +1751,7 @@ p{
     font-weight: bold;
 }
 
-.dropdown-toggle::after{
+.filterContIt .dropdown-toggle::after{
     border-top: 0em solid;
     border-right: 0 solid transparent;
     border-bottom: 0;
@@ -1831,6 +1842,158 @@ p{
 .owlNavSec .owl-prev {
     right: -22px;
 }
+
+.imgProvider{
+    display: table;
+    margin: auto;
+}
+
+.bronz{
+    position: absolute;
+    bottom: -20px;
+    max-width: 70px
+}
+
+.lisOr li:before {
+    content: "";
+    position: absolute;
+    top: 18px;
+    background-color: #DDD;
+    width: 1px;
+    height: 100%;
+}
+
+.lisOr li:last-child:before {
+    display: none;
+}
+
+.icFl{
+    position: absolute;
+    top: 0px;
+}
+
+.fiUp .input-file {
+    position: relative;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: initial;
+    color: #3a3a3a;
+    text-align: center;
+    font-size: 14px;
+    padding: 5px 10px;
+}
+
+.bgBan{
+    background-image: url("../img/austin-distel-rxpThOwuVgE-unsplash.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 550px;
+}
+
+.ovTex{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.1);
+    display: flex;
+    align-items: flex-end;
+    padding: 10px;
+}
+
+.viFix .ovTex{
+    background-color: rgba(0,0,0,0.3);
+    padding: 0px;
+}
+
+.formAddPro label:after{
+    content: "*";
+    color: #F00;
+    margin: 0px 5px;
+}
+
+.formAddPro .imagesUploadBlock {
+    /*background-image: url(../img/frame_upload.png);*/
+    background-image: initial;
+    height: 120px;
+    background-color: #fafafa;
+}
+
+.formAddPro .frame_upload{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+}
+
+.formAddPro .uploadImg:after{
+    display: none;
+}
+
+.secLang .form-group .form-control{
+    border-color: #ededed !important;
+    font-size: 14px;
+}
+
+.secLang .bootstrap-select>.dropdown-toggle {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.divAddLang{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.wrapNoN .input-file {
+    position: relative;
+    bottom: 0;
+    margin: initial;
+    padding: 0;
+}
+
+.wrapNoN{
+    height: 50px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 0px 10px;
+}
+
+.secLang .btnButton {
+    height: 40px;
+    line-height: 40px;
+    width: 120px;
+}
+
+.w-85{
+    width: 85%;
+}
+
+.imSocial{
+    width: 30px;
+    border-radius: 50%;
+    height: 30px;
+    object-fit: contain;
+}
+
+
+
+
+
+
+
+/************************ Style Sh3wZa ******************************/
+
+/* Amany */
 
 .profileCont .blockProviderInfo {
     display: flex;
@@ -1948,110 +2111,8 @@ p{
     flex-wrap: wrap;
 }
 
+/* Amany */
 
-.imgProvider{
-    display: table;
-    margin: auto;
-}
-
-.bronz{
-    position: absolute;
-    bottom: -20px;
-    max-width: 70px
-}
-
-.lisOr li:before {
-    content: "";
-    position: absolute;
-    top: 18px;
-    background-color: #DDD;
-    width: 1px;
-    height: 100%;
-}
-
-.lisOr li:last-child:before {
-    display: none;
-}
-
-.icFl{
-    position: absolute;
-    top: 0px;
-}
-
-.fiUp .input-file {
-    position: relative;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    margin: initial;
-    color: #3a3a3a;
-    text-align: center;
-    font-size: 14px;
-    padding: 5px 10px;
-}
-
-.bgBan{
-    background-image: url("../img/austin-distel-rxpThOwuVgE-unsplash.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    width: 100%;
-    height: 550px;
-}
-
-.ovTex{
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0,0,0,0.1);
-    display: flex;
-    align-items: flex-end;
-    padding: 10px;
-}
-
-.viFix .ovTex{
-    background-color: rgba(0,0,0,0.3);
-    padding: 0px;
-}
-
-.formAddPro label:after{
-    content: "*";
-    color: #F00;
-    margin: 0px 5px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/************************ Style Sh3wZa ******************************/
 
 /* Style ChickBox */
 
@@ -5767,8 +5828,20 @@ footer .footerInfo > div .apps img{
     .dopBox, .filterContIt{
         margin: 5px 0 !important;
     }
-    .w100, .w250, .w150, .w-50{
+    .w100, .w250, .w150, .w-50, .w350, .w450, .w-85{
         width: 100% !important;
+    }
+    .flex1, .flex33{
+        flex-basis: 100%;
+    }
+    .flexEnd {
+        justify-content: center;
+    }
+    .secLang {
+        text-align: center;
+    }
+    .secLang .flex1{
+        margin: 5px 0;
     }
 }
 
