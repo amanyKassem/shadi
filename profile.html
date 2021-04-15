@@ -194,34 +194,34 @@
     <div class="container">
         <ul class="catLinks">
             <li>
-                <a href="visitorsSeen.html">مشاهدات الزوار</a>
+                <a href="graphicDesign.html">مشاهدات الزوار</a>
             </li>
             <li>
                 <a href="graphicDesign.html">الجرافيك والديزاين</a>
             </li>
             <li>
-                <a href="technology.html">التكنولوجيا والتسويق الرقمي</a>
+                <a href="graphicDesign.html">التكنولوجيا والتسويق الرقمي</a>
             </li>
             <li>
-                <a href="writingTranslation.html">الكتابة والترجمة</a>
+                <a href="graphicDesign.html">الكتابة والترجمة</a>
             </li>
             <li>
-                <a href="photography.html">التصوير والمونتاج</a>
+                <a href="graphicDesign.html">التصوير والمونتاج</a>
             </li>
             <li>
-                <a href="video.html">الفيديو والانيميشن</a>
+                <a href="graphicDesign.html">الفيديو والانيميشن</a>
             </li>
             <li>
-                <a href="education.html">التعليم</a>
+                <a href="graphicDesign.html">التعليم</a>
             </li>
             <li>
-                <a href="lifeStyle.html">لايف ستايل</a>
+                <a href="graphicDesign.html">لايف ستايل</a>
             </li>
             <li>
-                <a href="consulting.html">الاستشارات</a>
+                <a href="graphicDesign.html">الاستشارات</a>
             </li>
             <li>
-                <a href="publicServices.html">خدمات عامة</a>
+                <a href="graphicDesign.html">خدمات عامة</a>
             </li>
         </ul>
     </div>
@@ -245,17 +245,33 @@
 
                             <span class="status">متصل</span>
 
-                            <div class="imgProvider text-center position-relative">
-                                <img src="img/girl_placeholder.png" alt="profile image" style="width: 130px;height: 130px;border-radius: 50%">
-                                <i class="fas fa-camera"></i>
+                            <div class="imgProvider changeImg text-center position-relative">
+                                <a class="change">
+                                    <img src="img/girl_placeholder.png" alt="profile image" >
+                                    <input class="file-upload" type="file" accept="image/*">
+                                    <i class="fas fa-camera"></i>
+                                </a>
                             </div>
 
+
                             <div class="text-center mt-4">
-                                <h6 class="font-weight-bold colorBla m-0 mb-1">أماني قاسم</h6>
-                                <p class="colorBla font-weight-bold m-0 lineHText0">front-end developer</p>
+
+                                <form class="editableForm" action="">
+                                    <div class="form-group">
+                                        <input type="text" name="fullName" id="fullName" class="form-control" disabled value="أماني قاسم">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" name="jobTitle" id="jobTitle" class="form-control" disabled value="front-end developer">
+                                    </div>
+
+                                    <div class="btnCon">
+                                        <a class="btnDefault hvr-pulse saveForm">تحديث</a>
+                                        <a class="btnDefault hvr-pulse cancelForm">الغاء</a>
+                                    </div>
+                                </form>
 
                                 <div class="flex flex-column pb-4 borderBCli">
-                                    <a href="editProfile.html" class="editProfile"><i class="fas fa-pen"></i></a>
+                                    <a class="editProfile"><i class="fas fa-pen"></i></a>
 
                                     <a data-toggle="modal" data-target="#editInfo" class="editInfo">تعديل معلومات التسجيل</a>
                                 </div>
@@ -331,45 +347,144 @@
                         <div class="borderBCli pb-3">
                             <div class="topHead">
                                 <h6 class="colorBlack font-weight-bold font13">الوصف</h6>
-                                <a href="editProfile.html">
+                                <a class="editDesc">
                                     تعديل الوصف
                                     <i class="fas fa-caret-left"></i>
+                                    <!--                                    in english case-->
+                                    <!--                                    <i class="fas fa-caret-right"></i>-->
                                 </a>
                             </div>
-                            <p class="colorBla font13 font-weight-bold">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.</p>
+                            <p class="descText colorBla font13 font-weight-bold">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.</p>
+
+                            <form action="" class="descForm">
+                                <div class="form-group">
+                                    <textarea class="form-control"></textarea>
+                                </div>
+                                <div class="btnCon">
+                                    <a class="btnDefault hvr-pulse saveDesc">حفظ</a>
+                                    <a class="btnDefault hvr-pulse cancelDesc">الغاء</a>
+                                </div>
+                            </form>
                         </div>
 
                         <div class="borderBCli pb-3 pt-3">
                             <div class="topHead">
                                 <h6 class="colorBlack font-weight-bold font13">اللغات التي تتقنها</h6>
-                                <a href="editProfile.html">
+                                <a class="addLang">
                                     اضف جديد
                                     <i class="fas fa-caret-left"></i>
-<!--                                    in english case-->
-<!--                                    <i class="fas fa-caret-right"></i>-->
+                                    <!--                                    in english case-->
+                                    <!--                                    <i class="fas fa-caret-right"></i>-->
                                 </a>
                             </div>
 
-                            <ul>
-                                <li class="colorBla font-weight-bold w-100 mt-1 mb-1">English - Basic
+                            <ul class="langUl">
+                                <li class="colorBla font-weight-bold w-100 mt-1 mb-1"><span class="myLang">English</span> - <span class="myLangType">اساسي</span>
                                     <a class="editLang colorGreen"><i class="fas fa-pen"></i></a>
                                     <a class="deleteLang colorGreen"><i class="fas fa-trash"></i></a>
                                 </li>
-                                <li class="colorBla font-weight-bold w-100 mt-1 mb-1">Arabic - Basic
+                                <li class="colorBla font-weight-bold w-100 mt-1 mb-1"><span class="myLang">عربي</span> - <span class="myLangType">متحدث</span>
                                     <a class="editLang colorGreen"><i class="fas fa-pen"></i></a>
                                     <a class="deleteLang colorGreen"><i class="fas fa-trash"></i></a>
                                 </li>
                             </ul>
+
+                            <form action="" class="langForm">
+
+                                <div class="bg-white">
+
+                                    <div class="form-group">
+                                        <input type="text" name="lang" id="lang" class="form-control" placeholder="اضف لغة">
+                                    </div>
+                                    <hr class="customHr my-2">
+                                    <div class="form-group">
+                                        <select class="selectpicker" id="langType">
+                                            <option>اساسي</option>
+                                            <option>متحدث</option>
+                                            <option>متحدث بطلاقة</option>
+                                            <option>لغتك الأم</option>
+                                        </select>
+                                    </div>
+
+                                </div>
+
+                                <hr class="customHr my-4">
+
+                                <div class="btnCon">
+                                    <a class="btnDefault hvr-pulse saveLang">حفظ</a>
+                                    <a class="btnDefault hvr-pulse cancelLang">الغاء</a>
+                                </div>
+                            </form>
+
                         </div>
 
                         <div class="borderBCli pb-3 pt-3">
 
                             <div class="topHead">
                                 <h6 class="colorBlack font-weight-bold font13">روابط التواصل الاجتماعي</h6>
-                                <a>
+                                <a class="addSocial" data-toggle="modal" data-target="#addSocial">
                                     اضف جديد
                                     <i class="fas fa-caret-left"></i>
+                                    <!--                                    in english case-->
+                                    <!--                                    <i class="fas fa-caret-right"></i>-->
                                 </a>
+                            </div>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="addSocial" tabindex="-1" role="dialog" aria-labelledby="addSocialTitle" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-body align-items-start justify-content-start p-4 p-lg-5">
+
+                                            <h4 class="colorBlack font14">مواقع التواصل المتفاعل عليها</h4>
+                                            <h4 class="colorBla font13">اضف اللينكات الخاصة بك</h4>
+
+                                            <form action="" class="socialForm">
+
+                                                <div class="form-group">
+                                                    <img src="img/google3.png" alt="google">
+                                                    <label for="google">google</label>
+                                                    <input type="text" name="google" id="google" class="form-control">
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <img src="img/facebook_icon.png" alt="facebook">
+                                                    <label for="facebook">facebook</label>
+                                                    <input type="text" name="facebook" id="facebook" class="form-control">
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <img src="img/twitter_icon.png" alt="twitter">
+                                                    <label for="twitter">twitter</label>
+                                                    <input type="text" name="twitter" id="twitter" class="form-control">
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <img src="img/dribbble.png" alt="dribble">
+                                                    <label for="dribble">dribble</label>
+                                                    <input type="text" name="dribble" id="dribble" class="form-control">
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <img src="img/behance.png" alt="behance">
+                                                    <label for="behance">behance</label>
+                                                    <input type="text" name="behance" id="behance" class="form-control">
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <img src="img/vimeo.png" alt="vimeo">
+                                                    <label for="vimeo">vimeo</label>
+                                                    <input type="text" name="vimeo" id="vimeo" class="form-control">
+                                                </div>
+
+                                                <hr class="customHr">
+
+                                                <a data-dismiss="modal" class="btnDefault hvr-pulse" type="submit">اضافة</a>
+                                            </form>
+
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
 
                             <ul>
@@ -392,6 +507,8 @@
                                 <a>
                                     اضف جديد
                                     <i class="fas fa-caret-left"></i>
+                                    <!--                                    in english case-->
+                                    <!--                                    <i class="fas fa-caret-right"></i>-->
                                 </a>
                             </div>
                             <h6 class="colorBlack font-weight-bold font13">أضف مهارة جديدة</h6>
@@ -412,6 +529,8 @@
                                 <a>
                                     اضف جديد
                                     <i class="fas fa-caret-left"></i>
+                                    <!--                                    in english case-->
+                                    <!--                                    <i class="fas fa-caret-right"></i>-->
                                 </a>
                             </div>
                             <h6 class="colorBlack font-weight-bold font13">أضف تعليم جديدة</h6>
@@ -425,6 +544,8 @@
                                 <a>
                                     اضف جديد
                                     <i class="fas fa-caret-left"></i>
+                                    <!--                                    in english case-->
+                                    <!--                                    <i class="fas fa-caret-right"></i>-->
                                 </a>
                             </div>
                             <h6 class="colorBlack font-weight-bold font13">أضف شهادة جديدة</h6>
@@ -692,11 +813,111 @@
     $(".selectpicker").on("hide.bs.select", function() {
         var val = $(this).val().toString();
         if (val) {
-            $('.authForm .bootstrap-select>.dropdown-toggle').css('border' , '1px solid #56C429');
+            $('.modal .bootstrap-select>.dropdown-toggle').css('border' , '1px solid #56C429');
         }
     })
 </script>
 <!--end select-->
+
+<script>
+    // upload profile image
+    var readURL = function(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+
+            reader.onload = function (e) {
+                $('.changeImg img').attr('src', e.target.result);
+            }
+
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+
+
+    $(".file-upload").on('change', function(){
+        readURL(this);
+    });
+
+    // editProfile pen
+    $('.editProfile').click(function () {
+        $('.editableForm .form-control').removeAttr('disabled').css('color', '#cfcfcf');
+        $(this).hide();
+        $('.profileCont .editableForm .btnCon').css('display', 'flex').fadeIn(300);
+    });
+    $('.saveForm , .cancelForm').click(function () {
+        $('.editableForm .form-control').prop('disabled', true).css('color', '#818181');
+        $('.profileCont .editableForm .btnCon').hide();
+        $('.editProfile').fadeIn(300);
+    });
+
+    //edit description
+
+    $('.editDesc').click(function () {
+        $('.profileCont .descForm .btnCon').css('display', 'flex').fadeIn(300);
+        $('.descText').hide();
+        $('.descForm').fadeIn();
+        $('.descForm textarea').val($('.descText').text());
+    });
+    $('.saveDesc , .cancelDesc').click(function () {
+        $('.profileCont .descForm .btnCon').hide();
+        $('.descForm').hide();
+        $('.descText').fadeIn().text( $('.descForm textarea').val());
+    });
+
+
+    //edit , add & delete lang
+
+    $('body').on('click', '.deleteLang', function() {
+        $(this).parent().remove();
+    });
+
+    $('.addLang').click(function () {
+        $('.profileCont .langForm .btnCon').css('display', 'flex').fadeIn(300);
+        $('.langUl').hide();
+        $('.langForm').fadeIn();
+        $('.langForm .form-control').val('');
+        $('.saveLang').addClass('saveAdd');
+    });
+
+    $('body').on('click', '.editLang', function() {
+        $('.profileCont .langForm .btnCon').css('display', 'flex').fadeIn(300);
+        $('.langUl').hide();
+        $('.langForm').fadeIn();
+        let langVal = $(this).parent('li').find('.myLang').text();
+        let langType = $(this).parent('li').find('.myLangType').text();
+        $('.langForm .form-control').val(langVal);
+        $('.selectpicker').selectpicker('val', langType);
+        $('.saveLang').addClass('saveEdit');
+        $(this).parent('li').addClass('editLi');
+    });
+
+    $('body').on('click', '.saveLang.saveAdd', function() {
+        let val = $("#langType").val().toString();
+        let lang = $('.langForm .form-control').val().toString();
+        $(".langUl").append("<li class=\"colorBla font-weight-bold w-100 mt-1 mb-1\"><span class=\"myLang\">"+lang+"</span> - <span class=\"myLangType\">"+val+"</span>\n" +
+            "                                    <a class=\"editLang colorGreen\"><i class=\"fas fa-pen\"></i></a>\n" +
+            "                                    <a class=\"deleteLang colorGreen\"><i class=\"fas fa-trash\"></i></a>\n" +
+            "                                </li>");
+        $(this).removeClass('saveAdd');
+    });
+
+    $('body').on('click', '.saveLang.saveEdit', function() {
+        let langType = $("#langType").val().toString();
+        let langVal = $('.langForm .form-control').val().toString();
+        $('.editLi').find('.myLang').text(langVal);
+        $('.editLi').find('.myLangType').text(langType);
+        $(this).removeClass('saveEdit');
+        $(this).parent('li').removeClass('editLi');
+    });
+
+    $('.saveLang , .cancelLang').click(function () {
+        $('.profileCont .langForm .btnCon').hide();
+        $('.langForm').hide();
+        $('.langUl').fadeIn();
+    });
+
+
+</script>
 
 </body>
 </html>
