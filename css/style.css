@@ -20,6 +20,7 @@ body {
     font: 14px 'Cairo', sans-serif;
     line-height: 1.6em;
     position: relative;
+    font-weight: bold !important;
 }
 
 a, button, img{
@@ -5745,9 +5746,9 @@ footer .footerInfo > div .apps img{
     .closeChat {
         display: flex;
     }
-    .sectionComment .flexRow {
-        flex-wrap: nowrap;
-    }
+    /*.sectionComment .flexRow {*/
+    /*    flex-wrap: nowrap;*/
+    /*}*/
     .listUl ul li{
         display: block;
         width: 100%;
@@ -5790,12 +5791,6 @@ footer .footerInfo > div .apps img{
     .bockSea h6{
         margin-bottom: 30px;
     }
-    .logoAfterIn{
-        margin: 10px auto;
-    }
-    .linkAfter{
-        margin: 20px auto;
-    }
     .infoWo .flex5{
         flex-basis: 5% !important;
     }
@@ -5815,6 +5810,9 @@ footer .footerInfo > div .apps img{
         width: 100%;
         text-align: center;
     }
+    .owlUser .owl-nav {
+        top: 42px;
+    }
 }
 
 @media(max-width: 400px){
@@ -5828,7 +5826,7 @@ footer .footerInfo > div .apps img{
     .dopBox, .filterContIt{
         margin: 5px 0 !important;
     }
-    .w100, .w250, .w150, .w-50, .w350, .w450, .w-85{
+    .w100, .w250, .w150, .w-50, .w350, .w450, .w-85, .wMobil, .w-75{
         width: 100% !important;
     }
     .flex1, .flex33{
@@ -5843,6 +5841,52 @@ footer .footerInfo > div .apps img{
     .secLang .flex1{
         margin: 5px 0;
     }
+    .choTime {
+        justify-content: center;
+    }
+    .mio{
+        margin: 10px 0;
+        text-align: center;
+    }
+    #sync1 img, #sync1 {
+        height: 300px;
+    }
+    .overX{
+        overflow-x: auto;
+    }
+    .tableOrder td, .tableOrder th {
+        padding: 30px 35px;
+    }
+    .cUl li, .cUl li a {
+        width: 100%;
+        text-align: center;
+    }
+    .TabsNav .nav-item {
+        width: 100%;
+    }
+    .owlProduct2 .owl-nav {
+        display: none !important;
+    }
+    .paddingMobile{
+        padding: 15px !important;
+    }
+    .popVid img{
+        height: 255px;
+    }
+    .linkAfter{
+        margin: 20px auto;
+    }
+    .logoAfterIn{
+        margin: 10px auto;
+    }
+}
+
+@media(max-width: 991px){
+
+    .menuToLogin{
+        
+    }
+
 }
 
 /********************* Sh3wZa Media *********************/

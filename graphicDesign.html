@@ -347,7 +347,7 @@
                             <div class="flex flexRowCenter">
 
                                 <label class="chickBox pl-1 pr-1 mt-2 mb-2 colorGray flex50">
-                                    <input type="radio" name="radio22">
+                                    <input type="radio" name="radio44">
                                     <span class="checkmark"></span>
                                     <strong class="font12">
                                         الولايات المتحده ( 43 )
@@ -355,7 +355,7 @@
                                 </label>
 
                                 <label class="chickBox pl-1 pr-1 mt-2 mb-2 colorGray flex50">
-                                    <input type="radio" name="radio22">
+                                    <input type="radio" name="radio44">
                                     <span class="checkmark"></span>
                                     <strong class="font12">
                                         بريطانيا ( 43 )
@@ -363,7 +363,7 @@
                                 </label>
 
                                 <label class="chickBox pl-1 pr-1 mt-2 mb-2 colorGray flex50">
-                                    <input type="radio" name="radio22">
+                                    <input type="radio" name="radio44">
                                     <span class="checkmark"></span>
                                     <strong class="font12">
                                         مصر ( 43 )
@@ -371,7 +371,7 @@
                                 </label>
 
                                 <label class="chickBox pl-1 pr-1 mt-2 mb-2 colorGray flex50">
-                                    <input type="radio" name="radio22">
+                                    <input type="radio" name="radio44">
                                     <span class="checkmark"></span>
                                     <strong class="font12">
                                         كندا ( 43 )
@@ -1195,18 +1195,27 @@
 </script>
 <!--end select-->
 <script>
+    // click Edit Input
     $(document).on('click', '.formEdit a',function (e){
         e.preventDefault();
         $(this).parents('.formEdit').find('input').focus();
     });
+
+    // click Favorite Item
     $(document).on('click', '.clickFavItem',function (e){
         e.preventDefault();
         $(this).parents('.boxInfoMo').find('.icon-like-3').toggleClass('colorRed');
     });
+
+    // click DropDown Item
     $(document).on('click', '.filterContIt',function (e){
         e.preventDefault();
+        e.stopPropagation();
         $('.dropFil').removeClass('fadDiv');
         $(this).parents('.dopBox').find('.dropFil').toggleClass('fadDiv');
+    });
+    $(document).on('click', function (){
+        $('.dropFil').removeClass('fadDiv');
     });
 </script>
 </body>
