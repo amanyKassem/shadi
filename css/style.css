@@ -20,6 +20,7 @@ body {
     font: 14px 'Cairo', sans-serif;
     line-height: 1.6em;
     position: relative;
+    font-weight: bold !important;
 }
 
 a, button, img{
@@ -742,11 +743,6 @@ input:checked + .slider:before {
 
 .blockSent .infoSender p{
     background-color: #f6f6f7;
-    border-radius: 50px 40px 0px 50px;
-}
-
-.blockRecent .infoRecent p{
-    border-radius: 40px 50px 50px 0px;
 }
 
 .sentMassage input{
@@ -1192,14 +1188,15 @@ p{
     border: 2px solid #5cc431 !important;
 }
 
-.bgHead{
-    background-image: url("../img/slider_pic.png");
-    background-repeat: no-repeat;
+.bgHead, .transImg{
+    /*background-image: url("../img/slider_pic.png");*/
+    /*background-repeat: no-repeat;*/
     /*background-position: center;*/
-    background-size: cover;
+    /*background-size: cover;*/
     /*background-attachment: fixed;*/
     width: 100%;
-    height: 615px;
+    height: 590px;
+    overflow: hidden;
 }
 
 .linkSearch li a{
@@ -1223,7 +1220,11 @@ p{
 }
 
 .contentViewSearch {
-    max-width: 630px;
+    width: 630px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 9;
 }
 
 .h50{
@@ -1768,6 +1769,7 @@ p{
 
 .dropdown-item.active, .dropdown-item:active {
     background-color: #ececec;
+    color: #363636;
 }
 
 .dropFil{
@@ -2056,11 +2058,11 @@ p{
 .profileCont .topHead a:hover {
     color: #3A3A3A;
 }
-.profileCont .editLang{
+.profileCont .editLang , .profileCont .editTalent , .profileCont .editEducation, .profileCont .editCertificate{
     margin: 0 10px;
     font-size: 12px;
 }
-.profileCont .deleteLang{
+.profileCont .deleteLang , .profileCont .deleteTalent{
     font-size: 12px;
 }
 
@@ -2089,6 +2091,17 @@ p{
 .profileCont .tabsWhite .TabContainer.on{
     display: block;
 }
+.profileCont .tabsWhite .TabContainer .radioButton .checkmark:after {
+    top: 3px;
+    width: 9px;
+    height: 9px;
+}
+
+.profileCont .tabsWhite .TabContainer .radioButton .checkmark {
+    height: 17px;
+    width: 17px;
+}
+
 .profileCont .tabsWhite .radioTabs{
     display: flex;
     flex-direction: column;
@@ -2181,18 +2194,24 @@ p{
 }
 .profileCont .btnCon .btnDefault.cancelForm,
 .profileCont .btnCon .btnDefault.cancelDesc,
-.profileCont .btnCon .btnDefault.cancelLang{
+.profileCont .btnCon .btnDefault.cancelSocial,
+.profileCont .btnCon .btnDefault.cancelLang ,
+.profileCont .btnCon .btnDefault.cancelTalent ,
+.profileCont .btnCon .btnDefault.cancelCertificate ,
+.profileCont .btnCon .btnDefault.cancelEducation{
     background: #fdfdfd !important;
     color: #535353 !important;
     border-color: #ddd !important;
 }
-.profileCont .descForm  , .profileCont .langForm{
+.profileCont .descForm  , .profileCont .langForm , .profileCont .talentForm , .profileCont .educationForm , .profileCont .certificateForm{
     background: #f5f5f5;
     padding: 20px;
     display: none;
 }
 
-.profileCont .descForm .btnCon , .profileCont .langForm .btnCon{
+
+.profileCont .descForm .btnCon , .profileCont .langForm .btnCon , .profileCont .talentForm .btnCon ,
+.profileCont .educationForm .btnCon , .profileCont .certificateForm .btnCon{
     margin: 0;
 }
 .profileCont .descForm .form-control{
@@ -2202,14 +2221,19 @@ p{
     font-size: 14px;
 }
 
-.profileCont .langForm .bg-white{
+.profileCont .langForm .bg-white , .profileCont .talentForm .bg-white {
     padding: 15px;
     border: 1px solid #e1e1e1;
 }
-.profileCont .langForm .form-group{
+.profileCont .educationForm .bg-white , .profileCont .certificateForm .bg-white{
+    background: none !important;
+    border: 0;
+    padding: 0;
+}
+.profileCont .langForm .form-group , .profileCont .talentForm .form-group{
     margin: 0;
 }
-.profileCont .langForm .form-control{
+.profileCont .langForm .form-control , .profileCont .talentForm .form-control{
     border: 0;
     height: auto;
     padding: 0;
@@ -2217,36 +2241,127 @@ p{
     color: #3A3A3A;
 }
 
-.profileCont .langForm .bootstrap-select .dropdown-menu {
+.profileCont .educationForm .contGroup {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.profileCont .educationForm .contGroup .form-group:first-child {
+    width: 100px;
+}
+.profileCont .educationForm .contGroup .form-group:last-child {
+    flex: 1;
+}
+.profileCont .educationForm .contGroup .form-group .form-control {
+    background: #fff;
+}
+
+.profileCont .educationForm .form-control , .profileCont .certificateForm .form-control {
+    border: 1px solid #e1e1e1 !important;
+    height: 45px;
+    padding: 0 10px;
+    font-size: 13px;
+    color: #3A3A3A;
+}
+.profileCont .certificateForm .form-control , .profileCont .certificateForm .form-group .form-control:disabled {
+    background: #fff !important;
+}
+.profileCont .certificateForm .uploadFile {
+    background: #fff;
+    opacity: 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    z-index: 1;
+}
+.profileCont .certificateForm .form-group i {
+    position: absolute;
+    left: 12px;
+    color: #56C429;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.profileCont .certificateUl li img {
+    width: 25px;
+    height: 25px;
+}
+
+.profileCont .langForm .bootstrap-select .dropdown-menu , .profileCont .talentForm .bootstrap-select .dropdown-menu  ,
+.profileCont .educationForm .bootstrap-select .dropdown-menu , .profileCont .educationForm .bootstrap-select .dropdown-menu {
     padding: 0;
 }
 
-.profileCont .langForm .bootstrap-select>.dropdown-toggle {
+.profileCont .langForm .bootstrap-select>.dropdown-toggle, .profileCont .talentForm .bootstrap-select>.dropdown-toggle{
     border: 0;
     height: auto;
     padding: 0;
     font-size: 13px;
     color: #3A3A3A;
 }
+.profileCont .educationForm .bootstrap-select>.dropdown-toggle , .profileCont .certificateForm .bootstrap-select>.dropdown-toggle {
+    border: 1px solid #e1e1e1;
+    height: 45px;
+    padding: 0 10px;
+    font-size: 13px;
+    color: #3A3A3A;
+    background: #fff;
+    border-radius: 0;
+}
 
-.profileCont .langForm .bootstrap-select .dropdown-menu li {
+.profileCont .langForm .bootstrap-select .dropdown-menu li , .profileCont .talentForm .bootstrap-select .dropdown-menu li ,
+.profileCont .educationForm .bootstrap-select .dropdown-menu li , .profileCont .certificateForm .bootstrap-select .dropdown-menu li {
     border-bottom: 1px solid #ddd;
 }
 
-.profileCont .langForm .bootstrap-select .dropdown-menu li a {
+.profileCont .langForm .bootstrap-select .dropdown-menu li a , .profileCont .talentForm .bootstrap-select .dropdown-menu li a  ,
+.profileCont .educationForm .bootstrap-select .dropdown-menu li a , .profileCont .certificateForm .bootstrap-select .dropdown-menu li a {
     font-size: 14px;
     padding: 8px 10px;
 }
 .profileCont .langForm .dropdown-item.hover, .profileCont .langForm .dropdown-item:hover ,
-.profileCont .langForm .dropdown-item.active, .profileCont .langForm .dropdown-item:active {
+.profileCont .langForm .dropdown-item.active, .profileCont .langForm .dropdown-item:active ,
+.profileCont .talentForm .dropdown-item.hover, .profileCont .talentForm .dropdown-item:hover ,
+.profileCont .talentForm .dropdown-item.active, .profileCont .talentForm .dropdown-item:active ,
+.profileCont .certificateForm .dropdown-item.hover, .profileCont .certificateForm .dropdown-item:hover ,
+.profileCont .certificateForm .dropdown-item.active, .profileCont .certificateForm .dropdown-item:active ,
+.profileCont .educationForm .dropdown-item.hover, .profileCont .educationForm .dropdown-item:hover ,
+.profileCont .educationForm .dropdown-item.active, .profileCont .educationForm .dropdown-item:active {
     background-color: #d9f2cf;
     color: #324c38;
 }
 
 .profileCont .langForm .btn-light:not(:disabled):not(.disabled).active,
 .profileCont .langForm .btn-light:not(:disabled):not(.disabled):active,
-.profileCont .langForm .show>.btn-light.dropdown-toggle{
+.profileCont .langForm .show>.btn-light.dropdown-toggle,
+.profileCont .talentForm .btn-light:not(:disabled):not(.disabled).active,
+.profileCont .talentForm .btn-light:not(:disabled):not(.disabled):active,
+.profileCont .talentForm .show>.btn-light.dropdown-toggle,
+.profileCont .educationForm .btn-light:not(:disabled):not(.disabled).active,
+.profileCont .educationForm .btn-light:not(:disabled):not(.disabled):active,
+.profileCont .educationForm .show>.btn-light.dropdown-toggle,
+.profileCont .certificateForm .btn-light:not(:disabled):not(.disabled).active,
+.profileCont .certificateForm .btn-light:not(:disabled):not(.disabled):active,
+.profileCont .certificateForm .show>.btn-light.dropdown-toggle{
     background: #fff;
+}
+.profileCont .talentsUl {
+    margin: 30px 0;
+}
+.profileCont .talentsUl li {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.profileCont .talentsUl li .myTalent {
+    border: 1px solid #ddd;
+    flex: 1;
+    padding: 5px 15px;
+    border-radius: 10px;
 }
 
 .modal-body .socialForm {
@@ -4756,7 +4871,6 @@ footer .lightLamp{
     display: flex;
     flex-direction: column;
     padding: 30px 15px;
-    margin: 20px 25px 0 0;
     border-radius: 10px;
 }
 .addService .dataForm .leftDiv:before{
@@ -5925,7 +6039,7 @@ footer .footerInfo > div .apps img{
 
 @media(max-width: 1024px){
 
-    .flex5, .flex10, .flex15, .flex20, .flex25, .flex30, .flex35, .flex40, .flex50, .flex60, .flex70, .flex75, .flex80,.flex85, .flex90, .flex95{
+    .flex5, .flex10, .flex15, .flex20, .flex25, .flex40, .flex30, .flex35, .flex40, .flex50, .flex60, .flex70, .flex75, .flex80,.flex85, .flex90, .flex95{
         flex-basis: 100%;
     }
 
@@ -5943,9 +6057,9 @@ footer .footerInfo > div .apps img{
     .closeChat {
         display: flex;
     }
-    .sectionComment .flexRow {
-        flex-wrap: nowrap;
-    }
+    /*.sectionComment .flexRow {*/
+    /*    flex-wrap: nowrap;*/
+    /*}*/
     .listUl ul li{
         display: block;
         width: 100%;
@@ -5988,12 +6102,6 @@ footer .footerInfo > div .apps img{
     .bockSea h6{
         margin-bottom: 30px;
     }
-    .logoAfterIn{
-        margin: 10px auto;
-    }
-    .linkAfter{
-        margin: 20px auto;
-    }
     .infoWo .flex5{
         flex-basis: 5% !important;
     }
@@ -6013,6 +6121,12 @@ footer .footerInfo > div .apps img{
         width: 100%;
         text-align: center;
     }
+    .owlUser .owl-nav {
+        top: 42px;
+    }
+    .boEImg{
+        width: 100% !important;
+    }
 }
 
 @media(max-width: 400px){
@@ -6026,7 +6140,7 @@ footer .footerInfo > div .apps img{
     .dopBox, .filterContIt{
         margin: 5px 0 !important;
     }
-    .w100, .w250, .w150, .w-50, .w350, .w450, .w-85{
+    .w100, .w250, .w150, .w-50, .w350, .w450, .w-85, .wMobil, .w-75{
         width: 100% !important;
     }
     .flex1, .flex33{
@@ -6041,6 +6155,68 @@ footer .footerInfo > div .apps img{
     .secLang .flex1{
         margin: 5px 0;
     }
+    .choTime {
+        justify-content: center;
+    }
+    .mio{
+        margin: 10px 0;
+        text-align: center;
+    }
+    #sync1 img, #sync1 {
+        height: 300px;
+    }
+    .overX{
+        overflow-x: auto;
+    }
+    .tableOrder td, .tableOrder th {
+        padding: 30px 35px;
+    }
+    .cUl li, .cUl li a {
+        width: 100%;
+        text-align: center;
+    }
+    .TabsNav .nav-item {
+        width: 100%;
+    }
+    .owlProduct2 .owl-nav {
+        display: none !important;
+    }
+    .paddingMobile{
+        padding: 15px !important;
+    }
+    .popVid img{
+        height: 255px;
+    }
+    .linkAfter{
+        margin: 20px auto;
+    }
+    .logoAfterIn{
+        margin: 10px auto;
+    }
+}
+
+@media(max-width: 991px){
+
+    .menuToLogin{
+        
+    }
+
+}
+
+@media(max-width: 1200px){
+
+    .blockMore{
+        flex-basis: 100%;
+        margin-bottom: 15px;
+    }
+    .filterCont {
+        width: 100% !important;
+        margin: 10px 0;
+    }
+    .blockMore span {
+        font-size: 12px;
+    }
+
 }
 
 /********************* Sh3wZa Media *********************/

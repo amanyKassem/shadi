@@ -422,6 +422,29 @@ header .headerTop span {
     padding-right: 15px;
 }
 
+.addService .dataForm .leftDiv{
+    margin: 20px 25px 0 0;
+}
+
+.blockSent .infoSender p{
+    border-radius: 50px 40px 0px 50px;
+}
+
+.blockRecent .infoRecent p{
+    border-radius: 40px 50px 50px 0px;
+}
+
+.float-right {
+    float: right !important;
+}
+
+.contentViewSearch {
+    right: 10%;
+}
+.profileCont .suggestionUl li {
+    margin: 0 0 10px 10px;
+}
+
 @media(max-width: 767px){
     .register .btnGray {
         margin-right: 0;

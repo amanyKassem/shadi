@@ -97,8 +97,12 @@ body {
 .form-group>label{
     left: 15px;
 }
-.form-group input:focus + label, .form-group input:valid + label.form-group input:focus + label, .form-group input:valid + label , .owl-prev {
+.form-group input:focus + label, .form-group input:valid + label.form-group input:focus + label, .form-group input:valid + label {
     left: 10px;
+}
+
+.owl-prev{
+    right: 10px;
 }
 
 .slider:before {
@@ -204,7 +208,7 @@ div.dataTables_wrapper .dataTables_length input, div.dataTables_wrapper .dataTab
 }
 
 .owl-next{
-    right: 10px;
+    left: 10px;
 }
 
 .btnFullScreen{
@@ -219,6 +223,7 @@ div.dataTables_wrapper .dataTables_length input, div.dataTables_wrapper .dataTab
     right: -15px;
     left: auto;
 }
+
 .addService .dataForm .leftDiv:before{
     border-right: 15px solid #defad2;
     left: -15px;
@@ -385,8 +390,12 @@ header .headerTop span {
 }
 
 .owlProduct2 .owl-next {
-    left: 65px;
+    left: 0;
     right: auto;
+}
+
+.owlProduct2 .owl-prev{
+    left: 65px;
 }
 
 .conPo{
@@ -447,6 +456,36 @@ header .headerTop span {
     padding-left: 15px;
 }
 
+i.fas.fa-chevron-left, i.fas.fa-caret-left.mr-2.ml-2, .icon-right_arrow {
+    transform: rotate(180deg);
+}
+
+.addService .dataForm .leftDiv{
+    margin: 20px 0 0 25px;
+}
+
+.blockSent .infoSender p{
+    border-radius: 40px 50px 50px 0px;
+}
+
+.blockRecent .infoRecent p{
+    border-radius: 50px 40px 0px 50px;
+}
+
+.float-right {
+    float: left !important;
+}
+
+.contentViewSearch {
+    left: 10%;
+}
+
+.transImg{
+    transform: scale(-1.1, 1.1);
+}
+.profileCont .suggestionUl li {
+    margin: 0 10px 10px 0;
+}
 
 @media(max-width: 767px){
     .register .btnGray {

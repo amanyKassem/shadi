@@ -504,7 +504,7 @@
 
                             <div class="topHead">
                                 <h6 class="colorBlack font-weight-bold font13">المهارات</h6>
-                                <a>
+                                <a class="addTalent">
                                     اضف جديد
                                     <i class="fas fa-caret-left"></i>
                                     <!--                                    in english case-->
@@ -513,12 +513,48 @@
                             </div>
                             <h6 class="colorBlack font-weight-bold font13">أضف مهارة جديدة</h6>
 
+                            <ul class="talentsUl">
+                                <li class="colorBla font-weight-bold w-100 mt-1 mb-1"><span class="myTalent">مصمم ويب</span>
+                                    <a class="editTalent colorGreen"><i class="fas fa-pen"></i></a>
+                                    <a class="deleteTalent colorGreen"><i class="fas fa-trash"></i></a>
+                                </li>
+                            </ul>
 
-<!--                            <ul class="flex flexRowCenter mt-4">-->
-<!--                                <li class="m-2"><a href="" class="bgGray borderCli pl-3 pr-3 pt-2 pb-2 displayInline Radius10">مصمم ويب</a></li>-->
-<!--                                <li class="m-2"><a href="" class="bgGray borderCli pl-3 pr-3 pt-2 pb-2 displayInline Radius10">مصمم موبايل</a></li>-->
-<!--                                <li class="m-2"><a href="" class="bgGray borderCli pl-3 pr-3 pt-2 pb-2 displayInline Radius10">لوجهات</a></li>-->
-<!--                            </ul>-->
+                            <div class="suggestion">
+                                <h6 class="colorBlack font-weight-bold font13">اقتراحات</h6>
+                                <ul class="suggestionUl flex flexRowCenter">
+                                    <li class="suggestionLi"><a href="" class="bgGray pl-3 pr-3 pt-2 pb-2 displayInline Radius10">مصمم ويب</a></li>
+                                    <li class="suggestionLi"><a href="" class="bgGray pl-3 pr-3 pt-2 pb-2 displayInline Radius10">مصمم موبايل</a></li>
+                                    <li class="suggestionLi"><a href="" class="bgGray pl-3 pr-3 pt-2 pb-2 displayInline Radius10">لوجهات</a></li>
+                                </ul>
+                            </div>
+
+                            <form action="" class="talentForm">
+
+                                <div class="bg-white">
+
+                                    <div class="form-group">
+                                        <input type="text" name="talent" id="talent" class="form-control" placeholder="اكتب مهارة جديدة">
+                                    </div>
+                                    <hr class="customHr my-2">
+                                    <div class="form-group">
+                                        <select class="selectpicker" id="exp">
+                                            <option>مبتدئ</option>
+                                            <option>متوسط</option>
+                                            <option>خبرة</option>
+                                        </select>
+                                    </div>
+
+                                </div>
+
+                                <hr class="customHr my-4">
+
+                                <div class="btnCon">
+                                    <a class="btnDefault hvr-pulse saveTalent">حفظ</a>
+                                    <a class="btnDefault hvr-pulse cancelTalent">الغاء</a>
+                                </div>
+                            </form>
+
 
                         </div>
 
@@ -526,7 +562,7 @@
 
                             <div class="topHead">
                                 <h6 class="colorBlack font-weight-bold font13">التعليم</h6>
-                                <a>
+                                <a class="addEducation">
                                     اضف جديد
                                     <i class="fas fa-caret-left"></i>
                                     <!--                                    in english case-->
@@ -535,13 +571,64 @@
                             </div>
                             <h6 class="colorBlack font-weight-bold font13">أضف تعليم جديدة</h6>
 
+                            <ul class="EducationUl">
+                                <li class="colorBla font-weight-bold w-100 mt-1 mb-1">بكالريوس - تجارة و ادارة اعمال - mansoura university , Egypt , graduated 2017
+                                    <a class="editEducation colorGreen"><i class="fas fa-pen"></i></a>
+                                    <a class="deleteEducation colorGreen"><i class="fas fa-trash"></i></a>
+                                </li>
+                            </ul>
+
+                            <form action="" class="educationForm">
+
+                                <div class="bg-white">
+
+                                    <div class="form-group">
+                                        <select class="selectpicker" id="country" title="البلد">
+                                            <option>مصر</option>
+                                            <option>امريكا</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <input type="text" name="uniName" id="uniName" class="form-control" placeholder="اسم الجامعة">
+                                    </div>
+
+                                    <div class="contGroup">
+                                        <div class="form-group">
+                                            <select class="selectpicker" id="degree" title="الدرجة">
+                                                <option>امتياز</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <input type="text" name="uniSpec" id="uniSpec" class="form-control" placeholder="تخصص الجامعة">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <select class="selectpicker" id="graduationYear" title="سنة التخرج">
+                                            <option>2017</option>
+                                            <option>2018</option>
+                                        </select>
+                                    </div>
+
+                                </div>
+
+                                <hr class="customHr my-4">
+
+                                <div class="btnCon">
+                                    <a class="btnDefault hvr-pulse saveEducation">حفظ</a>
+                                    <a class="btnDefault hvr-pulse cancelEducation">الغاء</a>
+                                </div>
+                            </form>
+
                         </div>
 
                         <div class="pb-3 pt-3">
 
                             <div class="topHead">
                                 <h6 class="colorBlack font-weight-bold font13">الشهادة</h6>
-                                <a>
+                                <a class="addCertificate">
                                     اضف جديد
                                     <i class="fas fa-caret-left"></i>
                                     <!--                                    in english case-->
@@ -549,6 +636,51 @@
                                 </a>
                             </div>
                             <h6 class="colorBlack font-weight-bold font13">أضف شهادة جديدة</h6>
+
+                            <ul class="certificateUl">
+                                <li class="colorBla font-weight-bold w-100 mt-1 mb-1">
+                                    <div class="d-flex align-items-center flex-wrap">
+                                        XD <a class="editCertificate colorGreen"><i class="fas fa-pen"></i></a>
+                                        <a class="deleteCertificate colorGreen"><i class="fas fa-trash"></i></a>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center flex-wrap">
+                                        <div>adobe-202</div>
+                                        <img src="img/order.png" alt="uploaded image">
+                                    </div>
+                                </li>
+                            </ul>
+
+                            <form action="" class="certificateForm">
+
+                                <div class="bg-white">
+
+                                    <div class="form-group">
+                                        <input type="text" name="certName" id="certName" class="form-control" placeholder="اسم الشهادة">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <input type="text" class="form-control plusInput" id="docPhoto" placeholder="حمل الشهادة" disabled="">
+                                        <input id="photo-upload" class="uploadFile" name="upload_cont_file" type="file">
+                                        <i class="fas fa-paperclip"></i>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <select class="selectpicker" id="year" title="السنة">
+                                            <option>2017</option>
+                                            <option>2018</option>
+                                        </select>
+                                    </div>
+
+                                </div>
+
+                                <hr class="customHr my-4">
+
+                                <div class="btnCon">
+                                    <a class="btnDefault hvr-pulse saveCertificate">حفظ</a>
+                                    <a class="btnDefault hvr-pulse cancelCertificate">الغاء</a>
+                                </div>
+                            </form>
+
                         </div>
 
                     </div>
@@ -596,17 +728,232 @@
                         </div>
 
                         <div class="TabContainer">
-                            <h2>article1</h2>
+
+                            <div class="mt-2 mb-2 pt-2 pb-2">
+
+                                <p>ماهي افضل وصف لمرحله مكان عملك / عملك</p>
+
+                                <label class="radioButton w-100 mt-2 mb-2 colorBlack">
+                                    <input type="radio" name="radio">
+                                    <span class="checkmark"></span>
+                                    مرحله الفكره : البحث الاولي والتخطيط
+                                </label>
+
+                                <label class="radioButton w-100 mt-2 mb-2 colorBlack">
+                                    <input type="radio" name="radio">
+                                    <span class="checkmark"></span>
+                                    مرحله بدء التشغيل : إطلاق وتشغيل مبكر
+                                </label>
+
+                                <label class="radioButton w-100 mt-2 mb-2 colorBlack">
+                                    <input type="radio" name="radio">
+                                    <span class="checkmark"></span>
+                                    مرحله التوسيع : العمليات النشطه ونمو العملاء
+                                </label>
+
+                                <label class="radioButton w-100 mt-2 mb-2 colorBlack">
+                                    <input type="radio" name="radio">
+                                    <span class="checkmark"></span>
+                                    المنشاه : وجود قوي في الصناعه
+                                </label>
+
+                            </div>
+
+                            <div class="mt-2 mb-2 pt-2 pb-2">
+
+                                <div class="mt-2 mb-2 w450">
+
+                                    <p class="mt-4 mb-4">ماهي الصناعه التي ينتمي إليها مكان العمل / الاعمال ؟</p>
+
+                                    <div class="form-group bgFa">
+                                        <select class="selectpicker">
+                                            <option>إختر من ...</option>
+                                            <option>مصمم</option>
+                                            <option>مكود</option>
+                                            <option>مطور</option>
+                                        </select>
+                                    </div>
+
+                                </div>
+
+                                <div class="mt-2 mb-2 w450">
+
+                                    <p class="mt-4 mb-4">كم عدد الاشخاص الذين يعملون في شركتك ؟</p>
+
+                                    <div class="form-group bgFa">
+                                        <select class="selectpicker">
+                                            <option>إختر من ...</option>
+                                            <option>32</option>
+                                            <option>22</option>
+                                            <option>23</option>
+                                        </select>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
                         </div>
+
                         <div class="TabContainer">
-                            <h2>article2</h2>
+
+                            <div class="mt-2 mb-2 pt-2 pb-2">
+
+                                <div class="mt-2 mb-2 w450">
+
+                                    <p class="mt-4 mb-4">ماهي الصناعه التي ينتمي إليها مكان العمل / الاعمال ؟</p>
+
+                                    <div class="form-group bgFa">
+                                        <select class="selectpicker">
+                                            <option>إختر من ...</option>
+                                            <option>مصمم</option>
+                                            <option>مكود</option>
+                                            <option>مطور</option>
+                                        </select>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
                         </div>
+
                         <div class="TabContainer">
-                            <h2>article3</h2>
+
+                            <div class="mt-2 mb-2 pt-2 pb-2">
+
+                                <p>ماهي افضل وصف لمرحله مكان عملك / عملك</p>
+
+                                <label class="radioButton w-100 mt-2 mb-2 colorBlack">
+                                    <input type="radio" name="radio">
+                                    <span class="checkmark"></span>
+                                    مرحله الفكره : البحث الاولي والتخطيط
+                                </label>
+
+                                <label class="radioButton w-100 mt-2 mb-2 colorBlack">
+                                    <input type="radio" name="radio">
+                                    <span class="checkmark"></span>
+                                    مرحله بدء التشغيل : إطلاق وتشغيل مبكر
+                                </label>
+
+                                <label class="radioButton w-100 mt-2 mb-2 colorBlack">
+                                    <input type="radio" name="radio">
+                                    <span class="checkmark"></span>
+                                    مرحله التوسيع : العمليات النشطه ونمو العملاء
+                                </label>
+
+                                <label class="radioButton w-100 mt-2 mb-2 colorBlack">
+                                    <input type="radio" name="radio">
+                                    <span class="checkmark"></span>
+                                    المنشاه : وجود قوي في الصناعه
+                                </label>
+
+                            </div>
+
+                            <div class="mt-2 mb-2 pt-2 pb-2">
+
+                                <div class="mt-2 mb-2 w450">
+
+                                    <p class="mt-4 mb-4">ماهي الصناعه التي ينتمي إليها مكان العمل / الاعمال ؟</p>
+
+                                    <div class="form-group bgFa">
+                                        <select class="selectpicker">
+                                            <option>إختر من ...</option>
+                                            <option>مصمم</option>
+                                            <option>مكود</option>
+                                            <option>مطور</option>
+                                        </select>
+                                    </div>
+
+                                </div>
+
+                                <div class="mt-2 mb-2 w450">
+
+                                    <p class="mt-4 mb-4">كم عدد الاشخاص الذين يعملون في شركتك ؟</p>
+
+                                    <div class="form-group bgFa">
+                                        <select class="selectpicker">
+                                            <option>إختر من ...</option>
+                                            <option>32</option>
+                                            <option>22</option>
+                                            <option>23</option>
+                                        </select>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
                         </div>
+
                         <div class="TabContainer">
-                            <h2>article4</h2>
+
+                            <div class="mt-2 mb-2 pt-2 pb-2">
+
+                                <p>ماهي افضل وصف لمرحله مكان عملك / عملك</p>
+
+                                <label class="radioButton w-100 mt-2 mb-2 colorBlack">
+                                    <input type="radio" name="radio">
+                                    <span class="checkmark"></span>
+                                    مرحله الفكره : البحث الاولي والتخطيط
+                                </label>
+
+                                <label class="radioButton w-100 mt-2 mb-2 colorBlack">
+                                    <input type="radio" name="radio">
+                                    <span class="checkmark"></span>
+                                    مرحله بدء التشغيل : إطلاق وتشغيل مبكر
+                                </label>
+
+                                <label class="radioButton w-100 mt-2 mb-2 colorBlack">
+                                    <input type="radio" name="radio">
+                                    <span class="checkmark"></span>
+                                    مرحله التوسيع : العمليات النشطه ونمو العملاء
+                                </label>
+
+                                <label class="radioButton w-100 mt-2 mb-2 colorBlack">
+                                    <input type="radio" name="radio">
+                                    <span class="checkmark"></span>
+                                    المنشاه : وجود قوي في الصناعه
+                                </label>
+
+                            </div>
+
+                            <div class="mt-2 mb-2 pt-2 pb-2">
+
+                                <div class="mt-2 mb-2 w450">
+
+                                    <p class="mt-4 mb-4">ماهي الصناعه التي ينتمي إليها مكان العمل / الاعمال ؟</p>
+
+                                    <div class="form-group bgFa">
+                                        <select class="selectpicker">
+                                            <option>إختر من ...</option>
+                                            <option>مصمم</option>
+                                            <option>مكود</option>
+                                            <option>مطور</option>
+                                        </select>
+                                    </div>
+
+                                </div>
+
+                                <div class="mt-2 mb-2 w450">
+
+                                    <p class="mt-4 mb-4">كم عدد الاشخاص الذين يعملون في شركتك ؟</p>
+
+                                    <div class="form-group bgFa">
+                                        <select class="selectpicker">
+                                            <option>إختر من ...</option>
+                                            <option>32</option>
+                                            <option>22</option>
+                                            <option>23</option>
+                                        </select>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
                         </div>
+
                         <div class="TabContainer">
 
                         </div>
@@ -617,7 +964,7 @@
 
                     <div class="pl-3 pr-3 pt-4 pb-4 mt-3 bgWight position-relative borderCli Radius5 newServiceBlock">
                         <h5 class="mainTitle">يبدو انه لا يوجد خدمه لديك ، ابدأ الآن واربح من موقعنا</h5>
-                        <a href="" class="btnDefault hvr-pulse">انشاء خدمة جديدة</a>
+                        <a href="addService.html" class="btnDefault hvr-pulse">انشاء خدمة جديدة</a>
                     </div>
 
                 </div>
@@ -907,7 +1254,7 @@
         $('.editLi').find('.myLang').text(langVal);
         $('.editLi').find('.myLangType').text(langType);
         $(this).removeClass('saveEdit');
-        $(this).parent('li').removeClass('editLi');
+        $('.langUl li').removeClass('editLi');
     });
 
     $('.saveLang , .cancelLang').click(function () {
@@ -916,6 +1263,73 @@
         $('.langUl').fadeIn();
     });
 
+
+
+    //edit , add & delete talent
+
+    $('body').on('click', '.deleteTalent', function() {
+        $(this).parent().remove();
+    });
+
+    $('.addTalent , .editTalent').click(function () {
+        $('.profileCont .talentForm .btnCon').css('display', 'flex').fadeIn(300);
+        $('.talentsUl , .suggestion').hide();
+        $('.talentForm').fadeIn();
+        $('.talentForm .form-control').val('');
+    });
+
+    $('.saveTalent , .cancelTalent').click(function () {
+        $('.profileCont .talentForm .btnCon').hide();
+        $('.talentForm').hide();
+        $('.talentsUl , .suggestion').fadeIn();
+    });
+
+    //edit , add & delete education
+
+    $('body').on('click', '.deleteEducation', function() {
+        $(this).parent().remove();
+    });
+
+    $('.addEducation , .editEducation').click(function () {
+        $('.profileCont .educationForm .btnCon').css('display', 'flex').fadeIn(300);
+        $('.EducationUl').hide();
+        $('.educationForm').fadeIn();
+        $('.educationForm .form-control').val('')
+    });
+
+    $('.saveEducation , .cancelEducation').click(function () {
+        $('.profileCont .educationForm .btnCon').hide();
+        $('.educationForm').hide();
+        $('.EducationUl').fadeIn();
+    });
+
+
+    //edit , add & delete Certificate
+
+    $('body').on('click', '.deleteCertificate', function() {
+        $(this).parent().parent().remove();
+    });
+
+    $('.addCertificate , .editCertificate').click(function () {
+        $('.profileCont .certificateForm .btnCon').css('display', 'flex').fadeIn(300);
+        $('.certificateUl').hide();
+        $('.certificateForm').fadeIn();
+        $('.educationForm .form-control').val('')
+    });
+
+    $('.saveCertificate , .cancelCertificate').click(function () {
+        $('.profileCont .certificateForm .btnCon').hide();
+        $('.certificateForm').hide();
+        $('.certificateUl').fadeIn();
+    });
+
+    // upload documentation text
+
+    $('.uploadFile').change(function() {
+        var i = $(this).prev('.custom-file-upload').clone();
+        var file = $(this)[0].files[0].name;
+        $(this).prev('#docPhoto').attr('placeholder',file);
+    });
 
 </script>
 
