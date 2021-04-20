@@ -1214,6 +1214,9 @@
         $('.dropFil').removeClass('fadDiv');
         $(this).parents('.dopBox').find('.dropFil').toggleClass('fadDiv');
     });
+    $(document).on('click', '.dopBox',function (e){
+        e.stopPropagation();
+    });
     $(document).on('click', function (){
         $('.dropFil').removeClass('fadDiv');
     });
