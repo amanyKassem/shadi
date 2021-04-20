@@ -483,6 +483,9 @@ i.fas.fa-chevron-left, i.fas.fa-caret-left.mr-2.ml-2, .icon-right_arrow {
 .transImg{
     transform: scale(-1.1, 1.1);
 }
+.profileCont .suggestionUl li {
+    margin: 0 10px 10px 0;
+}
 
 @media(max-width: 767px){
     .register .btnGray {

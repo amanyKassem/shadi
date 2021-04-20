@@ -441,6 +441,9 @@ header .headerTop span {
 .contentViewSearch {
     right: 10%;
 }
+.profileCont .suggestionUl li {
+    margin: 0 0 10px 10px;
+}
 
 @media(max-width: 767px){
     .register .btnGray {

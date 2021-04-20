@@ -30,6 +30,13 @@
           </advancedOptions>
         </fileTransfer>
       </webServer>
+      <webServer id="1a9ef3b1-d30b-4088-841e-9d4c566aa247" name="3ndy" url="http://andy.aait-sa.com">
+        <fileTransfer rootFolder="/public_html" host="andy.aait-sa.com" port="21">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
     </option>
   </component>
 </project>
