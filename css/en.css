@@ -21,9 +21,9 @@ body {
     padding-left: 1rem!important;
 }
 
-.selector i{
-    left: 10px;
-}
+/*.selector i{*/
+/*    left: 10px;*/
+/*}*/
 
 .contentCart {
     right: 0;
@@ -106,7 +106,7 @@ body {
 }
 
 .slider:before {
-    right: 4px;
+    right: 25px;
 }
 
 .noChat , .listPoint li:before , .overLayBT , .upload-img:before ,.loader ,
@@ -432,10 +432,32 @@ header .headerTop span {
 }
 
 .icFl{
-    left: 0;
+    left: -4px;
 }
 .profileCont .topHead a i {
     margin-left: 5px;
+}
+
+/*.flexRow, .flexRowCenter, .flexSpace, .flexAround{*/
+/*    flex-direction: row-reverse;*/
+/*}*/
+
+.boxInProduct {
+    direction: ltr;
+}
+
+.boxInfoMo .flex {
+    flex-direction: row-reverse;
+}
+
+.icon-check_rules, .flagIc {
+    transform: rotateY(
+            180deg
+    );
+}
+
+.selector i{
+    right: 5px;
 }
 
 .profileCont .tabsWhite .parentTab.custom-control {
@@ -454,6 +476,10 @@ header .headerTop span {
 
 .profileCont .tabsWhite .radioTabs .tabTitle {
     padding-left: 15px;
+}
+
+.formAction button{
+    transform: translateY(-50%) rotate(180deg);
 }
 
 i.fas.fa-chevron-left, i.fas.fa-caret-left.mr-2.ml-2, .icon-right_arrow {
@@ -609,7 +635,13 @@ i.fas.fa-chevron-left, i.fas.fa-caret-left.mr-2.ml-2, .icon-right_arrow {
 
 }
 
-@media screen and (max-width: 990px) {
+@media(max-width: 700px){
 
+    .toggleBox span{
+        text-align: left;
+    }
+    .contentViewSearch {
+        left: 0%;
+    }
 
 }

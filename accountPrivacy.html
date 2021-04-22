@@ -199,19 +199,25 @@
 
             <div class="mainTitles">
 
-                <a class="active" href="userOrderDetails.html">
+                <a class="active" href="formUpgradedToProvider.html">
                     <span class="icon-info_service icons"></span>
                     <h5>المعلومات الشخصيه</h5>
                 </a>
                 <i class="fas fa-chevron-left"></i>
 
-                <a class="active" href="PostingRequirements.html">
+                <a class="active" href="completUpgradedProvider.html">
+                    <span class="icon-info_service icons"></span>
+                    <h5>المعلومات الشخصيه</h5>
+                </a>
+                <i class="fas fa-chevron-left"></i>
+
+                <a class="active" href="linkedAccounts.html">
                     <span class="icon-link_provider icons"></span>
                     <h5>حسابات مربوطه</h5>
                 </a>
                 <i class="fas fa-chevron-left"></i>
 
-                <a class="active" href="">
+                <a class="active" href="accountPrivacy.html">
                     <span class="icon-data_provider icons"></span>
                     <h5>خصوصيه الحساب</h5>
                 </a>
@@ -271,7 +277,7 @@
                         </div>
                     </div>
 
-                    <div class="flex flexRowCenter">
+                    <div class="flex flexRowCenter formEdIn">
                         <div class="w350 form-group mt-2 mb-2 position-relative">
                             <input type="text" class="form-control font13 font-weight-bold bgF1" value="sh3wza@gmail.com" style="border: 1px solid #f1f1f1 !important;">
                             <i class="fas fa-check-circle colorDefault I"></i>
@@ -282,10 +288,10 @@
 
                             <div class="flex flexRowCenter">
 
-                                <a href="" class="colorBla font13 mr-3 ml-3 addLang">
+                                <a href="" class="colorBla font13 mr-3 ml-3 editIn">
                                     <i class="fas fa-pen"></i>
                                 </a>
-                                <a href="" class="colorBla font13 removeLang">
+                                <a href="" class="colorBla font13 removeIn">
                                     <i class="fas fa-trash"></i>
                                 </a>
 
@@ -309,7 +315,7 @@
                         </div>
                     </div>
 
-                    <div class="flex flexRowCenter">
+                    <div class="flex flexRowCenter formEdIn">
                         <div class="w350 form-group mt-2 mb-2 position-relative">
                             <input type="text" class="form-control font13 font-weight-bold bgF1" value="01001846667" style="border: 1px solid #f1f1f1 !important;">
                             <i class="fas fa-check-circle colorDefault I"></i>
@@ -320,10 +326,10 @@
 
                             <div class="flex flexRowCenter">
 
-                                <a href="" class="colorBla font13 mr-3 ml-3 addLang">
+                                <a href="" class="colorBla font13 mr-3 ml-3 editIn">
                                     <i class="fas fa-pen"></i>
                                 </a>
-                                <a href="" class="colorBla font13 removeLang">
+                                <a href="" class="colorBla font13 removeIn">
                                     <i class="fas fa-trash"></i>
                                 </a>
 
@@ -583,6 +589,22 @@
 <script src="js/bootstrap-select.min.js"></script>
 <script src="js/owl.carousel.min.js"></script>
 <script src="js/script.js"></script>
+
+<script>
+
+    // click Favorite Item
+    $(document).on('click', '.editIn',function (e){
+        e.preventDefault();
+        $(this).parents('.formEdIn').find('input').focus();
+    });
+
+    // click DropDown Item
+    $(document).on('click', '.removeIn',function (e){
+        e.preventDefault();
+        $(this).parents('.formEdIn').find('input').val('');
+    });
+
+</script>
 
 </body>
 </html>

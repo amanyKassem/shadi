@@ -398,10 +398,22 @@ header .headerTop span {
 }
 
 .icFl{
-    right: 0;
+    right: -4px;
 }
 .profileCont .topHead a i {
     margin-right: 5px;
+}
+
+/*.flexRow, .flexRowCenter, .flexSpace, .flexAround{*/
+/*    flex-direction: row;*/
+/*}*/
+
+.boxInProduct, .btnFullScreen {
+    direction: rtl;
+}
+
+.selector i{
+    left: 5px;
 }
 
 .profileCont .tabsWhite .parentTab.custom-control {
@@ -571,7 +583,13 @@ header .headerTop span {
 
 }
 
-@media screen and (max-width: 990px) {
+@media(max-width: 700px){
 
+    .toggleBox span{
+        text-align: right;
+    }
+    .contentViewSearch {
+        right: 0%;
+    }
 
 }

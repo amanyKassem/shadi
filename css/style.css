@@ -467,12 +467,10 @@ li{
 }
 
 .flexRow{
-    flex-direction: row;
     flex-wrap: wrap;
 }
 
 .flexRowCenter{
-    flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
 }
@@ -490,14 +488,12 @@ li{
 }
 
 .flexSpace{
-    flex-direction: row;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
 .flexAround{
-    flex-direction: row;
     align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -591,7 +587,7 @@ li{
 
 .minBody{
     min-height: 700px;
-    overflow: hidden;
+    /*overflow: hidden;*/
 }
 
 .switch {
@@ -912,7 +908,6 @@ input:checked + .slider:before {
 .btnFullScreen{
     top: 15px;
     z-index: 99;
-    direction: rtl;
 }
 
 .lineHText{
@@ -1131,6 +1126,7 @@ p{
     text-overflow: ellipsis;
     overflow: hidden;
     padding: 0px 10px;
+    width: 90px;
 }
 
 .linkSocial a{
@@ -1299,7 +1295,11 @@ p{
 
 .popVid img{
     width: 100%;
-    height: 400px;
+    height: 330px;
+}
+
+.ImVed img{
+    height: 270px;
 }
 
 .clickOpVid {
@@ -1395,12 +1395,12 @@ p{
 
 .owlUser .owl-item {
     opacity: 0.6;
-    transform: scale(0.8);
+    transform: scale(0.7);
 }
 
 .owlUser .owl-item.active.center {
     opacity: 1;
-    transform: scale(1.3, 1.1);
+    transform: scale(1.4, 1.1);
     z-index: 9;
 }
 
@@ -1444,10 +1444,6 @@ p{
 .imgPoo img{
     width: 100%;
     height: 150px;
-}
-
-.boxInProduct {
-    direction: rtl;
 }
 
 .boxInProduct img{
@@ -1991,10 +1987,56 @@ p{
     object-fit: contain;
 }
 
+.poFiInp{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    right: 0;
+    top: 0;
+    opacity: 0;
+}
 
+.imSeder{
+    width: 125px;
+    height: 80px;
+    border-radius: 10px;
+}
 
+.flexNoneBasic .imgUserMassage{
+    flex-basis: 15%;
+}
 
+.flexNoneBasic .infoMassage{
+    flex-basis: 85%;
+}
 
+.flexNoneBasic .imgUserMassage{
+    flex-basis: 10%;
+}
+
+.flexNoneBasic .infoSender{
+    flex-basis: 90%;
+}
+
+.owlProductP .owl-item{
+    padding: 10px;
+}
+
+.viewMUser{
+    flex-basis: 5%;
+}
+
+.viewIUser{
+    flex-basis: 95%;
+}
+.iInfo{
+    max-width: 35px
+}
+.selector i{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
 
 
 /************************ Style Sh3wZa ******************************/
@@ -5656,6 +5698,7 @@ footer .footerInfo > div .apps img{
     }
     .addService .mainTitles a h5 {
         font-size: 13px;
+        margin: 0px 5px;
     }
 
     .addService .dataForm {
@@ -5855,7 +5898,6 @@ footer .footerInfo > div .apps img{
 
 }
 
-
 @media(min-width: 768px) and (max-width: 991px){
     .authForm .authImg .vector {
         width: 300px;
@@ -5993,8 +6035,15 @@ footer .footerInfo > div .apps img{
     .userOrders .tab-pane .orderBlock {
         width: 48%;
     }
+    .contentViewSearch{
+        width: 350px;
+    }
+    .centerMobMin{
+        flex-wrap: nowrap;
+    }
 
 }
+
 @media(min-width: 992px) and (max-width: 1199px) {
     .authForm .authImg .vector {
         width: 430px;
@@ -6028,6 +6077,9 @@ footer .footerInfo > div .apps img{
     .topCategories .catLinks li a:before {
         height: 3px;
     }
+    .contentViewSearch{
+        width: 450px;
+    }
 }
 
 @media(min-width: 1200px){
@@ -6035,6 +6087,7 @@ footer .footerInfo > div .apps img{
         max-width: 800px;
     }
 }
+
 /********************* Sh3wZa Media *********************/
 
 @media(max-width: 1024px){
@@ -6079,9 +6132,6 @@ footer .footerInfo > div .apps img{
         width: 100%;
         margin: 30px auto;
     }
-    .contentViewSearch {
-        max-width: 100%;
-    }
     .owlUser .owl-item.active.center {
         opacity: 1;
         transform: initial;
@@ -6115,7 +6165,7 @@ footer .footerInfo > div .apps img{
         padding: 0px 10px;
     }
     .linkAfter li a {
-        padding: 0px 10px;
+        padding: 0px 8px;
     }
     .infoSiteFix h6{
         width: 100%;
@@ -6124,8 +6174,61 @@ footer .footerInfo > div .apps img{
     .owlUser .owl-nav {
         top: 42px;
     }
+    .bgSellOwl .owl-nav {
+        top: 23px;
+    }
+    .inSecPro h2, .inSecPro h4 {
+        font-size: 18px;
+    }
     .boEImg{
         width: 100% !important;
+    }
+    .boxInfoOp {
+        width: 75% !important;
+    }
+    .dLang .flex25, .fixBas .flex25 {
+        flex-basis: 25%;
+    }
+    .boxInfoMo .btnButton {
+        margin: 5px 0;
+    }
+    .infoMo {
+        flex-direction: column;
+    }
+    .infoMo div{
+        margin: 3px 0;
+    }
+    .infoNote {
+        padding: 0px 12px;
+    }
+    .formDis button {
+        width: 100%;
+        margin-top: 5px;
+    }
+    .pr-5{
+        padding-right: 10px !important;
+    }
+    .pl-5{
+        padding-left: 10px !important;
+    }
+    .fixFlex, .fixFlex .flex {
+        flex-direction: column;
+    }
+    .centerMob{
+        text-align: center;
+        margin: 5px auto;
+        justify-content: center;
+        display: block;
+        width: 100%;
+    }
+    .shareDiv{
+        text-align: center;
+    }
+    .shareDiv p{
+        margin: 10px 0 !important;
+    }
+    .progress{
+        margin: 10px 0;
     }
 }
 
@@ -6170,6 +6273,7 @@ footer .footerInfo > div .apps img{
     }
     .tableOrder td, .tableOrder th {
         padding: 30px 35px;
+        white-space: pre-line;
     }
     .cUl li, .cUl li a {
         width: 100%;
@@ -6193,12 +6297,73 @@ footer .footerInfo > div .apps img{
     .logoAfterIn{
         margin: 10px auto;
     }
+    .divAddLang button {
+        margin: 5px 0;
+    }
+    .dLang .flex25, .fixBas .flex25{
+        flex-basis: 100%;
+    }
+    .infoNote {
+        padding: 0px;
+    }
+    .switch{
+        margin-top: 10px;
+    }
+
+    .fitchDiv{
+        width: 100%;
+    }
+    .fitchDiv a{
+        width: 100% !important;
+        margin: 10px 0 !important;
+    }
 }
 
-@media(max-width: 991px){
-
-    .menuToLogin{
-        
+@media(max-width: 700px){
+    .inSecProGrid {
+        flex-direction: column;
+    }
+    button.toggleBox {
+        padding: 10px !important;
+    }
+    .toggleBox span{
+        flex-basis: 95%;
+        font-size: 12px;
+    }
+    .toggleBox h6{
+        flex-basis: 5%;
+        font-size: 10px;
+    }
+    .titCen {
+        text-align: center;
+        line-height: 35px;
+    }
+    .contentViewSearch {
+        max-width: 100%;
+        width: 100%;
+        padding: 0px 5px;
+    }
+    .viewInfoUserDec h5 {
+        line-height: 35px;
+    }
+    .btnFullScreen {
+        left: 0 !important;
+        right: 0;
+        margin: auto;
+    }
+    .centerMobMin{
+        text-align: center;
+        margin: 5px auto;
+        justify-content: center;
+        display: block;
+        width: 100%;
+    }
+    .iInfo{
+        margin-bottom: 10px;
+    }
+    .ulCon {
+        margin-top: 15px;
+        width: 100%;
     }
 
 }
