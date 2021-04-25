@@ -300,19 +300,19 @@
                                 <th class="border-0"></th>
                                 <th class="pr-3 pl-3">
                                     <form action="" class="flex flexSpace formEdit">
-                                        <input type="text" class="inpEdit" value="اسم الباقه بالتفصيل">
+                                        <input type="text" class="inpEdit" value="اسم الباقه بالتفصيل" disabled>
                                         <button><img style="max-width: 13px;" src="img/edit_black.png" alt=""></button>
                                     </form>
                                 </th>
                                 <th class="pr-3 pl-3">
                                     <form action="" class="flex flexSpace formEdit">
-                                        <input type="text" class="inpEdit" value="اسم الباقه بالتفصيل">
+                                        <input type="text" class="inpEdit" value="اسم الباقه بالتفصيل" disabled>
                                         <button><img style="max-width: 13px;" src="img/edit_black.png" alt=""></button>
                                     </form>
                                 </th>
                                 <th class="pr-3 pl-3">
                                     <form action="" class="flex flexSpace formEdit">
-                                        <input type="text" class="inpEdit" value="اسم الباقه بالتفصيل">
+                                        <input type="text" class="inpEdit" value="اسم الباقه بالتفصيل" disabled>
                                         <button><img style="max-width: 13px;" src="img/edit_black.png" alt=""></button>
                                     </form>
                                 </th>
@@ -850,8 +850,25 @@
     // onClick Focus Input
     $(document).on('click', '.formEdit button',function (e){
         e.preventDefault();
-        $(this).parents('.formEdit').find('input').focus();
-        $(this).parents('.formEdit').find('input').toggleClass('bgWight');
+        if ($(this).parents('.formEdit').find('input').attr('disabled')) {
+            console.log('removeAttr')
+            $('.formEdit input').attr('disabled', 'disabled');
+            $(this).parents('.formEdit').find('input').removeAttr("disabled");
+            $(this).parents('.formEdit').find('input').addClass('bgWight');
+            $(this).parents('.formEdit').find('input').focus();
+        } else {
+            console.log('attr')
+            $(this).parents('.formEdit').find('input').attr('disabled', 'disabled');
+            $(this).parents('.formEdit').find('input').removeClass('bgWight');
+        }
+    });
+
+    $(document).on('click', '.formEdit',function (e){
+        e.stopPropagation();
+    });
+
+    $(document).on('click', function (){
+        $('.formEdit input').attr('disabled', 'disabled');
     });
 </script>
 

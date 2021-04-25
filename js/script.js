@@ -137,7 +137,7 @@ $('.imagesUploadBlock').on('click', '.close',function (){
 $('.wrap input[type="file"]').each(function() {
 
     let label = $(this).parents('.custom-file-upload').find('p').text();
-    label = (label) ? label : 'اسحب pdf او <span class="colorDefault">رفع</span> من علي جهازك';
+    label = (label) ? label : '<span class="colorDefault">رفع</span>  pdf من علي جهازك';
 
     $(this).wrap('<div class="input-file"></div>');
     $(this).before('<span class="file-selected">'+label+'</span>');
