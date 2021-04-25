@@ -173,7 +173,7 @@
                     <span class="icon-cancel closeSearch d-none d-sm-block"></span>
                     <span class="borderR d-none d-sm-block">|</span>
                     <input type="text" class="form-control" placeholder="ابحث عن الخدمه او القسم الذي تريده">
-                    <button class="searchIcon" type="submi">
+                    <button class="searchIcon" type="submit">
                         <span class="icon-search"></span>
                     </button>
                 </div>
@@ -272,7 +272,7 @@
                                     </div>
 
                                     <div class="btnCon">
-                                        <a class="btnDefault hvr-pulse saveForm">تحديث</a>
+                                        <button type="submit" class="btnDefault hvr-pulse saveForm">تحديث</button>
                                         <a class="btnDefault hvr-pulse cancelForm">الغاء</a>
                                     </div>
                                 </form>
@@ -313,7 +313,7 @@
                                                         </select>
                                                     </div>
 
-                                                    <a href="services.html" data-dismiss="modal" class="btnDefault hvr-pulse mb-5">حفظ</a>
+                                                    <button type="submit" data-dismiss="modal" class="btnDefault hvr-pulse mb-5">حفظ</button>
 
                                                 </form>
                                             </div>
@@ -366,7 +366,7 @@
                                     <textarea class="form-control"></textarea>
                                 </div>
                                 <div class="btnCon">
-                                    <a class="btnDefault hvr-pulse saveDesc">حفظ</a>
+                                    <button type="submit" class="btnDefault hvr-pulse saveDesc">حفظ</button>
                                     <a class="btnDefault hvr-pulse cancelDesc">الغاء</a>
                                 </div>
                             </form>
@@ -422,7 +422,7 @@
                                 <hr class="customHr my-4">
 
                                 <div class="btnCon">
-                                    <a class="btnDefault hvr-pulse saveLang">حفظ</a>
+                                    <button type="submit" class="btnDefault hvr-pulse saveLang">حفظ</button>
                                     <a class="btnDefault hvr-pulse cancelLang">الغاء</a>
                                 </div>
                             </form>
@@ -488,7 +488,7 @@
 
                                                 <hr class="customHr">
 
-                                                <a data-dismiss="modal" class="btnDefault hvr-pulse" type="submit">اضافة</a>
+                                                <button data-dismiss="modal" class="btnDefault hvr-pulse" type="submit">اضافة</button>
                                             </form>
 
                                         </div>
@@ -557,7 +557,7 @@
                                 <hr class="customHr my-4">
 
                                 <div class="btnCon">
-                                    <a class="btnDefault hvr-pulse saveTalent">حفظ</a>
+                                    <button type="submit" class="btnDefault hvr-pulse saveTalent">حفظ</button>
                                     <a class="btnDefault hvr-pulse cancelTalent">الغاء</a>
                                 </div>
                             </form>
@@ -622,7 +622,7 @@
                                 <hr class="customHr my-4">
 
                                 <div class="btnCon">
-                                    <a class="btnDefault hvr-pulse saveEducation">حفظ</a>
+                                    <button type="submit" class="btnDefault hvr-pulse saveEducation">حفظ</button>
                                     <a class="btnDefault hvr-pulse cancelEducation">الغاء</a>
                                 </div>
                             </form>
@@ -679,7 +679,7 @@
                                 <hr class="customHr my-4">
 
                                 <div class="btnCon">
-                                    <a class="btnDefault hvr-pulse saveCertificate">حفظ</a>
+                                    <button type="submit" class="btnDefault hvr-pulse saveCertificate">حفظ</button>
                                     <a class="btnDefault hvr-pulse cancelCertificate">الغاء</a>
                                 </div>
                             </form>
@@ -1096,7 +1096,7 @@
                         <div class="form-group">
                             <input type="text" name="email" id="email" class="form-control" placeholder="اضف البريد الالكتروني">
                         </div>
-                        <a data-dismiss="modal" class="btnDefault hvr-pulse" type="submit">ارسال</a>
+                        <button data-dismiss="modal" class="btnDefault hvr-pulse" type="submit">ارسال</button>
                     </form>
                     <p class="title my-4">رابط الدعوه الخاص بك</p>
                     <a href="" class="bgLightGray py-3 px-md-5 px-2 borderCli Radius5 colorBlack w-75 wordBreak text-center">
@@ -1203,7 +1203,8 @@
         $(this).hide();
         $('.profileCont .editableForm .btnCon').css('display', 'flex').fadeIn(300);
     });
-    $('.saveForm , .cancelForm').click(function () {
+    $('.saveForm , .cancelForm').click(function (e) {
+        e.preventDefault()
         $('.editableForm .form-control').prop('disabled', true).css('color', '#818181');
         $('.profileCont .editableForm .btnCon').hide();
         $('.editProfile').fadeIn(300);
@@ -1217,7 +1218,8 @@
         $('.descForm').fadeIn();
         $('.descForm textarea').val($('.descText').text());
     });
-    $('.saveDesc').click(function () {
+    $('.saveDesc').click(function (e) {
+        e.preventDefault()
         $('.profileCont .descForm .btnCon').hide();
         $('.descForm').hide();
         $('.descText').fadeIn().text( $('.descForm textarea').val());
@@ -1280,7 +1282,8 @@
     //     $('.langUl li').removeClass('editLi');
     // });
 
-    $('.saveLang , .cancelLang').click(function () {
+    $('.saveLang , .cancelLang').click(function (e) {
+        e.preventDefault()
         $('.profileCont .langForm .btnCon').hide();
         $('.langForm').hide();
         $('.langUl').fadeIn();
@@ -1301,7 +1304,8 @@
         $('.talentForm .form-control').val('');
     });
 
-    $('.saveTalent , .cancelTalent').click(function () {
+    $('.saveTalent , .cancelTalent').click(function (e) {
+        e.preventDefault()
         $('.profileCont .talentForm .btnCon').hide();
         $('.talentForm').hide();
         $('.talentsUl , .suggestion').fadeIn();
@@ -1320,7 +1324,8 @@
         $('.educationForm .form-control').val('')
     });
 
-    $('.saveEducation , .cancelEducation').click(function () {
+    $('.saveEducation , .cancelEducation').click(function (e) {
+        e.preventDefault()
         $('.profileCont .educationForm .btnCon').hide();
         $('.educationForm').hide();
         $('.EducationUl').fadeIn();
@@ -1340,7 +1345,8 @@
         $('.educationForm .form-control').val('')
     });
 
-    $('.saveCertificate , .cancelCertificate').click(function () {
+    $('.saveCertificate , .cancelCertificate').click(function (e) {
+        e.preventDefault()
         $('.profileCont .certificateForm .btnCon').hide();
         $('.certificateForm').hide();
         $('.certificateUl').fadeIn();
