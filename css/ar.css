@@ -469,6 +469,9 @@ header .headerTop span {
 .profileCont .certificateForm .form-group i {
     left: 12px;
 }
+.infoNote .removeNote {
+    left: -20px;
+}
 
 @media(max-width: 767px){
     .register .btnGray {

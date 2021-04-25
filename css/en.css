@@ -534,6 +534,9 @@ i.fas.fa-chevron-left, i.fas.fa-caret-left.mr-2.ml-2, .icon-right_arrow {
 .profileCont .certificateForm .form-group i {
     right: 12px;
 }
+.infoNote .removeNote {
+    right: -20px;
+}
 
 @media(max-width: 767px){
     .register .btnGray {
