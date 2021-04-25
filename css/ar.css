@@ -246,9 +246,9 @@ header .overlay {
     margin-left: 45px;
 }
 
-.addService .dataForm .rightDiv .requiredInfo .titleInfo {
-    margin-left: 0;
-}
+/*.addService .dataForm .rightDiv .requiredInfo .titleInfo {*/
+/*    margin-left: 0;*/
+/*}*/
 
 .addService .dataForm .rightDiv .requiredInfo .tags-input-wrapper .tag{
     margin-left: 10px;
@@ -443,6 +443,19 @@ header .headerTop span {
 }
 .profileCont .suggestionUl li {
     margin: 0 0 10px 10px;
+}
+
+.modal-body .innerForm .form-group i {
+    left: 12px;
+}
+.profileCont .certificateForm .form-group .form-control:disabled {
+    padding-left: 30px;
+}
+.changesSaved img {
+    margin-left: 17px;
+}
+.profileCont .certificateForm .form-group i {
+    left: 12px;
 }
 
 @media(max-width: 767px){

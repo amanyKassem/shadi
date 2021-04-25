@@ -298,9 +298,9 @@ header .overlay {
     margin-right: 45px;
 }
 
-.addService .dataForm .rightDiv .requiredInfo .titleInfo {
-    margin-right: 0;
-}
+/*.addService .dataForm .rightDiv .requiredInfo .titleInfo {*/
+/*    margin-right: 0;*/
+/*}*/
 .addService .dataForm .rightDiv .requiredInfo .tags-input-wrapper .tag{
     margin-right: 10px;
 }
@@ -436,6 +436,9 @@ header .headerTop span {
 }
 .profileCont .topHead a i {
     margin-left: 5px;
+    transform: rotateY(
+            180deg
+    );
 }
 
 .profileCont .tabsWhite .parentTab.custom-control {
@@ -485,6 +488,25 @@ i.fas.fa-chevron-left, i.fas.fa-caret-left.mr-2.ml-2, .icon-right_arrow {
 }
 .profileCont .suggestionUl li {
     margin: 0 10px 10px 0;
+}
+
+.statistics .ordersInfo .orderStatistic .chartLine, .earnings .earningsInfo .orderStatistic .chartLine {
+    transform: rotateY(
+            180deg
+    );
+}
+.modal-body .innerForm .form-group i {
+    right: 12px;
+}
+.profileCont .certificateForm .form-group .form-control:disabled {
+    padding-right: 30px;
+}
+.changesSaved img {
+    margin-right: 17px;
+}
+
+.profileCont .certificateForm .form-group i {
+    right: 12px;
 }
 
 @media(max-width: 767px){

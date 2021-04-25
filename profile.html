@@ -228,7 +228,14 @@
 </div>
 <!--end top categories-->
 
-<!--start social-->
+<!--start toast-->
+
+<div class="changesSaved">
+    <img src="img/notification_ring.png" alt="alert">
+    تم حفظ التغييرات بنجاح
+</div>
+
+<!--start profile-->
 
 <div class="minBody mt-75 profileCont">
 
@@ -350,8 +357,6 @@
                                 <a class="editDesc">
                                     تعديل الوصف
                                     <i class="fas fa-caret-left"></i>
-                                    <!--                                    in english case-->
-                                    <!--                                    <i class="fas fa-caret-right"></i>-->
                                 </a>
                             </div>
                             <p class="descText colorBla font13 font-weight-bold">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.</p>
@@ -373,8 +378,6 @@
                                 <a class="addLang">
                                     اضف جديد
                                     <i class="fas fa-caret-left"></i>
-                                    <!--                                    in english case-->
-                                    <!--                                    <i class="fas fa-caret-right"></i>-->
                                 </a>
                             </div>
 
@@ -425,8 +428,6 @@
                                 <a class="addSocial" data-toggle="modal" data-target="#addSocial">
                                     اضف جديد
                                     <i class="fas fa-caret-left"></i>
-                                    <!--                                    in english case-->
-                                    <!--                                    <i class="fas fa-caret-right"></i>-->
                                 </a>
                             </div>
 
@@ -507,8 +508,6 @@
                                 <a class="addTalent">
                                     اضف جديد
                                     <i class="fas fa-caret-left"></i>
-                                    <!--                                    in english case-->
-                                    <!--                                    <i class="fas fa-caret-right"></i>-->
                                 </a>
                             </div>
                             <h6 class="colorBlack font-weight-bold font13">أضف مهارة جديدة</h6>
@@ -565,8 +564,6 @@
                                 <a class="addEducation">
                                     اضف جديد
                                     <i class="fas fa-caret-left"></i>
-                                    <!--                                    in english case-->
-                                    <!--                                    <i class="fas fa-caret-right"></i>-->
                                 </a>
                             </div>
                             <h6 class="colorBlack font-weight-bold font13">أضف تعليم جديدة</h6>
@@ -631,8 +628,6 @@
                                 <a class="addCertificate">
                                     اضف جديد
                                     <i class="fas fa-caret-left"></i>
-                                    <!--                                    in english case-->
-                                    <!--                                    <i class="fas fa-caret-right"></i>-->
                                 </a>
                             </div>
                             <h6 class="colorBlack font-weight-bold font13">أضف شهادة جديدة</h6>
@@ -954,11 +949,10 @@
 
                         </div>
 
-                        <div class="TabContainer">
+                        <div class="TabContainer"></div>
 
-                        </div>
+                        <a class="btnDefault hvr-pulse saveChanges">حفظ التغيرات</a>
 
-                        <a href="" class="btnDefault hvr-pulse">حفظ التغيرات</a>
 
                     </div>
 
@@ -974,7 +968,7 @@
         </div>
     </div>
 </div>
-<!--end social-->
+<!--end profile-->
 
 
 
@@ -1166,6 +1160,16 @@
 </script>
 <!--end select-->
 
+<!--start saveChanges-->
+<script>
+    $(".saveChanges").click(function () {
+        $('.changesSaved').fadeIn()
+        var delay = 2000;
+        setTimeout(function(){ $('.changesSaved').fadeOut() }, delay);
+    })
+</script>
+<!--end saveChanges-->
+
 <script>
     // upload profile image
     var readURL = function(input) {
@@ -1205,10 +1209,15 @@
         $('.descForm').fadeIn();
         $('.descForm textarea').val($('.descText').text());
     });
-    $('.saveDesc , .cancelDesc').click(function () {
+    $('.saveDesc').click(function () {
         $('.profileCont .descForm .btnCon').hide();
         $('.descForm').hide();
         $('.descText').fadeIn().text( $('.descForm textarea').val());
+    });
+    $('.cancelDesc').click(function () {
+        $('.profileCont .descForm .btnCon').hide();
+        $('.descForm').hide();
+        $('.descText').fadeIn()
     });
 
 

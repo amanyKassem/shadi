@@ -2278,7 +2278,6 @@ p{
 }
 .profileCont .certificateForm .form-group i {
     position: absolute;
-    left: 12px;
     color: #56C429;
     top: 50%;
     transform: translateY(-50%);
@@ -2362,6 +2361,24 @@ p{
     flex: 1;
     padding: 5px 15px;
     border-radius: 10px;
+}
+.changesSaved{
+    z-index: 2;
+    position: fixed;
+    top: 200px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: #aff593;
+    color: #0b2e13;
+    width: fit-content;
+    padding: 10px 45px;
+    border-radius: 10px;
+    border: 1px solid #9cde81;
+    display: none;
+}
+.changesSaved img {
+    width: 20px;
 }
 
 .modal-body .socialForm {
@@ -2827,7 +2844,6 @@ p{
 .modal-body .innerForm .form-group i {
     font-size: 16px;
     position: absolute;
-    left: 12px;
     top: 50%;
     transform: translateY(-50%);
     color: #3A3A3A;
@@ -5254,6 +5270,11 @@ footer .footerInfo > div .apps img{
     .orderDetailsContainer .detailsCont .rightCont .details .user{
         font-size: 14px;
     }
+
+    .statistics .publishImg{
+        width: 220px;
+    }
+
     .register .registerImg {
         width: 450px;
     }
@@ -5605,9 +5626,9 @@ footer .footerInfo > div .apps img{
         width: 220px;
     }
     div.dataTables_wrapper .dataTables_length input, div.dataTables_wrapper .dataTables_filter input {
-        margin-left: 0;
-        margin-right: 0;
-        width: 220px;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        width: 210px;
     }
     div.dataTables_wrapper .dataTables_scrollBody table tbody tr td img {
         width: 60px;
@@ -5664,7 +5685,7 @@ footer .footerInfo > div .apps img{
 
     .addService .dataForm .leftDiv {
         width: 100%;
-        margin: 30px 0;
+        margin: 30px 0 !important;
     }
     .addService .dataForm .rightDiv {
         width: 100%;
@@ -5853,6 +5874,10 @@ footer .footerInfo > div .apps img{
         margin-top: 15px;
     }
 
+    .editCategory .addService {
+        margin: auto;
+    }
+
 }
 
 
@@ -5916,6 +5941,11 @@ footer .footerInfo > div .apps img{
         width: 31%;
     }
 
+
+    .statistics .publishImg{
+        width: 320px;
+    }
+
     .orderDetailsContainer .detailsCont .leftCont {
         width: 30%;
     }
@@ -5957,7 +5987,7 @@ footer .footerInfo > div .apps img{
     }
     .addService .dataForm .leftDiv {
         width: 50%;
-        margin:10px auto 45px;
+        margin:10px auto 45px !important;
         align-self: center;
     }
 
@@ -5994,6 +6024,17 @@ footer .footerInfo > div .apps img{
         width: 48%;
     }
 
+    .editCategory .btnDefault {
+        margin: 20px auto;
+    }
+
+    .profileCont .btnCon {
+        flex-direction: column;
+    }
+    .profileCont .btnCon .btnDefault {
+        margin-bottom: 5px;
+    }
+
 }
 @media(min-width: 992px) and (max-width: 1199px) {
     .authForm .authImg .vector {
@@ -6027,6 +6068,13 @@ footer .footerInfo > div .apps img{
     }
     .topCategories .catLinks li a:before {
         height: 3px;
+    }
+
+    .profileCont .btnCon {
+        flex-direction: column;
+    }
+    .profileCont .btnCon .btnDefault {
+        margin-bottom: 5px;
     }
 }
 
