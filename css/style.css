@@ -1120,13 +1120,14 @@ p{
     right: 0;
     left: 0;
     margin: auto;
-    color: #3a3a3a;
-    text-align: center;
+    color: #3A3A3A;
+    /* text-align: center; */
     font-size: 12px;
     text-overflow: ellipsis;
     overflow: hidden;
     padding: 0px 10px;
-    width: 90px;
+    width: 110px;
+    white-space: nowrap;
 }
 
 .linkSocial a{
@@ -5703,11 +5704,15 @@ footer .footerInfo > div .apps img{
     .addService .mainTitles a {
         margin-bottom: 10px;
         width: 90%;
+        flex-wrap: nowrap;
     }
     .addService .mainTitles a .icons {
         width: 30px;
         height: 30px;
         font-size: 12px;
+        display: table;
+        text-align: center;
+        line-height: 30px;
     }
 
     .addService .mainTitles {
@@ -6081,6 +6086,10 @@ footer .footerInfo > div .apps img{
     }
     .profileCont .btnCon .btnDefault {
         margin-bottom: 5px;
+    }
+
+    .formAddPro .input-file {
+        width: 60px;
     }
 
 }

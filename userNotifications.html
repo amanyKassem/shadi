@@ -29,7 +29,7 @@
     <link rel="stylesheet" href="css/ar.css">
 
 </head>
-<body class="pT115">
+<body class="pT115 pT175">
 
 <!-- Start Loading Page -->
 
@@ -43,11 +43,15 @@
 
 <!--  Start Header  -->
 
-<header>
+<header class="userHeader">
+    <div class="headerTop">
+        <span>احصل علي 20%</span> علي اول طلب تطلبه من موقعنا
+        <span class="icon-cancel closeTopHeader"></span>
+    </div>
     <div class="container">
 
         <div class="menuBar d-flex d-md-none justify-content-between align-items-center">
-            <a href="providerHome.html">
+            <a href="userHome.html">
                 <img src="img/logo_icon.png" class="logo" alt="logo">
             </a>
             <div class="toggle">
@@ -78,16 +82,16 @@
 
 
             <div class="d-flex align-items-center">
-                <a href="providerHome.html" class="d-none d-md-block">
+                <a href="userHome.html" class="d-none d-md-block">
                     <img src="img/logo_icon.png" class="logo" alt="logo">
                 </a>
 
                 <ul class="menuLinks">
-                    <li class="active">
-                        <a href="providerHome.html">الرئيسية</a>
+                    <li>
+                        <a href="userHome.html">الرئيسية</a>
                     </li>
                     <li>
-                        <a href="providerOrders.html">الطلبات</a>
+                        <a href="beSeller.html">ترقية لمقدم</a>
                     </li>
                     <li>
                         <div class="msgs">
@@ -97,33 +101,22 @@
                             الرسائل
                             <span class="icon-down_arrow_drop"></span>
                             <ul class="boxShadow">
-                                <li><a href="chat.html"><span class="icon-email_gray"></span> الرسائل</a></li>
-                                <li class="active"><a href="notifications.html"><span class="icon-notification"></span> الاشعارات</a></li>
+                                <li><a href="userChat.html"><span class="icon-email_gray"></span> الرسائل</a></li>
+                                <li class="active"><a href="userNotifications.html"><span class="icon-notification"></span> الاشعارات</a></li>
                             </ul>
                         </div>
                     </li>
                     <li>
-                        <a href="services.html">الخدمات المقدمة</a>
+                        <a href="saves.html">المحفوظات</a>
                     </li>
                     <li>
-                        <a href="analytics.html">تحليلات</a>
-                    </li>
-                    <li>
-                        <a href="earnings.html">ارباح</a>
+                        <a href="orders.html">الطلبات</a>
                     </li>
 
                     <!--                    only in mobile-->
 
-                    <li class="d-sm-none">
-                        <div>
-                            <span>الحالة</span>
-                            <div class="custom-control custom-switch">
-                                <input type="checkbox" class="custom-control-input" id="aval2">
-                                <label class="custom-control-label" for="aval2"></label>
-                            </div>
-                        </div>
-                    </li>
-
+                    <li class="d-sm-none"><a href="interests.html">الاهتمامات</a></li>
+                    <li class="d-sm-none"><a href="providerHome.html">تحويل للوحة التحكم</a></li>
                     <li class="d-sm-none"><a href="settings.html">الاعدادات</a></li>
                     <li class="d-sm-none">
                         <div>
@@ -143,10 +136,6 @@
 
             <div class="d-flex flex-column align-items-start flex-md-row align-items-md-center">
 
-                <a href="transferBuyer" class="transferBuyer">
-                    حول الي مشتري
-                </a>
-
                 <!-- if user login-->
                 <!--                <a href="profile.html" class="profile d-none d-md-flex">-->
                 <!--                    <img src="img/pic.jpg" class="img-fluid" alt="profile">-->
@@ -159,15 +148,8 @@
                     <img src="img/triangle.png" alt="arrow" class="triangle">
                     <ul class="boxShadow">
                         <li><a href="profile.html">عرض الملف الشخصي</a></li>
-                        <li>
-                            <div>
-                                <span>الحالة</span>
-                                <div class="custom-control custom-switch">
-                                    <input type="checkbox" class="custom-control-input" id="aval">
-                                    <label class="custom-control-label" for="aval"></label>
-                                </div>
-                            </div>
-                        </li>
+                        <li><a href="interests.html">الاهتمامات</a></li>
+                        <li><a href="providerHome.html">تحويل للوحة التحكم</a></li>
                         <li><a href="settings.html">الاعدادات</a></li>
                         <li>
                             <div>
@@ -183,13 +165,66 @@
                     </ul>
                 </div>
 
+
+
+                <div class="searchCont">
+                    <span class="icon-cancel closeSearch d-none d-sm-block"></span>
+                    <span class="borderR d-none d-sm-block">|</span>
+                    <input type="text" class="form-control" placeholder="ابحث عن الخدمه او القسم الذي تريده">
+                    <button class="searchIcon" type="submi">
+                        <span class="icon-search"></span>
+                    </button>
+                </div>
+
             </div>
+
+
+
         </div>
 
     </div>
 </header>
 
 <!--end header-->
+
+<!--start top categories-->
+<div class="topCategories">
+    <div class="container">
+        <ul class="catLinks">
+            <li>
+                <a href="graphicDesign.html">مشاهدات الزوار</a>
+            </li>
+            <li>
+                <a href="graphicDesign.html">الجرافيك والديزاين</a>
+            </li>
+            <li>
+                <a href="graphicDesign.html">التكنولوجيا والتسويق الرقمي</a>
+            </li>
+            <li>
+                <a href="graphicDesign.html">الكتابة والترجمة</a>
+            </li>
+            <li>
+                <a href="graphicDesign.html">التصوير والمونتاج</a>
+            </li>
+            <li>
+                <a href="graphicDesign.html">الفيديو والانيميشن</a>
+            </li>
+            <li>
+                <a href="graphicDesign.html">التعليم</a>
+            </li>
+            <li>
+                <a href="graphicDesign.html">لايف ستايل</a>
+            </li>
+            <li>
+                <a href="graphicDesign.html">الاستشارات</a>
+            </li>
+            <li>
+                <a href="graphicDesign.html">خدمات عامة</a>
+            </li>
+        </ul>
+    </div>
+</div>
+<!--end top categories-->
 
 <!--start statistics-->
 <div class="statistics bgLightGray minBody pt-5">

@@ -396,9 +396,17 @@
 
                                 <div class="bg-white">
 
+<!--                                    <div class="form-group">-->
+<!--                                        <input type="text" name="lang" id="lang" class="form-control" placeholder="اضف لغة">-->
+<!--                                    </div>-->
+
                                     <div class="form-group">
-                                        <input type="text" name="lang" id="lang" class="form-control" placeholder="اضف لغة">
+                                        <select class="selectpicker" id="addLang" title="اضف لغة">
+                                            <option>عربي</option>
+                                            <option>English</option>
+                                        </select>
                                     </div>
+
                                     <hr class="customHr my-2">
                                     <div class="form-group">
                                         <select class="selectpicker" id="langType">
@@ -1227,44 +1235,50 @@
         $(this).parent().remove();
     });
 
-    $('.addLang').click(function () {
+    $('.addLang , .editLang').click(function () {
         $('.profileCont .langForm .btnCon').css('display', 'flex').fadeIn(300);
         $('.langUl').hide();
         $('.langForm').fadeIn();
-        $('.langForm .form-control').val('');
-        $('.saveLang').addClass('saveAdd');
     });
 
-    $('body').on('click', '.editLang', function() {
-        $('.profileCont .langForm .btnCon').css('display', 'flex').fadeIn(300);
-        $('.langUl').hide();
-        $('.langForm').fadeIn();
-        let langVal = $(this).parent('li').find('.myLang').text();
-        let langType = $(this).parent('li').find('.myLangType').text();
-        $('.langForm .form-control').val(langVal);
-        $('.selectpicker').selectpicker('val', langType);
-        $('.saveLang').addClass('saveEdit');
-        $(this).parent('li').addClass('editLi');
-    });
+    // $('.addLang').click(function () {
+    //     $('.profileCont .langForm .btnCon').css('display', 'flex').fadeIn(300);
+    //     $('.langUl').hide();
+    //     $('.langForm').fadeIn();
+    //     $('.langForm .form-control').val('');
+    //     $('.saveLang').addClass('saveAdd');
+    // });
 
-    $('body').on('click', '.saveLang.saveAdd', function() {
-        let val = $("#langType").val().toString();
-        let lang = $('.langForm .form-control').val().toString();
-        $(".langUl").append("<li class=\"colorBla font-weight-bold w-100 mt-1 mb-1\"><span class=\"myLang\">"+lang+"</span> - <span class=\"myLangType\">"+val+"</span>\n" +
-            "                                    <a class=\"editLang colorGreen\"><i class=\"fas fa-pen\"></i></a>\n" +
-            "                                    <a class=\"deleteLang colorGreen\"><i class=\"fas fa-trash\"></i></a>\n" +
-            "                                </li>");
-        $(this).removeClass('saveAdd');
-    });
-
-    $('body').on('click', '.saveLang.saveEdit', function() {
-        let langType = $("#langType").val().toString();
-        let langVal = $('.langForm .form-control').val().toString();
-        $('.editLi').find('.myLang').text(langVal);
-        $('.editLi').find('.myLangType').text(langType);
-        $(this).removeClass('saveEdit');
-        $('.langUl li').removeClass('editLi');
-    });
+    // $('body').on('click', '.editLang', function() {
+    //     $('.profileCont .langForm .btnCon').css('display', 'flex').fadeIn(300);
+    //     $('.langUl').hide();
+    //     $('.langForm').fadeIn();
+    //     let langVal = $(this).parent('li').find('.myLang').text();
+    //     let langType = $(this).parent('li').find('.myLangType').text();
+    //     $('.langForm .form-control').val(langVal);
+    //     $('.selectpicker').selectpicker('val', langType);
+    //     $('.saveLang').addClass('saveEdit');
+    //     $(this).parent('li').addClass('editLi');
+    // });
+    //
+    // $('body').on('click', '.saveLang.saveAdd', function() {
+    //     let val = $("#langType").val().toString();
+    //     let lang = $('.langForm .form-control').val().toString();
+    //     $(".langUl").append("<li class=\"colorBla font-weight-bold w-100 mt-1 mb-1\"><span class=\"myLang\">"+lang+"</span> - <span class=\"myLangType\">"+val+"</span>\n" +
+    //         "                                    <a class=\"editLang colorGreen\"><i class=\"fas fa-pen\"></i></a>\n" +
+    //         "                                    <a class=\"deleteLang colorGreen\"><i class=\"fas fa-trash\"></i></a>\n" +
+    //         "                                </li>");
+    //     $(this).removeClass('saveAdd');
+    // });
+    //
+    // $('body').on('click', '.saveLang.saveEdit', function() {
+    //     let langType = $("#langType").val().toString();
+    //     let langVal = $('.langForm .form-control').val().toString();
+    //     $('.editLi').find('.myLang').text(langVal);
+    //     $('.editLi').find('.myLangType').text(langType);
+    //     $(this).removeClass('saveEdit');
+    //     $('.langUl li').removeClass('editLi');
+    // });
 
     $('.saveLang , .cancelLang').click(function () {
         $('.profileCont .langForm .btnCon').hide();
