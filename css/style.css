@@ -661,6 +661,7 @@ input:checked + .slider:before {
 
 .heightChat{
     height: 600px;
+    position: relative;
 }
 
 .imgUserMassage, .imgUserMassage img{
@@ -676,6 +677,19 @@ input:checked + .slider:before {
 
 .menuChat .boxMessage:last-child{
     border-bottom: 0px solid #e5e5e5;
+}
+
+.searchAbsolute {
+    position: absolute;
+    width: 90%;
+    height: 100%;
+    top: 70px;
+    background: #fff;
+    right: 0;
+    left: 0;
+    margin: auto;
+    z-index: 100;
+    display: none;
 }
 
 .point{
@@ -1997,7 +2011,12 @@ p{
     object-fit: contain;
 }
 
-
+.relateTo{
+    display: block;
+    color: #818181;
+    margin: 10px 0;
+    font-size: 13px;
+}
 .chatLink {
     border: 1px solid #ddd;
     max-width: 300px;

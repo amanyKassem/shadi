@@ -214,14 +214,14 @@
 
                         <div class="formAction Radius5 overflow-hidden">
                             <form action="" class="position-relative overflow-hidden">
-                                <input class="Radius10" type="text" placeholder="ابحث عن اسم المستخدم">
+                                <input class="Radius10 searchConv" type="text" placeholder="ابحث عن اسم المستخدم">
                                 <button class="btnButton btnDefault w-auto pl-3 pr-3 Radius10">
                                     <span class="icon-search colorWight"></span>
                                 </button>
                             </form>
                         </div>
 
-                        <div class="pt-3 pb-3">
+                        <div class="pt-3 pb-3 mainConv">
                             <div class="boxMessage clickTo flex noWrap flexRowCenter pt-3 pb-3 pr-1 pl-1 flexNoneBasic">
                                 <div class="imgUserMassage text-center position-relative">
                                     <div class="position-relative Radius50 m-auto" style="width: 35px;height: 35px;">
@@ -363,6 +363,37 @@
                                     <div class="flex flexSpace">
                                         <p class="m-0 colorOp MSG">كيف الحال يا اخي العزيز ؟</p>
                                         <span class="colorGray"><i class="fas fa-check-circle"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pt-3 pb-3 searchAbsolute">
+                            <div class="boxMessage clickTo flex noWrap flexRowCenter pt-3 pb-3 pr-1 pl-1 flexNoneBasic">
+                                <div class="imgUserMassage text-center position-relative">
+                                    <div class="position-relative Radius50 m-auto" style="width: 35px;height: 35px;">
+                                        <img src="img/pic.jpg" alt="">
+                                        <span class="point pointRed"></span>
+                                    </div>
+                                </div>
+                                <div class="infoMassage pr-2 pl-2">
+                                    <div class="flex flexSpace">
+                                        <h6 class="m-0">شعوذه</h6>
+                                        <span class="colorGray">12 Jun</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="boxMessage clickTo flex noWrap flexRowCenter pt-3 pb-3 pr-1 pl-1 flexNoneBasic">
+                                <div class="imgUserMassage text-center position-relative">
+                                    <div class="position-relative Radius50 m-auto" style="width: 35px;height: 35px;">
+                                        <img src="img/pic.jpg" alt="">
+                                        <span class="point pointRed"></span>
+                                    </div>
+                                </div>
+                                <div class="infoMassage pr-2 pl-2">
+                                    <div class="flex flexSpace">
+                                        <h6 class="m-0">شعوذه</h6>
+                                        <span class="colorGray">12 Jun</span>
                                     </div>
                                 </div>
                             </div>
@@ -430,6 +461,7 @@
                                     <div class="infoSender">
                                         <p class="m-0 pr-3 pl-3 pt-2 pb-2 float-right">كيف الحال يا اخي العزيز ؟</p>
                                         <div class="w-100 float-right mt-2 mb-2">
+                                            <span class="relateTo">هذه الرسالة تابعه ل :</span>
                                             <a class="chatLink">
                                                 <img src="img/austin-distel-rxpThOwuVgE-unsplash.png" alt="" class="imSeder">
                                                 <span>
@@ -440,7 +472,7 @@
                                     </div>
                                 </div>
                             </div>
-                            
+
                         </div>
 
                         <div class="formAction sentMassage pt-4 pb-2 bgWight borderTCli">
@@ -626,6 +658,20 @@
 <script src="js/script.js"></script>
 <script>
 
+    // chat search
+    $( ".searchConv" ).keyup(function() {
+        $('.searchAbsolute').show()
+        $('.mainConv').hide()
+
+        if(!$(this).val() || $(this).val().indexOf(' ')>=0){
+            $('.searchAbsolute').hide()
+            $('.mainConv').show()
+        }
+
+    });
+
+
+    // upload file
 
     $('.poFiInp').change(function() {
         var file = $(this)[0].files[0].name;
