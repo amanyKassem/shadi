@@ -455,9 +455,34 @@
                                     </div>
                                 </div>
                             </div>
+
+                            <div class="blockSent pb-4 pt-4">
+                                <span class="text-center d-block w-100 colorGray mt-2 mb-2">19/1/2020 , 3:39 AM</span>
+                                <div class="sent flex flexRow noWrap flexNoneBasic">
+                                    <div class="imgUserMassage imgSender text-center position-relative mt-2 mb-2">
+                                        <img src="img/pic.jpg" alt="">
+                                    </div>
+                                    <div class="infoSender">
+                                        <p class="m-0 pr-3 pl-3 pt-2 pb-2 float-right">كيف الحال يا اخي العزيز ؟</p>
+                                        <div class="w-100 float-right mt-2 mb-2">
+                                            <a class="chatLink">
+                                                <img src="img/austin-distel-rxpThOwuVgE-unsplash.png" alt="" class="imSeder">
+                                                <span>
+                                                link text  link text  link text  link text  link text
+                                           </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
 
                         <div class="formAction sentMassage pt-4 pb-2 bgWight borderTCli">
+                            <div class="fileNamCont">
+                                <span class="fileName"></span>
+                                <span class="icon-cancel_black"></span>
+                            </div>
                             <form action="" class="position-relative overflow-hidden formChat">
                                 <a class="position-absolute btnButton btnDefault w-auto pl-3 pr-3 posRightSec">
                                     <span class="icon-paperclip"></span>
@@ -635,6 +660,20 @@
 <script src="js/owl.carousel.min.js"></script>
 <script src="js/script.js"></script>
 <script>
+
+    $('.poFiInp').change(function() {
+        var file = $(this)[0].files[0].name;
+        $('.fileName').text(file);
+        $('.fileNamCont').css('display', 'flex').fadeIn()
+
+    });
+
+    $('body').on('click', '.icon-cancel_black', function() {
+        $('.fileName').text('');
+        $('.fileNamCont').hide()
+        $('.poFiInp').val('')
+    });
+
 
     // Open Chat
 

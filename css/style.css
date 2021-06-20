@@ -1997,6 +1997,46 @@ p{
     object-fit: contain;
 }
 
+
+.chatLink {
+    border: 1px solid #ddd;
+    max-width: 300px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-radius: 5px;
+    text-decoration: underline;
+}
+
+.chatLink img{
+    width: 100px;
+    height: 60px;
+    border-radius: 5px;
+}
+
+.fileNamCont{
+    display: none;
+    color: #3a3a3a;
+    align-items: center;
+    padding: 0 20px 10px;
+    font-size: 15px;
+}
+.fileNamCont .icon-cancel_black{
+    border-radius: 50%;
+    color: #fff;
+    margin: 0 10px;
+    font-size: 9px;
+    font-weight: bold;
+    background: #f00;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
 .poFiInp{
     position: absolute;
     width: 100% !important;
@@ -2005,7 +2045,7 @@ p{
     top: 0;
     opacity: 0;
     padding: 0 !important;
-    visibility: hidden;
+    /*visibility: hidden;*/
 }
 
 .imSeder{
@@ -5935,6 +5975,15 @@ footer .footerInfo > div .apps img{
 
     .editCategory .addService {
         margin: auto;
+    }
+
+    .chatLink {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .chatLink img {
+        margin: 0 0 10px !important;
     }
 
 }

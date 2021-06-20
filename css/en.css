@@ -538,6 +538,10 @@ i.fas.fa-chevron-left, i.fas.fa-caret-left.mr-2.ml-2, .icon-right_arrow {
     right: -20px;
 }
 
+.chatLink img{
+    margin-right: 10px;
+}
+
 @media(max-width: 767px){
     .register .btnGray {
         margin-left: 0;
