@@ -663,7 +663,7 @@
         $('.searchAbsolute').show()
         $('.mainConv').hide()
 
-        if(!$(this).val() || $(this).val().indexOf(' ')>=0){
+        if(!$(this).val() || !$(this).val().replace(/\s/g, '').length){
             $('.searchAbsolute').hide()
             $('.mainConv').show()
         }
